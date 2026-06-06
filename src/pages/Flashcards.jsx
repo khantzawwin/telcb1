@@ -111,16 +111,16 @@ export default function Flashcards() {
 
   return (
     // Full-height session view — important on mobile
-    <div className="flex flex-col h-[calc(100vh-56px)] md:h-screen max-w-lg mx-auto px-4 py-4 sm:py-8">
+    <div className="flex flex-col h-[calc(100vh-56px)] md:h-screen max-w-2xl mx-auto px-6 py-6 sm:py-10">
       {/* Progress bar */}
-      <div className="flex items-center gap-3 mb-4 flex-shrink-0">
-        <div className="flex-1 bg-gray-200 rounded-full h-1.5">
+      <div className="flex items-center gap-3 mb-5 flex-shrink-0">
+        <div className="flex-1 bg-gray-200 rounded-full h-2">
           <div
-            className="bg-indigo-500 h-1.5 rounded-full transition-all duration-300"
+            className="bg-indigo-500 h-2 rounded-full transition-all duration-300"
             style={{ width: `${progress * 100}%` }}
           />
         </div>
-        <span className="text-xs text-gray-400 tabular-nums">{cardIndex}/{session.length}</span>
+        <span className="text-sm text-gray-400 tabular-nums">{cardIndex}/{session.length}</span>
       </div>
 
       {/* Card — takes most of the space */}
@@ -128,27 +128,27 @@ export default function Flashcards() {
         className="flex-1 bg-white border border-gray-200 rounded-2xl flex flex-col items-center justify-center p-6 sm:p-10 cursor-pointer shadow-sm select-none mb-4 active:bg-gray-50 transition-colors"
         onClick={() => !flipped && setFlipped(true)}
       >
-        <div className="text-xs font-medium text-gray-400 uppercase tracking-widest mb-6">
+        <div className="text-sm font-medium text-gray-400 uppercase tracking-widest mb-8">
           {card.type} · L{card.lesson}
         </div>
 
         {!flipped ? (
           <div className="text-center">
-            <p className="text-3xl sm:text-4xl font-bold text-gray-900 leading-tight mb-2">{card.word}</p>
-            {card.info && <p className="text-gray-400 text-sm mb-6">{card.info}</p>}
-            <div className="inline-flex items-center gap-2 text-gray-400 text-sm mt-4 bg-gray-100 px-4 py-2 rounded-full">
+            <p className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-3">{card.word}</p>
+            {card.info && <p className="text-gray-400 text-base mb-6">{card.info}</p>}
+            <div className="inline-flex items-center gap-2 text-gray-400 text-base mt-6 bg-gray-100 px-5 py-2.5 rounded-full">
               <span>tap to reveal</span>
             </div>
           </div>
         ) : (
           <div className="text-center w-full">
-            <p className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">{card.word}</p>
-            <p className="text-xl sm:text-2xl font-semibold text-indigo-600 mb-4">{card.translation}</p>
+            <p className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3">{card.word}</p>
+            <p className="text-2xl sm:text-3xl font-semibold text-indigo-600 mb-5">{card.translation}</p>
             {card.example && (
-              <div className="bg-gray-50 rounded-xl px-4 py-3 text-left max-w-sm mx-auto mt-2">
-                <p className="text-sm text-gray-700 italic leading-relaxed">{card.example}</p>
+              <div className="bg-gray-50 rounded-xl px-5 py-4 text-left max-w-lg mx-auto mt-3">
+                <p className="text-base text-gray-700 italic leading-relaxed">{card.example}</p>
                 {card.exampleTranslation && (
-                  <p className="text-xs text-gray-400 mt-1.5 leading-relaxed">{card.exampleTranslation}</p>
+                  <p className="text-sm text-gray-400 mt-2 leading-relaxed">{card.exampleTranslation}</p>
                 )}
               </div>
             )}
@@ -159,22 +159,22 @@ export default function Flashcards() {
       {/* Rating buttons — large, thumb-friendly */}
       <div className="flex-shrink-0">
         {flipped ? (
-          <div className="grid grid-cols-4 gap-2">
+          <div className="grid grid-cols-4 gap-3">
             {RATINGS.map(r => (
               <button
                 key={r.value}
                 onClick={() => handleRate(r.value)}
-                className={`py-3.5 sm:py-4 rounded-xl border ${r.bg} ${r.text} ${r.border} transition-colors`}
+                className={`py-4 sm:py-5 rounded-xl border ${r.bg} ${r.text} ${r.border} transition-colors`}
               >
-                <span className="block text-xs font-bold">{r.label}</span>
-                <span className="block text-xs opacity-60 mt-0.5 hidden sm:block">{r.sublabel}</span>
+                <span className="block text-sm font-bold">{r.label}</span>
+                <span className="block text-xs opacity-60 mt-1 hidden sm:block">{r.sublabel}</span>
               </button>
             ))}
           </div>
         ) : (
           <button
             onClick={() => setFlipped(true)}
-            className="w-full py-4 bg-indigo-600 text-white font-semibold rounded-xl active:bg-indigo-700 transition-colors"
+            className="w-full py-5 bg-indigo-600 text-white text-lg font-semibold rounded-xl active:bg-indigo-700 transition-colors"
           >
             Show answer
           </button>
@@ -187,12 +187,12 @@ export default function Flashcards() {
 function StartScreen({ slot, dueCount, onStart }) {
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] px-6 text-center">
-      <div className="text-6xl mb-6">🃏</div>
-      <h2 className="text-2xl font-bold text-gray-900 mb-2 capitalize">{slot} Session</h2>
-      <p className="text-gray-500 mb-8 text-sm">{dueCount} cards ready to review</p>
+      <div className="text-7xl mb-8">🃏</div>
+      <h2 className="text-3xl font-bold text-gray-900 mb-3 capitalize">{slot} Session</h2>
+      <p className="text-gray-500 mb-10 text-lg">{dueCount} cards ready to review</p>
       <button
         onClick={onStart}
-        className="bg-indigo-600 text-white font-semibold px-10 py-4 rounded-2xl text-base hover:bg-indigo-700 active:scale-95 transition-all shadow-lg shadow-indigo-200"
+        className="bg-indigo-600 text-white font-semibold px-12 py-5 rounded-2xl text-lg hover:bg-indigo-700 active:scale-95 transition-all shadow-lg shadow-indigo-200"
       >
         Start Session
       </button>
@@ -203,10 +203,10 @@ function StartScreen({ slot, dueCount, onStart }) {
 function SessionAlreadyDone({ slot, onAnyway }) {
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] px-6 text-center">
-      <div className="text-6xl mb-6">✅</div>
-      <h2 className="text-2xl font-bold text-gray-900 mb-2 capitalize">{slot} session done!</h2>
-      <p className="text-gray-500 mb-8 text-sm">Come back later for your next session.</p>
-      <button onClick={onAnyway} className="text-sm text-indigo-600 underline">
+      <div className="text-7xl mb-8">✅</div>
+      <h2 className="text-3xl font-bold text-gray-900 mb-3 capitalize">{slot} session done!</h2>
+      <p className="text-gray-500 mb-10 text-lg">Come back later for your next session.</p>
+      <button onClick={onAnyway} className="text-base text-indigo-600 underline">
         Practice anyway
       </button>
     </div>
@@ -217,14 +217,14 @@ function CompletionScreen({ total, correct, slot }) {
   const pct = Math.round((correct / total) * 100)
   return (
     <div className="flex flex-col items-center justify-center min-h-[60vh] px-6 text-center">
-      <div className="text-6xl mb-6">{pct >= 80 ? '🎉' : '💪'}</div>
-      <h2 className="text-2xl font-bold text-gray-900 mb-2">Session complete!</h2>
-      <p className="text-gray-500 mb-6 text-sm">{correct}/{total} correct</p>
-      <div className="w-full max-w-xs bg-gray-200 rounded-full h-3 mb-2">
-        <div className="bg-green-500 h-3 rounded-full transition-all" style={{ width: `${pct}%` }} />
+      <div className="text-7xl mb-8">{pct >= 80 ? '🎉' : '💪'}</div>
+      <h2 className="text-3xl font-bold text-gray-900 mb-3">Session complete!</h2>
+      <p className="text-gray-500 mb-8 text-lg">{correct}/{total} correct</p>
+      <div className="w-full max-w-sm bg-gray-200 rounded-full h-4 mb-3">
+        <div className="bg-green-500 h-4 rounded-full transition-all" style={{ width: `${pct}%` }} />
       </div>
-      <p className="text-2xl font-bold text-gray-900 mb-6">{pct}%</p>
-      <p className="text-xs text-gray-400">
+      <p className="text-3xl font-bold text-gray-900 mb-8">{pct}%</p>
+      <p className="text-base text-gray-400">
         {slot === 'morning' ? 'Evening session available after 14:00.' : 'See you tomorrow!'}
       </p>
     </div>

@@ -72,29 +72,29 @@ export default function Grammar() {
   }
 
   return (
-    <div className="max-w-2xl mx-auto px-4 sm:px-8 py-6 sm:py-10">
+    <div className="max-w-4xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
 
       {/* ── Header ───────────────────────────────────── */}
-      <div className="flex items-start justify-between gap-3 mb-4">
+      <div className="flex items-start justify-between gap-4 mb-5">
         <div className="flex-1 min-w-0">
-          <p className="text-xs font-semibold text-indigo-500 uppercase tracking-widest mb-1">
+          <p className="text-sm font-semibold text-indigo-500 uppercase tracking-widest mb-1.5">
             Grammar Practice
           </p>
-          <h1 className="text-lg sm:text-xl font-bold text-gray-900 leading-snug">{topic.title}</h1>
-          <p className="text-xs text-gray-400 mt-0.5">L{topic.lesson} · {topic.lessonTitle}</p>
+          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-snug">{topic.title}</h1>
+          <p className="text-sm text-gray-400 mt-1">L{topic.lesson} · {topic.lessonTitle}</p>
         </div>
-        <div className="flex gap-1 flex-shrink-0 pt-1">
+        <div className="flex gap-2 flex-shrink-0 pt-1">
           <button
             onClick={() => switchTopic(-1)}
             aria-label="Previous topic"
-            className="w-9 h-9 flex items-center justify-center rounded-lg border border-gray-200 text-gray-500 hover:bg-gray-50 active:bg-gray-100"
+            className="w-11 h-11 flex items-center justify-center rounded-xl border border-gray-200 text-gray-500 hover:bg-gray-50 active:bg-gray-100"
           >
             <ChevronLeft />
           </button>
           <button
             onClick={() => switchTopic(1)}
             aria-label="Next topic"
-            className="w-9 h-9 flex items-center justify-center rounded-lg border border-gray-200 text-gray-500 hover:bg-gray-50 active:bg-gray-100"
+            className="w-11 h-11 flex items-center justify-center rounded-xl border border-gray-200 text-gray-500 hover:bg-gray-50 active:bg-gray-100"
           >
             <ChevronRight />
           </button>
@@ -102,31 +102,31 @@ export default function Grammar() {
       </div>
 
       {/* Topic dots */}
-      <div className="flex gap-1 mb-6">
+      <div className="flex gap-1 mb-8">
         {grammarTopics.map((_, i) => (
           <button
             key={i}
             onClick={() => { setTopicIndex(i); setAnswers({}); setChecked(false); setRuleOpen(false) }}
             aria-label={`Topic ${i + 1}`}
-            className={`h-1.5 flex-1 rounded-full transition-colors ${i === topicIndex ? 'bg-indigo-500' : 'bg-gray-200 hover:bg-gray-300'}`}
+            className={`h-2 flex-1 rounded-full transition-colors ${i === topicIndex ? 'bg-indigo-500' : 'bg-gray-200 hover:bg-gray-300'}`}
           />
         ))}
       </div>
 
       {/* ── Grammar Rule (collapsible) ─────────────────── */}
-      <div className="mb-6 border border-gray-200 rounded-2xl overflow-hidden bg-white">
+      <div className="mb-8 border border-gray-200 rounded-2xl overflow-hidden bg-white">
         <button
           onClick={() => setRuleOpen(o => !o)}
-          className="w-full flex items-center justify-between px-5 py-4 text-left hover:bg-gray-50 active:bg-gray-100 transition-colors"
+          className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 active:bg-gray-100 transition-colors"
         >
           <div className="flex items-center gap-3">
-            <div className="w-7 h-7 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
-              <BookIcon className="w-4 h-4 text-indigo-600" />
+            <div className="w-9 h-9 rounded-xl bg-indigo-100 flex items-center justify-center flex-shrink-0">
+              <BookIcon className="w-5 h-5 text-indigo-600" />
             </div>
-            <span className="text-sm font-semibold text-gray-800">Grammar Rule</span>
+            <span className="text-base font-semibold text-gray-800">Grammar Rule</span>
           </div>
           <svg
-            className={`w-4 h-4 text-gray-400 flex-shrink-0 transition-transform duration-200 ${ruleOpen ? 'rotate-180' : ''}`}
+            className={`w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-200 ${ruleOpen ? 'rotate-180' : ''}`}
             fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
           >
             <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -134,8 +134,8 @@ export default function Grammar() {
         </button>
 
         {ruleOpen && (
-          <div className="px-5 pb-5 border-t border-gray-100">
-            <div className="pt-4">
+          <div className="px-6 pb-6 border-t border-gray-100">
+            <div className="pt-5">
               <RuleContent body={topic.body} />
             </div>
           </div>
@@ -145,18 +145,18 @@ export default function Grammar() {
       {/* ── Practice ────────────────────────────────────── */}
       {exercises ? (
         <>
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-sm font-bold text-gray-700 uppercase tracking-wide">
+          <div className="flex items-center justify-between mb-5">
+            <h2 className="text-base font-bold text-gray-700 uppercase tracking-wide">
               Practice · {exercises.length} questions
             </h2>
             {grammarDone && !checked && (
-              <span className="text-xs text-green-600 font-medium bg-green-50 px-2.5 py-1 rounded-full">
+              <span className="text-sm text-green-600 font-medium bg-green-50 px-3 py-1.5 rounded-full">
                 ✓ Completed today
               </span>
             )}
           </div>
 
-          <div className="space-y-3">
+          <div className="space-y-4">
             {exercises.map((ex, i) => (
               <QuestionCard
                 key={ex.id}
@@ -171,12 +171,12 @@ export default function Grammar() {
             ))}
           </div>
 
-          <div className="mt-6">
+          <div className="mt-8">
             {!checked ? (
               <button
                 onClick={handleCheck}
                 disabled={!allAnswered}
-                className="w-full py-4 bg-indigo-600 text-white font-semibold rounded-2xl hover:bg-indigo-700 active:scale-[0.98] transition-all disabled:opacity-40 disabled:cursor-not-allowed disabled:active:scale-100"
+                className="w-full py-5 text-lg bg-indigo-600 text-white font-semibold rounded-2xl hover:bg-indigo-700 active:scale-[0.98] transition-all disabled:opacity-40 disabled:cursor-not-allowed disabled:active:scale-100"
               >
                 {allAnswered ? 'Check Answers' : `Answer all ${exercises.length} questions to continue`}
               </button>
@@ -186,10 +186,10 @@ export default function Grammar() {
           </div>
         </>
       ) : (
-        <div className="bg-amber-50 border border-amber-200 rounded-2xl px-5 py-8 text-center">
-          <p className="text-2xl mb-3">🚧</p>
-          <p className="text-sm font-medium text-amber-800">Exercises coming soon for this topic.</p>
-          <p className="text-xs text-amber-600 mt-1">Read the Grammar Rule above to study.</p>
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl px-6 py-10 text-center">
+          <p className="text-3xl mb-3">🚧</p>
+          <p className="text-base font-medium text-amber-800">Exercises coming soon for this topic.</p>
+          <p className="text-sm text-amber-600 mt-1.5">Read the Grammar Rule above to study.</p>
         </div>
       )}
     </div>
@@ -209,21 +209,21 @@ function QuestionCard({ number, exercise, selected, checked, onSelect }) {
         : 'border-gray-200'
     }`}>
       {/* Question */}
-      <div className="px-4 pt-4 pb-3">
-        <div className="flex gap-2.5 items-start">
-          <span className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold mt-0.5 ${
+      <div className="px-5 pt-5 pb-4">
+        <div className="flex gap-3 items-start">
+          <span className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center text-sm font-bold mt-0.5 ${
             showResult
               ? isCorrect ? 'bg-green-100 text-green-700' : 'bg-red-100 text-red-600'
               : 'bg-gray-100 text-gray-500'
           }`}>
             {showResult ? (isCorrect ? '✓' : '✗') : number}
           </span>
-          <p className="text-sm sm:text-base text-gray-900 font-medium leading-relaxed">{exercise.question}</p>
+          <p className="text-base sm:text-lg text-gray-900 font-medium leading-relaxed">{exercise.question}</p>
         </div>
       </div>
 
       {/* Options */}
-      <div className="px-4 pb-4 grid grid-cols-1 sm:grid-cols-2 gap-2">
+      <div className="px-5 pb-5 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
         {exercise.options.map(opt => {
           const isSelected = selected === opt
           const isAnswer = opt === exercise.answer
@@ -237,7 +237,7 @@ function QuestionCard({ number, exercise, selected, checked, onSelect }) {
             <button
               key={opt}
               onClick={() => onSelect(opt)}
-              className={`px-4 py-3 rounded-xl text-sm border transition-colors text-left active:scale-[0.98] ${cls} ${checked ? 'cursor-default' : 'cursor-pointer'}`}
+              className={`px-4 py-3.5 rounded-xl text-base border transition-colors text-left active:scale-[0.98] ${cls} ${checked ? 'cursor-default' : 'cursor-pointer'}`}
             >
               {opt}
             </button>
@@ -247,17 +247,17 @@ function QuestionCard({ number, exercise, selected, checked, onSelect }) {
 
       {/* Explanation (shown after check) */}
       {checked && (
-        <div className={`mx-4 mb-4 flex gap-2.5 items-start rounded-xl px-3.5 py-3 ${
+        <div className={`mx-5 mb-5 flex gap-3 items-start rounded-xl px-4 py-4 ${
           isCorrect ? 'bg-green-50' : 'bg-amber-50'
         }`}>
-          <span className="text-base flex-shrink-0 mt-0.5">{isCorrect ? '💡' : '📖'}</span>
+          <span className="text-lg flex-shrink-0 mt-0.5">{isCorrect ? '💡' : '📖'}</span>
           <div>
             {!isCorrect && (
-              <p className="text-xs font-semibold text-amber-800 mb-0.5">
+              <p className="text-sm font-semibold text-amber-800 mb-1">
                 Correct answer: <span className="font-bold">{exercise.answer}</span>
               </p>
             )}
-            <p className="text-xs text-gray-700 leading-relaxed">{exercise.explanation}</p>
+            <p className="text-sm text-gray-700 leading-relaxed">{exercise.explanation}</p>
           </div>
         </div>
       )}
@@ -274,21 +274,21 @@ function ScoreCard({ score, total, onRetry }) {
     <div className={`rounded-2xl border p-6 text-center ${
       isPerfect ? 'bg-green-50 border-green-200' : isGood ? 'bg-indigo-50 border-indigo-200' : 'bg-amber-50 border-amber-200'
     }`}>
-      <div className="text-4xl mb-3">{isPerfect ? '🎉' : isGood ? '💪' : '📖'}</div>
-      <p className="text-3xl font-bold text-gray-900 mb-1">{score}/{total}</p>
-      <p className="text-sm text-gray-600 mb-4">
+      <div className="text-5xl mb-4">{isPerfect ? '🎉' : isGood ? '💪' : '📖'}</div>
+      <p className="text-4xl font-bold text-gray-900 mb-2">{score}/{total}</p>
+      <p className="text-base text-gray-600 mb-5">
         {isPerfect ? 'Perfect! All correct.' : isGood ? 'Good work! Review the missed ones above.' : 'Keep studying — check the explanations above.'}
       </p>
       {/* Score bar */}
-      <div className="w-full bg-white rounded-full h-2.5 mb-5 border border-gray-200">
+      <div className="w-full bg-white rounded-full h-3 mb-6 border border-gray-200">
         <div
-          className={`h-2.5 rounded-full transition-all ${isPerfect ? 'bg-green-500' : isGood ? 'bg-indigo-500' : 'bg-amber-500'}`}
+          className={`h-3 rounded-full transition-all ${isPerfect ? 'bg-green-500' : isGood ? 'bg-indigo-500' : 'bg-amber-500'}`}
           style={{ width: `${pct}%` }}
         />
       </div>
       <button
         onClick={onRetry}
-        className="text-sm font-medium text-gray-600 underline underline-offset-2 hover:text-gray-800"
+        className="text-base font-medium text-gray-600 underline underline-offset-2 hover:text-gray-800"
       >
         Try again
       </button>
@@ -307,8 +307,8 @@ function RuleContent({ body }) {
     if (tableBuffer.length === 0) return
     const rows = tableBuffer.filter(r => !r.match(/^\|[-:\s|]+\|$/))
     elements.push(
-      <div key={`tbl_${elements.length}`} className="my-3 overflow-x-auto">
-        <table className="w-full text-xs border-collapse">
+      <div key={`tbl_${elements.length}`} className="my-4 overflow-x-auto">
+        <table className="w-full text-sm border-collapse">
           <tbody>
             {rows.map((row, ri) => {
               const cells = row.split('|').filter(Boolean).map(c => c.trim())
@@ -318,7 +318,7 @@ function RuleContent({ body }) {
                   {cells.map((c, ci) => (
                     <td
                       key={ci}
-                      className={`px-3 py-1.5 border border-gray-200 text-gray-700 ${isHeader ? 'font-semibold' : ''}`}
+                      className={`px-4 py-2.5 border border-gray-200 text-gray-700 ${isHeader ? 'font-semibold' : ''}`}
                       dangerouslySetInnerHTML={{ __html: renderInline(c) }}
                     />
                   ))}
@@ -343,7 +343,7 @@ function RuleContent({ body }) {
       elements.push(<div key={i} className="h-1.5" />)
     } else if (line.startsWith('> ')) {
       elements.push(
-        <blockquote key={i} className="border-l-4 border-indigo-200 pl-3 my-2 text-sm text-gray-700 italic leading-relaxed">
+        <blockquote key={i} className="border-l-4 border-indigo-200 pl-4 my-3 text-base text-gray-700 italic leading-relaxed">
           {line.slice(2)}
         </blockquote>
       )
@@ -355,7 +355,7 @@ function RuleContent({ body }) {
       elements.push(
         <p
           key={i}
-          className="text-sm text-gray-700 leading-relaxed"
+          className="text-base text-gray-700 leading-relaxed"
           dangerouslySetInnerHTML={{ __html: renderInline(line) }}
         />
       )
@@ -372,7 +372,7 @@ function renderInline(text) {
   return text
     .replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>')
     .replace(/\*(.+?)\*/g, '<em>$1</em>')
-    .replace(/`(.+?)`/g, '<code class="bg-gray-100 px-1 py-0.5 rounded text-xs font-mono">$1</code>')
+    .replace(/`(.+?)`/g, '<code class="bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono">$1</code>')
     .replace(/⚠️/g, '<span>⚠️</span>')
 }
 

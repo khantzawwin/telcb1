@@ -1,16 +1,17 @@
 // 10 questions per grammar topic.
-// Topic keys are the slugified section titles from notes.md.
+// Keys are exact slugified titles produced by parseNotes.js → slugify().
 
 export const exercises = {
 
-  // ── Lektion 1 ────────────────────────────────────────────────────────────
-  als_vs__wenn____when__in_german: [
+  // ─── Lektion 1 ────────────────────────────────────────────────────────────
+
+  als_vs_wenn_when_in_german: [
     {
       id: 'aw_1',
       question: '_____ ich klein war, hatte ich einen Hund.',
       options: ['Als', 'Wenn'],
       answer: 'Als',
-      explanation: '"Als" — single, one-time period in the past ("when I was little"). Use als for past events that happened once.',
+      explanation: '"Als" — a single, one-time period in the past ("when I was little"). Use als for past events that happened once.',
     },
     {
       id: 'aw_2',
@@ -31,7 +32,7 @@ export const exercises = {
       question: '_____ ich krank bin, trinke ich viel Tee.',
       options: ['Als', 'Wenn'],
       answer: 'Wenn',
-      explanation: '"Wenn" — a present habit/general truth. Whenever I am sick (now/regularly) → wenn.',
+      explanation: '"Wenn" — a present habit. Whenever I am sick (now/regularly) → wenn.',
     },
     {
       id: 'aw_5',
@@ -73,18 +74,19 @@ export const exercises = {
       question: '_____ ich mehr Zeit hätte, würde ich mehr lesen.',
       options: ['Als', 'Wenn'],
       answer: 'Wenn',
-      explanation: '"Wenn" — a hypothetical / conditional (Konjunktiv II: hätte/würde). Conditionals always use wenn.',
+      explanation: '"Wenn" — a hypothetical/conditional (Konjunktiv II: hätte/würde). Conditionals always use wenn.',
     },
   ],
 
-  // ── Lektion 2 ────────────────────────────────────────────────────────────
-  kausale_konnektoren__deshalb___deswegen___darum___daher: [
+  // ─── Lektion 2 ────────────────────────────────────────────────────────────
+
+  kausale_konnektoren_deshalb_deswegen_darum_daher: [
     {
       id: 'kk_1',
       question: 'Er ist müde. _____ geht er früh ins Bett.',
       options: ['Deshalb', 'Weil', 'Obwohl', 'Wenn'],
       answer: 'Deshalb',
-      explanation: '"Deshalb" starts a new main clause meaning "that\'s why". Verb comes directly after it (position 2): Deshalb geht er…',
+      explanation: '"Deshalb" starts a new main clause meaning "that\'s why". Verb comes directly after it (position 2).',
     },
     {
       id: 'kk_2',
@@ -112,73 +114,73 @@ export const exercises = {
       question: 'Ich bin müde, weil ich nicht geschlafen _____.',
       options: ['habe', 'hat', 'haben', 'hatte'],
       answer: 'habe',
-      explanation: '"Weil" is a subordinating conjunction → verb goes to the END. "ich … habe" (not "habe ich").',
+      explanation: '"Weil" is a subordinating conjunction → verb goes to the END of the clause.',
     },
     {
       id: 'kk_6',
       question: 'Ich vertraue dir. _____ sage ich dir alles.',
       options: ['Deshalb', 'Weil', 'Damit', 'Dass'],
       answer: 'Deshalb',
-      explanation: '"Deshalb" introduces a consequence as a new main clause. Compare: "weil" would create a subordinate clause with verb-final order.',
+      explanation: '"Deshalb" introduces a consequence as a new main clause. "Weil" would create a verb-final subordinate clause, not a new main clause.',
     },
     {
       id: 'kk_7',
       question: 'Das Wetter war schön. _____ gingen wir spazieren.',
       options: ['Deswegen', 'Obwohl', 'Wenn', 'Als'],
       answer: 'Deswegen',
-      explanation: '"Deswegen" = therefore. The nice weather caused them to go for a walk → result/consequence.',
+      explanation: '"Deswegen" = therefore. The nice weather caused the walk → result/consequence.',
     },
     {
       id: 'kk_8',
       question: 'Sie hat die Stelle bekommen, _____ sie sehr gut Deutsch spricht.',
       options: ['weil', 'deshalb', 'daher', 'darum'],
       answer: 'weil',
-      explanation: '"Weil" introduces a reason inside a subordinate clause (verb at end). Deshalb/daher/darum start new main clauses, not embedded ones.',
+      explanation: '"Weil" introduces a reason inside a subordinate clause (verb at end). Deshalb/daher/darum start new main clauses.',
     },
     {
       id: 'kk_9',
       question: 'Er kommt nicht zur Party. _____ bin ich sehr enttäuscht.',
       options: ['Daher', 'Da', 'Weil', 'Obwohl'],
       answer: 'Daher',
-      explanation: '"Daher" states the consequence (I am disappointed because of that). Starts a new main clause with verb-second word order.',
+      explanation: '"Daher" states the consequence. Starts a new main clause with verb-second word order.',
     },
     {
       id: 'kk_10',
       question: 'Gute Freundschaften brauchen Zeit. _____ muss man sie pflegen.',
       options: ['Deshalb', 'Weil', 'Wenn', 'Dass'],
       answer: 'Deshalb',
-      explanation: '"Deshalb" = that\'s why. The logical consequence of friendship needing time is that you must nurture it.',
+      explanation: '"Deshalb" = that\'s why. The logical consequence of needing time is that you must nurture friendships.',
     },
   ],
 
-  adjektiv___nomen__adjektivische_substantive_: [
+  adjektiv_nomen_adjektivische_substantive: [
     {
       id: 'as_1',
       question: 'Das ist _____ Bekannter von mir.  (male, indefinite, Nominativ)',
       options: ['ein', 'eine', 'einer', 'einem'],
       answer: 'ein',
-      explanation: 'Nominative masculine with indefinite article: ein Bekannter. The adjective-noun takes a strong -er ending because the article has no gender signal.',
+      explanation: 'Nominative masculine + indefinite article: ein Bekannter. Strong -er ending because the article gives no gender signal.',
     },
     {
       id: 'as_2',
       question: 'Ich habe _____ Bekannten getroffen.  (male, indefinite, Akkusativ)',
       options: ['einen', 'ein', 'einer', 'einem'],
       answer: 'einen',
-      explanation: 'Accusative masculine indefinite: einen Bekannten. Weak ending -en after einen.',
+      explanation: 'Accusative masculine indefinite: einen Bekannten. Weak ending -en after "einen".',
     },
     {
       id: 'as_3',
       question: 'Ich helfe _____ Bekannten.  (female, indefinite, Dativ)',
       options: ['einer', 'eine', 'einem', 'einen'],
       answer: 'einer',
-      explanation: 'Dative feminine indefinite: einer Bekannten. Article einer, noun ending -en.',
+      explanation: 'Dative feminine indefinite: einer Bekannten. Article "einer", noun ending -en.',
     },
     {
       id: 'as_4',
       question: '_____ Jugendliche braucht Unterstützung.  (male, definite, Nominativ)',
       options: ['Der', 'Die', 'Das', 'Den'],
       answer: 'Der',
-      explanation: 'Nominative masculine definite: der Jugendliche. Der Jugendliche = the (male) teenager.',
+      explanation: 'Nominative masculine definite: der Jugendliche. The male teenager.',
     },
     {
       id: 'as_5',
@@ -199,7 +201,7 @@ export const exercises = {
       question: 'Sie ist _____ Angestellte bei Siemens.  (female, indefinite, Nominativ)',
       options: ['eine', 'ein', 'einer', 'einem'],
       answer: 'eine',
-      explanation: 'Nominative feminine indefinite: eine Angestellte. Female employee → eine Angestellte.',
+      explanation: 'Nominative feminine indefinite: eine Angestellte. Female employee.',
     },
     {
       id: 'as_8',
@@ -213,7 +215,7 @@ export const exercises = {
       question: 'Er ist _____ Erwachsener, kein Kind mehr.  (male, indefinite, Nominativ)',
       options: ['ein', 'eine', 'einer', 'einem'],
       answer: 'ein',
-      explanation: 'Nominative masculine indefinite: ein Erwachsener. Like Bekannter, takes -er ending with indefinite article.',
+      explanation: 'Nominative masculine indefinite: ein Erwachsener. Takes -er strong ending with indefinite article.',
     },
     {
       id: 'as_10',
@@ -224,8 +226,9 @@ export const exercises = {
     },
   ],
 
-  // ── Lektion 13 ───────────────────────────────────────────────────────────
-  zweiteilige_konnektoren____weder____noch___sowohl____als_auch___nicht_nur____sondern_auch: [
+  // ─── Lektion 13 ───────────────────────────────────────────────────────────
+
+  zweiteilige_konnektoren_weder_noch_sowohl_als_auch_nicht_nur_sondern_auch: [
     {
       id: 'zk_1',
       question: 'Der Fuchs ist _____ langsam _____ dumm.',
@@ -238,66 +241,1567 @@ export const exercises = {
       question: 'Elefanten sind _____ intelligent _____ einfühlsam.',
       options: ['sowohl / als auch', 'weder / noch', 'nicht nur / sondern auch', 'entweder / oder'],
       answer: 'sowohl / als auch',
-      explanation: '"Sowohl … als auch" = both … and. Both qualities are confirmed. Elephants are BOTH intelligent AND empathetic.',
+      explanation: '"Sowohl … als auch" = both … and. Both qualities confirmed. Elephants are BOTH intelligent AND empathetic.',
     },
     {
       id: 'zk_3',
       question: 'Delfine sind _____ klug — _____ sehr sozial.',
       options: ['nicht nur / sondern auch', 'weder / noch', 'sowohl / als auch', 'entweder / oder'],
       answer: 'nicht nur / sondern auch',
-      explanation: '"Nicht nur … sondern auch" = not only … but also. The second quality (very social) is presented as a bonus/addition.',
+      explanation: '"Nicht nur … sondern auch" = not only … but also. The second quality is a bonus/addition.',
     },
     {
       id: 'zk_4',
       question: 'Sie spricht _____ Deutsch _____ Englisch.',
       options: ['sowohl / als auch', 'weder / noch', 'nicht nur / sondern auch', 'entweder / oder'],
       answer: 'sowohl / als auch',
-      explanation: '"Sowohl … als auch" includes both. She speaks BOTH German AND English — both languages confirmed.',
+      explanation: '"Sowohl … als auch" — she speaks BOTH German AND English. Both included.',
     },
     {
       id: 'zk_5',
       question: 'Er hat _____ Zeit _____ Lust, ins Kino zu gehen.',
       options: ['weder / noch', 'sowohl / als auch', 'nicht nur / sondern auch', 'entweder / oder'],
       answer: 'weder / noch',
-      explanation: '"Weder … noch" excludes both. He has NEITHER time NOR desire. Both are negated.',
+      explanation: '"Weder … noch" — he has NEITHER time NOR desire. Both are negated.',
     },
     {
       id: 'zk_6',
       question: 'Das Projekt war _____ teuer — _____ zeitaufwändig.',
       options: ['sowohl / als auch', 'nicht nur / sondern auch', 'weder / noch', 'entweder / oder'],
       answer: 'sowohl / als auch',
-      explanation: '"Sowohl … als auch" = both expensive AND time-consuming. Two equal qualities confirmed.',
+      explanation: '"Sowohl … als auch" = both expensive AND time-consuming. Two equal, confirmed qualities.',
     },
     {
       id: 'zk_7',
       question: 'Sie hat _____ eine Ausbildung gemacht _____ studiert.',
       options: ['sowohl / als auch', 'weder / noch', 'nicht nur / sondern auch', 'entweder / oder'],
       answer: 'sowohl / als auch',
-      explanation: '"Sowohl … als auch" — she did BOTH: completed training AND studied at university. Both actions confirmed.',
+      explanation: '"Sowohl … als auch" — she did BOTH: completed training AND studied. Both actions confirmed.',
     },
     {
       id: 'zk_8',
       question: 'Er ist _____ pünktlich _____ zuverlässig.',
       options: ['weder / noch', 'sowohl / als auch', 'nicht nur / sondern auch', 'entweder / oder'],
       answer: 'weder / noch',
-      explanation: '"Weder … noch" = neither punctual NOR reliable. Both negative qualities are negated/excluded.',
+      explanation: '"Weder … noch" — neither punctual NOR reliable. Both are negated/excluded.',
     },
     {
       id: 'zk_9',
       question: 'Das Buch ist _____ informativ — _____ macht es richtig Spaß.',
       options: ['nicht nur / sondern auch', 'weder / noch', 'sowohl / als auch', 'entweder / oder'],
       answer: 'nicht nur / sondern auch',
-      explanation: '"Nicht nur … sondern auch" — the book is not only informative (expected), but ALSO fun (bonus/surprise).',
+      explanation: '"Nicht nur … sondern auch" — not only informative (expected), but ALSO fun (bonus/surprise).',
     },
     {
       id: 'zk_10',
       question: 'Sie hat _____ Erfahrung _____ eine Ausbildung für diesen Job.',
       options: ['weder / noch', 'sowohl / als auch', 'nicht nur / sondern auch', 'entweder / oder'],
       answer: 'weder / noch',
-      explanation: '"Weder … noch" — she lacks BOTH experience AND formal training. Both are absent/negated.',
+      explanation: '"Weder … noch" — she lacks BOTH experience AND formal training. Both are absent.',
     },
   ],
+
+  // ─── Lektion 14 ───────────────────────────────────────────────────────────
+
+  relativs_tze_mit_was_und_wo_relative_clauses_with_was_and_wo: [
+    {
+      id: 'rw_1',
+      question: 'Das ist etwas, _____ mich sehr freut.',
+      options: ['was', 'wo', 'das', 'die'],
+      answer: 'was',
+      explanation: '"Was" — used after "etwas" (something). The antecedent is an indefinite pronoun, not a specific noun → was.',
+    },
+    {
+      id: 'rw_2',
+      question: 'Alles, _____ er sagte, war wahr.',
+      options: ['was', 'wo', 'das', 'dem'],
+      answer: 'was',
+      explanation: '"Was" — used after "alles" (everything). One of the fixed triggers for "was".',
+    },
+    {
+      id: 'rw_3',
+      question: 'Das ist das Büro, _____ ich jeden Tag arbeite.',
+      options: ['wo', 'was', 'das', 'in dem'],
+      answer: 'wo',
+      explanation: '"Wo" — used after a place. "Das Büro" is a location → wo (informal but accepted at B1).',
+    },
+    {
+      id: 'rw_4',
+      question: 'Es gibt nichts, _____ mich noch überraschen könnte.',
+      options: ['was', 'wo', 'das', 'dem'],
+      answer: 'was',
+      explanation: '"Was" — used after "nichts" (nothing). Another fixed trigger for "was".',
+    },
+    {
+      id: 'rw_5',
+      question: 'Das Beste, _____ du tun kannst, ist üben.',
+      options: ['was', 'wo', 'das', 'die'],
+      answer: 'was',
+      explanation: '"Was" — used after superlative nouns (das Beste, das Wichtigste, das Schönste etc.).',
+    },
+    {
+      id: 'rw_6',
+      question: 'Berlin ist die Stadt, _____ ich aufgewachsen bin.',
+      options: ['wo', 'was', 'die', 'der'],
+      answer: 'wo',
+      explanation: '"Wo" — "Berlin" is a place → wo. Could also be "in der" in formal German, but "wo" is correct at B1.',
+    },
+    {
+      id: 'rw_7',
+      question: 'Sie hat die Zusage bekommen, _____ mich sehr gefreut hat.',
+      options: ['was', 'wo', 'das', 'die'],
+      answer: 'was',
+      explanation: '"Was" — refers to the entire main clause (the whole fact that she got the offer). "Was" is used when the antecedent is a complete idea/event.',
+    },
+    {
+      id: 'rw_8',
+      question: 'Vieles, _____ er getan hat, war falsch.',
+      options: ['was', 'wo', 'das', 'dem'],
+      answer: 'was',
+      explanation: '"Was" — used after "vieles" (much/many things). Another fixed trigger.',
+    },
+    {
+      id: 'rw_9',
+      question: 'Das ist das Restaurant, _____ wir uns kennengelernt haben.',
+      options: ['wo', 'was', 'das', 'dem'],
+      answer: 'wo',
+      explanation: '"Wo" — a restaurant is a place → wo replaces "in dem".',
+    },
+    {
+      id: 'rw_10',
+      question: 'Er hat die Prüfung nicht bestanden, _____ uns alle überraschte.',
+      options: ['was', 'wo', 'das', 'dem'],
+      answer: 'was',
+      explanation: '"Was" — the antecedent is the whole preceding clause (the fact that he failed). Use "was", not "das".',
+    },
+  ],
+
+  relativpronomen_dessen_deren_denen_genitive_dative_plural: [
+    {
+      id: 'rd_1',
+      question: 'Das ist der Mann, _____ Auto kaputt ist.',
+      options: ['dessen', 'deren', 'denen', 'dem'],
+      answer: 'dessen',
+      explanation: '"Dessen" — masculine noun (der Mann) + genitive (whose). Masculine/neuter genitive → dessen.',
+    },
+    {
+      id: 'rd_2',
+      question: 'Das ist die Frau, _____ Mann Arzt ist.',
+      options: ['deren', 'dessen', 'denen', 'der'],
+      answer: 'deren',
+      explanation: '"Deren" — feminine noun (die Frau) + genitive (whose). Feminine genitive → deren.',
+    },
+    {
+      id: 'rd_3',
+      question: 'Das sind die Gäste, _____ der Wirt geholfen hat.',
+      options: ['denen', 'deren', 'dessen', 'den'],
+      answer: 'denen',
+      explanation: '"Denen" — plural noun (die Gäste) + dative (helfen + Dativ). Dative plural → denen.',
+    },
+    {
+      id: 'rd_4',
+      question: 'Das ist das Kind, _____ Mutter Lehrerin ist.',
+      options: ['dessen', 'deren', 'denen', 'dem'],
+      answer: 'dessen',
+      explanation: '"Dessen" — neuter noun (das Kind) + genitive (whose). Masculine OR neuter genitive → dessen.',
+    },
+    {
+      id: 'rd_5',
+      question: 'Das sind die Leute, _____ Kinder in Berlin wohnen.',
+      options: ['deren', 'dessen', 'denen', 'die'],
+      answer: 'deren',
+      explanation: '"Deren" — plural noun (die Leute) + genitive (whose). Plural genitive → deren.',
+    },
+    {
+      id: 'rd_6',
+      question: 'Das sind die Kinder, _____ ich Bücher geschenkt habe.',
+      options: ['denen', 'deren', 'dessen', 'die'],
+      answer: 'denen',
+      explanation: '"Denen" — plural (die Kinder) + dative (schenken + Dativ). Dative plural → denen.',
+    },
+    {
+      id: 'rd_7',
+      question: 'Das ist die Kollegin, _____ Ideen immer gut sind.',
+      options: ['deren', 'dessen', 'denen', 'der'],
+      answer: 'deren',
+      explanation: '"Deren" — feminine noun (die Kollegin) + genitive (whose ideas). Feminine genitive → deren.',
+    },
+    {
+      id: 'rd_8',
+      question: 'Das ist der Autor, _____ Buch ich gerade lese.',
+      options: ['dessen', 'deren', 'denen', 'den'],
+      answer: 'dessen',
+      explanation: '"Dessen" — masculine noun (der Autor) + genitive (whose book). Masculine genitive → dessen.',
+    },
+    {
+      id: 'rd_9',
+      question: 'Das sind die Studenten, _____ der Professor geholfen hat.',
+      options: ['denen', 'deren', 'dessen', 'den'],
+      answer: 'denen',
+      explanation: '"Denen" — plural (die Studenten) + dative (helfen + Dativ → "to whom"). Dative plural → denen.',
+    },
+    {
+      id: 'rd_10',
+      question: 'Das ist das Café, _____ Atmosphäre sich verändert hat.',
+      options: ['dessen', 'deren', 'denen', 'dem'],
+      answer: 'dessen',
+      explanation: '"Dessen" — neuter noun (das Café) + genitive (whose atmosphere). Neuter genitive → dessen.',
+    },
+  ],
+
+  // ─── Lektion 15 ───────────────────────────────────────────────────────────
+
+  lassen_infinitiv: [
+    {
+      id: 'li_1',
+      question: 'Sie _____ die Wohnung renovieren. (= She is having the apartment renovated.)',
+      options: ['lässt', 'lasst', 'lassen', 'lässest'],
+      answer: 'lässt',
+      explanation: '"lässt" — 3rd person singular of lassen (er/sie/es lässt). Note the Umlaut: a → ä.',
+    },
+    {
+      id: 'li_2',
+      question: 'Er lässt sie _____. (= He lets her go out.)',
+      options: ['ausgehen', 'auszugehen', 'geht aus', 'gegangen'],
+      answer: 'ausgehen',
+      explanation: 'lassen + Infinitiv (WITHOUT zu). The infinitive goes to the end with no "zu".',
+    },
+    {
+      id: 'li_3',
+      question: 'Das _____ sich erklären. (= That can be explained.)',
+      options: ['lässt', 'lassen', 'lasst', 'ließ'],
+      answer: 'lässt',
+      explanation: '"sich lassen + Infinitiv" = something can be done. "Das lässt sich erklären" → "That can be explained."',
+    },
+    {
+      id: 'li_4',
+      question: 'Er _____ sich die Haare schneiden. (= He is getting his hair cut.)',
+      options: ['lässt', 'lassen', 'lasst', 'ließ'],
+      answer: 'lässt',
+      explanation: 'Causative use of lassen: "sich … lassen" = to have something done to oneself. "lässt" (3rd person singular).',
+    },
+    {
+      id: 'li_5',
+      question: 'Liebe lässt sich nicht _____. (= Love cannot be forced.)',
+      options: ['erzwingen', 'zu erzwingen', 'erzwungen', 'erzwinge'],
+      answer: 'erzwingen',
+      explanation: '"sich lassen + Infinitiv" = cannot be done. Infinitive WITHOUT zu. "Liebe lässt sich nicht erzwingen."',
+    },
+    {
+      id: 'li_6',
+      question: 'Sie lässt ihn nicht _____. (= She won\'t let him leave.)',
+      options: ['gehen', 'zu gehen', 'gegangen', 'geht'],
+      answer: 'gehen',
+      explanation: '"lassen" + Infinitiv (without zu). "Sie lässt ihn nicht gehen" — use 1: to let/allow.',
+    },
+    {
+      id: 'li_7',
+      question: 'Er hat das Auto reparieren _____. (Perfekt — He had the car repaired.)',
+      options: ['lassen', 'gelassen', 'zu lassen', 'lässt'],
+      answer: 'lassen',
+      explanation: 'In Perfekt with another infinitive, lassen stays as infinitive: "hat … reparieren lassen" (double infinitive construction).',
+    },
+    {
+      id: 'li_8',
+      question: '_____ du mich bitte kurz ausreden? (= Will you let me finish speaking?)',
+      options: ['Lässt', 'Lasst', 'Lassen', 'Ließ'],
+      answer: 'Lässt',
+      explanation: '"Lässt" — 2nd person singular: du lässt. Remember the Umlaut in du/er/sie forms.',
+    },
+    {
+      id: 'li_9',
+      question: 'Das Problem lässt sich nicht so einfach _____.',
+      options: ['lösen', 'zu lösen', 'gelöst', 'löst'],
+      answer: 'lösen',
+      explanation: '"sich lassen + Infinitiv" = cannot be done easily. Infinitive without zu.',
+    },
+    {
+      id: 'li_10',
+      question: 'Which sentence uses "lassen" correctly?',
+      options: [
+        'Er lässt das Auto zu reparieren.',
+        'Er lässt das Auto reparieren.',
+        'Er lässt das Auto repariert.',
+        'Er lässt das Auto repariert werden.',
+      ],
+      answer: 'Er lässt das Auto reparieren.',
+      explanation: 'lassen + Infinitiv WITHOUT zu. "Er lässt das Auto reparieren" = He is having the car repaired. No "zu", no participle.',
+    },
+  ],
+
+  // ─── Lektion 16 ───────────────────────────────────────────────────────────
+
+  je_komparativ_desto_umso_komparativ: [
+    {
+      id: 'jd_1',
+      question: 'Je mehr Geld man hat, desto mehr _____ man aus.',
+      options: ['gibt', 'geben', 'gibt man', 'man gibt'],
+      answer: 'gibt',
+      explanation: 'After "desto/umso" the verb comes FIRST, then the subject: desto mehr GIBT man. Inversion is mandatory.',
+    },
+    {
+      id: 'jd_2',
+      question: 'Je _____ man wartet, umso schwieriger wird es.',
+      options: ['länger', 'lang', 'am längsten', 'lange'],
+      answer: 'länger',
+      explanation: 'Both the "je" and "desto/umso" clauses require the COMPARATIVE form (Komparativ): lang → länger.',
+    },
+    {
+      id: 'jd_3',
+      question: 'Je günstiger der Kredit ist, _____ besser ist es für den Kunden.',
+      options: ['desto', 'umso', 'desto / umso', 'je'],
+      answer: 'desto / umso',
+      explanation: '"Desto" and "umso" are interchangeable — both are correct and mean exactly the same thing.',
+    },
+    {
+      id: 'jd_4',
+      question: 'Je früher du anfängst, _____ mehr Zeit hast du.',
+      options: ['desto', 'umso', 'je', 'weil'],
+      answer: 'desto',
+      explanation: '"Je … desto" — the desto-clause introduces the result. Verb comes before subject: desto mehr Zeit HAST DU.',
+    },
+    {
+      id: 'jd_5',
+      question: 'Je fleißiger man lernt, _____ Ergebnisse erzielt man.',
+      options: ['desto bessere', 'desto gut', 'umso gut', 'je bessere'],
+      answer: 'desto bessere',
+      explanation: '"Desto" + comparative adjective agreeing with the noun: desto bessere Ergebnisse (plural accusative).',
+    },
+    {
+      id: 'jd_6',
+      question: 'What is the correct word order in a "je … desto" sentence?',
+      options: [
+        'Je-clause: verb at end. Desto-clause: verb before subject.',
+        'Je-clause: verb before subject. Desto-clause: verb at end.',
+        'Both clauses: verb at end.',
+        'Both clauses: verb before subject.',
+      ],
+      answer: 'Je-clause: verb at end. Desto-clause: verb before subject.',
+      explanation: 'Je-clause is a subordinate clause → verb-final. Desto-clause is a main clause with inversion → verb before subject.',
+    },
+    {
+      id: 'jd_7',
+      question: 'Je länger man schläft, _____ ausgeruhter fühlt man sich.',
+      options: ['desto', 'umso', 'desto / umso', 'je'],
+      answer: 'desto / umso',
+      explanation: 'Both "desto" and "umso" are correct. They are fully interchangeable in this structure.',
+    },
+    {
+      id: 'jd_8',
+      question: 'Je _____ das Problem ist, desto schwieriger ist es zu lösen.',
+      options: ['größer', 'groß', 'am größten', 'großem'],
+      answer: 'größer',
+      explanation: 'The adjective in the je-clause must be in the comparative form: groß → größer.',
+    },
+    {
+      id: 'jd_9',
+      question: 'Je mehr Stress man hat, _____ Schlaf braucht man.',
+      options: ['desto mehr', 'desto viel', 'umso viele', 'je mehr'],
+      answer: 'desto mehr',
+      explanation: '"Desto mehr" — "mehr" is already the comparative of "viel". Both halves use comparative forms.',
+    },
+    {
+      id: 'jd_10',
+      question: 'Je _____ du übst, desto besser wirst du.',
+      options: ['mehr', 'viel', 'meisten', 'am meisten'],
+      answer: 'mehr',
+      explanation: '"Je mehr" — "mehr" is the comparative of "viel". The je-clause requires the comparative.',
+    },
+  ],
+
+  entweder_oder_either_or: [
+    {
+      id: 'eo_1',
+      question: 'Entweder _____ ich mit Karte, oder ich hebe Bargeld ab.',
+      options: ['zahle', 'ich zahle', 'zahlen', 'gezahlt'],
+      answer: 'zahle',
+      explanation: 'When "entweder" starts the clause, inversion is required: Entweder ZAHLE ich (verb before subject).',
+    },
+    {
+      id: 'eo_2',
+      question: 'Du kannst entweder den Kredit aufnehmen _____ dein Erspartes nutzen.',
+      options: ['oder', 'noch', 'als auch', 'sondern'],
+      answer: 'oder',
+      explanation: '"Entweder … oder" = either … or. The second connector is always "oder".',
+    },
+    {
+      id: 'eo_3',
+      question: 'Entweder kommt er pünktlich, _____ wir fangen ohne ihn an.',
+      options: ['oder', 'noch', 'und', 'aber'],
+      answer: 'oder',
+      explanation: '"Entweder … oder" presents two alternatives. Second part always introduced by "oder".',
+    },
+    {
+      id: 'eo_4',
+      question: 'She can either work from home or go to the office. Which is correct?',
+      options: [
+        'Sie kann entweder von zu Hause aus arbeiten oder ins Büro gehen.',
+        'Sie kann entweder von zu Hause aus zu arbeiten oder ins Büro gehen.',
+        'Entweder sie kann von zu Hause aus arbeiten oder ins Büro gehen.',
+        'Sie kann weder von zu Hause aus arbeiten oder ins Büro gehen.',
+      ],
+      answer: 'Sie kann entweder von zu Hause aus arbeiten oder ins Büro gehen.',
+      explanation: '"Entweder" in mid-sentence → normal word order. Both options must be grammatically parallel (Infinitiv in both).',
+    },
+    {
+      id: 'eo_5',
+      question: 'What does "entweder … oder" express?',
+      options: [
+        'Two alternatives — one of them applies, not both',
+        'Both things are true at the same time',
+        'Neither thing is true',
+        'A condition and its result',
+      ],
+      answer: 'Two alternatives — one of them applies, not both',
+      explanation: '"Entweder … oder" = either … or. It presents two options where one (not necessarily both) will happen.',
+    },
+    {
+      id: 'eo_6',
+      question: '_____ du lernst jetzt, oder du bestehst die Prüfung nicht.',
+      options: ['Entweder', 'Weder', 'Sowohl', 'Nicht nur'],
+      answer: 'Entweder',
+      explanation: '"Entweder" starts the first alternative. When at position 1, the verb comes second (zahle/lernst etc.).',
+    },
+    {
+      id: 'eo_7',
+      question: 'Entweder _____ wir jetzt, oder wir verpassen den Bus.',
+      options: ['gehen', 'gehe', 'gehen wir', 'wir gehen'],
+      answer: 'gehen',
+      explanation: 'Entweder at position 1 → verb in position 2, subject in position 3: Entweder GEHEN wir…',
+    },
+    {
+      id: 'eo_8',
+      question: 'Which pair is "entweder … oder" similar to in meaning?',
+      options: [
+        'Either … or (exclusive alternatives)',
+        'Both … and (inclusive)',
+        'Neither … nor (both excluded)',
+        'Not only … but also (addition)',
+      ],
+      answer: 'Either … or (exclusive alternatives)',
+      explanation: '"Entweder … oder" presents two mutually exclusive choices. Compare: "sowohl…als auch" (both), "weder…noch" (neither).',
+    },
+    {
+      id: 'eo_9',
+      question: 'Er möchte entweder Arzt _____ Ingenieur werden.',
+      options: ['oder', 'noch', 'aber', 'sondern'],
+      answer: 'oder',
+      explanation: 'Always "entweder … ODER". The second connector is invariably "oder".',
+    },
+    {
+      id: 'eo_10',
+      question: 'Entweder du rufst sie an, _____ ich tue es.',
+      options: ['oder', 'noch', 'und', 'denn'],
+      answer: 'oder',
+      explanation: '"Entweder … oder" — two alternative clauses. Second clause introduced by "oder", normal word order.',
+    },
+  ],
+
+  zwar_aber_admittedly_but_it_s_true_but: [
+    {
+      id: 'za_1',
+      question: 'Der Kredit ist _____ günstig, aber die Zinsen sind hoch.',
+      options: ['zwar', 'doch', 'schon', 'zuerst'],
+      answer: 'zwar',
+      explanation: '"Zwar" concedes the point. "Der Kredit ist zwar günstig" = the loan is admittedly cheap (but there\'s a catch).',
+    },
+    {
+      id: 'za_2',
+      question: 'Zwar bietet die Bank eine Beratung an, _____ sie ist nicht kostenlos.',
+      options: ['aber', 'sondern', 'denn', 'weil'],
+      answer: 'aber',
+      explanation: '"Zwar … aber" always work as a pair. "Aber" introduces the contrasting point.',
+    },
+    {
+      id: 'za_3',
+      question: 'When "zwar" starts the sentence (position 1), what happens to the verb?',
+      options: [
+        'The verb comes in position 2 (inversion)',
+        'The verb goes to the end',
+        'The verb stays in position 3',
+        'Nothing changes',
+      ],
+      answer: 'The verb comes in position 2 (inversion)',
+      explanation: 'When "zwar" is at position 1: Zwar BIETET die Bank … (inversion, verb second). Inside a clause, no inversion.',
+    },
+    {
+      id: 'za_4',
+      question: 'What does "zwar … aber" express?',
+      options: [
+        'Concession + contrast ("it\'s true that … BUT")',
+        'Two equal alternatives',
+        'Cause and effect',
+        'Addition of a bonus point',
+      ],
+      answer: 'Concession + contrast ("it\'s true that … BUT")',
+      explanation: '"Zwar" acknowledges a point as true, then "aber" introduces a contrasting fact. Like "admittedly… but".',
+    },
+    {
+      id: 'za_5',
+      question: 'Das Angebot ist _____ interessant, _____ wir haben kein Budget.',
+      options: ['zwar / aber', 'sowohl / als auch', 'entweder / oder', 'weder / noch'],
+      answer: 'zwar / aber',
+      explanation: '"Zwar … aber" = admittedly … but. The offer is interesting (concession), but we have no budget (contrast).',
+    },
+    {
+      id: 'za_6',
+      question: 'Der Film ist zwar lang, _____ er ist sehr spannend.',
+      options: ['aber', 'sondern', 'denn', 'weil'],
+      answer: 'aber',
+      explanation: '"Aber" always follows "zwar". "Zwar long, aber spannend" — the contrast shows both are true but one weighs against the other.',
+    },
+    {
+      id: 'za_7',
+      question: 'Which sentence correctly uses "zwar … aber"?',
+      options: [
+        'Er ist zwar müde, aber er arbeitet weiter.',
+        'Er ist zwar müde, sondern er arbeitet weiter.',
+        'Er ist zwar müde, weil er arbeitet weiter.',
+        'Zwar er ist müde, aber er arbeitet weiter.',
+      ],
+      answer: 'Er ist zwar müde, aber er arbeitet weiter.',
+      explanation: '"Zwar" is an adverb (no inversion when mid-sentence); "aber" is a coordinating conjunction → normal word order after it.',
+    },
+    {
+      id: 'za_8',
+      question: 'Die Wohnung ist _____ klein, aber die Lage ist perfekt.',
+      options: ['zwar', 'schon', 'doch', 'eigentlich'],
+      answer: 'zwar',
+      explanation: '"Zwar" signals "admittedly" — the speaker admits the apartment is small, then contrasts it with a positive aspect.',
+    },
+    {
+      id: 'za_9',
+      question: 'What comes after "aber" in a "zwar … aber" sentence?',
+      options: [
+        'Normal main clause word order (subject-verb)',
+        'Verb-final subordinate clause',
+        'Inverted order (verb before subject)',
+        'Infinitive construction',
+      ],
+      answer: 'Normal main clause word order (subject-verb)',
+      explanation: '"Aber" is a coordinating conjunction → it does NOT change word order. Subject-verb order is maintained after "aber".',
+    },
+    {
+      id: 'za_10',
+      question: 'Das Essen ist zwar teuer, _____ es schmeckt ausgezeichnet.',
+      options: ['aber', 'sondern', 'obwohl', 'trotzdem'],
+      answer: 'aber',
+      explanation: '"Zwar … aber" is the fixed pair. "Aber" introduces the contrasting (positive) second point.',
+    },
+  ],
+
+  // ─── Lektion 17 ───────────────────────────────────────────────────────────
+
+  indem_by_doing_by_means_of: [
+    {
+      id: 'id_1',
+      question: 'Er lernt Deutsch, indem er jeden Tag Vokabeln _____.',
+      options: ['übt', 'üben', 'geübt', 'zu üben'],
+      answer: 'übt',
+      explanation: '"Indem" is a subordinating conjunction → verb goes to the END of the clause. "indem er … übt".',
+    },
+    {
+      id: 'id_2',
+      question: 'What question does "indem" answer?',
+      options: ['Wie? (How?)', 'Warum? (Why?)', 'Wann? (When?)', 'Wo? (Where?)'],
+      answer: 'Wie? (How?)',
+      explanation: '"Indem" explains the METHOD or MEANS by which something is done. It answers "Wie macht man das?" (How does one do that?)',
+    },
+    {
+      id: 'id_3',
+      question: 'Indem sie viel liest, _____ sie ihr Deutsch.',
+      options: ['verbessert', 'verbessert sie', 'sie verbessert', 'verbessern'],
+      answer: 'verbessert',
+      explanation: 'When the indem-clause comes first, the main clause INVERTS: verb comes right after the comma, before the subject. "verbessert sie" → only "verbessert" at position 1 of main clause.',
+    },
+    {
+      id: 'id_4',
+      question: 'Der Künstler drückt seine Gefühle aus, indem er _____.',
+      options: ['malt', 'zu malen', 'gemalt', 'malen'],
+      answer: 'malt',
+      explanation: '"Indem" sends verb to end: "indem er malt". No "zu" needed — indem is a conjunction, not an infinitive construction.',
+    },
+    {
+      id: 'id_5',
+      question: 'Which sentence correctly uses "indem"?',
+      options: [
+        'Sie spart Geld, indem sie weniger ausgibt.',
+        'Sie spart Geld, indem sie weniger ausgeben.',
+        'Sie spart Geld, indem sie weniger ausgegeben.',
+        'Indem sie spart Geld, gibt sie weniger aus.',
+      ],
+      answer: 'Sie spart Geld, indem sie weniger ausgibt.',
+      explanation: '"indem" + subordinate clause → verb at end: "indem sie weniger ausgibt". The main clause stays normal.',
+    },
+    {
+      id: 'id_6',
+      question: 'Man kann Stress reduzieren, indem man regelmäßig Sport _____.',
+      options: ['treibt', 'treiben', 'getrieben', 'zu treiben'],
+      answer: 'treibt',
+      explanation: 'Verb goes to end of the indem-clause: "indem man … treibt". Third person singular: treibt.',
+    },
+    {
+      id: 'id_7',
+      question: '"Indem" is similar in meaning to which English phrase?',
+      options: ['by doing / by means of', 'after doing', 'without doing', 'instead of doing'],
+      answer: 'by doing / by means of',
+      explanation: '"Indem" = "by doing something". It describes the method. Compare: "nachdem" (after), "ohne zu" (without), "statt zu" (instead of).',
+    },
+    {
+      id: 'id_8',
+      question: 'Indem sie täglich übt, _____ sie immer besser.',
+      options: ['wird', 'wird sie', 'sie wird', 'werden'],
+      answer: 'wird',
+      explanation: 'Indem-clause first → main clause inverts. Verb before subject: "wird sie" but the position-1 word is "wird" (then "sie" follows). Answer: "wird".',
+    },
+    {
+      id: 'id_9',
+      question: 'Er hilft ihr, indem er die Hausaufgaben _____ erklärt.',
+      options: ['ihr', 'sich', 'ihn', 'ihm'],
+      answer: 'ihr',
+      explanation: 'This tests the dative pronoun. "Ihr erklären" = to explain to her. The indem-clause: "indem er ihr … erklärt". Verb at end.',
+    },
+    {
+      id: 'id_10',
+      question: 'Which conjunction also sends the verb to the end (like "indem")?',
+      options: ['weil', 'aber', 'denn', 'oder'],
+      answer: 'weil',
+      explanation: '"Weil", "dass", "wenn", "obwohl", "indem", "nachdem" are all subordinating conjunctions → verb-final. "Aber", "denn", "oder" are coordinating → no change.',
+    },
+  ],
+
+  // ─── Lektion 18 ───────────────────────────────────────────────────────────
+
+  nachdem_after: [
+    {
+      id: 'na_1',
+      question: 'Nachdem er die Tablette genommen _____, ging er schlafen.',
+      options: ['hatte', 'hat', 'haben', 'war'],
+      answer: 'hatte',
+      explanation: '"Nachdem" + Plusquamperfekt → Präteritum in main clause. The tablet was taken BEFORE he went to sleep → hatte (Plusquamperfekt).',
+    },
+    {
+      id: 'na_2',
+      question: 'Nachdem sie die Prüfung _____, feierte sie mit Freunden.',
+      options: ['bestanden hatte', 'besteht', 'bestehen', 'bestand'],
+      answer: 'bestanden hatte',
+      explanation: 'Both past actions: the exam was passed BEFORE the celebration. Nachdem-clause → Plusquamperfekt: hatte + Partizip II.',
+    },
+    {
+      id: 'na_3',
+      question: 'Nachdem er das Schmerzmittel genommen hat, fühlt er sich _____.',
+      options: ['besser', 'gut', 'schlechter', 'schlecht'],
+      answer: 'besser',
+      explanation: 'Nachdem + Perfekt → Präsens: the medicine was just taken (Perfekt) and now he feels better (Präsens). "Besser" is the comparative of "gut".',
+    },
+    {
+      id: 'na_4',
+      question: 'Nachdem die Ärztin den Patienten untersucht hatte, _____ sie die Diagnose.',
+      options: ['stellte', 'stellt', 'hat gestellt', 'stellen'],
+      answer: 'stellte',
+      explanation: 'Nachdem + Plusquamperfekt → Präteritum (or Perfekt). "stellte" (Präteritum) is correct here. The exam came first → Plusquamperfekt; then the diagnosis → Präteritum.',
+    },
+    {
+      id: 'na_5',
+      question: 'When "nachdem" introduces the clause, where does the verb go?',
+      options: ['To the end of the clause', 'To position 2', 'Before the subject', 'To the beginning'],
+      answer: 'To the end of the clause',
+      explanation: '"Nachdem" is a subordinating conjunction → verb goes to the END of the nachdem-clause.',
+    },
+    {
+      id: 'na_6',
+      question: 'Nachdem er gegessen hatte, _____ er sich aus.',
+      options: ['ruhte', 'ruht', 'hat geruht', 'ruhten'],
+      answer: 'ruhte',
+      explanation: 'Nachdem-clause first → main clause inverts. Plusquamperfekt in nachdem-clause → Präteritum in main clause: "ruhte".',
+    },
+    {
+      id: 'na_7',
+      question: 'Which tense combination is correct with "nachdem" for two past events?',
+      options: [
+        'Nachdem-clause: Plusquamperfekt; Main clause: Perfekt/Präteritum',
+        'Nachdem-clause: Perfekt; Main clause: Plusquamperfekt',
+        'Both clauses: Plusquamperfekt',
+        'Both clauses: Perfekt',
+      ],
+      answer: 'Nachdem-clause: Plusquamperfekt; Main clause: Perfekt/Präteritum',
+      explanation: '"Nachdem" always describes the earlier action (Vorvergangenheit = Plusquamperfekt). The result/later action uses Perfekt or Präteritum.',
+    },
+    {
+      id: 'na_8',
+      question: 'Nachdem sie ins Krankenhaus _____, rief er sofort an.',
+      options: ['gegangen war', 'gegangen hatte', 'gegangen ist', 'geht'],
+      answer: 'gegangen war',
+      explanation: '"Gehen" uses "sein" in Perfekt/Plusquamperfekt (motion verb). Plusquamperfekt with sein: WAR + gegangen.',
+    },
+    {
+      id: 'na_9',
+      question: 'What is the function of "nachdem" in a sentence?',
+      options: [
+        'It shows that one action happened before another',
+        'It shows that two actions happen at the same time',
+        'It shows a reason or cause',
+        'It shows a condition',
+      ],
+      answer: 'It shows that one action happened before another',
+      explanation: '"Nachdem" = after. The nachdem-action always happened FIRST. It establishes a sequence of events in time.',
+    },
+    {
+      id: 'na_10',
+      question: 'Nachdem er die E-Mail _____, schickte er sie ab.',
+      options: ['geschrieben hatte', 'schreibt', 'geschrieben hat', 'schreiben'],
+      answer: 'geschrieben hatte',
+      explanation: 'Nachdem + Plusquamperfekt (hatte + Partizip II). Writing came BEFORE sending → Plusquamperfekt: "geschrieben hatte".',
+    },
+  ],
+
+  die_drei_vergangenheitsformen_perfekt_pr_teritum_plusquamperfekt: [
+    {
+      id: 'vf_1',
+      question: 'Ich _____ gestern das Medikament genommen. (spoken German, everyday)',
+      options: ['habe', 'hatte', 'bin', 'war'],
+      answer: 'habe',
+      explanation: 'Perfekt for spoken/everyday German: "habe … genommen". Perfekt uses haben/sein (Präsens) + Partizip II.',
+    },
+    {
+      id: 'vf_2',
+      question: 'Der Arzt _____ um 8 Uhr. (written German, one-time past event)',
+      options: ['kam', 'ist gekommen', 'kommt', 'hat gekommen'],
+      answer: 'kam',
+      explanation: 'Präteritum for written German/narration: "kam" (simple past of kommen). Common in stories and news.',
+    },
+    {
+      id: 'vf_3',
+      question: 'Nachdem er _____, ruhte er sich aus. (before another past action)',
+      options: ['gegessen hatte', 'gegessen hat', 'aß', 'isst'],
+      answer: 'gegessen hatte',
+      explanation: 'Plusquamperfekt for an action that happened BEFORE another past action: hatte + Partizip II.',
+    },
+    {
+      id: 'vf_4',
+      question: 'She went to the hospital. (spoken German) → Sie _____.',
+      options: ['ist ins Krankenhaus gegangen', 'ging ins Krankenhaus', 'hat ins Krankenhaus gegangen', 'war ins Krankenhaus gegangen'],
+      answer: 'ist ins Krankenhaus gegangen',
+      explanation: 'Perfekt for spoken German. "Gehen" uses SEIN (motion verb): ist … gegangen.',
+    },
+    {
+      id: 'vf_5',
+      question: 'Sie _____ sehr müde. (written German, state)',
+      options: ['war', 'ist gewesen', 'hat gewesen', 'ist'],
+      answer: 'war',
+      explanation: '"Sein" and "haben" are usually in Präteritum even in spoken German. "war" = was. Also common in written German.',
+    },
+    {
+      id: 'vf_6',
+      question: 'Which tense is formed with "hatte/war + Partizip II"?',
+      options: ['Plusquamperfekt', 'Perfekt', 'Präteritum', 'Futur I'],
+      answer: 'Plusquamperfekt',
+      explanation: 'Plusquamperfekt = hatte/war (Präteritum of haben/sein) + Partizip II. Used for the "before-past" (Vorvergangenheit).',
+    },
+    {
+      id: 'vf_7',
+      question: 'Nachdem sie _____, schlief sie sofort ein. (she had eaten before sleeping)',
+      options: ['gegessen hatte', 'isst', 'gegessen hat', 'aß'],
+      answer: 'gegessen hatte',
+      explanation: 'Action before the other past action → Plusquamperfekt: hatte + Partizip II.',
+    },
+    {
+      id: 'vf_8',
+      question: 'Which past tense is most common in everyday SPOKEN German?',
+      options: ['Perfekt', 'Präteritum', 'Plusquamperfekt', 'All are equal'],
+      answer: 'Perfekt',
+      explanation: 'Perfekt dominates spoken German. Präteritum is mainly written/literary (except sein/haben/modals). Plusquamperfekt is used for sequences.',
+    },
+    {
+      id: 'vf_9',
+      question: 'He had pain. (written or spoken with modals/sein/haben) → Er _____.',
+      options: ['hatte Schmerzen', 'hat Schmerzen gehabt', 'wird Schmerzen haben', 'ist Schmerzen'],
+      answer: 'hatte Schmerzen',
+      explanation: '"Haben" is typically used in Präteritum even in speech: "hatte Schmerzen". "hat … gehabt" is grammatically correct but less natural.',
+    },
+    {
+      id: 'vf_10',
+      question: 'Which formation is correct for Perfekt with "fahren"?',
+      options: ['ist gefahren', 'hat gefahren', 'war gefahren', 'hatte gefahren'],
+      answer: 'ist gefahren',
+      explanation: '"Fahren" is a motion verb → uses SEIN in Perfekt: ist gefahren. Motion/change-of-state verbs take sein; most others take haben.',
+    },
+  ],
+
+  // ─── Lektion 19 ───────────────────────────────────────────────────────────
+
+  das_passiv_the_passive_voice: [
+    {
+      id: 'pa_1',
+      question: 'Der Antrag _____ geprüft. (Passiv Präsens)',
+      options: ['wird', 'wurde', 'ist … worden', 'werden'],
+      answer: 'wird',
+      explanation: 'Passiv Präsens = wird + Partizip II. "Der Antrag wird geprüft" = The application is being checked.',
+    },
+    {
+      id: 'pa_2',
+      question: 'Die Frist _____ verlängert. (Passiv Präteritum — past)',
+      options: ['wurde', 'wird', 'ist … worden', 'war'],
+      answer: 'wurde',
+      explanation: 'Passiv Präteritum = wurde + Partizip II. "Die Frist wurde verlängert" = The deadline was extended.',
+    },
+    {
+      id: 'pa_3',
+      question: 'Der Antrag _____ genehmigt _____. (Passiv Perfekt)',
+      options: ['ist / worden', 'hat / worden', 'wird / worden', 'wurde / geworden'],
+      answer: 'ist / worden',
+      explanation: 'Passiv Perfekt = ist + Partizip II + WORDEN (not "geworden"!). "ist genehmigt worden".',
+    },
+    {
+      id: 'pa_4',
+      question: 'Active: "Die Behörde genehmigt den Antrag." → Passive: "_____"',
+      options: [
+        'Der Antrag wird von der Behörde genehmigt.',
+        'Den Antrag wird von der Behörde genehmigt.',
+        'Der Antrag wird genehmigt von der Behörde.',
+        'Der Antrag ist von der Behörde genehmigt.',
+      ],
+      answer: 'Der Antrag wird von der Behörde genehmigt.',
+      explanation: 'Active object (Akkusativ) → Passive subject (Nominativ). Agent expressed with "von + Dativ": von der Behörde.',
+    },
+    {
+      id: 'pa_5',
+      question: 'How do you express the agent (doer) in a passive sentence?',
+      options: ['von + Dativ', 'durch + Akkusativ', 'mit + Dativ', 'für + Akkusativ'],
+      answer: 'von + Dativ',
+      explanation: '"Von + Dativ" expresses who did the action. "Der Antrag wurde VON DER BEHÖRDE abgelehnt."',
+    },
+    {
+      id: 'pa_6',
+      question: 'Which word is used for Passiv Perfekt (NOT Präteritum or Präsens of "werden")?',
+      options: ['worden', 'geworden', 'wird', 'wurde'],
+      answer: 'worden',
+      explanation: '"Worden" is the special Partizip II of "werden" used ONLY in passive constructions. "Geworden" = became (active). "ist genehmigt WORDEN" (passive Perfekt).',
+    },
+    {
+      id: 'pa_7',
+      question: 'Die Ausbildung _____ anerkannt. (Passiv Präsens — is being recognised)',
+      options: ['wird', 'wurde', 'ist worden', 'werden'],
+      answer: 'wird',
+      explanation: 'Passiv Präsens: wird + Partizip II. Present passive → wird.',
+    },
+    {
+      id: 'pa_8',
+      question: 'Why do we use the passive voice?',
+      options: [
+        'To focus on the action/result rather than who does it',
+        'To make sentences longer',
+        'To describe past habits',
+        'To express hypothetical situations',
+      ],
+      answer: 'To focus on the action/result rather than who does it',
+      explanation: 'The passive shifts focus from the agent (doer) to what happens. The doer is unknown, unimportant, or expressed separately with "von".',
+    },
+    {
+      id: 'pa_9',
+      question: 'Ein positiver Bescheid _____ erteilt _____. (Passiv Perfekt)',
+      options: ['ist / worden', 'hat / worden', 'wurde / geworden', 'wird / werden'],
+      answer: 'ist / worden',
+      explanation: 'Passiv Perfekt: ist + Partizip II + worden. "Ein positiver Bescheid ist erteilt worden."',
+    },
+    {
+      id: 'pa_10',
+      question: 'Der Antrag _____ gestern abgelehnt. (Passiv Präteritum)',
+      options: ['wurde', 'wird', 'ist worden', 'war'],
+      answer: 'wurde',
+      explanation: 'Passiv Präteritum: wurde + Partizip II. "Der Antrag wurde gestern abgelehnt" = The application was rejected yesterday.',
+    },
+  ],
+
+  // ─── Lektion 20 ───────────────────────────────────────────────────────────
+
+  brauchen_nicht_keine_nur_zu_infinitiv: [
+    {
+      id: 'bn_1',
+      question: 'Du _____ das nicht zu erklären.',
+      options: ['brauchst', 'musst', 'kannst', 'willst'],
+      answer: 'brauchst',
+      explanation: '"Brauchen + nicht/nur + zu + Infinitiv" = don\'t need to. "Du brauchst das nicht zu erklären" = You don\'t need to explain that.',
+    },
+    {
+      id: 'bn_2',
+      question: 'Er braucht keine _____ . (He doesn\'t need any help.)',
+      options: ['Hilfe', 'Hilfe zu haben', 'zu helfen', 'helfen'],
+      answer: 'Hilfe',
+      explanation: '"Brauchen + keine + Noun" = doesn\'t need any [noun]. "Er braucht keine Hilfe" — no "zu + Infinitiv" needed when followed by a noun.',
+    },
+    {
+      id: 'bn_3',
+      question: 'Sie braucht nur _____, und ich helfe ihr.',
+      options: ['zu fragen', 'fragen', 'gefragt', 'frage'],
+      answer: 'zu fragen',
+      explanation: '"Brauchen + nur + zu + Infinitiv" = only needs to. Unlike modal verbs, "brauchen" REQUIRES "zu" before the infinitive.',
+    },
+    {
+      id: 'bn_4',
+      question: 'What is the key difference between "brauchen" and modal verbs (müssen, können)?',
+      options: [
+        'Brauchen needs "zu" before the infinitive; modal verbs do not',
+        'Brauchen goes to the end; modal verbs stay in position 2',
+        'Brauchen uses "sein" in Perfekt; modal verbs use "haben"',
+        'There is no difference',
+      ],
+      answer: 'Brauchen needs "zu" before the infinitive; modal verbs do not',
+      explanation: '"Du musst gehen" (no zu) vs. "Du brauchst nicht zu gehen" (zu required). This is the critical distinction.',
+    },
+    {
+      id: 'bn_5',
+      question: 'Du _____ nicht kommen — wir machen das ohne dich.',
+      options: ['brauchst', 'braucht', 'müsst', 'kannst'],
+      answer: 'brauchst',
+      explanation: '"Brauchst" — 2nd person singular. "Du brauchst nicht zu kommen" = You don\'t need to come.',
+    },
+    {
+      id: 'bn_6',
+      question: 'Er braucht nur einmal _____, dann versteht er es.',
+      options: ['zu lesen', 'lesen', 'gelesen', 'lesend'],
+      answer: 'zu lesen',
+      explanation: '"Brauchen + nur + zu + Infinitiv". "Er braucht nur zu lesen" — he only needs to read it once.',
+    },
+    {
+      id: 'bn_7',
+      question: 'Which sentence is grammatically CORRECT?',
+      options: [
+        'Du brauchst das nicht zu machen.',
+        'Du brauchst das nicht machen.',
+        'Du brauchen das nicht zu machen.',
+        'Du brauchst das nicht gemacht.',
+      ],
+      answer: 'Du brauchst das nicht zu machen.',
+      explanation: 'Correct: "brauchst" (2nd pers. sing.) + "nicht" + "zu" + Infinitiv. The "zu" before the infinitive is required with brauchen.',
+    },
+    {
+      id: 'bn_8',
+      question: 'Sie braucht keine _____ kaufen — sie hat noch genug.',
+      options: ['Lebensmittel zu', 'Lebensmittel', 'Lebensmittel zu kaufen', 'zu Lebensmittel'],
+      answer: 'Lebensmittel zu',
+      explanation: '"Brauchen + keine + Noun + zu + Infinitiv". "Sie braucht keine Lebensmittel zu kaufen" = She doesn\'t need to buy any groceries.',
+    },
+    {
+      id: 'bn_9',
+      question: '"Brauchen" is used mainly in which context?',
+      options: ['Negation (nicht/keine) and restriction (nur)', 'Obligation (must)', 'Ability (can)', 'Permission (may)'],
+      answer: 'Negation (nicht/keine) and restriction (nur)',
+      explanation: '"Brauchen" works as a semi-modal in negation (nicht brauchen = don\'t need to) and restriction (nur brauchen = only need to).',
+    },
+    {
+      id: 'bn_10',
+      question: 'Du _____ nur Bescheid sagen, dann helfe ich dir.',
+      options: ['brauchst', 'braucht', 'brauchen', 'gebraucht'],
+      answer: 'brauchst',
+      explanation: '"Du brauchst nur zu sagen" — 2nd person singular. "Nur + zu + Infinitiv" = only needs to. (The "zu" can be omitted colloquially but is standard.)',
+    },
+  ],
+
+  ohne_ohne_dass_an_statt_an_statt_dass: [
+    {
+      id: 'od_1',
+      question: 'Er verließ das Büro, ohne ein Wort _____ . (same subject)',
+      options: ['zu sagen', 'sagen', 'gesagt', 'dass er sagt'],
+      answer: 'zu sagen',
+      explanation: 'Same subject in both clauses → "ohne + zu + Infinitiv". "ohne ein Wort zu sagen" = without saying a word.',
+    },
+    {
+      id: 'od_2',
+      question: 'Er verließ das Büro, ohne _____ es bemerkte. (different subjects)',
+      options: ['dass jemand', 'jemand zu', 'jemand', 'zu jemanden'],
+      answer: 'dass jemand',
+      explanation: 'Different subjects → "ohne dass + subordinate clause" (verb at end). "ohne dass jemand es bemerkte".',
+    },
+    {
+      id: 'od_3',
+      question: 'Statt _____ , sollte man handeln. (same subject)',
+      options: ['zu diskutieren', 'diskutieren', 'diskutiert', 'dass man diskutiert'],
+      answer: 'zu diskutieren',
+      explanation: 'Same subject → "(an)statt + zu + Infinitiv". "Statt zu diskutieren, sollte man handeln."',
+    },
+    {
+      id: 'od_4',
+      question: 'Statt _____ er hilft, sitzt er nur da. (different subjects)',
+      options: ['dass', 'zu', 'obwohl', 'weil'],
+      answer: 'dass',
+      explanation: 'Different subjects → "(an)statt dass + subordinate clause". "Statt dass er hilft, sitzt er nur da."',
+    },
+    {
+      id: 'od_5',
+      question: 'What determines whether to use "ohne zu" or "ohne dass"?',
+      options: [
+        'Whether the subject is the same or different in both clauses',
+        'Whether the action is past or present',
+        'Whether the sentence is formal or informal',
+        'Whether the verb is regular or irregular',
+      ],
+      answer: 'Whether the subject is the same or different in both clauses',
+      explanation: 'Same subject → zu + Infinitiv. Different subject → dass + subordinate clause (verb at end). This rule applies to both "ohne" and "(an)statt".',
+    },
+    {
+      id: 'od_6',
+      question: 'Sie ging nach Hause, ohne sich zu _____. (same subject — to say goodbye)',
+      options: ['verabschieden', 'verabschiedet', 'verabschieden dass', 'verabschiede'],
+      answer: 'verabschieden',
+      explanation: '"ohne + sich + zu + Infinitiv" (reflexive). Same subject → zu + Infinitiv. "ohne sich zu verabschieden" = without saying goodbye.',
+    },
+    {
+      id: 'od_7',
+      question: 'Anstatt ins Kino zu gehen, _____ er zu Hause geblieben.',
+      options: ['ist', 'hat', 'wird', 'war'],
+      answer: 'ist',
+      explanation: '"Anstatt … zu + Infinitiv" in the first clause; main clause inverts. "Bleiben" uses sein → ist geblieben.',
+    },
+    {
+      id: 'od_8',
+      question: 'Er schaut TV, ohne dass _____ seine Aufgaben macht.',
+      options: ['er', 'sich', 'ihn', 'ihm'],
+      answer: 'er',
+      explanation: '"Ohne dass" introduces a subordinate clause with its own subject. Here "er" (different person implied) — the subject of the dass-clause.',
+    },
+    {
+      id: 'od_9',
+      question: 'Which pair has the same grammatical structure as "ohne / ohne dass"?',
+      options: ['(an)statt / (an)statt dass', 'deshalb / weil', 'sowohl / als auch', 'je / desto'],
+      answer: '(an)statt / (an)statt dass',
+      explanation: 'Both pairs follow the same rule: same subject → zu + Infinitiv; different subject → dass + subordinate clause.',
+    },
+    {
+      id: 'od_10',
+      question: 'Sie hat bestanden, ohne viel _____ zu haben. (without having learned much)',
+      options: ['gelernt', 'lernen', 'gelerntes', 'lernend'],
+      answer: 'gelernt',
+      explanation: '"Ohne + Partizip II + zu haben" can be used for completed actions in the infinitive clause: "ohne viel gelernt zu haben".',
+    },
+  ],
+
+  // ─── Lektion 20 (continued) ───────────────────────────────────────────────
+
+  redemittel_tatsachen_und_meinungen_diskutieren_discussing_facts_opinions: [
+    {
+      id: 'rm_1',
+      question: '"_____ ist, dass diese Information nicht stimmt." — Which phrase fits?',
+      options: ['Tatsache', 'Wahrheit', 'Meinung', 'Frage'],
+      answer: 'Tatsache',
+      explanation: '"Tatsache ist, dass …" = The fact is that … — a fixed Redemittel to state a confirmed fact.',
+    },
+    {
+      id: 'rm_2',
+      question: '"Es ist _____ so, wie du sagst." — What does this mean?',
+      options: ['tatsächlich', 'ehrlich', 'komisch', 'vorsichtig'],
+      answer: 'tatsächlich',
+      explanation: '"Es ist tatsächlich so" = It is actually the case / That\'s actually true. Confirms what the other person said.',
+    },
+    {
+      id: 'rm_3',
+      question: '"Das erscheint mir ein bisschen _____." — Which word expresses doubt?',
+      options: ['komisch', 'richtig', 'tatsächlich', 'ebenfalls'],
+      answer: 'komisch',
+      explanation: '"Das erscheint mir ein bisschen komisch" = That seems a bit strange/odd to me. A polite way to doubt information.',
+    },
+    {
+      id: 'rm_4',
+      question: '"Da _____ ich vorsichtig — das klingt nicht richtig." Which verb fits?',
+      options: ['wäre', 'bin', 'war', 'werde'],
+      answer: 'wäre',
+      explanation: '"Da wäre ich vorsichtig" = I would be careful. Konjunktiv II of "sein" (wäre) for a polite, cautious recommendation.',
+    },
+    {
+      id: 'rm_5',
+      question: 'You want to recommend that someone checks a fact. Which phrase do you use?',
+      options: [
+        'Das sollte man lieber mal überprüfen.',
+        'Das ist tatsächlich so.',
+        'Tatsache ist, dass das stimmt.',
+        'Ich möchte ebenfalls sagen, dass das wichtig ist.',
+      ],
+      answer: 'Das sollte man lieber mal überprüfen.',
+      explanation: '"Lieber mal überprüfen" = better check/verify. The phrase "Das sollte man lieber mal überprüfen" recommends checking the information.',
+    },
+    {
+      id: 'rm_6',
+      question: '"Es ist _____ richtig, dass er das gesagt hat, aber …" — What word shows concession?',
+      options: ['zwar', 'tatsächlich', 'ehrlich', 'ebenfalls'],
+      answer: 'zwar',
+      explanation: '"Es ist zwar richtig, dass … aber …" = It is indeed true that … but … — the zwar…aber structure for concession + contrast.',
+    },
+    {
+      id: 'rm_7',
+      question: '"Ehrlich gesagt _____ — ich glaube das nicht." Which word fits?',
+      options: ['nicht', 'ja', 'schon', 'tatsächlich'],
+      answer: 'nicht',
+      explanation: '"Ehrlich gesagt nicht" = honestly not / to be honest, no. A direct but polite way to disagree.',
+    },
+    {
+      id: 'rm_8',
+      question: '"Ich habe _____, dass die Information falsch ist." Which verb fits?',
+      options: ['herausgefunden', 'gesagt', 'erschienen', 'überprüft'],
+      answer: 'herausgefunden',
+      explanation: '"Herausgefunden, dass …" = (I have) found out that … Used to present a verified fact you discovered.',
+    },
+    {
+      id: 'rm_9',
+      question: '"Zur _____, ob das stimmt, möchte ich sagen …" — What word completes the phrase?',
+      options: ['Frage', 'Tatsache', 'Meinung', 'Frist'],
+      answer: 'Frage',
+      explanation: '"Zur Frage, ob das stimmt, …" = Regarding the question of whether it\'s true … A formal way to address a disputed claim.',
+    },
+    {
+      id: 'rm_10',
+      question: '"Ich möchte _____ sagen, dass das wichtig ist." — What word means "also"?',
+      options: ['ebenfalls', 'tatsächlich', 'ehrlich', 'zwar'],
+      answer: 'ebenfalls',
+      explanation: '"Ebenfalls sagen, dass …" = to also say that … Used to add your own point in a discussion after someone else has spoken.',
+    },
+  ],
+
+  // ─── Lektion 21 ───────────────────────────────────────────────────────────
+
+  passiv_pr_sens_mit_modalverb_passive_present_with_modal_verb: [
+    {
+      id: 'pm_1',
+      question: 'Das Problem muss gelöst _____.',
+      options: ['werden', 'worden', 'wird', 'wurde'],
+      answer: 'werden',
+      explanation: 'Passiv mit Modalverb: Modal + Partizip II + WERDEN (infinitive). "muss … gelöst werden".',
+    },
+    {
+      id: 'pm_2',
+      question: 'Die Regeln sollen befolgt _____.',
+      options: ['werden', 'worden', 'sein', 'hat'],
+      answer: 'werden',
+      explanation: 'Structure: Modalverb (sollen) + Partizip II (befolgt) + werden. "werden" goes to the END.',
+    },
+    {
+      id: 'pm_3',
+      question: 'Active: "Man muss das Problem lösen." → Passive: "_____"',
+      options: [
+        'Das Problem muss gelöst werden.',
+        'Das Problem muss lösen werden.',
+        'Das Problem wird gelöst müssen.',
+        'Das Problem muss gelöst worden sein.',
+      ],
+      answer: 'Das Problem muss gelöst werden.',
+      explanation: 'Active object → Passive subject. Modal stays conjugated; Partizip II + werden go to end.',
+    },
+    {
+      id: 'pm_4',
+      question: 'Erneuerbare Energien sollen stärker gefördert _____.',
+      options: ['werden', 'worden', 'geworden', 'wird'],
+      answer: 'werden',
+      explanation: '"Sollen" (modal, conjugated) + "gefördert" (Partizip II) + "werden" (infinitive at end). This is the fixed structure.',
+    },
+    {
+      id: 'pm_5',
+      question: 'Die Situation kann nicht ignoriert _____.',
+      options: ['werden', 'worden', 'sein', 'wird'],
+      answer: 'werden',
+      explanation: 'Passiv mit Modalverb: kann + ignoriert (Partizip II) + werden. "werden" always goes to the END in this structure.',
+    },
+    {
+      id: 'pm_6',
+      question: 'What is the correct word order in a "Passiv mit Modalverb" sentence?',
+      options: [
+        'Subject + Modal (conjugated) + … + Partizip II + werden',
+        'Subject + werden + … + Partizip II + Modal',
+        'Subject + Partizip II + Modal + werden',
+        'Subject + Modal + werden + Partizip II',
+      ],
+      answer: 'Subject + Modal (conjugated) + … + Partizip II + werden',
+      explanation: 'The modal verb is conjugated in position 2. Partizip II and "werden" (infinitive) go to the end: muss … gelöst werden.',
+    },
+    {
+      id: 'pm_7',
+      question: 'Das Formular _____ ausgefüllt werden.',
+      options: ['muss', 'müssen', 'musste', 'müsste'],
+      answer: 'muss',
+      explanation: '"Das Formular" is singular (3rd person singular) → "muss". The modal verb conjugates normally.',
+    },
+    {
+      id: 'pm_8',
+      question: 'Active: "Man kann das verbessern." → Passive: "_____"',
+      options: [
+        'Das kann verbessert werden.',
+        'Das wird verbessert können.',
+        'Das kann verbessert worden.',
+        'Das muss verbessert werden.',
+      ],
+      answer: 'Das kann verbessert werden.',
+      explanation: '"Man" disappears in passive. "Das" becomes subject. "Kann" stays; "verbessert" (Partizip II) + "werden" go to end.',
+    },
+    {
+      id: 'pm_9',
+      question: 'Die Daten _____ regelmäßig gesichert werden.',
+      options: ['müssen', 'muss', 'sollen er', 'sollten'],
+      answer: 'müssen',
+      explanation: '"Die Daten" is plural → plural modal: "müssen". "müssen … gesichert werden" = must be backed up regularly.',
+    },
+    {
+      id: 'pm_10',
+      question: 'Which sentence uses the "Passiv mit Modalverb" correctly?',
+      options: [
+        'Das kann sofort erledigt werden.',
+        'Das kann sofort erledigt wird.',
+        'Das kann sofort erledigt worden.',
+        'Das wird sofort erledigt können.',
+      ],
+      answer: 'Das kann sofort erledigt werden.',
+      explanation: 'Correct: Modal (kann) + Partizip II (erledigt) + werden. "werden" must be the infinitive form, not "wird" (Präsens) or "worden" (Perfekt).',
+    },
+  ],
+
+  modalverben_im_konjunktiv_ii_modal_verbs_in_subjunctive_ii: [
+    {
+      id: 'mk_1',
+      question: 'Man _____ mehr für den Klimaschutz tun. (recommendation / should)',
+      options: ['sollte', 'könnte', 'müsste', 'dürfte'],
+      answer: 'sollte',
+      explanation: '"Sollte" (Konjunktiv II of sollen) = should. Used for polite recommendations. "Man sollte mehr tun."',
+    },
+    {
+      id: 'mk_2',
+      question: 'Das _____ eine gute Lösung sein. (possibility / could)',
+      options: ['könnte', 'sollte', 'müsste', 'dürfte'],
+      answer: 'könnte',
+      explanation: '"Könnte" (Konjunktiv II of können) = could. Expresses a possibility or suggestion.',
+    },
+    {
+      id: 'mk_3',
+      question: 'Das _____ eigentlich schon bekannt sein. (strong assumption / really should)',
+      options: ['müsste', 'könnte', 'sollte', 'dürfte'],
+      answer: 'müsste',
+      explanation: '"Müsste" (Konjunktiv II of müssen) = would have to / really should / must surely. Expresses a strong expectation or assumption.',
+    },
+    {
+      id: 'mk_4',
+      question: 'Das _____ nicht so einfach sein. (probable assumption / is likely not)',
+      options: ['dürfte', 'sollte', 'könnte', 'müsste'],
+      answer: 'dürfte',
+      explanation: '"Dürfte" (Konjunktiv II of dürfen) = is likely to / probably. Expresses a probable (but uncertain) assumption.',
+    },
+    {
+      id: 'mk_5',
+      question: 'Sie _____ das Buch schon gelesen haben. (she has probably already read it)',
+      options: ['dürfte', 'sollte', 'könnte', 'musste'],
+      answer: 'dürfte',
+      explanation: '"Dürfte" expresses probability: she has probably already read it. "Musste" is Präteritum of müssen (not Konjunktiv II).',
+    },
+    {
+      id: 'mk_6',
+      question: 'Du _____ einen Arzt aufsuchen. (you should see a doctor — advice)',
+      options: ['solltest', 'könntest', 'müsstest', 'dürftest'],
+      answer: 'solltest',
+      explanation: '"Solltest" (2nd pers. sing. Konjunktiv II of sollen) = you should. Polite recommendation / advice.',
+    },
+    {
+      id: 'mk_7',
+      question: 'Wir _____ das Problem gemeinsam lösen. (we could solve it together — possibility)',
+      options: ['könnten', 'sollten', 'müssten', 'dürften'],
+      answer: 'könnten',
+      explanation: '"Könnten" (Konjunktiv II of können) = could. Expresses a possibility or suggestion for action.',
+    },
+    {
+      id: 'mk_8',
+      question: 'What is the difference between "müsste" and "sollte"?',
+      options: [
+        'Müsste = strong necessity/assumption; sollte = recommendation/advice',
+        'Müsste = polite request; sollte = obligation',
+        'Both mean the same',
+        'Müsste = possibility; sollte = probability',
+      ],
+      answer: 'Müsste = strong necessity/assumption; sollte = recommendation/advice',
+      explanation: '"Müsste" expresses strong expectation ("it must surely be…"). "Sollte" gives advice or a recommendation ("one should…").',
+    },
+    {
+      id: 'mk_9',
+      question: 'Die Ergebnisse _____ bald veröffentlicht werden. (they should be published soon)',
+      options: ['sollten', 'könnten', 'müssten', 'dürften'],
+      answer: 'sollten',
+      explanation: '"Sollten" (Konjunktiv II of sollen, plural) = should. Recommendation that the results be published.',
+    },
+    {
+      id: 'mk_10',
+      question: 'Das _____ der Grund für seine schlechte Laune sein. (that is probably the reason)',
+      options: ['dürfte', 'sollte', 'könnte', 'müsste'],
+      answer: 'dürfte',
+      explanation: '"Dürfte" = is probably / is likely. A probable explanation or assumption about why something is the case.',
+    },
+  ],
+
+  // ─── Lektion 22 ───────────────────────────────────────────────────────────
+
+  irrealer_vergleich_mit_als_ob_unreal_comparison: [
+    {
+      id: 'ao_1',
+      question: 'Er tut so, als ob er alles _____. (as if he knew everything — he doesn\'t)',
+      options: ['wüsste', 'weiß', 'wissen', 'gewusst'],
+      answer: 'wüsste',
+      explanation: '"Als ob" + Konjunktiv II. "Wüsste" is Konjunktiv II of "wissen". The comparison is unreal → Konjunktiv II required.',
+    },
+    {
+      id: 'ao_2',
+      question: 'Sie spricht so, als _____ sie die Chefin.',
+      options: ['wäre', 'ist', 'sein', 'sei'],
+      answer: 'wäre',
+      explanation: '"Als" alone (without ob) → Konjunktiv II comes DIRECTLY after "als", before the subject. "als wäre sie" (verb directly after als).',
+    },
+    {
+      id: 'ao_3',
+      question: 'When using "als ob", where does the verb go?',
+      options: ['To the END of the clause', 'Directly after "als ob"', 'Before the subject', 'To position 2'],
+      answer: 'To the END of the clause',
+      explanation: '"Als ob" is a subordinating conjunction → verb goes to the END. "als ob er alles WÜSSTE."',
+    },
+    {
+      id: 'ao_4',
+      question: 'When using "als" alone (without "ob"), where does the verb go?',
+      options: [
+        'Directly after "als" (before the subject)',
+        'To the end of the clause',
+        'To position 2 in the main clause',
+        'After the subject',
+      ],
+      answer: 'Directly after "als" (before the subject)',
+      explanation: '"Als" alone: verb comes DIRECTLY after "als", then subject. "als WÄRE er krank" (als + verb + subject).',
+    },
+    {
+      id: 'ao_5',
+      question: 'Er tut so, _____ er krank wäre.',
+      options: ['als ob', 'als wenn', 'als ob / als wenn', 'wie ob'],
+      answer: 'als ob / als wenn',
+      explanation: '"Als ob" and "als wenn" are interchangeable with the same meaning and same word order (verb at end). Both are correct.',
+    },
+    {
+      id: 'ao_6',
+      question: 'Die Partei verhält sich so, als ob sie keine Verantwortung _____.',
+      options: ['hätte', 'hat', 'haben', 'hatte'],
+      answer: 'hätte',
+      explanation: '"Als ob" + Konjunktiv II. "Hätte" is Konjunktiv II of "haben". The party doesn\'t really have no responsibility — it\'s an unreal comparison.',
+    },
+    {
+      id: 'ao_7',
+      question: 'What is the key grammatical requirement for "als ob" / "als wenn" / "als" comparisons?',
+      options: [
+        'Konjunktiv II must be used (the comparison is hypothetical/unreal)',
+        'Perfekt must be used',
+        'Futur I must be used',
+        'Präteritum must be used',
+      ],
+      answer: 'Konjunktiv II must be used (the comparison is hypothetical/unreal)',
+      explanation: 'All three forms (als ob / als wenn / als alone) describe an UNREAL comparison → Konjunktiv II is always required.',
+    },
+    {
+      id: 'ao_8',
+      question: 'She speaks as if she were the boss. Using "als" alone: "_____"',
+      options: [
+        'Sie spricht so, als wäre sie die Chefin.',
+        'Sie spricht so, als ob sie wäre die Chefin.',
+        'Sie spricht so, als sie die Chefin wäre.',
+        'Sie spricht so, als wenn sie wäre die Chefin.',
+      ],
+      answer: 'Sie spricht so, als wäre sie die Chefin.',
+      explanation: '"Als" alone: verb directly after "als" before subject. "als WÄRE sie die Chefin."',
+    },
+    {
+      id: 'ao_9',
+      question: 'Er sieht so aus, als ob er tagelang nicht _____ hätte.',
+      options: ['geschlafen', 'schlafen', 'schlaf', 'schläft'],
+      answer: 'geschlafen',
+      explanation: '"Als ob" + Konjunktiv II Vergangenheit: hätte + Partizip II. "als ob er nicht geschlafen hätte" = as if he had not slept.',
+    },
+    {
+      id: 'ao_10',
+      question: 'Which sentence is INCORRECT?',
+      options: [
+        'Er tut so, als ob er müde ist.',
+        'Er tut so, als ob er müde wäre.',
+        'Er tut so, als wenn er müde wäre.',
+        'Er tut so, als wäre er müde.',
+      ],
+      answer: 'Er tut so, als ob er müde ist.',
+      explanation: '"Als ob" requires Konjunktiv II ("wäre"), not Indikativ ("ist"). Using "ist" after "als ob" is a common mistake.',
+    },
+  ],
+
+  // ─── Lektion 23 ───────────────────────────────────────────────────────────
+
+  irreale_bedingungen_in_der_vergangenheit_was_w_re_gewesen_wenn_unreal_past_conditions: [
+    {
+      id: 'ib_1',
+      question: 'Wenn die Mauer nicht gefallen _____, wären viele Familien getrennt geblieben.',
+      options: ['wäre', 'hätte', 'ist', 'war'],
+      answer: 'wäre',
+      explanation: '"Fallen" uses "sein" in Perfekt (motion verb) → Konjunktiv II Vergangenheit uses WÄRE: "nicht gefallen wäre".',
+    },
+    {
+      id: 'ib_2',
+      question: 'Wenn es keine Proteste gegeben _____, hätte die DDR länger existiert.',
+      options: ['hätte', 'wäre', 'hat', 'hatte'],
+      answer: 'hätte',
+      explanation: '"Geben" uses "haben" in Perfekt → Konjunktiv II Vergangenheit uses HÄTTE: "gegeben hätte".',
+    },
+    {
+      id: 'ib_3',
+      question: 'Wenn ich Zeit gehabt _____, wäre ich gekommen.',
+      options: ['hätte', 'wäre', 'hat', 'habe'],
+      answer: 'hätte',
+      explanation: '"Haben" uses "haben" in Perfekt → Konjunktiv II uses HÄTTE: "gehabt hätte". The condition was not met → unreal past.',
+    },
+    {
+      id: 'ib_4',
+      question: 'Wenn sie früher _____, hätten wir das Problem lösen können.',
+      options: ['gekommen wäre', 'gekommen hätte', 'kommen wäre', 'kommt'],
+      answer: 'gekommen wäre',
+      explanation: '"Kommen" uses "sein" → Konjunktiv II Vergangenheit: WÄRE + gekommen. "wenn sie früher gekommen wäre".',
+    },
+    {
+      id: 'ib_5',
+      question: 'What structure is used for unreal PAST conditions?',
+      options: [
+        'hätte/wäre + Partizip II (in both clauses)',
+        'würde + Infinitiv (in both clauses)',
+        'Konjunktiv I + Partizip II',
+        'hatte/war + Partizip II',
+      ],
+      answer: 'hätte/wäre + Partizip II (in both clauses)',
+      explanation: 'Unreal past = Konjunktiv II der Vergangenheit: hätte/wäre + Partizip II. Both the wenn-clause AND the main clause use this structure.',
+    },
+    {
+      id: 'ib_6',
+      question: '_____ die Mauer nicht gefallen, wären viele Familien getrennt geblieben. (without "wenn")',
+      options: ['Wäre', 'Hätte', 'Ist', 'War'],
+      answer: 'Wäre',
+      explanation: 'Without "wenn": the verb moves to the FRONT of the clause (inverted). "Wäre die Mauer nicht gefallen…" = Had the Wall not fallen…',
+    },
+    {
+      id: 'ib_7',
+      question: 'How do you choose between "hätte" and "wäre" in Konjunktiv II Vergangenheit?',
+      options: [
+        'Same rule as Perfekt: motion/change-of-state verbs use wäre; others use hätte',
+        'Always use hätte',
+        'Always use wäre',
+        'Use wäre for nouns, hätte for verbs',
+      ],
+      answer: 'Same rule as Perfekt: motion/change-of-state verbs use wäre; others use hätte',
+      explanation: 'If the verb takes "sein" in Perfekt (gehen, kommen, fahren, bleiben…) → use WÄRE. All others → HÄTTE.',
+    },
+    {
+      id: 'ib_8',
+      question: 'Wenn die Menschen nicht für ihre Freiheit gekämpft _____, wäre die Wende nicht passiert.',
+      options: ['hätten', 'wären', 'haben', 'hatten'],
+      answer: 'hätten',
+      explanation: '"Kämpfen" uses "haben" in Perfekt → HÄTTEN + gekämpft. "wenn … gekämpft hätten."',
+    },
+    {
+      id: 'ib_9',
+      question: '_____ es keine Revolution gegeben, wäre Deutschland noch geteilt. (without "wenn")',
+      options: ['Hätte', 'Wäre', 'Hat', 'Hatte'],
+      answer: 'Hätte',
+      explanation: 'Without "wenn": verb-first inversion. "Geben" → hätte. "Hätte es keine Revolution gegeben, …" = Had there been no revolution…',
+    },
+    {
+      id: 'ib_10',
+      question: 'What is the difference between present unreal conditions and past unreal conditions?',
+      options: [
+        'Present: würde + Infinitiv / wäre/hätte. Past: hätte/wäre + Partizip II in BOTH clauses.',
+        'Present: Plusquamperfekt. Past: Konjunktiv II.',
+        'No difference.',
+        'Present: Perfekt. Past: Präteritum.',
+      ],
+      answer: 'Present: würde + Infinitiv / wäre/hätte. Past: hätte/wäre + Partizip II in BOTH clauses.',
+      explanation: 'Present unreal: "Wenn ich Zeit hätte, würde ich kommen." Past unreal: "Wenn ich Zeit gehabt hätte, wäre ich gekommen." Past uses hätte/wäre + Partizip II throughout.',
+    },
+  ],
+
+  // ─── Lektion 24 ───────────────────────────────────────────────────────────
+
+  die_zukunft_ausdr_cken_pr_sens_futur_i_expressing_the_future: [
+    {
+      id: 'zf_1',
+      question: 'Morgen _____ ich zum Arzt. (planned appointment)',
+      options: ['gehe', 'werde gehen', 'ging', 'bin gegangen'],
+      answer: 'gehe',
+      explanation: 'Planned/certain future → Präsens + Zeitangabe. "Morgen gehe ich" — no special tense needed when the time is clear.',
+    },
+    {
+      id: 'zf_2',
+      question: 'Es _____ morgen wahrscheinlich _____. (prediction about weather)',
+      options: ['wird / regnen', 'regnet / morgen', 'hat / geregnet', 'ist / geregnet'],
+      answer: 'wird / regnen',
+      explanation: 'Predictions and assumptions → Futur I: werden + Infinitiv. "Es wird morgen regnen" — "wahrscheinlich" signals a prediction.',
+    },
+    {
+      id: 'zf_3',
+      question: 'Ich _____ ab nächster Woche mehr Sport _____. (firm intention / resolution)',
+      options: ['werde / machen', 'mache / morgen', 'habe / gemacht', 'mache / nächster'],
+      answer: 'werde / machen',
+      explanation: 'Firm intention or promise → Futur I (werden + Infinitiv). "Ich werde … machen" = I will do.',
+    },
+    {
+      id: 'zf_4',
+      question: 'Heute Abend _____ wir uns mit Freunden. (certain/planned event)',
+      options: ['treffen', 'werden treffen', 'trafen', 'haben getroffen'],
+      answer: 'treffen',
+      explanation: 'Planned event with time expression → Präsens. "Heute Abend treffen wir uns" — it\'s already scheduled.',
+    },
+    {
+      id: 'zf_5',
+      question: 'Sie _____ wahrscheinlich zu spät _____. (assumption)',
+      options: ['wird / kommen', 'kommt / wahrscheinlich', 'ist / gekommen', 'kam'],
+      answer: 'wird / kommen',
+      explanation: '"Wahrscheinlich" signals a prediction/assumption → Futur I. "Sie wird wahrscheinlich zu spät kommen."',
+    },
+    {
+      id: 'zf_6',
+      question: 'Nächstes Jahr _____ wir nach Deutschland. (planned trip)',
+      options: ['fahren', 'werden fahren', 'fuhren', 'sind gefahren'],
+      answer: 'fahren',
+      explanation: '"Nächstes Jahr" is a time expression → Präsens for planned future. "Nächstes Jahr fahren wir…"',
+    },
+    {
+      id: 'zf_7',
+      question: 'Er _____ wohl erschöpft _____ . (he is probably exhausted right now — assumption)',
+      options: ['wird / sein', 'ist / gewesen', 'war / sein', 'ist / sein'],
+      answer: 'wird / sein',
+      explanation: 'Futur I + "wohl" expresses an assumption about a CURRENT state. "Er wird wohl erschöpft sein" = He is probably exhausted.',
+    },
+    {
+      id: 'zf_8',
+      question: 'When is Präsens used for future meaning?',
+      options: [
+        'When the event is already planned or certain, with a time expression',
+        'When making a prediction or guess',
+        'When expressing a promise',
+        'Always — German has no future tense',
+      ],
+      answer: 'When the event is already planned or certain, with a time expression',
+      explanation: 'Think: "Can you put this in your diary?" → Präsens. "It\'s a guess or decision?" → Futur I (werden).',
+    },
+    {
+      id: 'zf_9',
+      question: 'Ich _____ dir helfen — das verspreche ich dir! (promise)',
+      options: ['werde', 'bin', 'habe', 'soll'],
+      answer: 'werde',
+      explanation: 'Promises → Futur I. "Ich werde dir helfen" = I will help you (I promise). "Werden" (1st pers. sing.) + Infinitiv.',
+    },
+    {
+      id: 'zf_10',
+      question: 'Which signal words typically go with Futur I (predictions/assumptions)?',
+      options: [
+        'wahrscheinlich, vielleicht, sicher, wohl',
+        'morgen, nächste Woche, heute Abend',
+        'gestern, vor zwei Tagen, letztes Jahr',
+        'immer, manchmal, oft',
+      ],
+      answer: 'wahrscheinlich, vielleicht, sicher, wohl',
+      explanation: 'Words like "wahrscheinlich" (probably), "vielleicht" (maybe), "sicher/sicherlich" (certainly), "wohl" (probably) signal Futur I predictions.',
+    },
+  ],
+
 }
+
+// ─── Lookup helpers ──────────────────────────────────────────────────────────
 
 export function getExercisesForTopic(topicId) {
   return exercises[topicId] || null
@@ -307,9 +1811,10 @@ export function matchTopicId(topicId) {
   if (!topicId) return null
   if (exercises[topicId]) return topicId
   const keys = Object.keys(exercises)
-  // Try progressively shorter prefix matches
-  for (let len = 15; len >= 8; len--) {
-    const match = keys.find(k => topicId.startsWith(k.slice(0, len)) || k.startsWith(topicId.slice(0, len)))
+  // Try decreasing prefix length
+  for (let len = 20; len >= 8; len--) {
+    const prefix = topicId.slice(0, len)
+    const match = keys.find(k => k.startsWith(prefix) || prefix.startsWith(k.slice(0, len)))
     if (match) return match
   }
   return null

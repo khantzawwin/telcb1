@@ -22,7 +22,7 @@ export default function Layout({ children }) {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* ── Desktop sidebar ─────────────────────────── */}
-      <aside className="hidden md:flex flex-col w-56 bg-white border-r border-gray-200 fixed h-full z-20">
+      <aside className="hidden md:flex flex-col w-64 bg-white border-r border-gray-200 fixed h-full z-20">
         <div className="px-5 py-5 border-b border-gray-100">
           <AppLogo />
         </div>
@@ -34,14 +34,14 @@ export default function Layout({ children }) {
               to={to}
               end={end}
               className={({ isActive }) =>
-                `flex items-center gap-3 px-3 py-2 rounded-lg text-sm font-medium transition-colors ${
+                `flex items-center gap-3 px-4 py-2.5 rounded-lg text-base font-medium transition-colors ${
                   isActive
                     ? 'bg-indigo-50 text-indigo-700'
                     : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
                 }`
               }
             >
-              <Icon className="w-4 h-4 flex-shrink-0" />
+              <Icon className="w-5 h-5 flex-shrink-0" />
               {label}
             </NavLink>
           ))}
@@ -52,11 +52,11 @@ export default function Layout({ children }) {
             <img
               src={user?.photoURL || `https://ui-avatars.com/api/?name=${encodeURIComponent(user?.displayName || 'U')}&background=e0e7ff&color=4338ca&size=64`}
               alt="avatar"
-              className="w-7 h-7 rounded-full flex-shrink-0"
+              className="w-8 h-8 rounded-full flex-shrink-0"
             />
-            <p className="text-xs font-medium text-gray-800 truncate">{user?.displayName}</p>
+            <p className="text-sm font-medium text-gray-800 truncate">{user?.displayName}</p>
           </div>
-          <button onClick={handleLogOut} className="text-xs text-gray-400 hover:text-gray-600">
+          <button onClick={handleLogOut} className="text-sm text-gray-400 hover:text-gray-600">
             Sign out
           </button>
         </div>
@@ -96,7 +96,7 @@ export default function Layout({ children }) {
 
       {/* ── Main content ─────────────────────────── */}
       <main
-        className="md:ml-56 min-h-screen pb-20 md:pb-0"
+        className="md:ml-64 min-h-screen pb-20 md:pb-0"
         onClick={() => setMenuOpen(false)}
       >
         {children}
@@ -132,13 +132,13 @@ export default function Layout({ children }) {
 
 function AppLogo() {
   return (
-    <div className="flex items-center gap-2">
-      <div className="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
-        <span className="text-white text-xs font-bold">B1</span>
+    <div className="flex items-center gap-3">
+      <div className="w-9 h-9 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
+        <span className="text-white text-sm font-bold">B1</span>
       </div>
       <div>
-        <p className="text-sm font-semibold text-gray-900 leading-tight">TELC B1</p>
-        <p className="text-xs text-gray-400 leading-tight">Trainer</p>
+        <p className="text-base font-semibold text-gray-900 leading-tight">TELC B1</p>
+        <p className="text-sm text-gray-400 leading-tight">Trainer</p>
       </div>
     </div>
   )
