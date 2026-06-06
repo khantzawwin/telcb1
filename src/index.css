@@ -5,5 +5,22 @@
 @layer base {
   body {
     @apply text-gray-900 antialiased;
+    /* Prevent rubber-band scroll on iOS */
+    overscroll-behavior: none;
+  }
+
+  /* Safe area for notched phones */
+  .safe-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+@layer utilities {
+  /* Bottom nav height accounting for home indicator */
+  .pb-safe {
+    padding-bottom: calc(4rem + env(safe-area-inset-bottom));
   }
 }

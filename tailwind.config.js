@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         sans: ['-apple-system', 'BlinkMacSystemFont', '"Segoe UI"', 'Roboto', 'sans-serif'],
       },
+      borderWidth: {
+        3: '3px',
+      },
     },
   },
   plugins: [],
