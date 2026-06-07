@@ -114,7 +114,7 @@ export default function Grammar() {
       </div>
 
       {/* ── Grammar Rule (collapsible) ─────────────────── */}
-      <div className="mb-8 border border-gray-200 rounded-2xl overflow-hidden bg-white">
+      <div className="mb-8 rounded-3xl shadow-sm overflow-hidden bg-white">
         <button
           onClick={() => setRuleOpen(o => !o)}
           className="w-full flex items-center justify-between px-6 py-5 text-left hover:bg-gray-50 active:bg-gray-100 transition-colors"
@@ -203,10 +203,10 @@ function QuestionCard({ number, exercise, selected, checked, onSelect }) {
   const showResult = checked && selected !== undefined
 
   return (
-    <div className={`bg-white border rounded-2xl overflow-hidden transition-colors ${
+    <div className={`bg-white rounded-3xl overflow-hidden shadow-sm transition-colors ring-1 ${
       showResult
-        ? isCorrect ? 'border-green-300' : 'border-red-300'
-        : 'border-gray-200'
+        ? isCorrect ? 'ring-green-300' : 'ring-red-300'
+        : 'ring-transparent'
     }`}>
       {/* Question */}
       <div className="px-5 pt-5 pb-4">

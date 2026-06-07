@@ -20,7 +20,7 @@ export default function Layout({ children }) {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-slate-50">
       {/* ── Desktop sidebar ─────────────────────────── */}
       <aside className="hidden md:flex flex-col w-64 bg-white border-r border-gray-200 fixed h-full z-20">
         <div className="px-5 py-5 border-b border-gray-100">
@@ -34,9 +34,9 @@ export default function Layout({ children }) {
               to={to}
               end={end}
               className={({ isActive }) =>
-                `flex items-center gap-3 px-4 py-2.5 rounded-lg text-base font-medium transition-colors ${
+                `flex items-center gap-3 px-4 py-3 rounded-xl text-base font-medium transition-colors ${
                   isActive
-                    ? 'bg-indigo-50 text-indigo-700'
+                    ? 'bg-indigo-100 text-indigo-700'
                     : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
                 }`
               }

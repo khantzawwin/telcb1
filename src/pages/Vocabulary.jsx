@@ -83,7 +83,7 @@ export default function Vocabulary() {
 
 function WordRow({ card, isOpen, onToggle }) {
   return (
-    <div className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+    <div className="bg-white rounded-2xl shadow-sm overflow-hidden">
       <button
         onClick={onToggle}
         className="w-full flex items-center gap-3 px-5 py-4 text-left active:bg-gray-50 transition-colors"
