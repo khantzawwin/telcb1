@@ -911,6 +911,1500 @@ These compound words are common in environmental topics — useful for reading a
 
 ---
 
+## Lektion 4 — Vorsätze & Gewohnheiten (Resolutions & Habits / Behaviour Change)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**der Vorsatz** (pl. Vorsätze) — *resolution / intention / good intention*
+- *gute Vorsätze fürs neue Jahr* = New Year's resolutions
+- *einen Vorsatz haben / fassen* = to have / make a resolution
+- *Vorsätze in die Tat umsetzen* = to put resolutions into action
+
+> Mein guter Vorsatz für dieses Jahr ist, mehr Sport zu treiben.
+> *(My New Year's resolution this year is to do more sport.)*
+
+---
+
+**die Gewohnheit** (pl. Gewohnheiten) — *habit / custom*
+- *aus Gewohnheit* = out of habit
+- *eine Gewohnheit haben* = to have a habit
+- *eine schlechte Gewohnheit ablegen* = to break a bad habit
+- *zur Gewohnheit werden* = to become a habit
+
+> Jeden Morgen Kaffee zu trinken ist für mich eine feste Gewohnheit.
+> *(Drinking coffee every morning is a firm habit for me.)*
+
+---
+
+**das Verhalten** (kein Plural) — *behaviour / conduct*
+- *das Verhalten ändern* = to change one's behaviour
+- *umweltbewusstes Verhalten* = environmentally conscious behaviour
+- *sich (Akk.) verhalten* = to behave (verb)
+
+> Wir müssen unser Verhalten ändern, um Energie zu sparen.
+> *(We have to change our behaviour in order to save energy.)*
+
+---
+
+**die Ausdauer** (kein Plural) — *stamina / endurance / perseverance*
+- *Ausdauer haben* = to have stamina / staying power
+- *Ausdauer trainieren* = to train endurance
+- *das Ausdauertraining* = endurance training
+
+> Ohne Ausdauer kann man kein Ziel erreichen.
+> *(Without perseverance you cannot reach any goal.)*
+
+---
+
+#### Verbs
+
+**sich gewöhnen (an + Akk.)** — *to get used to something*
+- ⚠️ Reflexive verb, used with *an + Akkusativ*
+
+| Person | Form |
+|---|---|
+| ich | gewöhne mich |
+| du | gewöhnst dich |
+| er/sie/es | gewöhnt sich |
+| wir | gewöhnen uns |
+| ihr | gewöhnt euch |
+| sie/Sie | gewöhnen sich |
+
+- Perfekt: *hat sich gewöhnt* (regelmäßig)
+
+> Ich habe mich schnell an das neue Wetter gewöhnt.
+> *(I quickly got used to the new weather.)*
+
+---
+
+**wiederholen** — *to repeat / to revise*
+- ⚠️ **Untrennbar** (inseparable) when it means "to repeat" — stress on *-hol-*. No *ge-* in Perfekt.
+
+| Person | Form |
+|---|---|
+| ich | wiederhole |
+| du | wiederholst |
+| er/sie/es | wiederholt |
+| wir | wiederholen |
+| ihr | wiederholt |
+| sie/Sie | wiederholen |
+
+- Perfekt: *hat wiederholt*
+
+> Ich wiederhole die Vokabeln jeden Tag, damit ich sie nicht vergesse.
+> *(I repeat the vocabulary every day so that I don't forget it.)*
+
+---
+
+**ändern** — *to change / to alter*
+
+| Person | Form |
+|---|---|
+| ich | ändere |
+| du | änderst |
+| er/sie/es | ändert |
+| wir | ändern |
+| ihr | ändert |
+| sie/Sie | ändern |
+
+- Perfekt: *hat geändert* (regelmäßig)
+- *sich ändern* = to change (oneself / by itself)
+
+> Sie hat ihre Meinung plötzlich geändert.
+> *(She suddenly changed her mind.)*
+
+---
+
+**sich bewegen** — *to move / to exercise (be physically active)*
+- ⚠️ Reflexive
+
+| Person | Form |
+|---|---|
+| ich | bewege mich |
+| du | bewegst dich |
+| er/sie/es | bewegt sich |
+| wir | bewegen uns |
+| ihr | bewegt euch |
+| sie/Sie | bewegen sich |
+
+- Perfekt: *hat sich bewegt*
+
+> Man sollte sich jeden Tag mindestens 30 Minuten bewegen.
+> *(You should move / exercise at least 30 minutes every day.)*
+
+---
+
+**sich anstrengen** — *to make an effort / to exert oneself*
+- ⚠️ **Trennbares Verb** (separable: *an-*) and reflexive
+
+| Person | Form |
+|---|---|
+| ich | strenge mich an |
+| du | strengst dich an |
+| er/sie/es | strengt sich an |
+| wir | strengen uns an |
+| ihr | strengt euch an |
+| sie/Sie | strengen sich an |
+
+- Perfekt: *hat sich angestrengt*
+- *anstrengend* = exhausting / strenuous (adjective)
+
+> Wenn du dich mehr anstrengst, wirst du die Prüfung bestehen.
+> *(If you make more of an effort, you will pass the exam.)*
+
+---
+
+**genügen** — *to be enough / to suffice*
+
+| Person | Form |
+|---|---|
+| ich | genüge |
+| du | genügst |
+| er/sie/es | genügt |
+| wir | genügen |
+| ihr | genügt |
+| sie/Sie | genügen |
+
+- Perfekt: *hat genügt*
+- Synonym: *reichen, ausreichen*
+
+> Zehn Minuten am Tag genügen, um fit zu bleiben.
+> *(Ten minutes a day are enough to stay fit.)*
+
+---
+
+**umlernen** — *to relearn / to retrain / to change one's habits or thinking*
+- ⚠️ **Trennbares Verb** (separable: *um-*)
+
+| Person | Form |
+|---|---|
+| ich | lerne um |
+| du | lernst um |
+| er/sie/es | lernt um |
+| wir | lernen um |
+| ihr | lernt um |
+| sie/Sie | lernen um |
+
+- Perfekt: *hat umgelernt*
+
+> Nach der Diagnose musste er völlig umlernen und gesünder leben.
+> *(After the diagnosis he had to completely rethink his habits and live more healthily.)*
+
+---
+
+**verzichten (auf + Akk.)** — *to do without / to give up / to abstain from something*
+- ⚠️ Used with *auf + Akkusativ*
+
+| Person | Form |
+|---|---|
+| ich | verzichte |
+| du | verzichtest |
+| er/sie/es | verzichtet |
+| wir | verzichten |
+| ihr | verzichtet |
+| sie/Sie | verzichten |
+
+- Perfekt: *hat verzichtet*
+
+> Ich verzichte auf Süßigkeiten, damit ich abnehme.
+> *(I'm giving up sweets so that I lose weight.)*
+
+---
+
+#### Adjectives & Adverbs
+
+**energiesparend** — *energy-saving / energy-efficient*
+- *energiesparende Geräte* = energy-saving appliances
+- *energiesparend heizen* = to heat in an energy-saving way
+- Related: *Energie sparen* = to save energy
+
+> Energiesparende Lampen verbrauchen viel weniger Strom.
+> *(Energy-saving lamps use much less electricity.)*
+
+---
+
+#### Set Phrases
+
+These fixed expressions are common when talking about resolutions, habits and behaviour change:
+
+| Phrase | Meaning |
+|---|---|
+| *einen Vorsatz haben / fassen* | to have / make a resolution |
+| *eine Gewohnheit haben* | to have a habit |
+| *sich an etwas (Akk.) gewöhnen* | to get used to something |
+| *etwas wiederholen* | to repeat something |
+| *das Verhalten ändern* | to change one's behaviour |
+| *sich bewegen* | to move / exercise |
+| *sich anstrengen* | to make an effort |
+| *Ausdauer haben* | to have stamina / perseverance |
+| *auf etwas verzichten* | to do without / give up something |
+
+---
+
+### Grammar
+
+---
+
+#### damit — "so that" (Final clause / purpose, Nebensatz)
+
+**damit** introduces a **Nebensatz (subordinate clause)** that expresses a **purpose or goal (das Ziel / die Absicht)** — the answer to the question **Wozu? / Mit welchem Ziel?** ("For what purpose?"). It translates as *"so that"*.
+
+Because it introduces a Nebensatz, the **conjugated verb moves to the end** of the clause:
+
+> Ich wiederhole die Vokabeln, **damit** ich sie nicht **vergesse**.
+> *(I repeat the vocabulary so that I don't forget it.)*
+
+> Sie spart Energie, **damit** die Stromrechnung niedriger **wird**.
+> *(She saves energy so that the electricity bill becomes lower.)*
+
+**damit vs. um … zu:**
+
+- Use **damit** when the two clauses have **different subjects**.
+- Use **um … zu + Infinitiv** when **both clauses have the same subject** (shorter, more elegant).
+
+> Ich gebe dir das Buch, **damit du** es liest. → *different subjects (ich / du)* ✅ damit
+> Ich lerne viel, **um** die Prüfung **zu** bestehen. → *same subject (ich / ich)* ✅ um … zu
+> *(= Ich lerne viel, **damit ich** die Prüfung bestehe — also correct, but um…zu is preferred.)*
+
+**Word order pattern:**
+
+> Hauptsatz **, damit** + Subjekt + … + **Verb (am Ende).**
+
+> Man sollte sich täglich bewegen, **damit** der Körper gesund **bleibt**.
+> *(You should exercise daily so that the body stays healthy.)*
+
+⚠️ **Note:** *damit* can also be a pronominal adverb meaning *"with it / with that"* (da + mit). Context tells them apart:
+> *Was machst du **damit**?* = What do you do **with it**? (≠ purpose conjunction)
+
+---
+
+## Lektion 6 — Beruf, Selbstständigkeit & Ziele (Work, Self-Employment & Goals)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**der Auftrag** (pl. Aufträge) — *order / commission / assignment*
+- ⚠️ Gender: **der** Auftrag → *einen Auftrag* (Akkusativ)
+- *einen Auftrag bekommen / erhalten* = to get an order/commission
+- *einen Auftrag annehmen / ausführen* = to accept / carry out an order
+- *im Auftrag von …* = on behalf of …
+
+> Die Firma hat einen großen Auftrag von einem Kunden bekommen.
+> *(The company got a big order from a customer.)*
+
+---
+
+**das Risiko** (pl. Risiken) — *risk*
+- *ein Risiko eingehen* = to take a risk
+- *ein hohes / großes Risiko* = a high / big risk
+- *auf eigenes Risiko* = at one's own risk
+- *riskant* = risky (adjective)
+
+> Wer selbstständig wird, geht immer ein finanzielles Risiko ein.
+> *(Anyone who becomes self-employed always takes a financial risk.)*
+
+---
+
+**die Erfahrung** (pl. Erfahrungen) — *experience*
+- *Erfahrungen sammeln / machen* = to gain / have experiences
+- *Berufserfahrung* = work experience
+- *aus Erfahrung* = from experience
+- *erfahren* = experienced (adjective)
+
+> Im Praktikum kann man wertvolle Erfahrungen sammeln.
+> *(In an internship you can gain valuable experience.)*
+
+---
+
+**der Traum** (pl. Träume) — *dream*
+- *einen Traum verwirklichen / erfüllen* = to realise / fulfil a dream
+- *der Traumberuf* = dream job
+- *träumen (von + Dat.)* = to dream (of)
+
+> Sie hat ihren Traum verwirklicht und ein eigenes Café eröffnet.
+> *(She realised her dream and opened her own café.)*
+
+---
+
+**das Projekt** (pl. Projekte) — *project*
+- *ein Projekt planen / leiten / durchführen* = to plan / lead / carry out a project
+- *an einem Projekt arbeiten* = to work on a project
+- *das Projektmanagement* = project management
+
+> Wir planen gerade ein neues Projekt für nächstes Jahr.
+> *(We are currently planning a new project for next year.)*
+
+---
+
+**die Idee** (pl. Ideen) — *idea*
+- *eine Idee umsetzen / verwirklichen* = to implement / realise an idea
+- *eine gute / kreative Idee haben* = to have a good / creative idea
+- *auf eine Idee kommen* = to come up with an idea
+
+> Er hatte eine kreative Idee und hat sie sofort umgesetzt.
+> *(He had a creative idea and implemented it immediately.)*
+
+---
+
+#### Verbs
+
+**eingehen** *(ein Risiko eingehen)* — *to take / enter into (a risk)*
+- ⚠️ **Trennbares Verb** (ein-) | **unregelmäßig** | Perfekt mit *sein*
+
+| Person | Form |
+|---|---|
+| ich | gehe ein |
+| du | gehst ein |
+| er/sie/es | geht ein |
+| wir | gehen ein |
+| ihr | geht ein |
+| sie/Sie | gehen ein |
+
+- Perfekt: *ist eingegangen*
+
+> Ich gehe das Risiko ein und kündige meinen Job.
+> *(I'm taking the risk and quitting my job.)*
+
+---
+
+**wagen** *(etwas Neues wagen)* — *to dare / to venture*
+
+| Person | Form |
+|---|---|
+| ich | wage |
+| du | wagst |
+| er/sie/es | wagt |
+| wir | wagen |
+| ihr | wagt |
+| sie/Sie | wagen |
+
+- Perfekt: *hat gewagt* (regelmäßig)
+- *sich (an etwas Akk.) wagen* = to dare to attempt something
+
+> Manchmal muss man etwas Neues wagen, um erfolgreich zu sein.
+> *(Sometimes you have to dare something new in order to be successful.)*
+
+---
+
+**sammeln** *(Erfahrungen sammeln)* — *to collect / to gather*
+
+| Person | Form |
+|---|---|
+| ich | sammle |
+| du | sammelst |
+| er/sie/es | sammelt |
+| wir | sammeln |
+| ihr | sammelt |
+| sie/Sie | sammeln |
+
+- Perfekt: *hat gesammelt* (regelmäßig)
+
+> Während des Studiums habe ich viel Erfahrung gesammelt.
+> *(During my studies I gathered a lot of experience.)*
+
+---
+
+**umsetzen** *(eine Idee umsetzen)* — *to implement / to put into practice*
+- ⚠️ **Trennbares Verb** (um-)
+
+| Person | Form |
+|---|---|
+| ich | setze um |
+| du | setzt um |
+| er/sie/es | setzt um |
+| wir | setzen um |
+| ihr | setzt um |
+| sie/Sie | setzen um |
+
+- Perfekt: *hat umgesetzt*
+- *etwas in die Tat umsetzen* = to put something into action
+
+> Es ist nicht leicht, eine Idee in die Tat umzusetzen.
+> *(It is not easy to put an idea into action.)*
+
+---
+
+**verwirklichen** *(einen Traum verwirklichen)* — *to realise / to make come true*
+
+| Person | Form |
+|---|---|
+| ich | verwirkliche |
+| du | verwirklichst |
+| er/sie/es | verwirklicht |
+| wir | verwirklichen |
+| ihr | verwirklicht |
+| sie/Sie | verwirklichen |
+
+- Perfekt: *hat verwirklicht* (untrennbar, kein *ge-*)
+- *sich verwirklichen* = to fulfil oneself / find self-fulfilment
+
+> Mit viel Mut kann man seine Träume verwirklichen.
+> *(With a lot of courage you can make your dreams come true.)*
+
+---
+
+**planen** *(ein Projekt planen)* — *to plan*
+
+| Person | Form |
+|---|---|
+| ich | plane |
+| du | planst |
+| er/sie/es | plant |
+| wir | planen |
+| ihr | plant |
+| sie/Sie | planen |
+
+- Perfekt: *hat geplant* (regelmäßig)
+
+> Wir planen, im Sommer ein neues Geschäft zu eröffnen.
+> *(We are planning to open a new business in summer.)*
+
+---
+
+**bekommen** *(einen Auftrag bekommen)* — *to get / to receive*
+- ⚠️ **Unregelmäßiges Verb** | untrennbar — kein *ge-* im Perfekt
+
+| Person | Form |
+|---|---|
+| ich | bekomme |
+| du | bekommst |
+| er/sie/es | bekommt |
+| wir | bekommen |
+| ihr | bekommt |
+| sie/Sie | bekommen |
+
+- Perfekt: *hat bekommen*
+
+> Gestern habe ich endlich eine Zusage für den Auftrag bekommen.
+> *(Yesterday I finally got a confirmation for the order.)*
+
+---
+
+#### Adjectives & Adverbs
+
+**freiberuflich** — *freelance / self-employed (in a profession)*
+- *freiberuflich arbeiten / tätig sein* = to work freelance
+- *der/die Freiberufler/in* = freelancer
+- *die Selbstständigkeit* = self-employment
+
+> Viele Designer arbeiten lieber freiberuflich als fest angestellt.
+> *(Many designers prefer to work freelance rather than be permanently employed.)*
+
+---
+
+**fest angestellt** — *permanently employed / on a permanent contract*
+- *fest angestellt sein* = to be in permanent employment
+- *die Festanstellung* = permanent position
+- Opposite: *freiberuflich / selbstständig* = freelance / self-employed
+
+> Nach dem Praktikum wurde sie fest angestellt.
+> *(After the internship she was given a permanent position.)*
+
+---
+
+#### Set Phrases
+
+Common fixed expressions for talking about work, self-employment and goals:
+
+| Phrase | Meaning |
+|---|---|
+| *freiberuflich arbeiten* | to work freelance |
+| *fest angestellt sein* | to be permanently employed |
+| *ein Risiko eingehen* | to take a risk |
+| *etwas Neues wagen* | to dare/venture something new |
+| *Erfahrungen sammeln* | to gain experience |
+| *eine Idee umsetzen* | to implement an idea |
+| *einen Traum verwirklichen* | to realise a dream |
+| *ein Projekt planen* | to plan a project |
+| *einen Auftrag bekommen* | to get an order/commission |
+
+---
+
+### Grammar
+
+---
+
+#### obwohl — "although" (Concessive clause, Nebensatz) — and obwohl vs. trotzdem
+
+**obwohl** introduces a **Nebensatz (subordinate clause)** expressing a **contrast / unexpected concession** ("although / even though"). As with all subordinating conjunctions, the **conjugated verb goes to the end** of the clause:
+
+> **Obwohl** sie wenig Geld **hat**, wagt sie den Schritt in die Selbstständigkeit.
+> *(Although she has little money, she dares to take the step into self-employment.)*
+
+> Er ging das Risiko ein, **obwohl** es gefährlich **war**.
+> *(He took the risk, even though it was dangerous.)*
+
+**obwohl vs. trotzdem — same meaning, different grammar:**
+
+Both express contrast, but they are different word types and need different word order:
+
+| | Type | What follows | Verb position |
+|---|---|---|---|
+| **obwohl** | Subjunktion (Nebensatz) | Subjekt + … + Verb | verb **at the end** |
+| **trotzdem** | Adverb (Hauptsatz) | Verb + Subjekt | verb in **2nd position** |
+
+> **Obwohl** es regnet, gehen wir spazieren. → *(obwohl = subordinate clause, verb last)*
+> Es regnet. **Trotzdem** gehen wir spazieren. → *(trotzdem = adverb, verb 2nd → "gehen" before "wir")*
+
+Both sentences mean *"Although it's raining, we're going for a walk."*
+
+⚠️ After **trotzdem** the verb comes **before** the subject (Inversion), because *trotzdem* fills the first position of a main clause.
+
+---
+
+## Lektion 8 — Gesellschaft, Politik & Engagement (Society, Politics & Civic Engagement)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**der Aktivist / die Aktivistin** (pl. Aktivisten / Aktivistinnen) — *activist*
+- *der Umweltaktivist* = environmental activist
+- *sich für etwas engagieren* = to be committed / active for something
+- *die Aktion* = campaign / action
+
+> Die Aktivistin kämpft seit Jahren für mehr Klimaschutz.
+> *(The activist has been fighting for more climate protection for years.)*
+
+---
+
+**die Pflicht** (pl. Pflichten) — *duty / obligation*
+- *die Schulpflicht* = compulsory schooling
+- *die Pflicht haben, etwas zu tun* = to have the duty to do something
+- Opposite: *das Recht* = right
+- *die Rechte und Pflichten* = rights and duties
+
+> Es ist die Pflicht jedes Bürgers, die Gesetze zu respektieren.
+> *(It is every citizen's duty to respect the laws.)*
+
+---
+
+**der Bürger / die Bürgerin** (pl. Bürger / Bürgerinnen) — *citizen*
+- *der Staatsbürger* = national / citizen of a state
+- *die Bürgerinitiative* = citizens' initiative
+- *bürgerlich* = civic / middle-class (adjective)
+
+> Jeder Bürger hat das Recht zu wählen.
+> *(Every citizen has the right to vote.)*
+
+---
+
+**das Gesetz** (pl. Gesetze) — *law*
+- *ein Gesetz verabschieden / beschließen* = to pass a law
+- *gegen das Gesetz verstoßen* = to break the law
+- *gesetzlich* = legal / by law (adjective)
+
+> Das neue Gesetz schützt die Umwelt besser.
+> *(The new law protects the environment better.)*
+
+---
+
+**die Politik** (kein Plural) — *politics / policy*
+- *der Politiker / die Politikerin* = politician
+- *politisch* = political (adjective)
+- *sich für Politik interessieren* = to be interested in politics
+
+> Viele junge Menschen interessieren sich heute für Politik.
+> *(Many young people today are interested in politics.)*
+
+---
+
+**der Staat** (pl. Staaten) — *state / country*
+- ⚠️ Spelling: **Staat** (state), not *Stadt* (city)!
+- *der Sozialstaat* = welfare state
+- *staatlich* = state-run / public (adjective)
+- *die Vereinigten Staaten* = the United States
+
+> Der Staat muss seine Bürger schützen.
+> *(The state must protect its citizens.)*
+
+---
+
+**die Gesellschaft** (pl. Gesellschaften) — *society*
+- *gesellschaftlich* = social / societal (adjective)
+- *die Gesellschaft verändern* = to change society
+- *ein Mitglied der Gesellschaft* = a member of society
+
+> Jeder kann etwas tun, um die Gesellschaft zu verbessern.
+> *(Everyone can do something to improve society.)*
+
+---
+
+#### Verbs
+
+**schützen** *(etwas/jemanden schützen)* — *to protect*
+
+| Person | Form |
+|---|---|
+| ich | schütze |
+| du | schützt |
+| er/sie/es | schützt |
+| wir | schützen |
+| ihr | schützt |
+| sie/Sie | schützen |
+
+- Perfekt: *hat geschützt* (regelmäßig)
+- zu-Form: *zu schützen*
+
+> Wir alle müssen die Natur schützen.
+> *(We all have to protect nature.)*
+
+---
+
+**weitergeben** *(Informationen weitergeben)* — *to pass on / to forward*
+- ⚠️ **Trennbares Verb** (weiter-) | unregelmäßig (geben)
+
+| Person | Form |
+|---|---|
+| ich | gebe weiter |
+| du | gibst weiter |
+| er/sie/es | gibt weiter |
+| wir | geben weiter |
+| ihr | gebt weiter |
+| sie/Sie | geben weiter |
+
+- Perfekt: *hat weitergegeben*
+- zu-Form: *weiterzugeben* (zu **between** prefix and stem!)
+
+> Es ist wichtig, falsche Nachrichten nicht weiterzugeben.
+> *(It is important not to pass on fake news.)*
+
+---
+
+**informieren** *(jemanden / sich informieren)* — *to inform*
+- ⚠️ *sich informieren über + Akk.* = to inform oneself about
+
+| Person | Form |
+|---|---|
+| ich | informiere |
+| du | informierst |
+| er/sie/es | informiert |
+| wir | informieren |
+| ihr | informiert |
+| sie/Sie | informieren |
+
+- Perfekt: *hat informiert* (untrennbar, kein *ge-*)
+- zu-Form: *zu informieren*
+
+> Es ist die Aufgabe der Medien, die Bürger zu informieren.
+> *(It is the media's task to inform the citizens.)*
+
+---
+
+**hereinfallen** *(auf etwas/jemanden hereinfallen)* — *to fall for / to be taken in / to be fooled*
+- ⚠️ **Trennbares Verb** (herein-) | unregelmäßig (fallen) | Perfekt mit *sein*
+- *auf + Akk. hereinfallen* = to fall for something
+
+| Person | Form |
+|---|---|
+| ich | falle herein |
+| du | fällst herein |
+| er/sie/es | fällt herein |
+| wir | fallen herein |
+| ihr | fallt herein |
+| sie/Sie | fallen herein |
+
+- Perfekt: *ist hereingefallen*
+- zu-Form: *hereinzufallen*
+
+> Man muss aufpassen, um nicht auf Betrüger hereinzufallen.
+> *(You have to be careful not to fall for fraudsters.)*
+
+---
+
+**aufklären** *(jemanden über etwas aufklären)* — *to clarify / to educate / to enlighten*
+- ⚠️ **Trennbares Verb** (auf-)
+
+| Person | Form |
+|---|---|
+| ich | kläre auf |
+| du | klärst auf |
+| er/sie/es | klärt auf |
+| wir | klären auf |
+| ihr | klärt auf |
+| sie/Sie | klären auf |
+
+- Perfekt: *hat aufgeklärt*
+- zu-Form: *aufzuklären*
+- *die Aufklärung* = enlightenment / information / education
+
+> Die Schule hat die Eltern über die Gefahren im Internet aufgeklärt.
+> *(The school informed the parents about the dangers on the internet.)*
+
+---
+
+**löschen** *(etwas löschen)* — *to delete / to extinguish (a fire)*
+
+| Person | Form |
+|---|---|
+| ich | lösche |
+| du | löschst |
+| er/sie/es | löscht |
+| wir | löschen |
+| ihr | löscht |
+| sie/Sie | löschen |
+
+- Perfekt: *hat gelöscht* (regelmäßig)
+- zu-Form: *zu löschen*
+
+> Es ist ratsam, persönliche Daten regelmäßig zu löschen.
+> *(It is advisable to delete personal data regularly.)*
+
+---
+
+**umgehen** *(mit etwas/jemandem umgehen)* — *to deal with / to handle*
+- ⚠️ **Trennbares Verb** (um-) | unregelmäßig | Perfekt mit *sein* | *mit + Dativ*
+
+| Person | Form |
+|---|---|
+| ich | gehe um |
+| du | gehst um |
+| er/sie/es | geht um |
+| wir | gehen um |
+| ihr | geht um |
+| sie/Sie | gehen um |
+
+- Perfekt: *ist umgegangen*
+- zu-Form: *umzugehen*
+
+> Man muss lernen, verantwortungsvoll mit sozialen Medien umzugehen.
+> *(You have to learn to deal responsibly with social media.)*
+
+---
+
+**eingehen** *(auf etwas/ein Risiko eingehen)* — *to enter into / to respond to / to take (a risk)*
+- ⚠️ **Trennbares Verb** (ein-) | unregelmäßig | Perfekt mit *sein* — *(also in Lektion 6)*
+
+| Person | Form |
+|---|---|
+| ich | gehe ein |
+| du | gehst ein |
+| er/sie/es | geht ein |
+| wir | gehen ein |
+| ihr | geht ein |
+| sie/Sie | gehen ein |
+
+- Perfekt: *ist eingegangen*
+- zu-Form: *einzugehen*
+- *auf etwas (Akk.) eingehen* = to respond to / address something
+
+> Es ist wichtig, auf die Meinungen anderer einzugehen.
+> *(It is important to respond to other people's opinions.)*
+
+---
+
+#### Adjectives & Adverbs
+
+**freiwillig** — *voluntary / voluntarily*
+- *freiwillige Arbeit / das Ehrenamt* = voluntary work
+- *sich freiwillig melden* = to volunteer
+- Opposite: *verpflichtend / zwangsweise* = compulsory / obligatory
+
+> Viele Menschen helfen freiwillig in sozialen Projekten.
+> *(Many people help voluntarily in social projects.)*
+
+---
+
+**sozial** — *social*
+- *die soziale Gerechtigkeit* = social justice
+- *soziale Medien* = social media
+- *sozial engagiert sein* = to be socially engaged
+
+> Soziale Projekte unterstützen Menschen in Not.
+> *(Social projects support people in need.)*
+
+---
+
+**ökologisch** — *ecological / environmental*
+- *der ökologische Fußabdruck* = ecological footprint
+- *ökologisch nachhaltig* = ecologically sustainable
+- Synonym context: *umweltfreundlich* = environmentally friendly
+
+> Eine ökologische Lebensweise schützt das Klima.
+> *(An ecological way of life protects the climate.)*
+
+---
+
+### Grammar
+
+---
+
+#### Infinitiv mit "zu" (Infinitive with "zu")
+
+Many German constructions require a verb in the infinitive together with **zu**. The structure is: **…, zu + Infinitiv** (the infinitive goes to the **end** of the clause).
+
+**When do we use Infinitiv mit zu?**
+
+1. After certain **verbs**: *versuchen, beginnen, anfangen, vergessen, vorhaben, aufhören, sich freuen …*
+   > Ich versuche, gesünder **zu leben**. *(I try to live more healthily.)*
+
+2. After **expressions with sein**: *Es ist wichtig / schön / nötig / verboten …*
+   > Es ist wichtig, die Umwelt **zu schützen**. *(It is important to protect the environment.)*
+
+3. After **nouns + haben**: *Lust haben, Zeit haben, die Möglichkeit haben, die Pflicht haben …*
+   > Ich habe keine Zeit, dir **zu helfen**. *(I have no time to help you.)*
+
+4. With **um … zu** (purpose) — see Lektion 6.
+
+**⚠️ Key rule for separable verbs (trennbare Verben):**
+With a separable verb, **zu goes between the prefix and the stem**, written as one word:
+
+| Base verb | Infinitiv mit zu |
+|---|---|
+| schützen | **zu** schützen |
+| sein | **zu** sein |
+| informieren | **zu** informieren |
+| löschen | **zu** löschen |
+| weiter**geben** (sep.) | weiter**zu**geben |
+| herein**fallen** (sep.) | herein**zu**fallen |
+| auf**klären** (sep.) | auf**zu**klären |
+| um**gehen** (sep.) | um**zu**gehen |
+| ein**gehen** (sep.) | ein**zu**gehen |
+
+**Examples:**
+
+> Es ist seine Pflicht, die Bürger **zu informieren**.
+> *(It is his duty to inform the citizens.)*
+
+> Sie hat vor, falsche Nachrichten nicht **weiterzugeben**.
+> *(She intends not to pass on fake news.)*
+
+> Wir lernen, verantwortungsvoll mit Daten **umzugehen**.
+> *(We learn to deal responsibly with data.)*
+
+**❌ No "zu" after:** modal verbs (*können, müssen, wollen …*) and *werden* (future).
+> Ich muss die Daten **löschen**. ✅ (not: ~~zu löschen~~)
+
+---
+
+## Lektion 10 — Arbeit, Karriere & Kompetenzen (Work, Career & Skills)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**die Arbeitsstelle** (pl. Arbeitsstellen) — *job / position / workplace*
+- *eine Arbeitsstelle suchen / finden* = to look for / find a job
+- Synonyms: *die Stelle, der Arbeitsplatz, der Job*
+- *eine Arbeitsstelle antreten* = to start a job
+
+> Sie hat eine neue Arbeitsstelle in einer großen Firma gefunden.
+> *(She found a new job in a big company.)*
+
+---
+
+**das Einkommen** (pl. Einkommen) — *income*
+- *ein hohes / niedriges Einkommen* = a high / low income
+- *das monatliche Einkommen* = monthly income
+- cf. *das Gehalt* (salary), *der Lohn* (wage)
+
+> Mit diesem Einkommen kann man gut leben.
+> *(You can live well on this income.)*
+
+---
+
+**die Karriere** (pl. Karrieren) — *career*
+- *Karriere machen* = to climb the career ladder / be successful
+- *die Karrierechance* = career opportunity
+- *der Karriereweg* = career path
+
+> Er will im Ausland Karriere machen.
+> *(He wants to build a career abroad.)*
+
+---
+
+**die Berufserfahrung** (kein Plural) — *professional / work experience*
+- *Berufserfahrung sammeln* = to gain work experience
+- *mehrjährige Berufserfahrung* = several years of work experience
+- cf. *die Erfahrung* (experience, Lektion 6)
+
+> Für diese Stelle braucht man mindestens drei Jahre Berufserfahrung.
+> *(For this position you need at least three years of work experience.)*
+
+---
+
+**die Kündigung** (pl. Kündigungen) — *termination / notice / resignation / dismissal*
+- *die Kündigung einreichen* = to hand in one's notice (employee)
+- *jemandem kündigen* = to dismiss someone (employer)
+- *die Kündigungsfrist* = period of notice
+
+> Nach der Kündigung suchte er sofort eine neue Stelle.
+> *(After the termination he immediately looked for a new position.)*
+
+---
+
+**die Verantwortung** (pl. Verantwortungen) — *responsibility*
+- *Verantwortung übernehmen / tragen* = to take / bear responsibility
+- *verantwortlich sein für + Akk.* = to be responsible for
+- *verantwortungsvoll* = responsible (adjective)
+
+> In dieser Position trägt man viel Verantwortung.
+> *(In this position you carry a lot of responsibility.)*
+
+---
+
+**die Weiterbildung** (pl. Weiterbildungen) — *further training / continuing education*
+- *eine Weiterbildung machen* = to do a further-training course
+- *sich weiterbilden* = to continue one's education
+- cf. *die Fortbildung* (in-service training)
+
+> Mein Arbeitgeber bezahlt eine Weiterbildung in Projektmanagement.
+> *(My employer is paying for further training in project management.)*
+
+---
+
+**die Herausforderung** (pl. Herausforderungen) — *challenge*
+- *eine Herausforderung annehmen / meistern* = to take on / master a challenge
+- *herausfordernd* = challenging (adjective)
+- *jemanden herausfordern* = to challenge someone
+
+> Ein neuer Job ist immer eine spannende Herausforderung.
+> *(A new job is always an exciting challenge.)*
+
+---
+
+**die Mitbestimmung** (kein Plural) — *co-determination / having a say / participation*
+- *das Recht auf Mitbestimmung* = the right to have a say
+- *mitbestimmen* = to have a say / participate in decisions
+- Common in workplace contexts (Betriebsrat = works council)
+
+> Die Mitarbeiter haben ein Recht auf Mitbestimmung im Betrieb.
+> *(The employees have a right to a say in the company.)*
+
+---
+
+**die Kritik** (pl. Kritiken) — *criticism / critique*
+- *Kritik üben (an + Dat.)* = to criticise
+- *konstruktive Kritik* = constructive criticism
+- *kritisieren* = to criticise (verb); *kritisch* = critical (adj.)
+
+> Konstruktive Kritik hilft uns, besser zu werden.
+> *(Constructive criticism helps us to improve.)*
+
+---
+
+**das Feedback** (pl. Feedbacks) — *feedback*
+- *Feedback geben / bekommen* = to give / receive feedback
+- *positives / negatives Feedback* = positive / negative feedback
+- Synonym: *die Rückmeldung*
+
+> Mein Chef gibt mir jede Woche Feedback zu meiner Arbeit.
+> *(My boss gives me feedback on my work every week.)*
+
+---
+
+**der Treffpunkt** (pl. Treffpunkte) — *meeting point / meeting place*
+- *einen Treffpunkt vereinbaren* = to arrange a meeting point
+- *sich treffen* = to meet
+- *das Treffen* = the meeting
+
+> Der Bahnhof ist ein guter Treffpunkt für uns.
+> *(The station is a good meeting point for us.)*
+
+---
+
+**der Vorschlag** (pl. Vorschläge) — *suggestion / proposal*
+- *einen Vorschlag machen* = to make a suggestion
+- *einen Vorschlag annehmen / ablehnen* = to accept / reject a proposal
+- *vorschlagen* = to suggest (verb)
+
+> Ich habe einen Vorschlag, wie wir das Problem lösen können.
+> *(I have a suggestion for how we can solve the problem.)*
+
+---
+
+**die Voraussetzung** (pl. Voraussetzungen) — *prerequisite / requirement / precondition*
+- *eine Voraussetzung erfüllen* = to meet a requirement
+- *unter der Voraussetzung, dass …* = on the condition that …
+- *voraussetzen* = to presuppose / require
+
+> Ein Hochschulabschluss ist eine Voraussetzung für diese Stelle.
+> *(A university degree is a prerequisite for this position.)*
+
+---
+
+**die Fähigkeit** (pl. Fähigkeiten) — *ability / skill*
+- *eine Fähigkeit haben / besitzen* = to have a skill
+- *soziale Fähigkeiten* = social skills
+- *fähig sein, etwas zu tun* = to be able / capable of doing something
+
+> Teamarbeit erfordert gute kommunikative Fähigkeiten.
+> *(Teamwork requires good communication skills.)*
+
+---
+
+**der Faktor** (pl. Faktoren) — *factor*
+- *ein wichtiger / entscheidender Faktor* = an important / decisive factor
+- *eine Rolle spielen* = to play a role
+
+> Das Gehalt ist nicht der einzige Faktor bei der Jobwahl.
+> *(Salary is not the only factor when choosing a job.)*
+
+---
+
+**die Selbstbestimmung** (kein Plural) — *self-determination / autonomy*
+- *selbstbestimmt leben / arbeiten* = to live / work self-determinedly
+- *die Selbstständigkeit* = independence / self-employment
+- cf. *die Mitbestimmung* (co-determination)
+
+> Viele Menschen wünschen sich mehr Selbstbestimmung im Beruf.
+> *(Many people wish for more self-determination at work.)*
+
+---
+
+#### Verbs
+
+**dauern** *(etwas dauert)* — *to last / to take (time)*
+
+| Person | Form |
+|---|---|
+| ich | dauere |
+| du | dauerst |
+| er/sie/es | dauert |
+| wir | dauern |
+| ihr | dauert |
+| sie/Sie | dauern |
+
+- Perfekt: *hat gedauert* (regelmäßig)
+- Most often used in the 3rd person: *Es dauert lange.*
+
+> Die Besprechung hat zwei Stunden gedauert.
+> *(The meeting lasted two hours.)*
+
+---
+
+**einteilen** *(etwas einteilen)* — *to divide up / to organise / to schedule*
+- ⚠️ **Trennbares Verb** (ein-)
+
+| Person | Form |
+|---|---|
+| ich | teile ein |
+| du | teilst ein |
+| er/sie/es | teilt ein |
+| wir | teilen ein |
+| ihr | teilt ein |
+| sie/Sie | teilen ein |
+
+- Perfekt: *hat eingeteilt*
+- *sich (Dat.) die Zeit einteilen* = to manage / organise one's time
+
+> Man muss lernen, sich seine Zeit gut einzuteilen.
+> *(You have to learn to manage your time well.)*
+
+---
+
+**begreifen** *(etwas begreifen)* — *to grasp / to understand / to comprehend*
+- ⚠️ **Unregelmäßiges Verb** | untrennbar — kein *ge-* | Präteritum: *begriff*
+
+| Person | Form |
+|---|---|
+| ich | begreife |
+| du | begreifst |
+| er/sie/es | begreift |
+| wir | begreifen |
+| ihr | begreift |
+| sie/Sie | begreifen |
+
+- Perfekt: *hat begriffen*
+
+> Endlich habe ich begriffen, wie das System funktioniert.
+> *(I have finally grasped how the system works.)*
+
+---
+
+**verlassen** *(jemanden / etwas verlassen)* — *to leave; (sich verlassen auf) to rely on*
+- ⚠️ **Unregelmäßiges Verb** | untrennbar | Präteritum: *verließ*
+
+| Person | Form |
+|---|---|
+| ich | verlasse |
+| du | verlässt |
+| er/sie/es | verlässt |
+| wir | verlassen |
+| ihr | verlasst |
+| sie/Sie | verlassen |
+
+- Perfekt: *hat verlassen*
+- *sich verlassen auf + Akk.* = to rely / depend on
+
+> Er hat die Firma nach zehn Jahren verlassen.
+> *(He left the company after ten years.)*
+> Du kannst dich auf mich verlassen.
+> *(You can rely on me.)*
+
+---
+
+#### Adjectives & Adverbs
+
+**sinnvoll** — *sensible / meaningful / useful*
+- Komparativ: sinnvoller
+- Superlativ: am sinnvollsten
+- Opposite: *sinnlos* = pointless / meaningless
+
+> Es ist sinnvoll, einen Plan zu machen, bevor man beginnt.
+> *(It is sensible to make a plan before you start.)*
+
+---
+
+**weitgehend** — *largely / to a great extent / extensive*
+- Used as adverb: *weitgehend selbstständig* = largely independent
+- Synonym: *größtenteils* = for the most part
+
+> Die Mitarbeiter arbeiten weitgehend selbstständig.
+> *(The employees work largely independently.)*
+
+---
+
+**neulich** — *recently / the other day*
+- ⚠️ Adverb (no comparison forms)
+- Refers to a recent point in the past
+- cf. *kürzlich* = recently (synonym)
+
+> Neulich hatte ich ein interessantes Gespräch mit meinem Chef.
+> *(The other day I had an interesting conversation with my boss.)*
+
+---
+
+### Grammar
+
+---
+
+#### Temporale Konnektoren: seit, bis, bevor, während (Temporal subordinate clauses)
+
+These four conjunctions introduce a **Nebensatz (subordinate clause)**, so the **conjugated verb goes to the end**. They tell us *when* something happens in relation to the main clause.
+
+**seit / seitdem — "since" (no end)**
+An action or state that **started in the past and still continues** — *there is no end yet.* (Memory aid: **Seit → es gibt kein Ende.**)
+> **Seit** ich in Berlin **wohne**, habe ich viele neue Freunde.
+> *(Since I have been living in Berlin, I have made many new friends.)*
+
+**bis — "until" (up to an end point)**
+The action of the main clause continues **up to a point/end**. (Memory aid: **Bis → wir kennen den Start nicht**, only the end point matters.)
+> Ich warte hier, **bis** der Chef **kommt**.
+> *(I'll wait here until the boss comes.)*
+
+**bevor — "before"**
+The Nebensatz action happens **after** the main clause (main clause first in time).
+> **Bevor** ich eine Entscheidung **treffe**, frage ich mein Team.
+> *(Before I make a decision, I ask my team.)*
+
+**während — "while / during"**
+Two actions happen **at the same time** (simultaneously).
+> **Während** ich **arbeite**, höre ich oft Musik.
+> *(While I am working, I often listen to music.)*
+
+⚠️ **Note:** *während* can also be a **preposition + Genitiv**: *während der Arbeit* = during work. As a conjunction (above) it needs a full clause with the verb at the end.
+
+**Word order reminder (Nebensatz first):**
+> **Bevor / Während / Seit / Bis** + Subjekt + … + **Verb (Ende)**, + **Verb** + Subjekt (Hauptsatz).
+> *(When the Nebensatz comes first, the main clause starts with its verb — Inversion.)*
+
+---
+
+## Lektion 12 — Kochen & Zubereitung (Cooking & Food Preparation)
+
+### Vocabulary
+
+---
+
+#### Verbs
+
+**aufwärmen** *(etwas aufwärmen)* — *to warm up / to reheat*
+- ⚠️ **Trennbares Verb** (auf-) | regelmäßig
+
+| Person | Form |
+|---|---|
+| ich | wärme auf |
+| du | wärmst auf |
+| er/sie/es | wärmt auf |
+| wir | wärmen auf |
+| ihr | wärmt auf |
+| sie/Sie | wärmen auf |
+
+- Perfekt: *hat aufgewärmt*
+
+> Ich wärme die Suppe von gestern in der Mikrowelle auf.
+> *(I'm reheating yesterday's soup in the microwave.)*
+
+---
+
+**backen** *(Kuchen / Brot backen)* — *to bake*
+- ⚠️ **Unregelmäßiges Verb** | Präteritum: *backte / buk* | Partizip II: *gebacken*
+
+| Person | Form |
+|---|---|
+| ich | backe |
+| du | bäckst (auch: backst) |
+| er/sie/es | bäckt (auch: backt) |
+| wir | backen |
+| ihr | backt |
+| sie/Sie | backen |
+
+- Perfekt: *hat gebacken*
+- *der Backofen* = oven · *die Bäckerei* = bakery
+
+> Meine Oma hat einen leckeren Apfelkuchen gebacken.
+> *(My grandma baked a delicious apple cake.)*
+
+---
+
+**braten** *(Fleisch / Eier braten)* — *to fry / to roast (in a pan)*
+- ⚠️ **Unregelmäßiges Verb** | Präteritum: *briet* | Partizip II: *gebraten*
+
+| Person | Form |
+|---|---|
+| ich | brate |
+| du | brätst |
+| er/sie/es | brät |
+| wir | braten |
+| ihr | bratet |
+| sie/Sie | braten |
+
+- Perfekt: *hat gebraten*
+- *die Bratpfanne* = frying pan
+
+> Sie brät das Steak in der Pfanne mit etwas Öl.
+> *(She is frying the steak in the pan with a little oil.)*
+
+---
+
+**grillen** *(Fleisch / Gemüse grillen)* — *to grill / to barbecue*
+
+| Person | Form |
+|---|---|
+| ich | grille |
+| du | grillst |
+| er/sie/es | grillt |
+| wir | grillen |
+| ihr | grillt |
+| sie/Sie | grillen |
+
+- Perfekt: *hat gegrillt* (regelmäßig)
+- *der Grill* = grill / barbecue
+
+> Im Sommer grillen wir oft im Garten.
+> *(In summer we often grill in the garden.)*
+
+---
+
+**hacken** *(Zwiebeln / Kräuter hacken)* — *to chop (finely)*
+
+| Person | Form |
+|---|---|
+| ich | hacke |
+| du | hackst |
+| er/sie/es | hackt |
+| wir | hacken |
+| ihr | hackt |
+| sie/Sie | hacken |
+
+- Perfekt: *hat gehackt* (regelmäßig)
+- *das Hackfleisch* = minced meat
+
+> Bitte hack die Zwiebeln ganz klein.
+> *(Please chop the onions very finely.)*
+
+---
+
+**kochen** *(etwas kochen)* — *to cook / to boil*
+
+| Person | Form |
+|---|---|
+| ich | koche |
+| du | kochst |
+| er/sie/es | kocht |
+| wir | kochen |
+| ihr | kocht |
+| sie/Sie | kochen |
+
+- Perfekt: *hat gekocht* (regelmäßig)
+- *das Wasser kocht* = the water is boiling
+
+> Heute koche ich Nudeln mit Tomatensoße.
+> *(Today I'm cooking pasta with tomato sauce.)*
+
+---
+
+**mixen** *(Zutaten mixen)* — *to mix / to blend*
+
+| Person | Form |
+|---|---|
+| ich | mixe |
+| du | mixt |
+| er/sie/es | mixt |
+| wir | mixen |
+| ihr | mixt |
+| sie/Sie | mixen |
+
+- Perfekt: *hat gemixt* (regelmäßig)
+- *der Mixer* = blender · Synonym: *mischen, verrühren*
+
+> Ich mixe Obst und Joghurt zu einem Smoothie.
+> *(I'm blending fruit and yoghurt into a smoothie.)*
+
+---
+
+**reiben** *(Käse / Karotten reiben)* — *to grate / to rub*
+- ⚠️ **Unregelmäßiges Verb** | Präteritum: *rieb* | Partizip II: *gerieben*
+
+| Person | Form |
+|---|---|
+| ich | reibe |
+| du | reibst |
+| er/sie/es | reibt |
+| wir | reiben |
+| ihr | reibt |
+| sie/Sie | reiben |
+
+- Perfekt: *hat gerieben*
+- *die Reibe* = grater · *geriebener Käse* = grated cheese
+
+> Reib bitte etwas Parmesan über die Pasta.
+> *(Please grate some parmesan over the pasta.)*
+
+---
+
+**schälen** *(Obst / Kartoffeln schälen)* — *to peel*
+
+| Person | Form |
+|---|---|
+| ich | schäle |
+| du | schälst |
+| er/sie/es | schält |
+| wir | schälen |
+| ihr | schält |
+| sie/Sie | schälen |
+
+- Perfekt: *hat geschält* (regelmäßig)
+- *der Schäler / der Sparschäler* = peeler · *die Schale* = peel / skin
+
+> Vor dem Kochen muss man die Kartoffeln schälen.
+> *(Before cooking you have to peel the potatoes.)*
+
+---
+
+**schneiden** *(etwas schneiden)* — *to cut / to slice*
+- ⚠️ **Unregelmäßiges Verb** | Präteritum: *schnitt* | Partizip II: *geschnitten*
+
+| Person | Form |
+|---|---|
+| ich | schneide |
+| du | schneidest |
+| er/sie/es | schneidet |
+| wir | schneiden |
+| ihr | schneidet |
+| sie/Sie | schneiden |
+
+- Perfekt: *hat geschnitten*
+- *in Scheiben / Würfel schneiden* = to cut into slices / cubes
+
+> Schneide das Brot bitte in dünne Scheiben.
+> *(Please cut the bread into thin slices.)*
+
+---
+
+**zubereiten** *(etwas / etwas roh zubereiten)* — *to prepare (food)*
+- ⚠️ **Trennbares Verb** (zu-) | regelmäßig
+- *roh zubereiten* = to prepare raw (without cooking)
+
+| Person | Form |
+|---|---|
+| ich | bereite zu |
+| du | bereitest zu |
+| er/sie/es | bereitet zu |
+| wir | bereiten zu |
+| ihr | bereitet zu |
+| sie/Sie | bereiten zu |
+
+- Perfekt: *hat zubereitet*
+- *die Zubereitung* = preparation
+
+> Diesen Salat kann man ganz einfach roh zubereiten.
+> *(You can prepare this salad very easily raw / without cooking.)*
+
+---
+
+#### Adjectives & Adverbs
+
+**roh** — *raw / uncooked*
+- *rohes Fleisch / rohes Gemüse* = raw meat / raw vegetables
+- *etwas roh essen* = to eat something raw
+- Opposite: *gekocht* (cooked), *gar* (done / cooked through)
+
+> Manche Pilze darf man nicht roh essen.
+> *(Some mushrooms must not be eaten raw.)*
+
+---
+
+#### Cooking-Verb Quick Reference
+
+| Verb | Meaning | Method |
+|---|---|---|
+| *aufwärmen* | to reheat | warming up leftovers |
+| *backen* | to bake | in the oven |
+| *braten* | to fry / roast | in a pan with fat |
+| *grillen* | to grill / barbecue | on a grill |
+| *hacken* | to chop finely | with a knife |
+| *kochen* | to cook / boil | in water |
+| *mixen* | to mix / blend | with a blender |
+| *reiben* | to grate | with a grater |
+| *schälen* | to peel | removing skin |
+| *schneiden* | to cut / slice | with a knife |
+| *zubereiten* | to prepare | general preparation |
+
+---
+
+### Grammar
+
+---
+
+#### dass, so … dass, sodass (Consequence / Result clauses)
+
+All of these introduce a **Nebensatz**, so the **conjugated verb goes to the end**. *so … dass* and *sodass* both express a **consequence / result (die Folge)**.
+
+**1) dass — "that" (general subordinating conjunction)**
+Used after verbs of saying, thinking, feeling: *sagen, denken, glauben, wissen, hoffen …*
+> Ich glaube, **dass** das Essen gleich fertig **ist**.
+> *(I think that the food is almost ready.)*
+
+**2) so + Adjektiv/Adverb + dass — "so … that"**
+Use this when the consequence depends on a **specific quality (adjective/adverb)** in the main clause. The *so* sits **directly before that adjective/adverb**.
+> Das Essen war **so** heiß, **dass** ich mir die Zunge verbrannt **habe**.
+> *(The food was so hot that I burned my tongue.)*
+> Sie hat **so** schnell geschnitten, **dass** sie sich fast verletzt **hätte**.
+> *(She cut so fast that she almost hurt herself.)*
+
+> 💡 *Merksatz:* **Wenn der Nebensatz die Folge einer einzelnen Information (Adjektiv/Adverb) im Hauptsatz nennt → so … dass.**
+
+**3) sodass (= so dass) — "so that / with the result that"**
+Use this when the consequence refers to the **whole main clause**, not just one word. The *sodass* stands together at the start of the Nebensatz.
+> Er hat das Gemüse klein geschnitten, **sodass** es schneller gar **wurde**.
+> *(He cut the vegetables small, so that they cooked faster.)*
+> Ich habe zu viel gekocht, **sodass** noch etwas für morgen übrig **ist**.
+> *(I cooked too much, so that there's some left for tomorrow.)*
+
+> 💡 *Merksatz:* **Bezieht sich die Folge auf den gesamten Hauptsatz → sodass.**
+
+**Quick contrast:**
+
+| | Refers to | Position of "so" |
+|---|---|---|
+| **so … dass** | one adjective/adverb | *so* before the adjective/adverb |
+| **sodass** | the whole main clause | *sodass* together at clause start |
+
+---
+
 ## Lektion 13 — Tiere (Animals)
 
 
@@ -6523,6 +8017,47 @@ Perfekt: **hat vorausgesagt**
 
 ---
 
+**überfordert** — *overwhelmed*
+- Past participle of *überfordern* (to demand too much of / to overwhelm)
+- *überfordert sein* = to be overwhelmed / to have too much on one's plate
+- Opposite: *unterfordert* = under-challenged
+
+> Nach der Prüfung und dem Umzug fühlt er sich völlig überfordert.
+> *(After the exam and the move, he feels completely overwhelmed.)*
+
+---
+
+**verunsichert** — *unsettled / uncertain*
+- Past participle of *verunsichern* (to unsettle / to make uncertain)
+- *verunsichert sein* = to feel uncertain or shaken
+- Related: *die Unsicherheit* = uncertainty, *unsicher* = unsure
+
+> Die neuen Regeln haben viele Studenten verunsichert.
+> *(The new rules left many students unsettled.)*
+
+---
+
+**herausfordernd** — *challenging / demanding*
+- Present participle of *herausfordern*, used as adjective
+- *etwas herausfordernd finden* = to find something challenging
+- Related: *die Herausforderung* = the challenge
+
+> Die Aufgabe war schwierig, aber herausfordernd auf eine gute Art.
+> *(The task was difficult, but challenging in a good way.)*
+
+---
+
+**anstrengend** — *exhausting / tiring / strenuous*
+- Present participle of *anstrengen* (to tire out / to strain)
+- *körperlich anstrengend* = physically demanding
+- *sich anstrengen* = to make an effort / to exert oneself
+- Related: *die Anstrengung* = effort, exertion
+
+> Diese Arbeit ist sehr anstrengend, aber sie lohnt sich.
+> *(This work is very exhausting, but it's worth it.)*
+
+---
+
 ### Grammar
 
 ---
@@ -7484,5 +9019,1753 @@ Which verb does **not** fit? (✅ = correct combinations)
 | **✅** | c | c | b | b | b | c | a | a | a | b |
 
 1 **weil** · 2 **vor** (= ago) · 3 **Dafür** · 4 **musste** · 5 **freundlichen** (zu + Dativ) · 6 **mir** (Fragen stellen + Dativ) · 7 **ausfüllen** (modal + bare Inf.) · 8 **für** · 9 **dem** (auf dem Arbeitsmarkt) · 10 **was**.
+
+---
+
+## Exam Strategy — Sprachbausteine Teil 2: Lückentext mit Wortliste (Gap Text with Word List)
+
+> **Thema des Kapitels:** *Wohnen* (Living / housing).
+> Schwerpunkt: **Wortschatz**.
+
+### Format & Vorgehensweise
+
+- An email with **10 gaps**; below it **15 options (a–o)** in CAPITALS — **10 correct, 5 distractors**.
+- Each word used **only once**.
+- **Zeit:** ca. 20 Min · **Bewertung:** 1,5 Punkte pro Item = 15 Punkte. Always tick something.
+
+**Steps:** ① Read for overview. ② Fill obvious gaps. ③ For each gap decide the **word type** (Nomen / Verb / Adjektiv / Adverb / Konnektor / Präposition), then use grammar clues (article + gender, adjective ending, preposition, verb position). ④ The option forms are fixed — the ending must already match.
+
+### Clue checklist
+- **Noun:** the article/ending before the gap reveals gender — *ein schöner ___* → masculine (BALKON, not TERRASSE).
+- **Adjective:** must fit meaning **and** ending must match the case — *eine neue Küche*, *an der frischen Luft*.
+- **Verb:** correct tense + conjugation — Perfekt (hat ge…t), Futur (werden … + Inf.), Konjunktiv II (könnten).
+- **Adverb:** time/place context — zuerst → dann; noch nie; zuletzt.
+- **Connector:** verb position — *deshalb* (verb 2nd) vs *dass* (verb at end).
+
+---
+
+### Wohnen — Vocabulary (Ex. 1 crossword)
+
+| German | English |
+|---|---|
+| das Kissen (pl. Kissen) | cushion / pillow |
+| der Spiegel (pl. Spiegel) | mirror |
+| einrichten | to furnish / decorate |
+| die Badewanne (pl. -wannen) | bathtub |
+| die Couch (pl. Couches) | couch / sofa |
+| der Schreibtisch (pl. -e) | desk |
+| schick | chic / stylish |
+| umziehen (sep., ist umgezogen) | to move house |
+| gebraucht | used / second-hand |
+| die Lampe (pl. Lampen) | lamp |
+| gehören (+ Dativ) | to belong to someone |
+
+**Useful collocations (Ex. 1b):** Rücksicht **nehmen** auf · Fehler **machen** · meiner Meinung **nach** · einen Vertrag **unterschreiben** · Zeit **verbringen** · herum**liegen** · sich **konzentrieren auf** · mitten **im** Zentrum.
+
+---
+
+### Exercise Answer Keys
+
+**Ex. 1b (underline):** 1 nehmen · 2 mache · 3 Leider · 4 nach · 5 Vertrag · 6 Zeit · 7 liegt · 8 für · 9 konzentrieren · 10 im.
+
+**Ex. 2 ("Liebe Sofia"):** 1 **b** SCHICKES · 2 **a** COUCH · 3 **d** SCHREIBTISCH · 4 **f** EINGERICHTET. *(Don't fit: KLEINE, VERMIETET. Tipp-matching: A→2, B→1, C→3, D→4.)*
+
+**Ex. 3a/3b:** 1 AN · 2 INNENSTADT · 3 WICHTIG · 4 ZU · 5 BUNTEN.
+
+**Ex. 4a (nouns):** ABLENKUNG, BLICK, ERNTE, KISSEN, ORDNUNG, POSITION, SCHATTEN, ZUHAUSE. *(Verbs: BLÜHEN, GEHÖREN, WACHSEN · Adjectives: HART, LEBENSWERT, PRAKTISCH, STÄNDIG.)*
+**Ex. 4b (word type):** 1 Nomen · 2 Adjektiv · 3 Verb.
+**Ex. 4c:** 1 **c** Kissen · 2 **b** Schatten · 3 **a** Stelle · 4 **c** Zuhause.
+
+**Ex. 4d ("Lieber Tim") — adjective endings:**
+
+| Gap | ✅ | Ending rule |
+|---|---|---|
+| 1 das ___ Zimmer | **freie** | das + Akk. neut. → -e |
+| 2 Unser ___ Gespräch | **gestriges** | unser + neut. → -es |
+| 3 auf eurem ___ Bauernhof | **wunderschönen** | eurem + Dat. masc. → -en |
+| 4 ein sehr ___ Zuhause | **gemütliches** | ein + neut. → -es |
+| 5 als ___ Kind | **kleines** | no article, neut. → -es |
+| 6 an der ___ Luft | **frischen** | fixed phrase |
+| 7 Anbau von ___ Gemüse | **verschiedenem** | von + Dat. neut. → -em |
+| 8 das ___ Leben | **stressige** | das + Akk. neut. → -e |
+| 9 aus der ___ Großstadt | **lauten** | der + Dat. fem. → -en |
+| 10 einen ___ Umzug | **möglichen** | einen + Akk. masc. → -en |
+
+**Ex. e (verb forms):** 1 Hast … gearbeitet · 2 finden · 3 kann · 4 hatte · 5 hat … ausgetauscht · 6 werden … ernten · 7 gefällt · 8 könnten.
+
+**Ex. f (adverbs):** 1 BALD · 2 NOCH NIE · 3 ZULETZT · 4 SPÄT · 5 ZUERST · 6 DANN. *(Distractors: FRÜH, JETZT, SCHON OFT, SPÄTER, WEIT.)*
+
+**Ex. 5 — Prüfungsaufgabe ("Sehr geehrter Herr Bauer"):**
+
+| Gap | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| **✅** | l | f | c | b | o | d | h | e | m | i |
+
+1 **UNSER** · 2 **LIEGT** · 3 **BEFINDET** (sich befinden) · 4 **BALKON** (masc.; Terrasse = distractor) · 5 **ZUR** (Wohnung gehört) · 6 **DASS** · 7 **NEUE** (Küche, -e) · 8 **DESHALB** · 9 **WANN** · 10 **PASSENDEN** (Termin, -en).
+*Distractors (5): BALD, MIT, SELBST, TERRASSE, WELCHE.*
+
+---
+
+## Exam Strategy — Hören Teil 1: 5 kurze Texte (richtig/falsch)
+
+> **Thema des Kapitels:** *Vielfalt* (Diversity / migration).
+> Schwerpunkt: **Globalverstehen** (gist).
+> *(No audio here — the answers below are only for the text-based exercises; the Prüfungsaufgabe needs the recording.)*
+
+### Format & Vorgehensweise
+
+- You hear **5 short texts** on one theme; for each, decide whether **one statement** is **richtig (✓)** or **falsch (✗)**.
+- A short **intro** gives the theme. Each text is heard **only once**.
+- **30 seconds** to read the 5 statements first.
+- **Zeit:** ca. 6 Min · **Bewertung:** 5 Punkte pro Antwort = 25 Punkte. No minus points — always mark something.
+
+### Key tips
+- Underline **keywords** in each statement during the 30 sec.
+- Guess the theme while reading; the intro confirms it.
+- The text uses **different words** than the statement — synonyms, paraphrases, or the **opposite**. Match meaning, not words.
+- Each statement covers the **whole text**, not a detail.
+- Use the pause between texts to read the next statement.
+- Don't panic over unknown words — get the core message.
+
+---
+
+### Vielfalt / Migration — Vocabulary (full)
+
+#### Nouns
+
+**der Einwanderer** (pl. die Einwanderer) — *immigrant* — (female: die Einwanderin, pl. -innen)
+> Viele Einwanderer kommen aus politischen Gründen nach Deutschland.
+> *(Many immigrants come to Germany for political reasons.)*
+
+**der Migrant** (pl. die Migranten) — *migrant* — (n-declension; female: die Migrantin, pl. -innen)
+> Migranten bekommen in Deutschland oft Unterstützung bei der Integration.
+> *(Migrants often get support with integration in Germany.)*
+
+**die Herkunft** (pl. die Herkünfte) — *origin / background*
+> Wegen meiner ausländischen Herkunft bekomme ich oft keine Wohnung.
+> *(Because of my foreign origin I often don't get a flat.)*
+
+**die Heimat** (meist Singular) — *homeland / home*
+> Von Anfang an habe ich mich in der neuen Heimat wohlgefühlt.
+> *(From the start I felt comfortable in my new homeland.)*
+
+**das Heimatland** (pl. die Heimatländer) — *home country*
+> Er musste wegen der politischen Lage sein Heimatland verlassen.
+> *(He had to leave his home country because of the political situation.)*
+
+**die Integration** (kein Plural) — *integration*
+> Sprache ist der Schlüssel zur Integration.
+> *(Language is the key to integration.)*
+
+**die Vielfalt** (kein Plural) — *diversity / variety*
+> Alle Menschen sollten in ihrer Vielfalt anerkannt werden.
+> *(All people should be recognised in their diversity.)*
+
+**die Gleichheit** (kein Plural) — *equality*
+> Artikel 3 betont die Gleichheit aller Menschen vor dem Gesetz.
+> *(Article 3 emphasises the equality of all people before the law.)*
+
+**die Gleichberechtigung** (kein Plural) — *equal rights / equality*
+> Gleichberechtigung bedeutet, dass Männer und Frauen die gleichen Rechte haben.
+> *(Equal rights means men and women have the same rights.)*
+
+**die Chancengleichheit** (kein Plural) — *equality of opportunity*
+> Chancengleichheit ist der Weg zu einer fairen Gesellschaft.
+> *(Equal opportunity is the path to a fair society.)*
+
+**die Chance** (pl. die Chancen) — *chance / opportunity*
+> Faire Chancen für alle sind noch nicht Wirklichkeit geworden.
+> *(Fair opportunities for everyone have not yet become reality.)*
+
+**die Diskriminierung** (pl. die Diskriminierungen) — *discrimination*
+> Leider erlebt man im Alltag immer wieder Diskriminierung.
+> *(Unfortunately, you repeatedly experience discrimination in everyday life.)*
+
+**die Toleranz** (kein Plural) — *tolerance*
+> Die Toleranz von kulturellen Unterschieden ist wichtig für das Zusammenleben.
+> *(Tolerance of cultural differences is important for living together.)*
+
+**der Rassist** (pl. die Rassisten) — *racist* — (n-declension; female: die Rassistin)
+> Ein Rassist behandelt Menschen wegen ihrer Herkunft schlechter.
+> *(A racist treats people worse because of their origin.)*
+
+**die Förderung** (pl. die Förderungen) — *support / funding / promotion*
+> Der Staat ist für die Förderung benachteiligter Menschen verantwortlich.
+> *(The state is responsible for supporting disadvantaged people.)*
+
+**der Schutz** (kein Plural) — *protection*
+> Die Grundrechte bilden die Grundlage für den Schutz vor Diskriminierung.
+> *(Basic rights form the foundation for protection from discrimination.)*
+
+**die Behinderung** (pl. die Behinderungen) — *disability*
+> Niemand darf wegen seiner Behinderung diskriminiert werden.
+> *(No one may be discriminated against because of their disability.)*
+
+**das Geschlecht** (pl. die Geschlechter) — *gender / sex*
+> Niemand darf wegen seines Geschlechts benachteiligt werden.
+> *(No one may be disadvantaged because of their gender.)*
+
+**die Abstammung** (pl. die Abstammungen) — *descent / ancestry*
+> Diskriminierung wegen der Abstammung ist verboten.
+> *(Discrimination based on ancestry is forbidden.)*
+
+**der Glaube** (kein Plural; Genitiv: des Glaubens) — *faith / belief*
+> Jeder darf seinen Glauben frei leben.
+> *(Everyone may practise their faith freely.)*
+
+**die Weltanschauung** (pl. die Weltanschauungen) — *worldview / ideology*
+> Diskriminierung aufgrund der Weltanschauung ist nicht erlaubt.
+> *(Discrimination on the basis of worldview is not allowed.)*
+
+**das Grundrecht** (pl. die Grundrechte) — *basic / fundamental right*
+> Die Grundrechte sind im Grundgesetz festgelegt.
+> *(Fundamental rights are laid down in the Basic Law.)*
+
+**das Grundgesetz** (kein Plural) — *Basic Law (German constitution)*
+> Im Grundgesetz wird die Menschenwürde als grundlegend definiert.
+> *(In the Basic Law, human dignity is defined as fundamental.)*
+
+**die Menschenwürde** (kein Plural) — *human dignity*
+> Die Menschenwürde ist unantastbar.
+> *(Human dignity is inviolable.)*
+
+**der Nachteil** (pl. die Nachteile) — *disadvantage* — (opposite: der Vorteil)
+> Kinder, die zu Hause kein Deutsch sprechen, haben oft Nachteile in der Schule.
+> *(Children who don't speak German at home often have disadvantages at school.)*
+
+**der Unterschied** (pl. die Unterschiede) — *difference*
+> Toleranz von kulturellen Unterschieden ist wichtig.
+> *(Tolerance of cultural differences is important.)*
+
+**das Missverständnis** (pl. die Missverständnisse) — *misunderstanding*
+> Wenn man eine Sprache nicht gut kann, gibt es oft Missverständnisse.
+> *(If you don't know a language well, there are often misunderstandings.)*
+
+**das Bildungssystem** (pl. die Bildungssysteme) — *education system*
+> Im Bildungssystem sollte niemand benachteiligt werden.
+> *(No one should be disadvantaged in the education system.)*
+
+**die Deutschkenntnisse** (nur Plural) — *knowledge of German / German skills*
+> Mit geringen Deutschkenntnissen ist die Kommunikation schwierig.
+> *(With poor German skills, communication is difficult.)*
+
+**die Ausbildung** (pl. die Ausbildungen) — *(vocational) training / apprenticeship* — (also: die Berufsausbildung)
+> Nach dem Schulabschluss konnte sie gleich mit ihrer Ausbildung beginnen.
+> *(After finishing school she could start her training right away.)*
+
+**der Schulabschluss** (pl. die Schulabschlüsse) — *school-leaving qualification*
+> Dank guter Lehrkräfte hat er seinen Schulabschluss geschafft.
+> *(Thanks to good teachers he passed his school-leaving exam.)*
+
+**die Lehrkraft** (pl. die Lehrkräfte) — *teacher (gender-neutral)*
+> Ich hatte tolle Lehrkräfte, die mir beim Deutschlernen geholfen haben.
+> *(I had great teachers who helped me learn German.)*
+
+**der Fahrgast** (pl. die Fahrgäste) — *passenger*
+> Ohne die Sprache ist die Kommunikation mit den Fahrgästen schwierig.
+> *(Without the language, communication with passengers is difficult.)*
+
+**der Führerschein** (pl. die Führerscheine) — *driving licence*
+> Mein Führerschein wird in Deutschland anerkannt.
+> *(My driving licence is recognised in Germany.)*
+
+**die Unterstützung** (kein Plural) — *support / help*
+> Im Beruf habe ich viel Unterstützung beim Lernen der Sprache erhalten.
+> *(At work I received a lot of support learning the language.)*
+
+**der Eindruck** (pl. die Eindrücke) — *impression*
+> Ich habe den Eindruck, dass man mich wegen meiner Herkunft ablehnt.
+> *(I have the impression that I'm rejected because of my origin.)*
+
+**die Lage** (pl. die Lagen) — *situation / location*
+> Wegen der schwierigen politischen Lage musste er fliehen.
+> *(Because of the difficult political situation he had to flee.)*
+
+#### Verbs
+
+**fliehen** — *to flee / to escape*
+⚠️ Unregelmäßig (irregular)
+
+| Person | Präsens |
+|--------|---------|
+| ich | fliehe |
+| du | fliehst |
+| er / sie / es | flieht |
+| wir | fliehen |
+| ihr | flieht |
+| sie / Sie | fliehen |
+
+Perfekt: **ist geflohen** (mit *sein* — Bewegung)
+> Viele Menschen fliehen vor Krieg in ein anderes Land.
+> *(Many people flee from war to another country.)*
+
+**verlassen** *(etwas verlassen)* — *to leave (a place)*
+⚠️ Unregelmäßig (Stammänderung: a → ä)
+
+| Person | Präsens |
+|--------|---------|
+| ich | verlasse |
+| du | verlässt |
+| er / sie / es | verlässt |
+| wir | verlassen |
+| ihr | verlasst |
+| sie / Sie | verlassen |
+
+Perfekt: **hat verlassen**
+> Er musste sein Heimatland verlassen.
+> *(He had to leave his home country.)*
+
+**unterscheiden** *(A von B unterscheiden / sich unterscheiden)* — *to distinguish / to differ*
+⚠️ Unregelmäßig
+
+| Person | Präsens |
+|--------|---------|
+| ich | unterscheide |
+| du | unterscheidest |
+| er / sie / es | unterscheidet |
+| wir | unterscheiden |
+| ihr | unterscheidet |
+| sie / Sie | unterscheiden |
+
+Perfekt: **hat unterschieden**
+> Man sollte Menschen nicht nach ihrer Herkunft unterscheiden.
+> *(One shouldn't differentiate people by their origin.)*
+
+**anerkennen** *(etwas anerkennen)* — *to recognise / to acknowledge*
+⚠️ Trennbar (an|erkennen) + unregelmäßig (wie *kennen*)
+
+| Person | Präsens |
+|--------|---------|
+| ich | erkenne an |
+| du | erkennst an |
+| er / sie / es | erkennt an |
+| wir | erkennen an |
+| ihr | erkennt an |
+| sie / Sie | erkennen an |
+
+Perfekt: **hat anerkannt**
+> Mein Führerschein wird hier anerkannt.
+> *(My driving licence is recognised here.)*
+
+**ablehnen** *(jemanden / etwas ablehnen)* — *to reject / to refuse / to turn down*
+⚠️ Trennbar (ab|lehnen) | regelmäßig
+
+| Person | Präsens |
+|--------|---------|
+| ich | lehne ab |
+| du | lehnst ab |
+| er / sie / es | lehnt ab |
+| wir | lehnen ab |
+| ihr | lehnt ab |
+| sie / Sie | lehnen ab |
+
+Perfekt: **hat abgelehnt**
+> Andere Menschen lehnen mich wegen meiner Herkunft ab.
+> *(Other people reject me because of my origin.)*
+
+**diskriminieren** *(jemanden diskriminieren)* — *to discriminate against*
+Regelmäßig | Perfekt: **hat diskriminiert**
+- *wegen + Genitiv diskriminiert werden* = to be discriminated against because of
+
+> Niemand darf wegen seiner Behinderung diskriminiert werden.
+> *(No one may be discriminated against because of their disability.)*
+
+**benachteiligen** *(jemanden benachteiligen)* — *to disadvantage / to put at a disadvantage*
+Regelmäßig | Perfekt: **hat benachteiligt**
+- Opposite: *bevorzugen* (to favour)
+
+> Im Bildungssystem werden manche Kinder benachteiligt.
+> *(In the education system some children are disadvantaged.)*
+
+**bevorzugen** *(jemanden / etwas bevorzugen)* — *to favour / to prefer*
+Regelmäßig | Perfekt: **hat bevorzugt**
+> Niemand darf benachteiligt oder bevorzugt werden.
+> *(No one may be disadvantaged or favoured.)*
+
+**fördern** *(jemanden / etwas fördern)* — *to support / to promote / to encourage*
+Regelmäßig | Perfekt: **hat gefördert**
+> Mein Chef hat mich sehr gefördert und einen Sprachkurs organisiert.
+> *(My boss supported me a lot and organised a language course.)*
+
+**akzeptieren** *(jemanden / etwas akzeptieren)* — *to accept*
+Regelmäßig | Perfekt: **hat akzeptiert**
+> Menschen mit einer anderen Herkunft sollten akzeptiert werden.
+> *(People of a different origin should be accepted.)*
+
+**behandeln** *(jemanden behandeln)* — *to treat (someone) / to deal with*
+Regelmäßig | Perfekt: **hat behandelt**
+- *jemanden gleich / fair behandeln* = to treat someone equally / fairly
+
+> Staat und Gesellschaft sind verpflichtet, alle Menschen gleich zu behandeln.
+> *(The state and society are obliged to treat everyone equally.)*
+
+**sich wohlfühlen** — *to feel comfortable / to feel at ease*
+⚠️ Trennbar (wohl|fühlen) + reflexiv | Perfekt: **hat sich wohlgefühlt**
+> Bei meinem Besuch habe ich mich sehr wohlgefühlt.
+> *(During my visit I felt very comfortable.)*
+
+#### Adjectives & Adverbs
+
+**gerecht** — *fair / just*
+- Komparativ: gerechter · Superlativ: am gerechtesten
+- *eine gerechte Gesellschaft* = a fair society
+
+> Artikel 3 fordert eine gerechte Behandlung aller Menschen.
+> *(Article 3 demands fair treatment of all people.)*
+
+**ausländisch** — *foreign* — (no comparative; classifying adjective)
+> Wegen meiner ausländischen Herkunft habe ich oft Nachteile.
+> *(Because of my foreign origin I often have disadvantages.)*
+
+**fremd** — *foreign / strange / unfamiliar*
+- *sich fremd fühlen* = to feel like a stranger / out of place
+
+> In der ersten Zeit habe ich mich in dem neuen Land fremd gefühlt.
+> *(At first I felt like a stranger in the new country.)*
+
+**gleich** — *equal / same*
+- *alle Menschen gleich behandeln* = to treat everyone equally
+- ⚠️ also an adverb meaning "right away" (*Ich komme gleich.*)
+
+> Vor dem Gesetz sind alle Menschen gleich.
+> *(Before the law, all people are equal.)*
+
+**zufrieden** *(mit + Dativ)* — *satisfied / content*
+- Komparativ: zufriedener · Superlativ: am zufriedensten
+
+> Heute arbeite ich als Mechatronikerin und bin mit meinem Beruf sehr zufrieden.
+> *(Today I work as a mechatronics technician and I'm very satisfied with my job.)*
+
+**selbstverständlich** — *self-evident / natural / of course*
+> Es sollte selbstverständlich sein, dass alle Menschen gleichbehandelt werden.
+> *(It should be self-evident that everyone is treated equally.)*
+
+**religiös** — *religious*
+- *religiöse Anschauungen* = religious beliefs
+
+> Niemand darf wegen seiner religiösen Anschauungen benachteiligt werden.
+> *(No one may be disadvantaged because of their religious beliefs.)*
+
+**ethnisch** — *ethnic*
+- *ethnische Herkunft* = ethnic origin
+
+> Diskriminierung aufgrund der ethnischen Herkunft ist verboten.
+> *(Discrimination based on ethnic origin is forbidden.)*
+
+**demokratisch** — *democratic*
+> Für eine demokratische Gesellschaft ist Gleichheit wichtig.
+> *(Equality is important for a democratic society.)*
+
+---
+
+### Ex. 1c — Word-by-word: „Chancengleichheit – der Weg zu einer fairen Gesellschaft"
+
+*The reading article (gaps filled), broken down sentence by sentence.*
+
+**§1 — The Basic Law & Article 1**
+
+- **Die Grundrechte sind in Deutschland im Grundgesetz festgelegt.** — *Fundamental rights are laid down in Germany in the Basic Law.*
+  - die Grundrechte = fundamental rights · festgelegt (festlegen) = laid down/fixed · das Grundgesetz = the Basic Law (German constitution)
+- **Zentral ist Artikel 1, denn dort wird die Menschenwürde als grundlegend definiert.** — *Article 1 is central, because there human dignity is defined as fundamental.*
+  - denn = because (main-clause connector) · wird … definiert = is defined (Passiv) · die Menschenwürde = human dignity · grundlegend = fundamental
+
+**§2 — Article 3: equality & non-discrimination**
+
+- **Wichtig ist auch Artikel 3, der die Gleichheit aller Menschen vor dem Gesetz betont.** — *Article 3 is also important, which emphasises the equality of all people before the law.*
+  - der = relative pronoun (→ Artikel 3) · die Gleichheit = equality · aller Menschen = of all people (Genitiv) · vor dem Gesetz = before the law · betont = emphasises
+- **„Niemand darf wegen seines Geschlechts, seiner Abstammung, seiner Rasse, seiner Sprache, seiner Heimat und Herkunft, seines Glaubens, seiner religiösen oder politischen Anschauungen benachteiligt oder bevorzugt werden."** — *"No one may be disadvantaged or favoured because of their gender, descent, race, language, homeland and origin, faith, religious or political views."*
+  - niemand = no one · darf … werden = may be (modal + Passiv) · wegen + Genitiv = because of · das Geschlecht = gender · die Abstammung = descent · die Rasse = race · die Herkunft = origin · der Glaube (des Glaubens) = faith · die Anschauungen = views/beliefs · benachteiligt = disadvantaged · bevorzugt = favoured
+- **In Artikel 3 steht auch noch, dass niemand wegen seiner Behinderung diskriminiert werden darf.** — *Article 3 also states that no one may be discriminated against because of their disability.*
+  - steht = it says (stehen) · auch noch = in addition · dass = that (verb cluster at end) · die Behinderung = disability · diskriminiert werden darf = may be discriminated against (Passiv + modal)
+
+**§3 — Protection & the Equal Treatment Act**
+
+- **Die Grundrechte bilden auch die Grundlage für den Schutz aller Menschen vor Diskriminierung.** — *Fundamental rights also form the basis for the protection of all people from discrimination.*
+  - bilden = form/constitute · die Grundlage für = the basis for · der Schutz vor = protection from · die Diskriminierung = discrimination
+- **Staat und Gesellschaft sind verpflichtet, alle Menschen gleich zu behandeln.** — *The state and society are obliged to treat all people equally.*
+  - der Staat = the state · die Gesellschaft = society · sind verpflichtet = are obliged · gleich = equally · zu behandeln = to treat (zu + Infinitiv)
+- **Diskriminierung aufgrund von ethnischer Herkunft, Geschlecht, Religion oder Weltanschauung, Behinderung, Alter oder sexueller Identität sind laut dem Allgemeinen Gleichbehandlungsgesetz verboten.** — *Discrimination on the basis of ethnic origin, gender, religion or worldview, disability, age or sexual identity is forbidden according to the General Equal Treatment Act.*
+  - aufgrund von + Dativ = on the basis of · ethnisch = ethnic · die Weltanschauung = worldview · das Alter = age · sexuelle Identität = sexual identity · laut + Dativ = according to · das (Allgemeine) Gleichbehandlungsgesetz = (General) Equal Treatment Act · verboten = forbidden
+
+**§4 — Diversity & everyday reality**
+
+- **Für eine demokratische Gesellschaft ist es wichtig, dass alle Menschen in ihrer Vielfalt anerkannt werden.** — *For a democratic society it is important that all people are recognised in their diversity.*
+  - demokratisch = democratic · es ist wichtig, dass = it is important that · die Vielfalt = diversity · anerkannt werden = are recognised (Passiv)
+- **Leider erlebt man im Alltag immer wieder Diskriminierung, und faire Chancen für alle Menschen sind noch nicht Wirklichkeit geworden.** — *Unfortunately, one repeatedly experiences discrimination in everyday life, and fair opportunities for all people have not yet become reality.*
+  - leider = unfortunately · erlebt man = one experiences · im Alltag = in everyday life · immer wieder = again and again · faire Chancen = fair opportunities · noch nicht = not yet · Wirklichkeit geworden = become reality
+- **Dabei sollte es doch selbstverständlich sein, dass alle Menschen gleichbehandelt werden.** — *And yet it should surely be self-evident that all people are treated equally.*
+  - dabei = and yet (contrast) · sollte = should (Konjunktiv II) · doch = surely (emphasis particle) · selbstverständlich = self-evident · gleichbehandelt werden = are treated equally (Passiv)
+
+**⭐ Grammar to take away:**
+- **Passiv Präsens:** *werden* + Partizip II — "wird definiert", "anerkannt werden", "gleichbehandelt werden".
+- **Modal + Passiv:** "darf … benachteiligt werden", "diskriminiert werden darf" (verb cluster goes to the end in a dass-clause).
+- **Reasons with cases:** *wegen + Genitiv* (wegen seiner Behinderung) and *aufgrund von + Dativ* (aufgrund von ethnischer Herkunft).
+
+---
+
+### Exercise Answer Keys (text-based)
+
+**Ex. 1c — "Chancengleichheit" article:** 1 Gleichheit · 2 Herkunft · 3 benachteiligt · 4 Schutz · 5 gleich · 6 Behinderung · 7 Vielfalt · 8 Chancen.
+
+**Ex. 2a — keywords:** 1 Krankenpflegerin / zufrieden · 2 politische Lage / Heimatland verlassen · 3 deutsche Frau / nach Deutschland gezogen · 4 schon immer / studieren · 5 als Kind / gekommen.
+**Ex. 2c — theme:** option **2** — "Menschen kommen aus unterschiedlichen Gründen nach Deutschland" (confirmed by audio intro).
+
+**Ex. 3a — Umschreibungen (match + same/opposite):**
+
+| # | Match | Relation |
+|---|---|---|
+| 1 | c | das Gleiche |
+| 2 | a | das Gegenteil |
+| 3 | f | das Gegenteil |
+| 4 | b | das Gleiche |
+| 5 | g | das Gleiche |
+| 6 | d | das Gegenteil |
+| 7 | e | das Gleiche |
+
+**Ex. 3b:** das Gleiche → 1c, 4b, 5g, 7e · das Gegenteil → 2a, 3f, 6d.
+
+**Ex. 4a/4b — printed transcripts (richtig/falsch):**
+- 1 (Mechatronikerin — German from school enabled her training): **richtig ✓** (teachers helped her learn German → school diploma → Ausbildung).
+- 2 (you can be a bus driver with little German): **falsch ✗** (he must first learn German; "ohne die Sprache ist die Kommunikation mit den Fahrgästen schwierig").
+
+**Ex. 4c (note-taking, same speakers):** 1 she values German for her job (richtig) · 2 he has not yet found his job / still learning (falsch) · 3 with better German he could get a good job (richtig).
+
+**Ex. 5 — Prüfungsaufgabe ("Meine Migrationserfahrung in Deutschland"):** 🔊 *audio only — answers need the recording.* Statements to judge: 1 no longer feels foreign because he can speak German · 2 it matters a lot where a person comes from · 3 migrants get no support in Germany · 4 interested in foreign traditions/dishes · 5 his German isn't good enough yet. Listen for same/opposite phrasing; one negation flips the answer.
+
+---
+
+## Klasse K3 — Persönliche Eigenschaften & Komparativ/Superlativ (Personal Qualities & Comparison)
+
+### Vocabulary
+
+*All words in this lesson are adjectives describing personal qualities — used frequently in job applications and self-descriptions.*
+
+---
+
+#### Adjectives
+
+**teamfähig** — *able to work in a team / team-oriented*
+> Er ist sehr teamfähig und arbeitet gern mit anderen zusammen.
+> *(He is very team-oriented and enjoys working with others.)*
+
+---
+
+**gut organisiert** — *well-organized*
+> Sie ist gut organisiert und plant alles im Voraus.
+> *(She is well-organized and plans everything in advance.)*
+
+---
+
+**kommunikativ** — *communicative*
+- Komparativ: kommunikativer · Superlativ: am kommunikativsten
+
+> Ein kommunikativer Mitarbeiter kann Konflikte leichter lösen.
+> *(A communicative employee can resolve conflicts more easily.)*
+
+---
+
+**pünktlich** — *punctual*
+- Komparativ: pünktlicher · Superlativ: am pünktlichsten
+
+> Bitte seien Sie pünktlich zum Vorstellungsgespräch.
+> *(Please be punctual for the job interview.)*
+
+---
+
+**zuverlässig** — *reliable*
+- Komparativ: zuverlässiger · Superlativ: am zuverlässigsten
+
+> Ich suche eine zuverlässige Person für diese Stelle.
+> *(I'm looking for a reliable person for this position.)*
+
+---
+
+**hilfsbereit** — *helpful / ready to help*
+- Komparativ: hilfsbereiter · Superlativ: am hilfsbereitsten
+
+> Die hilfsbereiten Kolleginnen haben mir beim Einarbeiten geholfen.
+> *(The helpful colleagues helped me during my induction.)*
+
+---
+
+**offen** — *open / open-minded*
+- Komparativ: offener · Superlativ: am offensten
+
+> Sie ist offen für neue Ideen und Veränderungen.
+> *(She is open to new ideas and changes.)*
+
+---
+
+**gründlich** — *thorough*
+- Komparativ: gründlicher · Superlativ: am gründlichsten
+
+> Er arbeitet sehr gründlich und macht selten Fehler.
+> *(He works very thoroughly and rarely makes mistakes.)*
+
+---
+
+**fleißig** — *hardworking / diligent*
+- Komparativ: fleißiger · Superlativ: am fleißigsten
+
+> Die fleißigen Schülerinnen haben alle die Prüfung bestanden.
+> *(The hardworking students all passed the exam.)*
+
+---
+
+**aufmerksam** — *attentive*
+- Komparativ: aufmerksamer · Superlativ: am aufmerksamsten
+
+> Bitte seien Sie im Unterricht aufmerksam.
+> *(Please be attentive in class.)*
+
+---
+
+**geduldig** — *patient*
+- Komparativ: geduldiger · Superlativ: am geduldigsten
+
+> Mit Kindern muss man sehr geduldig sein.
+> *(With children, one must be very patient.)*
+
+---
+
+**kreativ** — *creative*
+- Komparativ: kreativer · Superlativ: am kreativsten
+
+> Sie hat viele kreative Ideen für das neue Projekt.
+> *(She has many creative ideas for the new project.)*
+
+---
+
+### Grammar
+
+#### Komparativ & Superlativ — Comparison of Adjectives
+
+**Rule: How to form the three degrees**
+
+| Degree | Formation | Example: *wichtig* | Example: *groß* |
+|---|---|---|---|
+| **Positiv** (basic) | Adjektiv | wichtig | groß |
+| **Komparativ** | Adjektiv + **-er** | wichtig**er** | größ**er** ⚠️ |
+| **Superlativ** (predicative) | **am** + Adjektiv + **-(e)sten** | am wichtigsten | am größten |
+| **Superlativ** (attributive) | Adjektiv + **-(e)st-** + ending | der/die/das wichtigst**e** | der/die/das größt**e** |
+
+⚠️ **Many common adjectives take an Umlaut in Komparativ/Superlativ:**
+
+| Positiv | Komparativ | Superlativ |
+|---|---|---|
+| alt | **ä**lter | am **ä**ltesten |
+| groß | gr**öß**er | am gr**öß**ten |
+| jung | j**ü**nger | am j**ü**ngsten |
+| gut *(irregular)* | **besser** | am **besten** |
+| viel *(irregular)* | **mehr** | am **meisten** |
+| gern *(irregular)* | **lieber** | am **liebsten** |
+
+---
+
+**Why the ending differs by gender — the full chart**
+
+When an adjective comes *before* a noun (attributive position), it needs an ending. This ending depends on three things: **gender**, **case**, and **article type**. The comparison stem (Komparativ or Superlativ) is treated exactly like the basic adjective — just with a longer stem.
+
+**Formation shortcut:**
+- Komparativ stem = Adjektiv + **-er-** (then add the ending)
+- Superlativ stem = Adjektiv + **-(e)st-** (then add the ending)
+
+---
+
+**After DEFINITE article (der / die / das / die)**
+
+| Case | Maskulin | Feminin | Neutrum | Plural |
+|---|---|---|---|---|
+| **Nominativ** | -**e** | -**e** | -**e** | -**en** |
+| **Akkusativ** | -**en** | -**e** | -**e** | -**en** |
+| **Dativ** | -**en** | -**en** | -**en** | -**en** |
+| **Genitiv** | -**en** | -**en** | -**en** | -**en** |
+
+> *Memory trick:* After a definite article, the ending is almost always **-en** — except Nom. m/f/n and Akk. f/n which are **-e**.
+
+---
+
+**After INDEFINITE article (ein / eine / ein / —)**
+
+| Case | Maskulin | Feminin | Neutrum | Plural |
+|---|---|---|---|---|
+| **Nominativ** | -**er** | -**e** | -**es** | -**en** |
+| **Akkusativ** | -**en** | -**e** | -**es** | -**en** |
+| **Dativ** | -**en** | -**en** | -**en** | -**en** |
+| **Genitiv** | -**en** | -**en** | -**en** | -**en** |
+
+> *Memory trick:* After *ein*, the adjective carries the gender signal (m → **-er**, n → **-es**) because *ein* itself has no gender marker in Nom. m and Nom./Akk. n.
+
+---
+
+**Class examples (Nominativ, indefinite article):**
+
+| | Maskulin (m) | Neutrum (n) |
+|---|---|---|
+| **Positiv** | ein wichtig**er** Schritt | ein groß**es** Selbstvertrauen |
+| **Komparativ** | ein wichtig**erer** Schritt | ein größ**eres** Selbstvertrauen |
+| **Superlativ** | **der** wichtig**ste** Schritt | **das** größ**te** Selbstvertrauen |
+
+> ⭐ In the Superlativ with attributive use, the article switches to **definite** (der/die/das) because you are naming *the* most extreme — there is only one.
+
+---
+
+**Quick reference — Komparativ vs. Superlativ at a glance:**
+
+| Use | Structure | Example |
+|---|---|---|
+| Comparing two things | A + **Komparativ** + als + B | Er ist fleißig**er** als sie. |
+| Saying something is the most | **der/die/das** + Superlativ | Er ist **der** fleißigst**e** Schüler. |
+| Predicative superlative | **am** + Superlativ | Er arbeitet **am fleißigsten**. |
+
+---
+
+## Klasse K5 — Gemeinschaftsleben (Community Living)
+
+### Vocabulary
+
+*This lesson covers vocabulary for communal living spaces, community life, and social concepts.*
+
+---
+
+#### Nouns
+
+**der Schlafsaal** (pl. Schlafsäle) — *dormitory / sleeping hall*
+⚠️ Note spelling: Schlaf- (sleep) + Saal (hall) — not "Schalfsaal"
+
+> Im Schlafsaal schlafen bis zu zehn Personen gemeinsam.
+> *(Up to ten people sleep together in the dormitory.)*
+
+---
+
+**der Versammlungsraum** (pl. Versammlungsräume) — *assembly room / meeting room*
+- *sich versammeln* = to gather / to assemble
+- *die Versammlung* = the assembly / meeting
+
+> Im Versammlungsraum treffen sich alle Bewohner jeden Montag.
+> *(All residents meet in the assembly room every Monday.)*
+
+---
+
+**der Waldkindergarten** (pl. Waldkindergärten) — *forest kindergarten*
+- An outdoor nursery school where children spend most of the day in nature
+- Concept originating in Scandinavia, very popular in Germany
+
+> In einem Waldkindergarten verbringen die Kinder den ganzen Tag draußen.
+> *(In a forest kindergarten, the children spend the whole day outdoors.)*
+
+---
+
+**die Waschküche** (pl. Waschküchen) — *laundry room*
+- *waschen* = to wash · *die Küche* = kitchen (here: room)
+
+> Die Waschküche im Keller steht allen Bewohnern zur Verfügung.
+> *(The laundry room in the basement is available to all residents.)*
+
+---
+
+**die Werkstatt** (pl. Werkstätten) — *workshop*
+- *die Tischlerwerkstatt* = carpenter's workshop
+- *die Autowerkstatt* = car repair workshop / garage
+
+> In der gemeinsamen Werkstatt kann man Möbel reparieren.
+> *(In the shared workshop, you can repair furniture.)*
+
+---
+
+**der Zeltplatz** (pl. Zeltplätze) — *campsite / camping ground*
+- *zelten* = to camp · *das Zelt* = tent · *der Platz* = place / site
+
+> Der Zeltplatz am See ist bei Familien sehr beliebt.
+> *(The campsite by the lake is very popular with families.)*
+
+---
+
+**die Bibliothek** (pl. Bibliotheken) — *library*
+- *die Stadtbibliothek* = public/city library
+- *Bücher ausleihen* = to borrow books
+
+> In der Gemeinschaft gibt es eine kleine Bibliothek mit über 500 Büchern.
+> *(In the community there is a small library with over 500 books.)*
+
+---
+
+**der Dorfladen** (pl. Dorfläden) — *village shop*
+- *das Dorf* = village · *der Laden* = shop/store
+
+> Im Dorfladen kann man frisches Brot und lokale Produkte kaufen.
+> *(In the village shop, you can buy fresh bread and local products.)*
+
+---
+
+**die Gemeinschaftsküche** (pl. Gemeinschaftsküchen) — *communal kitchen / shared kitchen*
+- *die Gemeinschaft* = community · *die Küche* = kitchen
+- Common in shared housing (WG), hostels, and intentional communities
+
+> In der Gemeinschaftsküche kochen alle Bewohner zusammen.
+> *(In the communal kitchen, all residents cook together.)*
+
+---
+
+**die Kantine** (pl. Kantinen) — *canteen / cafeteria*
+- Usually refers to a workplace or school cafeteria
+
+> Heute gibt es in der Kantine Kartoffelsuppe und Salat.
+> *(Today in the canteen there is potato soup and salad.)*
+
+---
+
+**die Landwirtschaft** (kein Plural) — *agriculture / farming*
+- *landwirtschaftlich* = agricultural
+- *der Landwirt / die Landwirtin* = farmer
+- *der Bauernhof* = farm
+
+> Die Gemeinschaft betreibt eigene Landwirtschaft und baut Gemüse an.
+> *(The community runs its own agriculture and grows vegetables.)*
+
+---
+
+**die Gemeinschaft** (pl. Gemeinschaften) — *community / fellowship*
+- *die Wohngemeinschaft (WG)* = flat-share
+- *die Dorfgemeinschaft* = village community
+- *Gemeinschaftsgefühl* = sense of community
+
+> In einer Gemeinschaft ist gegenseitige Rücksicht sehr wichtig.
+> *(In a community, mutual consideration is very important.)*
+
+---
+
+**der Bewohner / die Bewohnerin** (pl. Bewohner / Bewohnerinnen) — *resident / inhabitant*
+- *bewohnen* = to inhabit / to live in
+- *die Bewohnerin* = female resident
+
+> Alle Bewohner des Hauses teilen sich die Gemeinschaftsküche.
+> *(All residents of the building share the communal kitchen.)*
+
+---
+
+**das Missverständnis** (pl. Missverständnisse) — *misunderstanding*
+- *missverstehen* = to misunderstand
+- *ein Missverständnis klären* = to clear up a misunderstanding
+
+> Das war ein Missverständnis — ich wollte das nicht so sagen.
+> *(That was a misunderstanding — I didn't mean it that way.)*
+
+---
+
+**die Rücksicht** (kein Plural) — *consideration / regard / thoughtfulness*
+- *Rücksicht nehmen auf + Akkusativ* = to show consideration for / to be mindful of
+- *rücksichtsvoll* = considerate · *rücksichtslos* = inconsiderate
+
+> In einer WG muss man auf die anderen Rücksicht nehmen.
+> *(In a shared flat, you must show consideration for others.)*
+
+---
+
+**die Lebenserfahrung** (pl. Lebenserfahrungen) — *life experience*
+- *die Erfahrung* = experience (general) · *das Leben* = life
+- *aus Erfahrung lernen* = to learn from experience
+
+> Ältere Bewohner bringen viel Lebenserfahrung in die Gemeinschaft ein.
+> *(Older residents bring a lot of life experience to the community.)*
+
+---
+
+#### Adverbs
+
+**halbtags** — *part-time / half-day*
+- *halbtags arbeiten* = to work part-time (literally: half-day)
+- *Halbtagsjob* = part-time job
+- Opposite: *ganztags* = full-time / all-day
+
+> Sie arbeitet halbtags und kümmert sich nachmittags um die Kinder.
+> *(She works part-time and takes care of the children in the afternoons.)*
+
+---
+
+### Grammar
+
+#### wenn — Reale & Irreale Bedingung (Real & Unreal Conditions)
+
+**Overview:**
+*wenn* (= if / when) introduces a condition clause (Bedingung). The type of verb tense shows whether the condition is **real** (could actually happen) or **unreal** (hypothetical / contrary to reality).
+
+---
+
+**1. Reale Bedingung (Real Condition)**
+
+Used when the condition is possible or likely to happen.
+
+| Part | Tense |
+|---|---|
+| Bedingung (condition) | **wenn** + Präsens |
+| Folge (consequence) | Präsens |
+
+> *Wenn es regnet, bleibe ich zu Hause.*
+> *(If it rains, I stay at home.)*
+>
+> *Wenn alle zusammenarbeiten, läuft es besser.*
+> *(If everyone works together, things run more smoothly.)*
+
+---
+
+**2. Irreale Bedingung (Unreal / Hypothetical Condition)**
+
+Used when the condition is contrary to reality — imagined, unlikely, or impossible.
+
+| Part | Tense |
+|---|---|
+| Bedingung (condition) | **wenn** + Konjunktiv II |
+| Folge (consequence) | Konjunktiv II |
+
+> *Wenn ich mehr Zeit hätte, würde ich mehr lesen.*
+> *(If I had more time, I would read more.)*
+>
+> *Wenn wir eine Gemeinschaftsküche hätten, wäre das Leben einfacher.*
+> *(If we had a communal kitchen, life would be easier.)*
+
+---
+
+**3. Konjunktiv II — Key Forms**
+
+The most important Konjunktiv II forms to know:
+
+| Verb | Konjunktiv II | Meaning |
+|---|---|---|
+| sein | **wäre** | would be |
+| haben | **hätte** | would have |
+| werden | **würde** | would (+ Infinitiv for all other verbs) |
+
+**würde + Infinitiv** is used for most other verbs:
+> *Ich würde gern in einer Gemeinschaft **leben**.*
+> *(I would like to live in a community.)*
+
+---
+
+**Structure summary:**
+
+```
+Reale Bedingung:
+  Wenn + [Subjekt] + … + [Verb Präsens], [Verb Präsens] + [Subjekt] + …
+
+Irreale Bedingung:
+  Wenn + [Subjekt] + … + [Konjunktiv II], [würde/wäre/hätte] + [Subjekt] + …
+```
+
+⚠️ The *wenn*-clause is a **Nebensatz** → verb goes to the **end**.
+⚠️ When the *wenn*-clause comes first, the main clause begins with the verb (inversion).
+
+> *Wenn ich reich **wäre**, **würde** ich ein großes Haus kaufen.*
+> *(If I were rich, I would buy a big house.)*
+
+---
+
+## Klasse K7 — Reisen & Tourismus (Travel & Tourism)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**die Sehenswürdigkeit** (pl. Sehenswürdigkeiten) — *sight / tourist attraction*
+- *sehenswert* = worth seeing
+- *Sehenswürdigkeiten besichtigen* = to visit/tour the sights
+
+> Berlin hat viele interessante Sehenswürdigkeiten zu bieten.
+> *(Berlin has many interesting sights to offer.)*
+
+---
+
+**die Übernachtung** (pl. Übernachtungen) — *overnight stay*
+- *übernachten* = to stay overnight · *die Nacht* = the night
+- *Übernachtung mit Frühstück* = bed and breakfast (B&B)
+
+> Die Übernachtung im Hotel kostete 80 Euro pro Person.
+> *(The overnight stay at the hotel cost 80 euros per person.)*
+
+---
+
+**die Unterkunft** (pl. Unterkünfte) — *accommodation / lodging*
+- broader than *das Hotel* — includes hostels, B&Bs, holiday flats, etc.
+- *eine Unterkunft buchen* = to book accommodation
+
+> Wir haben eine günstige Unterkunft direkt am Strand gefunden.
+> *(We found affordable accommodation right on the beach.)*
+
+---
+
+**der Reiseführer** (pl. Reiseführer) — *travel guide (book or person)*
+- *der Reiseführer* = the guidebook OR the tour guide (person)
+- *eine Stadtführung machen* = to take a city tour
+
+> Laut Reiseführer ist das Museum täglich von 9 bis 18 Uhr geöffnet.
+> *(According to the travel guide, the museum is open daily from 9 to 6 pm.)*
+
+---
+
+**das Souvenir** (pl. Souvenirs) — *souvenir*
+- *ein Souvenir kaufen/mitbringen* = to buy/bring back a souvenir
+
+> Als Souvenir hat sie einen kleinen Eiffelturm aus Paris mitgebracht.
+> *(As a souvenir, she brought back a small Eiffel Tower from Paris.)*
+
+---
+
+**die Touristin / der Tourist** (pl. Touristinnen / Touristen) — *tourist (f / m)*
+- *der Tourismus* = tourism · *touristisch* = tourist (adj.)
+
+> Im Sommer kommen Millionen von Touristen nach München.
+> *(In summer, millions of tourists come to Munich.)*
+
+---
+
+**die Erholung** (kein Plural) — *relaxation / recovery / rest*
+- *sich erholen* = to recover / to relax
+- *zur Erholung* = for relaxation / to unwind
+
+> Nach dem stressigen Jahr brauchen wir dringend Erholung.
+> *(After the stressful year, we urgently need relaxation.)*
+
+---
+
+**das Abenteuer** (pl. Abenteuer) — *adventure*
+- *ein Abenteuer erleben* = to experience an adventure
+- *abenteuerlich* = adventurous
+- *die Abenteuerlust* = thirst for adventure
+
+> Eine Reise durch Südamerika ist ein echtes Abenteuer.
+> *(A trip through South America is a real adventure.)*
+
+---
+
+**die Reisebegleitung** (pl. Reisebegleitungen) — *travel companion / travel company*
+- *die Begleitung* = company / accompaniment
+- *jemanden begleiten* = to accompany someone
+- *in Begleitung von* = accompanied by
+
+> Sie sucht eine Reisebegleitung für ihre Reise nach Japan.
+> *(She is looking for a travel companion for her trip to Japan.)*
+
+---
+
+**die Fähre** (pl. Fähren) — *ferry*
+- *mit der Fähre fahren* = to travel by ferry
+- *die Autofähre* = car ferry
+
+> Mit der Fähre dauert die Überfahrt nach Schweden etwa sechs Stunden.
+> *(By ferry, the crossing to Sweden takes about six hours.)*
+
+---
+
+**die Luxusjacht** (pl. Luxusjachten) — *luxury yacht*
+- *die Jacht* = yacht · *luxuriös* = luxurious
+
+> Auf einer Luxusjacht zu reisen ist ein besonderes Erlebnis.
+> *(Travelling on a luxury yacht is a special experience.)*
+
+---
+
+#### Adjectives
+
+**angenehm** — *pleasant / agreeable / comfortable*
+- Komparativ: angenehmer · Superlativ: am angenehmsten
+- *angenehmes Wetter* = pleasant weather
+- *eine angenehme Atmosphäre* = a pleasant atmosphere
+
+> Der Flug war sehr angenehm — wir hatten viel Platz.
+> *(The flight was very pleasant — we had a lot of space.)*
+
+---
+
+**herrlich** — *wonderful / magnificent / splendid*
+- Komparativ: herrlicher · Superlativ: am herrlichsten
+- Often used for scenery, weather, food, or experiences
+
+> Die Aussicht vom Gipfel war einfach herrlich.
+> *(The view from the summit was simply magnificent.)*
+
+---
+
+#### Verbs & Phrases
+
+**jemandem etwas einfallen** *(fällt ein · ist eingefallen)* — *to come to mind / to occur to someone*
+- ⚠️ Separable verb: ein|fallen
+- ⚠️ Dative verb — the person is **Dativ**, not Akkusativ
+- Subject = the idea (not the person!)
+- *Mir fällt ein, dass …* = It occurs to me that …
+
+| Person | Präsens |
+|---|---|
+| mir fällt … ein | *an idea* occurs to me |
+| dir fällt … ein | occurs to you |
+| ihm/ihr/ihm fällt … ein | occurs to him/her/it |
+| uns fällt … ein | occurs to us |
+| euch fällt … ein | occurs to you (pl.) |
+| ihnen/Ihnen fällt … ein | occurs to them/you (formal) |
+
+> Mir fällt gerade ein, dass wir noch keine Unterkunft gebucht haben!
+> *(It just occurs to me that we haven't booked accommodation yet!)*
+
+---
+
+**an etwas/jemanden denken** *(denkt · hat gedacht)* — *to think about something/someone*
+- ⚠️ Preposition: *an + Akkusativ*
+- Regelmäßiges Verb (regular)
+
+| Person | Präsens |
+|---|---|
+| ich denke | du denkst | er/sie/es denkt |
+| wir denken | ihr denkt | sie/Sie denken |
+
+> Im Urlaub denke ich kaum an die Arbeit.
+> *(On holiday, I hardly think about work.)*
+
+---
+
+**sich wohl fühlen** *(fühlt sich wohl · hat sich wohl gefühlt)* — *to feel comfortable / at ease / well*
+- ⚠️ Reflexive verb — the reflexive pronoun changes by person
+- *sich unwohl fühlen* = to feel unwell / uncomfortable
+
+| Person | Präsens |
+|---|---|
+| ich fühle mich wohl | du fühlst dich wohl | er/sie/es fühlt sich wohl |
+| wir fühlen uns wohl | ihr fühlt euch wohl | sie/Sie fühlen sich wohl |
+
+> In diesem Hotel fühle ich mich wirklich wohl.
+> *(In this hotel I really feel at ease.)*
+
+---
+
+### Grammar
+
+#### Adjektivdeklination — 3 Typen (Adjective Declension — 3 Types)
+
+When an adjective comes **before** a noun, its ending depends on three things:
+1. **Which article type** is used (definite / indefinite / none)
+2. **The gender** of the noun (m / f / n / pl)
+3. **The case** (Nominativ / Akkusativ / Dativ / Genitiv)
+
+---
+
+**Why three types?**
+German adjective endings work like a "team" with the article. One of them must carry the strong gender signal (the -r/-s/-e/-m signal). If the article already shows it clearly → the adjective gets a weak ending (-e or -en). If the article gives NO signal → the adjective must carry the full strong ending.
+
+---
+
+**Typ 1 — Bestimmter Artikel (der / die / das / die)**
+*The article already has a strong gender signal → adjective always gets a WEAK ending: -e or -en only.*
+
+| | Maskulin | Neutrum | Feminin | Plural |
+|---|---|---|---|---|
+| **Nominativ** | -**e** | -**e** | -**e** | -**en** |
+| **Akkusativ** | -**en** | -**e** | -**e** | -**en** |
+| **Dativ** | -**en** | -**en** | -**en** | -**en** |
+| **Genitiv** | -**en** | -**en** | -**en** | -**en** |
+
+Example adjective: *schön* (beautiful)
+
+| | Maskulin | Neutrum | Feminin |
+|---|---|---|---|
+| **Nom** | der schön**e** Strand | das schön**e** Hotel | die schön**e** Reise |
+| **Akk** | den schön**en** Strand | das schön**e** Hotel | die schön**e** Reise |
+| **Dat** | dem schön**en** Strand | dem schön**en** Hotel | der schön**en** Reise |
+
+> Ich buche das schöne Hotel am Meer.
+> *(I'm booking the beautiful hotel by the sea.)*
+
+---
+
+**Typ 2 — Unbestimmter Artikel (ein / kein / mein / dein / sein / ihr …)**
+*The article has NO ending in Nom m and Nom/Akk n → the adjective takes the strong ending there. Elsewhere → weak -en.*
+
+| | Maskulin | Neutrum | Feminin | Plural |
+|---|---|---|---|---|
+| **Nominativ** | -**er** | -**es** | -**e** | -**en** |
+| **Akkusativ** | -**en** | -**es** | -**e** | -**en** |
+| **Dativ** | -**en** | -**en** | -**en** | -**en** |
+| **Genitiv** | -**en** | -**en** | -**en** | -**en** |
+
+Example adjective: *schön*
+
+| | Maskulin | Neutrum | Feminin |
+|---|---|---|---|
+| **Nom** | ein schön**er** Strand | ein schön**es** Hotel | eine schön**e** Reise |
+| **Akk** | einen schön**en** Strand | ein schön**es** Hotel | eine schön**e** Reise |
+| **Dat** | einem schön**en** Strand | einem schön**en** Hotel | einer schön**en** Reise |
+
+> Das ist ein wunderbares Abenteuer!
+> *(This is a wonderful adventure!)*
+
+---
+
+**Typ 3 — Nullartikel (no article)**
+*No article at all → the adjective must carry the FULL strong ending (like the definite article itself).*
+
+| | Maskulin | Neutrum | Feminin | Plural |
+|---|---|---|---|---|
+| **Nominativ** | -**er** | -**es** | -**e** | -**e** |
+| **Akkusativ** | -**en** | -**es** | -**e** | -**e** |
+| **Dativ** | -**em** | -**em** | -**er** | -**en** |
+| **Genitiv** | -**en** | -**en** | -**er** | -**er** |
+
+Example adjective: *frisch* (fresh)
+
+| | Maskulin | Neutrum | Feminin |
+|---|---|---|---|
+| **Nom** | frisch**er** Kaffee | frisch**es** Wasser | frisch**e** Luft |
+| **Akk** | frisch**en** Kaffee | frisch**es** Wasser | frisch**e** Luft |
+| **Dat** | frisch**em** Kaffee | frisch**em** Wasser | frisch**er** Luft |
+
+> Wir trinken frischen Kaffee und essen frisches Brot.
+> *(We drink fresh coffee and eat fresh bread.)*
+
+---
+
+**Quick comparison — Typ 1 vs 2 vs 3 (Nominativ only):**
+
+| | Maskulin | Neutrum | Feminin | Plural |
+|---|---|---|---|---|
+| **Typ 1** (def.) | der alt**e** Mann | das neu**e** Haus | die schön**e** Reise | die lang**en** Tage |
+| **Typ 2** (indef.) | ein alt**er** Mann | ein neu**es** Haus | eine schön**e** Reise | keine lang**en** Tage |
+| **Typ 3** (null) | alt**er** Mann | neu**es** Haus | schön**e** Reise | lang**e** Tage |
+
+⭐ **Memory trick:** In Typ 3, the adjective ending = the definite article ending (with one exception: Gen m/n → -en, not -es).
+
+---
+
+## Klasse K9 — Studium & Bildung (University & Education)
+
+### Vocabulary
+
+*Typo corrections from notes: "Studeingebühren" → Studiengebühren · "aufenthalt" → der Aufenthalt (noun, capitalised)*
+
+---
+
+#### Nouns
+
+**der Abschluss** (pl. Abschlüsse) — *degree / qualification / graduation*
+- *den Abschluss machen* = to graduate / finish a degree
+- *der Schulabschluss* = school leaving certificate · *der Universitätsabschluss* = university degree
+
+> Nach dem Abschluss möchte sie im Ausland arbeiten.
+> *(After graduating, she wants to work abroad.)*
+
+---
+
+**der Bericht** (pl. Berichte) — *report*
+- *einen Bericht schreiben/erstellen* = to write a report
+- *der Erfahrungsbericht* = experience report · *der Praktikumsbericht* = internship report
+
+> Jeder Student muss am Ende des Semesters einen Bericht abgeben.
+> *(Every student must submit a report at the end of the semester.)*
+
+---
+
+**das Fach** (pl. Fächer) — *subject / field of study*
+- *ein Fach studieren* = to study a subject
+- *das Hauptfach* = major subject · *das Nebenfach* = minor subject
+- *Fächer* is simply the plural form
+
+> Welches Fach studierst du im zweiten Semester?
+> *(Which subject are you studying in the second semester?)*
+
+---
+
+**die Prüfung** (pl. Prüfungen) — *exam / test*
+- *eine Prüfung ablegen/machen* = to take an exam
+- *die Prüfung bestehen* = to pass · *durch die Prüfung fallen* = to fail
+- *die Abschlussprüfung* = final exam
+
+> Wegen der Krankheit konnte sie die Prüfung nicht ablegen.
+> *(Because of illness she couldn't take the exam.)*
+
+---
+
+**das Semester** (pl. Semester) — *semester*
+- *das Wintersemester* = winter semester · *das Sommersemester* = summer semester
+- *im ersten Semester* = in the first semester
+
+> Im dritten Semester beginnt das Praktikum.
+> *(The internship begins in the third semester.)*
+
+---
+
+**das Seminar** (pl. Seminare) — *seminar*
+- Smaller, interactive class — contrast with *die Vorlesung* (large lecture)
+- *an einem Seminar teilnehmen* = to attend a seminar
+
+> Im Seminar diskutieren wir aktuelle Forschungsergebnisse.
+> *(In the seminar we discuss current research findings.)*
+
+---
+
+**die Studiengebühren** (pl.) — *tuition fees*
+- Usually plural only
+- *Studiengebühren zahlen/bezahlen* = to pay tuition fees
+- ⚠️ Spelling: Studien- (studies) + Gebühren (fees)
+
+> In Deutschland gibt es in den meisten Bundesländern keine Studiengebühren.
+> *(In Germany, most states have no tuition fees.)*
+
+---
+
+**die Vorlesung** (pl. Vorlesungen) — *lecture (university)*
+- Larger class format where the professor speaks to many students
+- *eine Vorlesung halten* = to give a lecture · *eine Vorlesung besuchen* = to attend a lecture
+- Contrast: *das Seminar* (smaller, interactive)
+
+> Die Vorlesung beginnt um 8 Uhr morgens — das ist sehr früh!
+> *(The lecture starts at 8 in the morning — that's very early!)*
+
+---
+
+**das Zertifikat** (pl. Zertifikate) — *certificate*
+- *ein Zertifikat erwerben/erhalten* = to obtain a certificate
+- *das Sprachzertifikat* = language certificate (e.g. TELC B1)
+
+> Nach dem Kurs bekommt man ein offizielles Zertifikat.
+> *(After the course, you receive an official certificate.)*
+
+---
+
+**die Herausforderung** (pl. Herausforderungen) — *challenge*
+- *eine Herausforderung annehmen* = to accept a challenge
+- *herausfordern* = to challenge (verb)
+- *eine große Herausforderung* = a big challenge
+
+> Das Studium im Ausland ist eine große Herausforderung, aber auch eine Chance.
+> *(Studying abroad is a big challenge, but also an opportunity.)*
+
+---
+
+**der Aufenthalt** (pl. Aufenthalte) — *stay / sojourn*
+- *der Auslandsaufenthalt* = stay abroad
+- *der Aufenthalt dauert …* = the stay lasts …
+- *sich aufhalten* = to stay / to be located
+
+> Ihr Aufenthalt in Deutschland dauert sechs Monate.
+> *(Her stay in Germany lasts six months.)*
+
+---
+
+**der Fortschritt** (pl. Fortschritte) — *progress*
+- Almost always used in plural: *Fortschritte machen* = to make progress
+- *wissenschaftlicher Fortschritt* = scientific progress
+
+> Sie macht große Fortschritte in Deutsch — schon B1 nach einem Jahr!
+> *(She's making great progress in German — already B1 after one year!)*
+
+---
+
+**der Stil** (pl. Stile) — *style*
+- *der Schreibstil* = writing style · *der Lebensstil* = lifestyle
+- Important in academic writing: *formeller Stil* vs. *informeller Stil*
+
+> In einer formellen E-Mail ist ein höflicher Stil sehr wichtig.
+> *(In a formal email, a polite style is very important.)*
+
+---
+
+**die Gebühr** (pl. Gebühren) — *fee / charge*
+- *Gebühren zahlen* = to pay fees
+- *die Studiengebühren* = tuition fees · *die Prüfungsgebühr* = exam fee
+- *gebührenfrei* = free of charge
+
+> Für die Anmeldung zur Prüfung fällt eine kleine Gebühr an.
+> *(A small fee applies when registering for the exam.)*
+
+---
+
+#### Adjectives
+
+**stolz** — *proud*
+- *stolz auf + Akkusativ* = proud of something/someone
+- Komparativ: stolzer · Superlativ: am stolzesten
+
+> Sie ist sehr stolz auf ihren Universitätsabschluss.
+> *(She is very proud of her university degree.)*
+
+---
+
+**doppelt** — *double / twice*
+- *doppelt so viel* = twice as much
+- *doppelter Aufwand* = double the effort
+- *doppelt so lang* = twice as long
+
+> Wegen der Prüfungen muss er doppelt so viel lernen.
+> *(Because of the exams, he has to study twice as much.)*
+
+---
+
+#### Verbs
+
+**sich anmelden** *(meldet sich an · hat sich angemeldet)* — *to register / sign up / enrol*
+- ⚠️ Trennbares Verb: an|melden
+- ⚠️ Reflexives Verb — *sich* (Akkusativ)
+- *sich für etwas anmelden* = to register for something
+
+| Person | Präsens |
+|---|---|
+| ich melde mich an | du meldest dich an |
+| er/sie/es meldet sich an | wir melden uns an |
+| ihr meldet euch an | sie/Sie melden sich an |
+
+Perfekt: *hat sich angemeldet*
+
+> Ich möchte mich für den Deutschkurs anmelden.
+> *(I would like to register for the German course.)*
+
+---
+
+**ausreichen** *(reicht aus · hat ausgereicht)* — *to be sufficient / to be enough*
+- ⚠️ Trennbares Verb: aus|reichen
+- *reichen* alone also = to be enough / to suffice
+
+| Person | Präsens |
+|---|---|
+| ich reiche aus | du reichst aus |
+| er/sie/es reicht aus | wir reichen aus |
+| ihr reicht aus | sie/Sie reichen aus |
+
+Perfekt: *hat ausgereicht*
+
+> Leider reicht mein Deutsch für das Studium noch nicht aus.
+> *(Unfortunately, my German is not yet sufficient for university studies.)*
+
+---
+
+### Grammar
+
+#### wegen & trotz + Genitiv — Alternatives to weil / obwohl
+
+Both **wegen** and **trotz** are prepositions that take the **Genitiv** case. They allow you to express cause and contrast without using a full subordinate clause.
+
+---
+
+**wegen + Genitiv = weil + Nebensatz**
+*"because of" / "due to"*
+
+| Short form (Genitiv) | Long form (Nebensatz) |
+|---|---|
+| *wegen* + Nomen (Genitiv) | *weil* + Subjekt + … + Verb |
+| *wegen der Prüfung* | *weil die Prüfung ist* (→ natural: *weil ich Prüfung habe*) |
+
+Examples:
+> *Wegen **des schlechten Wetters** blieb er zu Hause.*
+> *= Weil das Wetter schlecht **war**, blieb er zu Hause.*
+> *(Because of the bad weather, he stayed at home.)*
+
+> *Wegen **meiner Krankheit** konnte ich nicht kommen.*
+> *= Weil ich krank **war**, konnte ich nicht kommen.*
+> *(Because of my illness, I couldn't come.)*
+
+**Genitiv endings after wegen:**
+
+| Gender | Example |
+|---|---|
+| Maskulin | *wegen des Stresses* / *wegen meines Bruders* |
+| Neutrum | *wegen des Wetters* / *wegen meines Studiums* |
+| Feminin | *wegen der Prüfung* / *wegen meiner Arbeit* |
+| Plural | *wegen der Gebühren* / *wegen meiner Eltern* |
+
+⚠️ In spoken German, *wegen + Dativ* is very common: *wegen dem Wetter* — but Genitiv is correct for writing.
+
+---
+
+**trotz + Genitiv = obwohl + Nebensatz**
+*"despite" / "in spite of"*
+
+| Short form (Genitiv) | Long form (Nebensatz) |
+|---|---|
+| *trotz* + Nomen (Genitiv) | *obwohl* + Subjekt + … + Verb |
+| *trotz der Müdigkeit* | *obwohl ich müde bin/war* |
+
+Examples:
+> *Trotz **der Herausforderungen** hat sie den Abschluss geschafft.*
+> *= Obwohl es viele Herausforderungen **gab**, hat sie den Abschluss geschafft.*
+> *(Despite the challenges, she managed to graduate.)*
+
+> *Trotz **des Regens** sind wir spazieren gegangen.*
+> *= Obwohl es **regnete**, sind wir spazieren gegangen.*
+> *(Despite the rain, we went for a walk.)*
+
+---
+
+#### Formelle & Halbformelle E-Mail schreiben (Writing Formal & Semi-formal Emails)
+
+This is a key skill for the TELC B1 Schreiben section.
+
+---
+
+**Formelle E-Mail** — used for official institutions, authorities, offices you don't know personally
+
+| Part | Formell |
+|---|---|
+| **Anrede** | Sehr geehrte Damen und Herren, · Sehr geehrter Herr [Name], · Sehr geehrte Frau [Name], |
+| **Einleitung** | *Ich schreibe Ihnen bezüglich …* · *Hiermit möchte ich mich für … bewerben.* · *Mit Bezug auf Ihre Anzeige …* |
+| **Ton** | Formal Sie-form, no contractions, full sentences, polite |
+| **Abschluss** | *Mit freundlichen Grüßen,* · *Mit freundlichem Gruß,* |
+| **Unterschrift** | Full name |
+
+**Template:**
+```
+Sehr geehrte Damen und Herren,
+
+ich schreibe Ihnen, weil ich mich für den Deutschkurs anmelden möchte.
+Könnten Sie mir bitte weitere Informationen zu den Studiengebühren schicken?
+Außerdem würde ich gern wissen, wann das Seminar beginnt.
+
+Mit freundlichen Grüßen,
+[Vorname Nachname]
+```
+
+---
+
+**Halbformelle E-Mail** — used for teachers, colleagues, or people you have met but address formally
+
+| Part | Halbformell |
+|---|---|
+| **Anrede** | *Guten Tag, Frau [Name],* · *Liebe Frau [Name],* · *Lieber Herr [Name],* |
+| **Einleitung** | *Ich hoffe, es geht Ihnen gut.* · *Ich möchte Sie kurz fragen …* |
+| **Ton** | Still Sie-form but warmer; slightly more personal |
+| **Abschluss** | *Viele Grüße,* · *Herzliche Grüße,* · *Mit freundlichen Grüßen,* |
+| **Unterschrift** | First name or full name |
+
+**Template:**
+```
+Guten Tag, Frau Müller,
+
+ich hoffe, es geht Ihnen gut. Ich habe eine Frage zu den Prüfungsgebühren.
+Reichen meine Unterlagen für die Anmeldung aus?
+Ich wäre Ihnen sehr dankbar für eine kurze Rückmeldung.
+
+Viele Grüße,
+[Vorname]
+```
+
+---
+
+**Key phrases for both types:**
+
+| Function | Formell | Halbformell |
+|---|---|---|
+| Reason for writing | *Ich schreibe Ihnen bezüglich …* | *Ich wollte kurz fragen …* |
+| Request | *Könnten Sie mir bitte … mitteilen?* | *Könnten Sie mir … schicken?* |
+| Asking for info | *Ich würde gern wissen, ob …* | *Ich wollte wissen, ob …* |
+| Thanking | *Vielen Dank für Ihre Mühe.* | *Danke im Voraus!* |
+| Closing | *Mit freundlichen Grüßen* | *Viele Grüße* |
+
+---
+
+## Klasse K11 — Materialien & Eigenschaften (Materials & Properties)
+
+### Vocabulary
+
+*This lesson focuses on adjectives describing the physical properties of materials — shape, weight, texture, firmness, and moisture.*
+
+---
+
+#### Adjectives — Material Properties (grouped by opposites)
+
+**Shape / Dimension**
+
+**flach** — *flat*
+- Komparativ: flacher · Superlativ: am flachsten
+- *eine flache Oberfläche* = a flat surface
+
+> Das Brett ist flach und eignet sich gut als Regal.
+> *(The board is flat and works well as a shelf.)*
+
+**dünn** ↔ **dick** — *thin ↔ thick*
+- Komparativ: dünner / dicker · Superlativ: am dünnsten / am dicksten
+- *dünnes Papier* = thin paper · *ein dickes Buch* = a thick book
+
+> Diese Keramik ist sehr dünn und deshalb zerbrechlich.
+> *(This ceramic is very thin and therefore fragile.)*
+
+**rund** ↔ **eckig / spitz** — *round ↔ angular / pointed*
+- *rund*: Komparativ: runder · Superlativ: am rundsten
+- *eckig* = angular, with corners · *spitz* = pointed / sharp-tipped
+- *eine runde Form* = a round shape · *eine spitze Nadel* = a sharp needle
+
+> Runde Formen sind oft weicher und angenehmer als eckige.
+> *(Round shapes are often softer and more pleasant than angular ones.)*
+
+---
+
+**Weight**
+
+**leicht** ↔ **schwer** — *light ↔ heavy*
+- Komparativ: leichter / schwerer · Superlativ: am leichtesten / am schwersten
+- *leichtes Material* = lightweight material · *schwerer Stoff* = heavy fabric
+- ⚠️ *schwer* also means *difficult*
+
+> Hanf ist ein leichtes und gleichzeitig stabiles Material.
+> *(Hemp is a light and at the same time sturdy material.)*
+
+---
+
+**Texture / Surface**
+
+**glatt** ↔ **rau** — *smooth ↔ rough*
+- Komparativ: glatter / rauer · Superlativ: am glattesten / am rauesten
+- *eine glatte Oberfläche* = a smooth surface · *raues Holz* = rough wood
+
+> Die Oberfläche des Steins ist rau, aber die des Glases ist glatt.
+> *(The surface of the stone is rough, but that of the glass is smooth.)*
+
+---
+
+**Firmness / Durability**
+
+**stabil** ↔ **empfindlich / zerbrechlich** — *sturdy / stable ↔ delicate / fragile*
+- *stabil*: Komparativ: stabiler · Superlativ: am stabilsten
+- *empfindlich* = sensitive / delicate (to touch or conditions)
+- *zerbrechlich* = breakable / fragile (= can physically break)
+
+> Keramik ist schön, aber sehr zerbrechlich — Glas dagegen ist empfindlich gegenüber Stößen.
+> *(Ceramics are beautiful, but very fragile — glass on the other hand is sensitive to impacts.)*
+
+---
+
+**Moisture**
+
+**trocken** ↔ **feucht / nass** — *dry ↔ damp / wet*
+- *trocken*: Komparativ: trockener · Superlativ: am trockensten
+- *feucht* = damp / moist (slightly wet) · *nass* = wet (thoroughly wet)
+- *Feucht* < *nass* on the wetness scale
+
+> Das Holz muss trocken gelagert werden, sonst wird es feucht und fault.
+> *(The wood must be stored dry, otherwise it gets damp and rots.)*
+
+---
+
+**Hardness / Softness**
+
+**weich** ↔ **hart** — *soft ↔ hard*
+- Komparativ: weicher / härter · Superlativ: am weichsten / am härtesten
+- *weiches Leder* = soft leather · *hartes Material* = hard material
+
+> Hanf kann zu weichen Textilien oder hartem Baustoff verarbeitet werden.
+> *(Hemp can be processed into soft textiles or hard building material.)*
+
+---
+
+#### Nouns
+
+**der Hanf** (kein Plural) — *hemp*
+- A natural plant fibre used for textiles, rope, paper, and building materials
+- *Hanffaser* = hemp fibre · *Hanföl* = hemp oil
+
+> Hanf ist ein nachhaltiger Rohstoff, der für viele Produkte verwendet werden kann.
+> *(Hemp is a sustainable raw material that can be used for many products.)*
+
+---
+
+**fossile Rohstoffe** (pl.) — *fossil raw materials / fossil resources*
+- Singular: *der fossile Rohstoff* (pl. Rohstoffe)
+- *fossil* = fossil (derived from ancient organic matter)
+- *der Rohstoff* = raw material · *fossile Brennstoffe* = fossil fuels
+
+> Fossile Rohstoffe wie Öl und Kohle sind endlich und umweltschädlich.
+> *(Fossil raw materials such as oil and coal are finite and harmful to the environment.)*
+
+---
+
+**der Abfall** (pl. Abfälle) — *waste / rubbish / trash*
+- *Abfall trennen* = to sort/separate waste
+- *der Sondermüll* = hazardous waste · *der Hausmüll* = household waste
+- *aus Abfall etwas machen* = to make something from waste
+
+> Aus Abfall kann man durch Recycling neue Produkte herstellen.
+> *(From waste, new products can be made through recycling.)*
+
+---
+
+**die Keramik** (pl. Keramiken) — *ceramics / ceramic*
+- *keramisch* = ceramic (adjective)
+- *ein Keramikgefäß* = a ceramic vessel
+- Properties: hard, brittle, heat-resistant, zerbrechlich
+
+> Keramik ist ein hartes, aber zerbrechliches Material, das seit Jahrtausenden verwendet wird.
+> *(Ceramics is a hard but fragile material that has been used for thousands of years.)*
+
+---
+
+### Grammar
+
+#### Relativpronomen — Relative Pronouns
+
+A **Relativsatz** (relative clause) adds extra information about a noun. It is introduced by a **Relativpronomen** (relative pronoun), which:
+1. Matches the **gender and number** of the noun it refers to (the antecedent)
+2. Takes the **case** determined by its function inside the relative clause
+3. Sends the **verb to the END** of the relative clause
+
+---
+
+**The Relativpronomen table**
+*"= Artikel" — the forms are the same as the definite article, with exceptions marked ⚠️*
+
+| | Maskulin | Neutrum | Feminin | Plural |
+|---|---|---|---|---|
+| **Nominativ** | der | das | die | die |
+| **Akkusativ** | den | das | die | die |
+| **Dativ** | dem | dem | der | **denen** ⚠️ |
+| **Genitiv** | **dessen** ⚠️ | **dessen** ⚠️ | **deren** ⚠️ | **deren** ⚠️ |
+
+⚠️ **Two differences from the definite article:**
+1. **Dativ Plural:** article = *den* → relative pronoun = **denen**
+2. **Genitiv (all):** article = *des/des/der/der* → relative pronoun = **dessen/dessen/deren/deren**
+
+---
+
+**How to use — 3 cases from class:**
+
+**Case 1: Plain Dativ**
+> *Jemand, **dem** Tiere leidtun, kauft keine Pelzprodukte.*
+> *(Someone to whom animals matter / who cares about animals, doesn't buy fur products.)*
+- *Jemand* → no gender, treat as masculine → **dem** (Dativ m)
+- Why Dativ? → *jemandem leidtun* = Dativ verb → the relative pronoun takes Dativ
+
+---
+
+**Case 2: Präposition + Dativ**
+> *Abfall, **aus dem** ein neues Produkt entsteht, ist wertvoll.*
+> *(Waste from which a new product arises is valuable.)*
+- *der Abfall* = masculine → pronoun gender: **m**
+- *aus* always takes **Dativ** → dem
+- Result: **aus dem**
+
+---
+
+**Case 3: Präposition + Akkusativ**
+> *Eine Lösung, **durch die** kein neues Plastik entsteht, ist nachhaltig.*
+> *(A solution through which no new plastic arises is sustainable.)*
+- *die Lösung* = feminine → pronoun gender: **f**
+- *durch* always takes **Akkusativ** → die (f Akk = same form as Nom f)
+- Result: **durch die**
+
+---
+
+**Word order rule:**
+```
+[Main clause], RELATIVPRONOMEN + Subjekt + … + VERB (end).
+```
+> *Das ist ein Material, **das** man recyceln **kann**.*
+> *(This is a material that can be recycled.)*
+
+> *Das ist ein Rohstoff, **aus dem** man neue Produkte herstellen **kann**.*
+> *(This is a raw material from which new products can be made.)*
+
+---
+
+**Quick guide — which relative pronoun to use:**
+
+| Step | Question | Action |
+|---|---|---|
+| 1 | What noun does it refer to? | Match gender & number |
+| 2 | Is there a preposition? | Add the preposition first |
+| 3 | What case does it need? | Use the correct row from the table |
 
 ---

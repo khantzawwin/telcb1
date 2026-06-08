@@ -1,13 +1,16 @@
 export function parseNotes(markdown) {
   const lessons = []
-  const lessonBlocks = markdown.split(/\n(?=## Lektion)/).filter(Boolean)
+  const lessonBlocks = markdown.split(/\n(?=## (?:Lektion|Klasse))/).filter(Boolean)
 
   for (const block of lessonBlocks) {
     const lessonMatch = block.match(/^## Lektion (\d+)\s*[—-]\s*(.+)/)
-    if (!lessonMatch) continue
+    const klasseMatch = block.match(/^## Klasse K(\d+)\s*[—-]\s*(.+)/)
+    if (!lessonMatch && !klasseMatch) continue
 
-    const lessonNum = parseInt(lessonMatch[1])
-    const lessonTitle = lessonMatch[2].trim()
+    const lessonNum = lessonMatch
+      ? parseInt(lessonMatch[1])
+      : parseInt(klasseMatch[1]) + 100 // K3 → 103, K5 → 105, etc.
+    const lessonTitle = (lessonMatch || klasseMatch)[2].trim()
 
     const vocabulary = parseVocabulary(block)
     const grammar = parseGrammar(block)
