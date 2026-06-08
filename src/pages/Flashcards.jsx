@@ -119,12 +119,20 @@ export default function Flashcards() {
   const remaining = session.length - cardIndex
 
   return (
-    <div className="flex flex-col h-[calc(100vh-56px)] md:h-screen max-w-2xl mx-auto px-4 sm:px-6 py-4 sm:py-8">
+    /*
+     * Height strategy:
+     *   Mobile:  100dvh minus app top-bar (~60px) and bottom-nav (~56px)
+     *   Desktop: full 100dvh (sidebar is horizontal, no top/bottom bars)
+     * Using dvh so the height tracks the visible viewport as the browser
+     * address bar shows/hides, preventing any scroll on mobile.
+     */
+    <div className="flex flex-col max-w-2xl mx-auto px-4 sm:px-6 py-2 sm:py-6
+                    h-[calc(100dvh-116px)] md:h-dvh overflow-hidden">
       {/* Progress */}
-      <div className="flex items-center gap-3 mb-4 flex-shrink-0">
-        <div className="flex-1 bg-gray-200 rounded-full h-2.5">
+      <div className="flex items-center gap-3 mb-3 flex-shrink-0">
+        <div className="flex-1 bg-gray-200 rounded-full h-2">
           <div
-            className="bg-indigo-500 h-2.5 rounded-full transition-all duration-300"
+            className="bg-indigo-500 h-2 rounded-full transition-all duration-300"
             style={{ width: `${progress * 100}%` }}
           />
         </div>
@@ -133,44 +141,42 @@ export default function Flashcards() {
         </span>
       </div>
 
-      {/* Card */}
+      {/* Card — min-h-0 lets it shrink when content is short */}
       <div
-        className="flex-1 bg-white rounded-3xl shadow-sm flex flex-col overflow-hidden cursor-pointer select-none mb-4 active:shadow-none transition-shadow"
+        className="flex-1 min-h-0 bg-white rounded-3xl shadow-sm flex flex-col overflow-hidden cursor-pointer select-none mb-3 active:shadow-none transition-shadow"
         onClick={() => !flipped && setFlipped(true)}
       >
         {/* Colored top bar */}
-        <div className={`h-1.5 flex-shrink-0 rounded-t-3xl ${flipped ? 'bg-indigo-500' : 'bg-gray-200'} transition-colors duration-300`} />
+        <div className={`h-1 flex-shrink-0 ${flipped ? 'bg-indigo-500' : 'bg-gray-200'} transition-colors duration-300`} />
 
-        <div className="flex-1 flex flex-col items-center justify-center p-6 sm:p-10">
+        {/* Scrollable inner — if example is long on small phones it scrolls inside the card */}
+        <div className="flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-center p-5 sm:p-10">
           {/* Type badge */}
-          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-500 uppercase tracking-wider mb-8">
+          <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-500 uppercase tracking-wider mb-6">
             {card.type} · L{card.lesson}
           </span>
 
           {!flipped ? (
             <div className="text-center">
-              <p className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-2">{card.word}</p>
-              {card.info && <p className="text-gray-400 text-base mb-3">{card.info}</p>}
-              <div className="flex justify-center mt-4 mb-6">
+              <p className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-1">{card.word}</p>
+              {card.info && <p className="text-gray-400 text-base mb-2">{card.info}</p>}
+              <div className="flex justify-center mt-3 mb-5">
                 <SpeakerButton text={card.word} />
               </div>
-              <div className="inline-flex items-center gap-2 text-gray-400 text-sm bg-gray-100 px-4 py-2 rounded-full">
+              <div className="inline-flex items-center gap-1.5 text-gray-400 text-sm bg-gray-100 px-4 py-2 rounded-full">
                 <TapIcon />
                 tap to reveal
               </div>
             </div>
           ) : (
             <div className="text-center w-full">
-              {/* Word + speaker */}
               <div className="flex items-center justify-center gap-3 mb-2">
                 <p className="text-3xl sm:text-4xl font-bold text-gray-900">{card.word}</p>
                 <SpeakerButton text={card.word} />
               </div>
-              {/* Translation */}
-              <p className="text-2xl sm:text-3xl font-semibold text-indigo-600 mb-6">{card.translation}</p>
-              {/* Example */}
+              <p className="text-2xl sm:text-3xl font-semibold text-indigo-600 mb-5">{card.translation}</p>
               {card.example && (
-                <div className="bg-slate-50 rounded-2xl px-5 py-4 text-left max-w-lg mx-auto">
+                <div className="bg-slate-50 rounded-2xl px-4 py-4 text-left max-w-lg mx-auto">
                   <div className="flex items-center justify-between mb-2">
                     <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Beispiel</span>
                     <SpeakerButton text={card.example} size="sm" />
@@ -189,12 +195,12 @@ export default function Flashcards() {
       {/* Rating buttons */}
       <div className="flex-shrink-0">
         {flipped ? (
-          <div className="grid grid-cols-4 gap-2.5">
+          <div className="grid grid-cols-4 gap-2">
             {RATINGS.map(r => (
               <button
                 key={r.value}
                 onClick={() => handleRate(r.value)}
-                className={`py-4 sm:py-5 rounded-2xl ${r.bg} ${r.active} text-white transition-all active:scale-[0.97]`}
+                className={`py-3.5 sm:py-4 rounded-2xl ${r.bg} ${r.active} text-white transition-all active:scale-[0.97]`}
               >
                 <span className="block text-sm font-bold">{r.label}</span>
                 <span className="block text-xs opacity-75 mt-0.5">{r.sublabel}</span>
@@ -204,7 +210,7 @@ export default function Flashcards() {
         ) : (
           <button
             onClick={(e) => { e.stopPropagation(); setFlipped(true) }}
-            className="w-full py-5 bg-indigo-600 text-white text-lg font-semibold rounded-2xl active:bg-indigo-700 transition-colors"
+            className="w-full py-4 bg-indigo-600 text-white text-base font-semibold rounded-2xl active:bg-indigo-700 transition-colors"
           >
             Show answer
           </button>
