@@ -5,15 +5,28 @@ export function calculateNextReview(card, rating) {
   let { interval = 1, repetitions = 0, easeFactor = 2.5 } = card
 
   if (rating === 0) {
+    // Again — reset to start; ease factor drops slightly
     repetitions = 0
     interval = 1
+    easeFactor = Math.max(1.3, easeFactor - 0.2)
   } else {
-    if (repetitions === 0) interval = 1
-    else if (repetitions === 1) interval = 3
-    else interval = Math.round(interval * easeFactor)
-
+    if (rating === 3) {
+      // Easy — accelerated: skip the slow learning phase
+      if (repetitions === 0) interval = 4
+      else if (repetitions === 1) interval = 8
+      else interval = Math.round(interval * easeFactor * 1.3)
+    } else if (rating === 2) {
+      // Good — standard SM-2
+      if (repetitions === 0) interval = 1
+      else if (repetitions === 1) interval = 4
+      else interval = Math.round(interval * easeFactor)
+    } else {
+      // Hard — conservative; interval barely grows
+      if (repetitions === 0) interval = 1
+      else if (repetitions === 1) interval = 2
+      else interval = Math.max(interval + 1, Math.round(interval * Math.max(1.2, easeFactor - 0.15)))
+    }
     repetitions += 1
-    // Adjust ease factor
     easeFactor = Math.max(
       1.3,
       easeFactor + 0.1 - (3 - rating) * (0.08 + (3 - rating) * 0.02)
@@ -47,7 +60,8 @@ export function getSessionSlot() {
 }
 
 export function getTodayKey() {
-  return new Date().toISOString().slice(0, 10)
+  const d = new Date()
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
 }
 
 export function selectSessionCards(allCards, progressMap, maxCards = 20) {

@@ -156,11 +156,15 @@ function SessionBadge({ label, done }) {
 
 // ── Activity Heatmap ─────────────────────────────────────────────────────────
 
+function localDateStr(d) {
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`
+}
+
 function ActivityHeatmap({ uid }) {
   const [activityMap, setActivityMap] = useState({})
   const [heatLoading, setHeatLoading] = useState(true)
 
-  // Build the 91-day grid anchored to today
+  // Build the 91-day grid anchored to today (local date, not UTC)
   const today = new Date()
   today.setHours(0, 0, 0, 0)
 
@@ -183,8 +187,9 @@ function ActivityHeatmap({ uid }) {
     weeks.push(week)
   }
 
-  const fromStr = windowStart.toISOString().split('T')[0]
-  const toStr = today.toISOString().split('T')[0]
+  // Use local date strings so Firestore keys (also local) match correctly
+  const fromStr = localDateStr(windowStart)
+  const toStr = localDateStr(today)
 
   useEffect(() => {
     let cancelled = false
@@ -289,7 +294,7 @@ function ActivityHeatmap({ uid }) {
               {weeks.map((week, wi) => (
                 <div key={wi} className="flex flex-col gap-1">
                   {week.map((day, di) => {
-                    const dateStr = day.toISOString().split('T')[0]
+                    const dateStr = localDateStr(day)
                     const isFuture = dateStr > toStr
                     return (
                       <div
