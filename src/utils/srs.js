@@ -77,12 +77,13 @@ export function selectSessionCards(allCards, progressMap, maxCards = 20) {
     }
   }
 
-  // Prioritise due reviews, then fill with new cards
-  const selected = [...due]
-  const remaining = maxCards - selected.length
-  if (remaining > 0) {
-    selected.push(...newCards.slice(0, remaining))
-  }
+  // Always guarantee up to 5 new cards; fill remaining slots with due reviews
+  const guaranteedNew = Math.min(5, newCards.length)
+  const dueSlots = Math.min(due.length, maxCards - guaranteedNew)
+  const selected = [
+    ...due.slice(0, dueSlots),
+    ...newCards.slice(0, maxCards - dueSlots),
+  ]
 
-  return selected.slice(0, maxCards).sort(() => Math.random() - 0.5)
+  return selected.sort(() => Math.random() - 0.5)
 }
