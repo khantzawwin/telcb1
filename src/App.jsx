@@ -8,6 +8,7 @@ import Dashboard from './pages/Dashboard'
 import Vocabulary from './pages/Vocabulary'
 import Flashcards from './pages/Flashcards'
 import Grammar from './pages/Grammar'
+import Writing from './pages/Writing'
 
 function AppRoutes() {
   return (
@@ -23,6 +24,7 @@ function AppRoutes() {
                 <Route path="/vocabulary" element={<Vocabulary />} />
                 <Route path="/flashcards" element={<Flashcards />} />
                 <Route path="/grammar" element={<Grammar />} />
+                <Route path="/writing" element={<Writing />} />
               </Routes>
             </Layout>
           </ProtectedRoute>

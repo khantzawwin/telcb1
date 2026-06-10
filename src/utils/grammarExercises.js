@@ -2347,6 +2347,81 @@ export const exercises = {
     },
   ],
 
+  // ─── Klasse K13 ──────────────────────────────────────────────────────────────
+
+  verben_mit_pr_positionen: [
+    {
+      id: 'vmp_1',
+      question: 'Wir haben uns ___ das neue Stadtprogramm informiert.',
+      options: ['über', 'für', 'von', 'nach'],
+      answer: 'über',
+      explanation: '"sich informieren über" + Akkusativ = to get information about something. The preposition is always über, not für or von.',
+    },
+    {
+      id: 'vmp_2',
+      question: 'Ich freue mich sehr ___ die Reise nach Wien nächste Woche.',
+      options: ['auf', 'über', 'für', 'von'],
+      answer: 'auf',
+      explanation: '"sich freuen auf" + Akkusativ = to look forward to something. Use "auf" for future events that have not happened yet.',
+    },
+    {
+      id: 'vmp_3',
+      question: 'Sie hat sich ___ das schöne Geschenk sehr gefreut.',
+      options: ['über', 'auf', 'für', 'bei'],
+      answer: 'über',
+      explanation: '"sich freuen über" + Akkusativ = to be happy/glad about something already received or happened. Use "über" for past/received things.',
+    },
+    {
+      id: 'vmp_4',
+      question: 'Mein Bruder interessiert sich sehr ___ Astronomie.',
+      options: ['für', 'über', 'an', 'mit'],
+      answer: 'für',
+      explanation: '"sich interessieren für" + Akkusativ = to be interested in something. Always für, not über or an.',
+    },
+    {
+      id: 'vmp_5',
+      question: 'Wir warten schon seit einer Stunde ___ den Zug.',
+      options: ['auf', 'für', 'nach', 'von'],
+      answer: 'auf',
+      explanation: '"warten auf" + Akkusativ = to wait for someone/something. Always auf, not für or nach.',
+    },
+    {
+      id: 'vmp_6',
+      question: 'Sie hat sich ___ eine Stelle als Ingenieurin beworben.',
+      options: ['um', 'für', 'auf', 'nach'],
+      answer: 'um',
+      explanation: '"sich bewerben um" + Akkusativ = to apply for a position. Always um — a common mistake is using für here.',
+    },
+    {
+      id: 'vmp_7',
+      question: 'Dieses Lied erinnert mich immer ___ meine Kindheit.',
+      options: ['an', 'auf', 'über', 'von'],
+      answer: 'an',
+      explanation: '"erinnern an" + Akkusativ = to remind of. Also "sich erinnern an" = to remember. Always an + Akkusativ.',
+    },
+    {
+      id: 'vmp_8',
+      question: 'Er kümmert sich sehr liebevoll ___ seine kranke Mutter.',
+      options: ['um', 'für', 'mit', 'nach'],
+      answer: 'um',
+      explanation: '"sich kümmern um" + Akkusativ = to take care of / look after. Always um — same as bewerben um and bitten um.',
+    },
+    {
+      id: 'vmp_9',
+      question: 'Hör endlich ___ dem Rauchen auf! Es ist ungesund.',
+      options: ['mit', 'von', 'auf', 'über'],
+      answer: 'mit',
+      explanation: '"aufhören mit" + Dativ = to stop doing something. Uses mit + Dativ (dem Rauchen). Also: "anfangen mit" + Dativ works the same way.',
+    },
+    {
+      id: 'vmp_10',
+      question: 'Als Kind hat sie immer ___ einer Weltreise geträumt.',
+      options: ['von', 'über', 'für', 'an'],
+      answer: 'von',
+      explanation: '"träumen von" + Dativ = to dream of/about. Uses von + Dativ — not über. Compare: "sprechen über" + Akk (to talk about) uses über.',
+    },
+  ],
+
 }
 
 // ─── Lookup helpers ──────────────────────────────────────────────────────────

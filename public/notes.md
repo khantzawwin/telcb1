@@ -10769,3 +10769,52 @@ A **Relativsatz** (relative clause) adds extra information about a noun. It is i
 | 3 | What case does it need? | Use the correct row from the table |
 
 ---
+
+## Klasse K13 — Verben mit Präpositionen (Verbs with Fixed Prepositions)
+
+### Grammar
+
+#### Verben mit Präpositionen
+
+Certain German verbs always pair with a specific preposition. You must memorize the verb, its preposition, **and the case** the preposition requires.
+
+| Verb | Preposition + Case | Meaning |
+|------|--------------------|---------|
+| sich informieren | **über** + Akk | to get information about |
+| sich freuen | **auf** + Akk | to look forward to (future) |
+| sich freuen | **über** + Akk | to be happy about (received/past) |
+| sich interessieren | **für** + Akk | to be interested in |
+| sich bewerben | **um** + Akk | to apply for |
+| warten | **auf** + Akk | to wait for |
+| denken | **an** + Akk | to think of |
+| sich erinnern | **an** + Akk | to remember |
+| sich kümmern | **um** + Akk | to take care of |
+| sich vorbereiten | **auf** + Akk | to prepare for |
+| bitten | **um** + Akk | to ask/request |
+| sich ärgern | **über** + Akk | to be annoyed about |
+| aufhören | **mit** + Dat | to stop doing |
+| anfangen | **mit** + Dat | to start with |
+| sich beschäftigen | **mit** + Dat | to be occupied with |
+| träumen | **von** + Dat | to dream of |
+| sprechen | **über** + Akk | to talk about |
+| sich entschuldigen | **bei** + Dat | to apologize to (person) |
+| sich entschuldigen | **für** + Akk | to apologize for (reason) |
+| teilnehmen | **an** + Dat | to take part in |
+| helfen | **bei** + Dat | to help with |
+
+**Freuen auf vs. über:**
+- *auf* → future / not yet happened: *Ich freue mich auf das Konzert morgen.*
+- *über* → already received / happened: *Ich freue mich über das Geschenk.*
+
+**Asking about things → wo(r)- + preposition; about people → preposition + wen/wem:**
+- *Worüber sprichst du?* (thing)
+- *Mit wem hast du gesprochen?* (person)
+
+> Ich informiere mich über die Kurse an der Volkshochschule.
+> *(I am getting information about the courses at the adult education centre.)*
+
+> Sie freut sich sehr auf den Urlaub nächste Woche.
+> *(She is really looking forward to the holiday next week.)*
+
+> Wir warten seit einer Stunde auf den Bus.
+> *(We have been waiting for the bus for an hour.)*
