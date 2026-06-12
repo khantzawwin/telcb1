@@ -134,6 +134,156 @@ const EXERCISES = [
 
   // ── sich beschäftigen ──
   { id: 'vp_50', verb: 'sich beschäftigen + ???', question: 'Er beschäftigt sich schon seit drei Jahren ___ diesem Thema.', options: ['mit', 'an', 'für', 'über'], answer: 'mit', explanation: 'sich beschäftigen MIT + Dativ = to deal with / be occupied with something.' },
+
+  // ── sich fürchten ──
+  { id: 'vp_51', verb: 'sich fürchten + ???', question: 'Als Kind fürchtete er sich sehr ___ großen Hunden.', options: ['vor', 'an', 'für', 'bei'], answer: 'vor', explanation: 'sich fürchten VOR + Dativ = to be afraid of something or someone. "vor" signals the source of fear.' },
+
+  // ── warnen ──
+  { id: 'vp_52', verb: 'warnen + ???', question: 'Der Arzt hat ihn ___ den Risiken der Operation gewarnt.', options: ['vor', 'über', 'gegen', 'von'], answer: 'vor', explanation: 'warnen VOR + Dativ = to warn someone about a danger or risk.' },
+
+  // ── schützen ──
+  { id: 'vp_53', verb: 'schützen + ???', question: 'Sonnencreme schützt deine Haut ___ schädlichen UV-Strahlen.', options: ['vor', 'gegen', 'von', 'für'], answer: 'vor', explanation: 'schützen VOR + Dativ = to protect something from a threat or harm.' },
+
+  // ── Angst haben ──
+  { id: 'vp_54', verb: 'Angst haben + ???', question: 'Hast du keine Angst ___ der Prüfung nächste Woche?', options: ['vor', 'für', 'an', 'von'], answer: 'vor', explanation: 'Angst haben VOR + Dativ = to be scared of / afraid of something.' },
+
+  // ── retten ──
+  { id: 'vp_55', verb: 'retten + ???', question: 'Die Ärztin hat ihn ___ dem Tod gerettet.', options: ['vor', 'aus', 'von', 'gegen'], answer: 'vor', explanation: 'retten VOR + Dativ = to save / rescue someone from a danger.' },
+
+  // ── verstehen unter ──
+  { id: 'vp_56', verb: 'verstehen + ??? (was bedeutet das?)', question: 'Was versteht man ___ dem Begriff "Nachhaltigkeit"?', options: ['unter', 'über', 'von', 'an'], answer: 'unter', explanation: 'verstehen UNTER + Dativ = to understand something by (a term) — i.e. what does a word or concept mean?' },
+
+  // ── sich vorstellen unter ──
+  { id: 'vp_57', verb: 'sich vorstellen + ??? (sich etwas denken)', question: 'Ich kann mir ___ diesem Fachbegriff leider nichts vorstellen.', options: ['unter', 'an', 'von', 'über'], answer: 'unter', explanation: 'sich (etwas) vorstellen UNTER + Dativ = to be able to picture or make sense of something.' },
+
+  // ── sich unterhalten mit ──
+  { id: 'vp_58', verb: 'sich unterhalten + ??? (die Person)', question: 'Ich habe mich gestern lange ___ meiner alten Freundin unterhalten.', options: ['mit', 'über', 'bei', 'von'], answer: 'mit', explanation: 'sich unterhalten MIT + Dativ = to have a conversation with someone (the person you are talking to).' },
+
+  // ── sich unterhalten über ──
+  { id: 'vp_59', verb: 'sich unterhalten + ??? (das Thema)', question: 'Wir haben uns ___ die aktuelle politische Lage unterhalten.', options: ['über', 'mit', 'von', 'an'], answer: 'über', explanation: 'sich unterhalten ÜBER + Akkusativ = to talk / chat about a topic.' },
+
+  // ── sich verabreden ──
+  { id: 'vp_60', verb: 'sich verabreden + ???', question: 'Hast du dich schon ___ deiner Freundin für Samstag verabredet?', options: ['mit', 'bei', 'zu', 'von'], answer: 'mit', explanation: 'sich verabreden MIT + Dativ = to arrange to meet with someone.' },
+
+  // ── telefonieren ──
+  { id: 'vp_61', verb: 'telefonieren + ???', question: 'Sie telefoniert jeden Abend ___ ihrer Schwester.', options: ['mit', 'bei', 'an', 'zu'], answer: 'mit', explanation: 'telefonieren MIT + Dativ = to be on the phone with someone.' },
+
+  // ── erzählen von ──
+  { id: 'vp_62', verb: 'erzählen + ??? (eine Geschichte)', question: 'Er hat uns stundenlang ___ seiner Reise durch Südamerika erzählt.', options: ['von', 'über', 'aus', 'an'], answer: 'von', explanation: 'erzählen VON + Dativ = to tell about / recount a personal story or experience. Compare: sprechen ÜBER (formal topic discussion).' },
+
+  // ── hören von ──
+  { id: 'vp_63', verb: 'hören + ??? (eine Neuigkeit)', question: 'Hast du schon ___ dem neuen Restaurant in der Innenstadt gehört?', options: ['von', 'über', 'an', 'für'], answer: 'von', explanation: 'hören VON + Dativ = to hear about something (a piece of news or information).' },
+
+  // ── sprechen von ──
+  { id: 'vp_64', verb: 'sprechen + ??? (etwas erwähnen)', question: 'Meine Oma spricht oft ___ ihren Kindheitserinnerungen.', options: ['von', 'über', 'aus', 'an'], answer: 'von', explanation: 'sprechen VON + Dativ = to speak of / mention something (often personal or nostalgic). Different from sprechen ÜBER (formal discussion of a topic).' },
+
+  // ── überreden ──
+  { id: 'vp_65', verb: 'überreden + ???', question: 'Mein Bruder hat mich ___ einem Kletterausflug überredet — ich bin kein Sportler!', options: ['zu', 'für', 'auf', 'bei'], answer: 'zu', explanation: 'überreden ZU + Dativ = to persuade / talk someone into doing something.' },
+
+  // ── beitragen ──
+  { id: 'vp_66', verb: 'beitragen + ???', question: 'Jeder kann ___ dem Klimaschutz beitragen, auch im Alltag.', options: ['zu', 'für', 'an', 'bei'], answer: 'zu', explanation: 'beitragen ZU + Dativ = to contribute to / help bring about something.' },
+
+  // ── führen zu ──
+  { id: 'vp_67', verb: 'führen + ??? (ein Ergebnis)', question: 'Zu wenig Schlaf kann ___ ernsthaften Gesundheitsproblemen führen.', options: ['zu', 'für', 'in', 'auf'], answer: 'zu', explanation: 'führen ZU + Dativ = to lead to / result in something.' },
+
+  // ── arbeiten an ──
+  { id: 'vp_68', verb: 'arbeiten + ???', question: 'Unsere Forschungsgruppe arbeitet seit zwei Jahren ___ einem neuen Impfstoff.', options: ['an', 'auf', 'für', 'bei'], answer: 'an', explanation: 'arbeiten AN + Dativ = to work on something (a project, task, or piece of creative or research work).' },
+
+  // ── schreiben an ──
+  { id: 'vp_69', verb: 'schreiben + ??? (an eine Person)', question: 'Sie hat einen langen Brief ___ ihren Vater geschrieben.', options: ['an', 'für', 'zu', 'bei'], answer: 'an', explanation: 'schreiben AN + Akkusativ = to write to someone (a letter directed at a person).' },
+
+  // ── sich anmelden bei ──
+  { id: 'vp_70', verb: 'sich anmelden + ???', question: 'Du musst dich ___ der Sprachschule anmelden, bevor du den Kurs buchen kannst.', options: ['bei', 'an', 'zu', 'auf'], answer: 'bei', explanation: 'sich anmelden BEI + Dativ = to register with / sign up at an institution or organisation.' },
+
+  // ── sich erkundigen ──
+  { id: 'vp_71', verb: 'sich erkundigen + ???', question: 'Ich habe mich ___ den Zugverbindungen nach Hamburg erkundigt.', options: ['nach', 'über', 'für', 'von'], answer: 'nach', explanation: 'sich erkundigen NACH + Dativ = to inquire about / ask for information about something specific.' },
+
+  // ── suchen nach ──
+  { id: 'vp_72', verb: 'suchen + ???', question: 'Die Firma sucht dringend ___ erfahrenen Mitarbeitern.', options: ['nach', 'für', 'um', 'auf'], answer: 'nach', explanation: 'suchen NACH + Dativ = to search for / look for someone or something.' },
+
+  // ── riechen ──
+  { id: 'vp_73', verb: 'riechen + ???', question: 'Es riecht hier ___ frischem Kaffee — habt ihr gerade eine Kanne gemacht?', options: ['nach', 'von', 'an', 'für'], answer: 'nach', explanation: 'riechen NACH + Dativ = to smell like / of something.' },
+
+  // ── bestehen aus ──
+  { id: 'vp_74', verb: 'bestehen + ??? (zusammengesetzt sein)', question: 'Die TELC-B1-Prüfung besteht ___ mehreren Teilen: Lesen, Hören, Schreiben und Sprechen.', options: ['aus', 'von', 'bei', 'mit'], answer: 'aus', explanation: 'bestehen AUS + Dativ = to consist of / be made up of something.' },
+
+  // ── kommen aus ──
+  { id: 'vp_75', verb: 'kommen + ??? (Herkunft)', question: 'Meine neue Kollegin kommt ursprünglich ___ dem Iran.', options: ['aus', 'von', 'bei', 'nach'], answer: 'aus', explanation: 'kommen AUS + Dativ = to come from a place of origin (country, city, or region).' },
+
+  // ── diskutieren ──
+  { id: 'vp_76', verb: 'diskutieren + ???', question: 'Die Politiker diskutieren schon seit Wochen ___ die geplante Steuerreform.', options: ['über', 'von', 'mit', 'an'], answer: 'über', explanation: 'diskutieren ÜBER + Akkusativ = to discuss / debate a topic.' },
+
+  // ── sich sorgen ──
+  { id: 'vp_77', verb: 'sich sorgen + ???', question: 'Sie sorgt sich sehr ___ die Gesundheit ihrer alten Mutter.', options: ['um', 'für', 'an', 'über'], answer: 'um', explanation: 'sich sorgen UM + Akkusativ = to worry about / be concerned about someone or something.' },
+
+  // ── rechnen mit ──
+  { id: 'vp_78', verb: 'rechnen + ??? (erwarten)', question: 'Mit so vielen Schwierigkeiten hatte ich wirklich nicht gerechnet.', options: ['mit', 'auf', 'für', 'an'], answer: 'mit', explanation: 'rechnen MIT + Dativ = to count on / expect / reckon with something (often in negative or surprised contexts).' },
+
+  // ── einverstanden sein ──
+  { id: 'vp_79', verb: 'einverstanden sein + ???', question: 'Ich bin vollkommen ___ deinem Vorschlag einverstanden — lass uns das so machen!', options: ['mit', 'für', 'an', 'zu'], answer: 'mit', explanation: 'einverstanden sein MIT + Dativ = to agree with / be in agreement with something.' },
+
+  // ── auffordern ──
+  { id: 'vp_80', verb: 'auffordern + ???', question: 'Der Richter forderte den Zeugen ___ einer klaren Aussage auf.', options: ['zu', 'für', 'auf', 'an'], answer: 'zu', explanation: 'auffordern ZU + Dativ = to call on / urge someone to do something.' },
+
+  // ── sich konzentrieren ──
+  { id: 'vp_81', verb: 'sich konzentrieren + ???', question: 'Bei diesem Lärm kann ich mich überhaupt nicht ___ meine Arbeit konzentrieren.', options: ['auf', 'für', 'bei', 'in'], answer: 'auf', explanation: 'sich konzentrieren AUF + Akkusativ = to concentrate / focus on something.' },
+
+  // ── aufpassen ──
+  { id: 'vp_82', verb: 'aufpassen + ???', question: 'Pass ___ deine Tasche auf — hier gibt es viele Taschendiebe!', options: ['auf', 'für', 'an', 'bei'], answer: 'auf', explanation: 'aufpassen AUF + Akkusativ = to watch out for / keep an eye on someone or something.' },
+
+  // ── ankommen auf ──
+  { id: 'vp_83', verb: 'ankommen + ??? (es kommt ... an)', question: 'Bei einem Vorstellungsgespräch kommt es sehr ___ den ersten Eindruck an.', options: ['auf', 'an', 'bei', 'für'], answer: 'auf', explanation: 'ankommen AUF + Akkusativ (es kommt auf ... an) = it depends on / what really matters is something.' },
+
+  // ── kämpfen um ──
+  { id: 'vp_84', verb: 'kämpfen + ??? (etwas gewinnen wollen)', question: 'Die Mannschaft kämpfte bis zur letzten Minute ___ den Sieg.', options: ['um', 'für', 'gegen', 'auf'], answer: 'um', explanation: 'kämpfen UM + Akkusativ = to fight / compete for something you want to win or keep.' },
+
+  // ── sich sehnen ──
+  { id: 'vp_85', verb: 'sich sehnen + ???', question: 'Nach drei Monaten im Ausland sehnte er sich sehr ___ seiner Familie.', options: ['nach', 'von', 'zu', 'an'], answer: 'nach', explanation: 'sich sehnen NACH + Dativ = to long for / miss someone or something deeply.' },
+
+  // ── zufrieden sein ──
+  { id: 'vp_86', verb: 'zufrieden sein + ???', question: 'Bist du wirklich ___ deinen Prüfungsergebnissen zufrieden?', options: ['mit', 'von', 'für', 'an'], answer: 'mit', explanation: 'zufrieden sein MIT + Dativ = to be satisfied / happy with something.' },
+
+  // ── überzeugen ──
+  { id: 'vp_87', verb: 'überzeugen + ??? (jemanden von etwas)', question: 'Es ist schwer, ihn ___ einer anderen Meinung zu überzeugen.', options: ['von', 'für', 'über', 'mit'], answer: 'von', explanation: 'jemanden überzeugen VON + Dativ = to convince someone of something.' },
+
+  // ── es handelt sich um ──
+  { id: 'vp_88', verb: 'es handelt sich + ???', question: 'In diesem Bericht handelt es sich ___ ein ernstes gesellschaftliches Problem.', options: ['um', 'über', 'von', 'an'], answer: 'um', explanation: 'es handelt sich UM + Akkusativ = it is about / it concerns something (common in formal and written German).' },
+
+  // ── sich orientieren an ──
+  { id: 'vp_89', verb: 'sich orientieren + ???', question: 'Bei meiner Entscheidung orientiere ich mich ___ den Empfehlungen des Arztes.', options: ['an', 'nach', 'mit', 'bei'], answer: 'an', explanation: 'sich orientieren AN + Dativ = to orient oneself by / use something as a guide or reference point.' },
+
+  // ── erinnern an (remind) ──
+  { id: 'vp_90', verb: 'erinnern + ??? (jemanden erinnern)', question: 'Kannst du mich bitte ___ den Zahnarzttermin morgen erinnern?', options: ['an', 'auf', 'für', 'bei'], answer: 'an', explanation: 'jemanden erinnern AN + Akkusativ = to remind someone of something. (Different from "sich erinnern an" = to remember yourself.)' },
+
+  // ── sich verlassen auf (new context) ──
+  { id: 'vp_91', verb: 'sich verlassen + ??? (new situation)', question: 'In dieser Stadt kann man sich leider nicht ___ pünktliche Busse verlassen.', options: ['auf', 'von', 'an', 'bei'], answer: 'auf', explanation: 'sich verlassen AUF + Akkusativ = to rely on / count on something.' },
+
+  // ── hängen an ──
+  { id: 'vp_92', verb: 'hängen + ??? (emotional verbunden)', question: 'Sie hängt sehr ___ ihrem alten Familienauto — es gibt so viele Erinnerungen daran.', options: ['an', 'auf', 'in', 'bei'], answer: 'an', explanation: 'hängen AN + Dativ = to be emotionally attached to something or someone.' },
+
+  // ── sich beteiligen ──
+  { id: 'vp_93', verb: 'sich beteiligen + ???', question: 'Möchtest du dich ___ unserem neuen Schulprojekt beteiligen?', options: ['an', 'bei', 'für', 'mit'], answer: 'an', explanation: 'sich beteiligen AN + Dativ = to participate in / take part in something.' },
+
+  // ── bestehen auf ──
+  { id: 'vp_94', verb: 'bestehen + ??? (darauf beharren)', question: 'Sie besteht ___ einer schriftlichen Bestätigung — mündlich reicht ihr nicht.', options: ['auf', 'an', 'für', 'um'], answer: 'auf', explanation: 'bestehen AUF + Dativ = to insist on something.' },
+
+  // ── sich entschließen ──
+  { id: 'vp_95', verb: 'sich entschließen + ???', question: 'Nach langem Zögern hat er sich ___ einer Ausbildung als Elektriker entschlossen.', options: ['zu', 'für', 'auf', 'an'], answer: 'zu', explanation: 'sich entschließen ZU + Dativ = to make up one\'s mind / decide to do something.' },
+
+  // ── protestieren ──
+  { id: 'vp_96', verb: 'protestieren + ???', question: 'Tausende von Menschen haben ___ die geplante Abholzung des Waldes protestiert.', options: ['gegen', 'für', 'über', 'an'], answer: 'gegen', explanation: 'protestieren GEGEN + Akkusativ = to protest against something.' },
+
+  // ── streben ──
+  { id: 'vp_97', verb: 'streben + ???', question: 'Er strebt schon immer ___ einem besseren Leben für seine Familie.', options: ['nach', 'für', 'um', 'zu'], answer: 'nach', explanation: 'streben NACH + Dativ = to strive for / aspire to something.' },
+
+  // ── sich freuen über (new context) ──
+  { id: 'vp_98', verb: 'sich freuen + ??? (ein erhaltenes Ergebnis)', question: 'Er freute sich sehr ___ die bestandene Prüfung und feierte mit Freunden.', options: ['über', 'auf', 'für', 'an'], answer: 'über', explanation: 'sich freuen ÜBER + Akkusativ = happy about something that has already happened or been received.' },
+
+  // ── neigen ──
+  { id: 'vp_99', verb: 'neigen + ???', question: 'Er neigt manchmal ___ Übertreibungen — glaub nicht alles, was er erzählt.', options: ['zu', 'für', 'an', 'auf'], answer: 'zu', explanation: 'neigen ZU + Dativ = to tend toward / have a tendency for something.' },
+
+  // ── ausgehen von ──
+  { id: 'vp_100', verb: 'ausgehen + ??? (annehmen)', question: 'Ich gehe ___ einer schnellen Lösung des Problems aus.', options: ['von', 'auf', 'für', 'an'], answer: 'von', explanation: 'ausgehen VON + Dativ = to assume / proceed on the assumption that something is true.' },
 ]
 
 // ─── Reference data — grouped by preposition ─────────────────────────────────
@@ -282,6 +432,31 @@ const VERB_GROUPS = [
       { verb: 'sich entschuldigen bei', english: 'apologize to (a person)', example: 'Hast du dich bei ihr entschuldigt?' },
     ],
   },
+  {
+    preposition: 'vor',
+    case: 'Dativ',
+    color: 'bg-red-50 text-red-700 border-red-200',
+    badge: 'bg-red-100 text-red-700',
+    verbs: [
+      { verb: 'sich fürchten vor', english: 'be afraid of', example: 'Sie fürchtet sich vor Spinnen.' },
+      { verb: 'warnen vor', english: 'warn about', example: 'Er warnte mich vor der Gefahr.' },
+      { verb: 'schützen vor', english: 'protect from', example: 'Die Jacke schützt dich vor dem Regen.' },
+      { verb: 'Angst haben vor', english: 'be scared of', example: 'Hast du Angst vor der Prüfung?' },
+      { verb: 'retten vor', english: 'save / rescue from', example: 'Der Feuerwehrmann hat ihn vor dem Feuer gerettet.' },
+      { verb: 'sich verstecken vor', english: 'hide from', example: 'Das Kind versteckt sich vor dem Hund.' },
+    ],
+  },
+  {
+    preposition: 'unter',
+    case: 'Dativ',
+    color: 'bg-slate-50 text-slate-700 border-slate-200',
+    badge: 'bg-slate-100 text-slate-700',
+    verbs: [
+      { verb: 'leiden unter', english: 'suffer from / be troubled by', example: 'Er leidet sehr unter dem Stress.' },
+      { verb: 'verstehen unter', english: 'understand / mean by', example: 'Was verstehst du unter "Freiheit"?' },
+      { verb: 'sich vorstellen unter', english: 'imagine / picture by', example: 'Ich kann mir darunter nichts vorstellen.' },
+    ],
+  },
 ]
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -303,7 +478,7 @@ export default function Verben() {
   return (
     <div className="max-w-3xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Verben mit Präpositionen</h1>
-      <p className="text-base text-gray-400 mb-8">Fill-in-the-blank practice · A2 + B1 level</p>
+      <p className="text-base text-gray-400 mb-8">Fill-in-the-blank practice · A2 + B1 · 50 questions per session from a pool of {EXERCISES.length}</p>
 
       <div className="flex gap-1 bg-gray-100 p-1 rounded-2xl mb-8 w-fit">
         {[['exercise', 'Exercise'], ['reference', 'Reference List']].map(([key, label]) => (
@@ -327,7 +502,8 @@ export default function Verben() {
 // ─── Exercise tab ─────────────────────────────────────────────────────────────
 
 function ExerciseTab() {
-  const [questions, setQuestions] = useState(() => shuffle(EXERCISES))
+  const SESSION_SIZE = 50
+  const [questions, setQuestions] = useState(() => shuffle(EXERCISES).slice(0, SESSION_SIZE))
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState(null)
   const [score, setScore] = useState(0)
@@ -353,7 +529,7 @@ function ExerciseTab() {
   }
 
   const handleRestart = () => {
-    setQuestions(shuffle(EXERCISES))
+    setQuestions(shuffle(EXERCISES).slice(0, SESSION_SIZE))
     setIndex(0)
     setSelected(null)
     setScore(0)
@@ -472,15 +648,190 @@ function ExerciseTab() {
 
 // ─── Reference tab ────────────────────────────────────────────────────────────
 
+const CASE_GUIDE = [
+  {
+    label: 'Always Dativ',
+    labelColor: 'text-teal-700',
+    bg: 'bg-teal-50 border-teal-200',
+    chipBg: 'bg-teal-100 text-teal-700',
+    prepositions: [
+      { prep: 'aus', examples: 'bestehen aus, stammen aus' },
+      { prep: 'bei', examples: 'helfen bei, sich bedanken bei, sich bewerben bei' },
+      { prep: 'mit', examples: 'anfangen mit, aufhören mit, telefonieren mit' },
+      { prep: 'nach', examples: 'fragen nach, riechen nach, suchen nach' },
+      { prep: 'seit', examples: 'mostly temporal — seit einem Jahr warten' },
+      { prep: 'von', examples: 'träumen von, abhängen von, sich erholen von' },
+      { prep: 'zu', examples: 'gehören zu, gratulieren zu, einladen zu' },
+      { prep: 'gegenüber', examples: 'sich verhalten gegenüber' },
+      { prep: 'außer', examples: 'mostly standalone — außer mir, außer Betrieb' },
+    ],
+    tip: 'Memory trick: aus · bei · mit · nach · seit · von · zu → ABMN-SVZ',
+  },
+  {
+    label: 'Always Akkusativ',
+    labelColor: 'text-indigo-700',
+    bg: 'bg-indigo-50 border-indigo-200',
+    chipBg: 'bg-indigo-100 text-indigo-700',
+    prepositions: [
+      { prep: 'durch', examples: 'mostly spatial — durch den Park gehen' },
+      { prep: 'für', examples: 'sich interessieren für, danken für, sich entscheiden für' },
+      { prep: 'gegen', examples: 'protestieren gegen, sich entscheiden gegen' },
+      { prep: 'ohne', examples: 'mostly standalone — ohne Hilfe, ohne dich' },
+      { prep: 'um', examples: 'bitten um, sich kümmern um, sich bewerben um' },
+      { prep: 'bis', examples: 'mostly temporal/spatial — bis nächste Woche' },
+    ],
+    tip: 'Memory trick: durch · für · gegen · ohne · um → DFGOU',
+  },
+  {
+    label: 'Wechselpräpositionen — Dativ or Akkusativ',
+    labelColor: 'text-amber-700',
+    bg: 'bg-amber-50 border-amber-200',
+    chipBg: 'bg-amber-100 text-amber-700',
+    prepositions: [
+      { prep: 'an', examples: null },
+      { prep: 'auf', examples: null },
+      { prep: 'hinter', examples: null },
+      { prep: 'in', examples: null },
+      { prep: 'neben', examples: null },
+      { prep: 'über', examples: null },
+      { prep: 'unter', examples: null },
+      { prep: 'vor', examples: null },
+      { prep: 'zwischen', examples: null },
+    ],
+    tip: null,
+    wechselIntro: 'Standard rule: Dativ = location (Wo? — Das Buch liegt auf dem Tisch.) · Akkusativ = direction (Wohin? — Ich lege das Buch auf den Tisch.)\n\nIn fixed verb + preposition expressions, this location/direction rule does not apply — the verb decides the case.',
+    wechsel: [
+      {
+        prep: 'auf',
+        rows: [
+          { case: 'Akkusativ', rule: 'almost always Akk in fixed expressions', verbs: 'warten auf, hoffen auf, sich freuen auf, achten auf, reagieren auf, sich vorbereiten auf' },
+        ],
+      },
+      {
+        prep: 'über',
+        rows: [
+          { case: 'Akkusativ', rule: 'almost always Akk in fixed expressions', verbs: 'sprechen über, nachdenken über, sich ärgern über, sich freuen über, sich informieren über' },
+        ],
+      },
+      {
+        prep: 'an',
+        rows: [
+          { case: 'Akkusativ', rule: 'figurative direction — toward someone/something', verbs: 'denken an, sich erinnern an, sich gewöhnen an, glauben an, schreiben an' },
+          { case: 'Dativ', rule: 'fixed idiomatic pairs — verb dictates Dativ', verbs: 'teilnehmen an, arbeiten an, zweifeln an' },
+        ],
+      },
+      {
+        prep: 'in',
+        rows: [
+          { case: 'Akkusativ', rule: 'change of state / entering', verbs: 'sich verlieben in, sich einarbeiten in' },
+          { case: 'Dativ', rule: 'fixed location sense or idiomatic', verbs: 'sich auskennen in, sich irren in' },
+        ],
+      },
+      {
+        prep: 'vor',
+        rows: [
+          { case: 'Dativ', rule: 'almost always Dat in fixed expressions (emotional distance / protection)', verbs: 'sich fürchten vor, warnen vor, schützen vor, Angst haben vor, retten vor' },
+        ],
+      },
+      {
+        prep: 'unter',
+        rows: [
+          { case: 'Dativ', rule: 'almost always Dat in fixed expressions', verbs: 'leiden unter, verstehen unter, sich vorstellen unter' },
+        ],
+      },
+      {
+        prep: 'hinter · neben · zwischen',
+        rows: [
+          { case: 'spatial only', rule: 'follow the standard Wo/Wohin rule — rarely appear in fixed verb expressions at B1', verbs: '' },
+        ],
+      },
+    ],
+  },
+]
+
 function ReferenceTab() {
   const [open, setOpen] = useState(null)
 
   return (
-    <div className="space-y-3">
-      <p className="text-sm text-gray-500 mb-2">
-        Tap a preposition to expand the verb list. The case shown is the case required by that verb–preposition pair.
-      </p>
-      {VERB_GROUPS.map((group, i) => {
+    <div className="space-y-4">
+
+      {/* ── Case guide ── */}
+      <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
+        <div className="px-6 py-4 border-b border-gray-100">
+          <p className="text-sm font-bold text-gray-800">Which case does each preposition take?</p>
+          <p className="text-xs text-gray-400 mt-0.5">With fixed verb + preposition expressions, the verb determines the case — but most prepositions always use the same one.</p>
+        </div>
+
+        <div className="divide-y divide-gray-100">
+          {CASE_GUIDE.map(group => (
+            <div key={group.label} className="px-6 py-5">
+              <div className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-xl border text-xs font-bold mb-4 ${group.bg} ${group.labelColor}`}>
+                {group.label}
+              </div>
+
+              {/* Preposition chips + examples */}
+              {group.prepositions.every(p => !p.examples) ? (
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {group.prepositions.map(({ prep }) => (
+                    <span key={prep} className={`text-sm font-bold px-2.5 py-0.5 rounded-lg ${group.chipBg}`}>{prep}</span>
+                  ))}
+                </div>
+              ) : (
+                <div className="space-y-2.5 mb-3">
+                  {group.prepositions.map(({ prep, examples }) => (
+                    <div key={prep} className="flex items-baseline gap-2 flex-wrap">
+                      <span className={`text-sm font-bold px-2.5 py-0.5 rounded-lg flex-shrink-0 ${group.chipBg}`}>{prep}</span>
+                      {examples && <span className="text-xs text-gray-500 leading-relaxed">{examples}</span>}
+                    </div>
+                  ))}
+                </div>
+              )}
+
+              {/* Tip text */}
+              {group.tip && (
+                <p className="text-xs text-gray-500 leading-relaxed">{group.tip}</p>
+              )}
+
+              {/* Wechselpräpositionen detail table */}
+              {group.wechsel && (
+                <div className="space-y-3 mt-1">
+                  {group.wechselIntro && group.wechselIntro.split('\n\n').map((para, i) => (
+                    <p key={i} className="text-xs text-gray-500 leading-relaxed">{para}</p>
+                  ))}
+                  <div className="space-y-3 pt-1">
+                    {group.wechsel.map(({ prep, rows }) => (
+                      <div key={prep} className="rounded-2xl overflow-hidden border border-amber-200">
+                        <div className="px-4 py-2 bg-amber-50 border-b border-amber-200">
+                          <span className="text-sm font-bold text-amber-700">{prep}</span>
+                        </div>
+                        {rows.map((row, i) => (
+                          <div key={i} className={`px-4 py-3 ${i < rows.length - 1 ? 'border-b border-amber-100' : ''}`}>
+                            <div className="flex items-center gap-2 mb-1 flex-wrap">
+                              <span className={`text-xs font-bold px-2 py-0.5 rounded-lg flex-shrink-0 ${
+                                row.case === 'Akkusativ' ? 'bg-indigo-100 text-indigo-700'
+                                : row.case === 'Dativ' ? 'bg-teal-100 text-teal-700'
+                                : 'bg-gray-100 text-gray-500'
+                              }`}>
+                                {row.case}
+                              </span>
+                              <span className="text-xs text-gray-500">{row.rule}</span>
+                            </div>
+                            {row.verbs && <p className="text-xs text-gray-600 italic mt-1">{row.verbs}</p>}
+                          </div>
+                        ))}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Verb groups ── */}
+      <p className="text-xs text-gray-400 px-1">Tap a preposition below to see all verbs and example sentences.</p>
+      {VERB_GROUPS.map((group) => {
         const key = `${group.preposition}-${group.case}`
         const isOpen = open === key
         return (
@@ -505,13 +856,9 @@ function ReferenceTab() {
               <div className="border-t border-gray-100">
                 {group.verbs.map((v, j) => (
                   <div key={j} className={`px-6 py-4 ${j < group.verbs.length - 1 ? 'border-b border-gray-50' : ''}`}>
-                    <div className="flex items-start justify-between gap-4">
-                      <div className="flex-1 min-w-0">
-                        <p className="text-sm font-bold text-gray-900">{v.verb}</p>
-                        <p className="text-xs text-gray-400 mt-0.5">{v.english}</p>
-                        <p className="text-xs text-gray-600 mt-1.5 italic leading-relaxed">{v.example}</p>
-                      </div>
-                    </div>
+                    <p className="text-sm font-bold text-gray-900">{v.verb}</p>
+                    <p className="text-xs text-gray-400 mt-0.5">{v.english}</p>
+                    <p className="text-xs text-gray-600 mt-1.5 italic leading-relaxed">{v.example}</p>
                   </div>
                 ))}
               </div>

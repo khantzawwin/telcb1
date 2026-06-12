@@ -1,21 +1,36 @@
-import { NavLink, useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import { NavLink, useNavigate, useLocation } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 
-const navItems = [
+// Desktop sidebar + primary bottom-nav (5 items)
+const primaryNavItems = [
   { to: '/', label: 'Home', icon: HomeIcon, end: true },
   { to: '/vocabulary', label: 'Vocab', icon: BookIcon },
   { to: '/flashcards', label: 'Cards', icon: CardsIcon },
-  { to: '/grammar', label: 'Grammar', icon: PencilIcon },
   { to: '/verben', label: 'Verbs', icon: LinkIcon },
+  { to: '/connectors', label: 'Connect', icon: ConnectIcon },
+]
+
+// Overflow — desktop sidebar shows these too, mobile bottom-nav hides them in "More"
+const secondaryNavItems = [
+  { to: '/grammar', label: 'Grammar', icon: PencilIcon },
   { to: '/writing', label: 'Writing', icon: WriteIcon },
   { to: '/sprechen', label: 'Speaking', icon: ChatIcon },
 ]
 
+const navItems = [...primaryNavItems, ...secondaryNavItems]
+
 export default function Layout({ children }) {
   const { user, logOut } = useAuth()
   const navigate = useNavigate()
+  const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
+  const [moreOpen, setMoreOpen] = useState(false)
+
+  const secondaryPaths = secondaryNavItems.map(n => n.to)
+  const isOnSecondaryRoute = secondaryPaths.includes(location.pathname)
+
+  useEffect(() => { setMoreOpen(false) }, [location.pathname])
 
   const handleLogOut = async () => {
     await logOut()
@@ -80,7 +95,6 @@ export default function Layout({ children }) {
           />
         </button>
 
-        {/* Mobile dropdown menu */}
         {menuOpen && (
           <div className="absolute top-full right-4 mt-1 bg-white border border-gray-200 rounded-xl shadow-lg overflow-hidden z-30">
             <div className="px-4 py-3 border-b border-gray-100">
@@ -100,33 +114,77 @@ export default function Layout({ children }) {
       {/* ── Main content ─────────────────────────── */}
       <main
         className="md:ml-64 min-h-screen pb-20 md:pb-0"
-        onClick={() => setMenuOpen(false)}
+        onClick={() => { setMenuOpen(false); setMoreOpen(false) }}
       >
         {children}
       </main>
 
       {/* ── Mobile bottom nav ─────────────────────────── */}
-      <nav className="md:hidden fixed bottom-0 inset-x-0 z-20 bg-white border-t border-gray-200 safe-bottom">
-        <div className="flex">
-          {navItems.map(({ to, label, icon: Icon, end }) => (
-            <NavLink
-              key={to}
-              to={to}
-              end={end}
-              className={({ isActive }) =>
-                `flex-1 flex flex-col items-center justify-center py-2 gap-0.5 text-xs font-medium transition-colors ${
-                  isActive ? 'text-indigo-600' : 'text-gray-500'
-                }`
-              }
+      <nav className="md:hidden fixed bottom-0 inset-x-0 z-20">
+        {/* More panel — slides up above the bar */}
+        {moreOpen && (
+          <div className="bg-white border-t border-gray-100 rounded-t-2xl shadow-lg overflow-hidden">
+            <div className="px-3 pt-3 pb-2">
+              <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest px-2 mb-1.5">More</p>
+              {secondaryNavItems.map(({ to, label, icon: Icon }) => (
+                <NavLink
+                  key={to}
+                  to={to}
+                  className={({ isActive }) =>
+                    `flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
+                      isActive
+                        ? 'bg-indigo-100 text-indigo-700'
+                        : 'text-gray-600 hover:bg-gray-100'
+                    }`
+                  }
+                >
+                  {({ isActive }) => (
+                    <>
+                      <Icon className={`w-5 h-5 flex-shrink-0 ${isActive ? 'text-indigo-600' : 'text-gray-400'}`} />
+                      {label}
+                    </>
+                  )}
+                </NavLink>
+              ))}
+            </div>
+          </div>
+        )}
+
+        {/* Bar */}
+        <div className="bg-white border-t border-gray-200 safe-bottom">
+          <div className="flex">
+            {primaryNavItems.map(({ to, label, icon: Icon, end }) => (
+              <NavLink
+                key={to}
+                to={to}
+                end={end}
+                onClick={() => setMoreOpen(false)}
+                className={({ isActive }) =>
+                  `flex-1 flex flex-col items-center justify-center py-2.5 gap-1 text-[11px] font-medium transition-colors ${
+                    isActive ? 'text-indigo-600' : 'text-gray-500'
+                  }`
+                }
+              >
+                {({ isActive }) => (
+                  <>
+                    <Icon className={`w-5 h-5 ${isActive ? 'text-indigo-600' : 'text-gray-400'}`} />
+                    {label}
+                  </>
+                )}
+              </NavLink>
+            ))}
+
+            {/* More button */}
+            <button
+              onClick={(e) => { e.stopPropagation(); setMoreOpen(o => !o) }}
+              className={`flex-1 flex flex-col items-center justify-center py-2.5 gap-1 text-[11px] font-medium transition-colors ${
+                moreOpen || isOnSecondaryRoute ? 'text-indigo-600' : 'text-gray-500'
+              }`}
             >
-              {({ isActive }) => (
-                <>
-                  <Icon className={`w-5 h-5 ${isActive ? 'text-indigo-600' : 'text-gray-400'}`} />
-                  {label}
-                </>
-              )}
-            </NavLink>
-          ))}
+              <MoreIcon className={`w-5 h-5 ${moreOpen || isOnSecondaryRoute ? 'text-indigo-600' : 'text-gray-400'}`} />
+              More
+            </button>
+          </div>
         </div>
       </nav>
     </div>
@@ -147,7 +205,6 @@ function AppLogo() {
   )
 }
 
-// Inline SVG icons to avoid any icon library dependency
 function HomeIcon({ className }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -196,10 +253,31 @@ function LinkIcon({ className }) {
   )
 }
 
+function ConnectIcon({ className }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <rect x="2" y="9" width="6" height="6" rx="1" />
+      <rect x="16" y="9" width="6" height="6" rx="1" />
+      <line x1="8" y1="12" x2="16" y2="12" strokeLinecap="round" />
+    </svg>
+  )
+}
+
 function WriteIcon({ className }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+    </svg>
+  )
+}
+
+function MoreIcon({ className }) {
+  return (
+    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+      <rect x="3" y="3" width="7" height="7" rx="1.5" />
+      <rect x="14" y="3" width="7" height="7" rx="1.5" />
+      <rect x="3" y="14" width="7" height="7" rx="1.5" />
+      <rect x="14" y="14" width="7" height="7" rx="1.5" />
     </svg>
   )
 }

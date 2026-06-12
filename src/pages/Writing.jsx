@@ -4,409 +4,619 @@ import { db } from '../firebase'
 import { useAuth } from '../contexts/AuthContext'
 import { getTodayKey } from '../utils/srs'
 
-// ─── Gemini setup ─────────────────────────────────────────────────────────────
-
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY
 const GEMINI_URL = GEMINI_API_KEY
   ? `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${GEMINI_API_KEY}`
   : null
 
-// ─── Writing prompts — all in German, exam-style ──────────────────────────────
+// ─── Prompts ──────────────────────────────────────────────────────────────────
+// Each prompt has an incoming email the student received, and points they must
+// include in their reply. This matches the real TELC B1 Schreiben Teil 1 format.
 
 const PROMPTS = [
-  // ── Förmlich ──────────────────────────────────────────────────────────────
+  // ── Informal ─────────────────────────────────────────────────────────────────
   {
-    id: 1, type: 'formal', format: 'E-Mail',
-    title: 'Sprachkursanfrage',
-    situation: 'Sie haben eine Anzeige für einen Deutschkurs an der Sprachschule Berliner Tor gesehen und möchten mehr Informationen. Schreiben Sie eine förmliche E-Mail an die Sprachschule.',
-    addressee: 'die Sprachschule Berliner Tor',
-    points: [
-      'Stellen Sie sich kurz vor und erklären Sie, warum Sie schreiben.',
-      'Fragen Sie nach dem Kursplan und der Kursdauer.',
-      'Erkundigen Sie sich nach den Kursgebühren und möglichen Ermäßigungen.',
-      'Fragen Sie, ob der Kurs für Lernende auf B1-Niveau geeignet ist.',
-      'Bitten Sie um Informationen, wie und wann man sich anmelden kann.',
-    ],
-  },
-  {
-    id: 2, type: 'formal', format: 'Brief',
-    title: 'Beschwerde — Hotel',
-    situation: 'Sie haben letzte Woche im Hotel Seeblick übernachtet und waren sehr unzufrieden mit Ihrem Aufenthalt. Schreiben Sie einen förmlichen Beschwerdebrief an den Hotelmanager.',
-    addressee: 'den Hotelmanager des Hotel Seeblick',
-    points: [
-      'Erklären Sie, wann Sie übernachtet haben und was Sie gebucht haben.',
-      'Beschreiben Sie das erste Problem, das Sie erlebt haben (z. B. Zimmer nicht fertig, Lärm).',
-      'Beschreiben Sie ein zweites Problem (z. B. Frühstücksqualität, Verhalten des Personals).',
-      'Erklären Sie, wie diese Probleme Ihren Aufenthalt beeinträchtigt haben.',
-      'Teilen Sie mit, welche Entschädigung Sie erwarten.',
-    ],
-  },
-  {
-    id: 3, type: 'formal', format: 'Brief',
-    title: 'Bewerbung — Teilzeitstelle',
-    situation: 'Sie haben eine Stellenanzeige für eine Teilzeitstelle als Büroassistentin / Büroassistent bei einem lokalen Unternehmen gesehen. Schreiben Sie ein förmliches Bewerbungsschreiben.',
-    addressee: 'die Personalabteilung des Unternehmens',
-    points: [
-      'Teilen Sie mit, wo Sie die Anzeige gesehen haben und auf welche Stelle Sie sich bewerben.',
-      'Stellen Sie kurz Ihren Bildungsweg vor.',
-      'Beschreiben Sie Ihre relevante Berufserfahrung.',
-      'Erklären Sie, warum Sie sich für dieses Unternehmen interessieren.',
-      'Geben Sie Ihre Verfügbarkeit an und teilen Sie mit, wie man Sie erreichen kann.',
-    ],
-  },
-  {
-    id: 4, type: 'formal', format: 'E-Mail',
-    title: 'Termin — Ausländerbehörde',
-    situation: 'Ihre Aufenthaltserlaubnis läuft bald ab. Sie müssen einen Termin bei der Ausländerbehörde vereinbaren. Schreiben Sie eine förmliche E-Mail.',
-    addressee: 'die Ausländerbehörde',
-    points: [
-      'Erklären Sie klar den Grund Ihrer E-Mail.',
-      'Nennen Sie Ihre persönlichen Daten (Name, Geburtsdatum, Staatsangehörigkeit).',
-      'Erklären Sie, wann Ihre aktuelle Erlaubnis abläuft.',
-      'Bitten Sie um einen Termin und nennen Sie mögliche Wunschtermine.',
-      'Fragen Sie, welche Unterlagen Sie zum Termin mitbringen müssen.',
-    ],
-  },
-  {
-    id: 5, type: 'formal', format: 'E-Mail',
-    title: 'Rückgabe — Online-Shop',
-    situation: 'Sie haben eine Jacke in einem Online-Shop bestellt, aber das falsche Produkt erhalten. Schreiben Sie eine förmliche Beschwerde und bitten Sie um eine Rückerstattung.',
-    addressee: 'den Kundendienst von Modehaus Online',
-    points: [
-      'Nennen Sie Ihre Bestellnummer und das Kaufdatum.',
-      'Beschreiben Sie genau, was Sie erhalten haben und was das Problem ist.',
-      'Erklären Sie, dass Sie bereits versucht haben, das Problem zu lösen (z. B. Anruf beim Kundendienst).',
-      'Bitten Sie um eine Rückerstattung oder die Lieferung des richtigen Produkts.',
-      'Bitten Sie um eine Antwort innerhalb einer angemessenen Frist.',
-    ],
-  },
-  {
-    id: 6, type: 'formal', format: 'Brief',
-    title: 'Heizungsproblem — Vermieter',
-    situation: 'Die Heizung in Ihrer Mietwohnung funktioniert seit zwei Wochen im Winter nicht. Sie frieren. Schreiben Sie einen förmlichen Brief an Ihren Vermieter, Herrn Maier.',
-    addressee: 'Ihren Vermieter, Herrn Maier',
-    points: [
-      'Beschreiben Sie das Problem und seit wann es besteht.',
-      'Erklären Sie, wie das Problem Ihren Alltag beeinträchtigt.',
-      'Erwähnen Sie, dass Sie das Problem bereits gemeldet haben (z. B. telefonisch).',
-      'Bitten Sie darum, dass das Problem bis zu einem bestimmten Datum behoben wird.',
-      'Bitten Sie um eine schriftliche Bestätigung der geplanten Reparatur.',
-    ],
-  },
-  {
-    id: 7, type: 'formal', format: 'Brief',
-    title: 'Zugverspätung — Beschwerde',
-    situation: 'Ihr Zug wurde storniert und Sie haben dadurch einen wichtigen Termin verpasst. Schreiben Sie eine förmliche Beschwerde an die Bahngesellschaft.',
-    addressee: 'Deutsche Bahn Kundenservice',
-    points: [
-      'Nennen Sie das Datum, die Zugnummer und die betroffene Strecke.',
-      'Beschreiben Sie, was passiert ist (Stornierung / lange Verspätung).',
-      'Erklären Sie, welche Folgen Sie erlitten haben (verpasster Termin, zusätzliche Kosten).',
-      'Erwähnen Sie, ob und wie Ihnen das Personal geholfen hat.',
-      'Bitten Sie um eine Entschädigung gemäß den EU-Fahrgastrechten.',
-    ],
-  },
-  {
-    id: 8, type: 'formal', format: 'Brief',
-    title: 'Krankenkasse — Anfrage',
-    situation: 'Sie haben eine Rechnung für einen Arztbesuch erhalten, der Ihrer Meinung nach von Ihrer Krankenkasse übernommen werden sollte. Schreiben Sie einen förmlichen Brief an Ihre Krankenkasse.',
-    addressee: 'Ihre Krankenkasse (AOK)',
-    points: [
-      'Erklären Sie, dass Sie eine unerwartete Rechnung erhalten haben.',
-      'Nennen Sie das Datum und die Einzelheiten der medizinischen Behandlung.',
-      'Geben Sie Ihre Versicherungsnummer und Ihren Versicherungsstatus an.',
-      'Erklären Sie, warum Sie glauben, dass die Behandlung von der Kasse übernommen werden sollte.',
-      'Bitten Sie um Klärung und darum, dass die Rechnung direkt beglichen wird.',
-    ],
-  },
-  {
-    id: 9, type: 'formal', format: 'E-Mail',
-    title: 'Wohnungsanfrage',
-    situation: 'Sie haben online eine Wohnung gesehen und sind interessiert. Schreiben Sie eine förmliche Anfrage an den Vermieter.',
-    addressee: 'den Vermieter der angebotenen Wohnung',
-    points: [
-      'Stellen Sie sich kurz vor (Beruf, wie viele Personen einziehen würden).',
-      'Fragen Sie nach der genauen Größe, dem Stockwerk und dem Zustand der Wohnung.',
-      'Erkundigen Sie sich nach den monatlichen Gesamtkosten inklusive Nebenkosten.',
-      'Fragen Sie, ob Haustiere erlaubt sind.',
-      'Bitten Sie um einen Besichtigungstermin und nennen Sie Ihre Kontaktdaten.',
-    ],
-  },
-  {
-    id: 10, type: 'formal', format: 'Brief',
-    title: 'Anwohnerparkausweis',
-    situation: 'Sie sind kürzlich in einen neuen Stadtteil umgezogen und benötigen einen Anwohnerparkausweis für Ihr Auto. Schreiben Sie einen förmlichen Brief an das Straßenverkehrsamt.',
-    addressee: 'das Straßenverkehrsamt',
-    points: [
-      'Nennen Sie Ihren Namen, Ihre neue Adresse und Ihr Fahrzeugkennzeichen.',
-      'Erklären Sie, wann Sie in das Gebiet gezogen sind.',
-      'Fragen Sie nach dem Verfahren und den Anforderungen für einen Parkausweis.',
-      'Fragen Sie, wie lange der Ausweis gültig ist und was er kostet.',
-      'Fragen Sie, wie lange das Antragsverfahren dauert.',
-    ],
-  },
-
-  // ── Halbförmlich ──────────────────────────────────────────────────────────
-  {
-    id: 11, type: 'halbformal', format: 'E-Mail',
-    title: 'Fehlende Prüfung — Lehrerin',
-    situation: 'Sie waren krank und konnten letzte Woche nicht an Ihrer Deutschprüfung teilnehmen. Schreiben Sie eine E-Mail an Ihre Lehrerin, Frau Schmidt.',
-    addressee: 'Ihre Deutschlehrerin, Frau Schmidt',
-    points: [
-      'Entschuldigen Sie sich für das Fehlen und erklären Sie, dass Sie krank waren.',
-      'Erwähnen Sie, dass Sie ein ärztliches Attest haben.',
-      'Fragen Sie, ob Sie die Prüfung zu einem späteren Zeitpunkt nachholen können.',
-      'Erkundigen Sie sich, welchen Unterrichtsstoff Sie verpasst haben.',
-      'Bedanken Sie sich für das Verständnis.',
-    ],
-  },
-  {
-    id: 12, type: 'halbformal', format: 'E-Mail',
-    title: 'Arzttermin vereinbaren',
-    situation: 'Sie möchten einen Arzt aufsuchen und einen Termin für eine Untersuchung vereinbaren. Schreiben Sie eine E-Mail an die Praxis von Dr. Müller.',
-    addressee: 'die Arztpraxis von Dr. Müller',
-    points: [
-      'Stellen Sie sich vor und erklären Sie, dass Sie Patient / Patientin in der Praxis sind.',
-      'Erklären Sie den Grund Ihres Besuchs (Routineuntersuchung, ein bestimmtes Symptom).',
-      'Nennen Sie Tage oder Uhrzeiten, an denen Sie nicht können.',
-      'Fragen Sie, ob in nächster Zeit ein Termin frei ist.',
-      'Geben Sie Ihre Telefonnummer zur Terminbestätigung an.',
-    ],
-  },
-  {
-    id: 13, type: 'halbformal', format: 'E-Mail',
-    title: 'Nachbar — Gemeinsamer Garten',
-    situation: 'Sie und Ihr Nachbar, Herr Fischer, teilen sich einen Garten. Es gibt einen Streit über die Gartennutzung. Schreiben Sie eine höfliche E-Mail, um das Problem zu klären.',
-    addressee: 'Ihren Nachbarn, Herrn Fischer',
-    points: [
-      'Begrüßen Sie ihn und erklären Sie den Zweck Ihrer E-Mail.',
-      'Beschreiben Sie das Problem (z. B. Lärm, Müll, Nutzung des Platzes).',
-      'Erkennen Sie an, dass es vielleicht ein Missverständnis gibt.',
-      'Schlagen Sie eine faire Lösung oder einen Kompromiss vor.',
-      'Schlagen Sie vor, das Problem persönlich bei einem Treffen zu besprechen.',
-    ],
-  },
-  {
-    id: 14, type: 'halbformal', format: 'E-Mail',
-    title: 'Sportverein beitreten',
-    situation: 'Sie möchten dem lokalen Fußballverein FC Grüntal beitreten. Schreiben Sie eine E-Mail an den Vereinssekretär.',
-    addressee: 'den Sekretär des FC Grüntal',
-    points: [
-      'Stellen Sie sich vor und erklären Sie, dass Sie Mitglied werden möchten.',
-      'Beschreiben Sie Ihre Spielerfahrung und Ihr aktuelles Fitnessniveau.',
-      'Fragen Sie nach den Trainingszeiten und -orten.',
-      'Erkundigen Sie sich nach dem Mitgliedsbeitrag und dem Anmeldeverfahren.',
-      'Fragen Sie, ob es die Möglichkeit eines Schnuppertrainings gibt.',
-    ],
-  },
-  {
-    id: 15, type: 'halbformal', format: 'E-Mail',
-    title: 'Stadtbibliothek — Mitgliedschaft',
-    situation: 'Sie sind in eine neue Stadt gezogen und möchten Mitglied der Stadtbibliothek Grünau werden. Schreiben Sie eine Anfrage per E-Mail.',
-    addressee: 'die Stadtbibliothek Grünau',
-    points: [
-      'Stellen Sie sich vor und erklären Sie, dass Sie kürzlich in die Stadt gezogen sind.',
-      'Fragen Sie, welche Mitgliedschaftsarten es gibt und was sie kosten.',
-      'Erkundigen Sie sich, welche Dienste angeboten werden (z. B. E-Books, Lernräume).',
-      'Fragen Sie, ob man auch Medien in anderen Sprachen ausleihen kann.',
-      'Fragen Sie, wie die Anmeldung funktioniert und ob man persönlich erscheinen muss.',
-    ],
-  },
-  {
-    id: 16, type: 'halbformal', format: 'E-Mail',
-    title: 'Flexible Arbeitszeiten',
-    situation: 'Sie müssen Ihre Arbeitszeiten vorübergehend ändern, da Sie eine familiäre Situation bewältigen müssen. Schreiben Sie eine E-Mail an Ihre Vorgesetzte, Frau Hoffmann.',
-    addressee: 'Ihre Vorgesetzte, Frau Hoffmann',
-    points: [
-      'Erklären Sie höflich, dass Sie eine private Situation bewältigen müssen.',
-      'Teilen Sie mit, welche Arbeitszeiten oder Tage Sie ändern möchten und für wie lange.',
-      'Schlagen Sie vor, wie Ihre Aufgaben trotzdem pünktlich erledigt werden können.',
-      'Bieten Sie Alternativen an (z. B. Homeoffice, Überstunden nachholen).',
-      'Bedanken Sie sich für das Verständnis und bieten Sie ein persönliches Gespräch an.',
-    ],
-  },
-  {
-    id: 17, type: 'halbformal', format: 'E-Mail',
-    title: 'Ehrenamt — Bürgerhaus',
-    situation: 'Sie möchten sich im Bürgerhaus Westend ehrenamtlich engagieren. Schreiben Sie eine E-Mail, um Ihr Interesse zu bekunden.',
-    addressee: 'die Koordinatorin / den Koordinator des Bürgerhaus Westend',
-    points: [
-      'Stellen Sie sich vor und erklären Sie Ihr Interesse am Ehrenamt.',
-      'Beschreiben Sie Ihre relevanten Fähigkeiten oder bisherige Erfahrungen.',
-      'Fragen Sie, welche ehrenamtlichen Tätigkeiten derzeit angeboten werden.',
-      'Erkundigen Sie sich nach dem zeitlichen Aufwand pro Woche.',
-      'Fragen Sie nach den nächsten Schritten, um mitmachen zu können.',
-    ],
-  },
-  {
-    id: 18, type: 'halbformal', format: 'E-Mail',
-    title: 'Reparatur — Waschmaschine',
-    situation: 'Die Waschmaschine in Ihrer Mietwohnung ist seit drei Tagen kaputt. Schreiben Sie eine E-Mail an Ihre Vermieterin, Frau Becker.',
-    addressee: 'Ihre Vermieterin, Frau Becker',
-    points: [
-      'Beschreiben Sie das Problem und wann es angefangen hat.',
-      'Erklären Sie, wie das Problem Ihren Alltag beeinträchtigt.',
-      'Erwähnen Sie, ob Sie bereits versucht haben, das Problem selbst zu beheben.',
-      'Bitten Sie darum, dass möglichst schnell ein Techniker geschickt wird.',
-      'Bitten Sie um eine Bestätigung, wann die Reparatur stattfinden kann.',
-    ],
-  },
-  {
-    id: 19, type: 'halbformal', format: 'E-Mail',
-    title: 'Stundenplanänderung — Sprachkurs',
-    situation: 'Der Stundenplan Ihres Sprachkurses hat sich geändert und kollidiert jetzt mit Ihrer Arbeitszeit. Schreiben Sie eine E-Mail an die Kurskoordinatorin.',
-    addressee: 'die Kurskoordinatorin Ihrer Sprachschule',
-    points: [
-      'Erklären Sie, dass der neue Stundenplan ein Problem für Sie ist.',
-      'Beschreiben Sie den Konflikt (z. B. Arbeit, Kinderbetreuung).',
-      'Fragen Sie, ob Sie in eine andere Gruppe oder zu einem anderen Zeitpunkt wechseln können.',
-      'Fragen Sie, was mit den Unterrichtsstunden passiert, die Sie verpassen werden.',
-      'Bitten Sie um eine schnelle Antwort, damit Sie Ihren Alltag planen können.',
-    ],
-  },
-  {
-    id: 20, type: 'halbformal', format: 'E-Mail',
-    title: 'Abwesenheit Ihres Kindes',
-    situation: 'Ihr Kind war drei Tage krank und konnte die Schule nicht besuchen. Schreiben Sie eine E-Mail an den Klassenlehrer, Herrn Weber.',
-    addressee: 'den Klassenlehrer, Herrn Weber',
-    points: [
-      'Entschuldigen Sie das Fehlen Ihres Kindes und erklären Sie den Grund.',
-      'Nennen Sie die genauen Fehlzeiten (Datum).',
-      'Erwähnen Sie, dass Sie ein ärztliches Attest beifügen.',
-      'Fragen Sie, welcher Unterrichtsstoff verpasst wurde und wie Ihr Kind aufholen kann.',
-      'Bedanken Sie sich für die Unterstützung des Lehrers.',
-    ],
-  },
-
-  // ── Informell ─────────────────────────────────────────────────────────────
-  {
-    id: 21, type: 'informal', format: 'Brief',
+    id: 1, type: 'informal',
     title: 'Neue Wohnung',
-    situation: 'Sie sind kürzlich in eine neue Wohnung umgezogen. Schreiben Sie einen Brief an Ihre Freundin Lena und erzählen Sie ihr davon.',
-    addressee: 'Ihre Freundin Lena',
+    instruction: 'Sie haben eine E-Mail von Ihrer Freundin Mia bekommen. Schreiben Sie eine Antwort auf die E-Mail.',
+    incomingEmail: {
+      from: 'Mia Schmidt',
+      subject: 'Deine neue Wohnung!',
+      body: `Liebe/r [Name],
+
+ich habe gerade von deinem Umzug gehört und wollte dir sofort schreiben! Wie ist deine neue Wohnung? Gefällt dir die Gegend?
+
+Ich würde dich so gerne besuchen! Wann würde es dir passen? Vielleicht könnten wir zusammen etwas essen gehen oder einen Spaziergang machen.
+
+Liebe Grüße,
+Mia`,
+    },
+    addressee: 'Mia',
     points: [
-      'Beschreiben Sie die Wohnung (Größe, Lage, was Ihnen gefällt).',
-      'Erzählen Sie vom Umzug — war er schwierig oder stressig?',
+      'Beschreiben Sie Ihre neue Wohnung (Größe, Lage, was Ihnen gefällt).',
+      'Erzählen Sie, wie der Umzug war.',
       'Berichten Sie etwas über Ihre neue Nachbarschaft.',
-      'Laden Sie Lena ein zu Besuch und beschreiben Sie, was ihr zusammen unternehmen könntet.',
-      'Fragen Sie, wie es Lena geht und was es Neues bei ihr gibt.',
+      'Laden Sie Mia ein und machen Sie einen konkreten Plan.',
     ],
   },
   {
-    id: 22, type: 'informal', format: 'Brief',
+    id: 2, type: 'informal',
     title: 'Urlaubspläne',
-    situation: 'Sie planen einen Urlaub und möchten Ihren Cousin Erik einladen, mitzukommen. Schreiben Sie ihm einen Brief.',
-    addressee: 'Ihren Cousin Erik',
+    instruction: 'Ihr Cousin Erik hat Ihnen eine E-Mail geschrieben. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Erik Berger',
+      subject: 'Sommerurlaub – kommst du mit?',
+      body: `Hey [Name],
+
+ich plane diesen Sommer eine Reise und dachte, vielleicht hast du Lust mitzukommen? Ich habe noch kein festes Ziel – vielleicht Südeuropa, vielleicht Skandinavien. Die Reise würde ungefähr zwei Wochen dauern, wahrscheinlich im Juli oder August.
+
+Was meinst du? Ich freue mich auf deine Antwort!
+
+Viele Grüße,
+Erik`,
+    },
+    addressee: 'Erik',
     points: [
-      'Erzählen Sie ihm, wohin Sie fahren möchten und wann.',
-      'Erklären Sie, warum Sie dieses Reiseziel gewählt haben.',
-      'Beschreiben Sie, was Sie dort unternehmen möchten.',
-      'Fragen Sie, ob er mitkommen kann, und nennen Sie einen Termin für seine Entscheidung.',
-      'Nennen Sie die ungefähren Kosten und bitten Sie ihn, bald zu bestätigen.',
+      'Zeigen Sie Interesse und sagen Sie, ob Sie mitkommen können.',
+      'Schlagen Sie ein konkretes Reiseziel vor und begründen Sie es.',
+      'Nennen Sie zwei Aktivitäten, die Sie dort machen möchten.',
+      'Fragen Sie nach den ungefähren Kosten und dem Transportmittel.',
     ],
   },
   {
-    id: 23, type: 'informal', format: 'Brief',
-    title: 'Einladung zum Geburtstag',
-    situation: 'Sie feiern bald Geburtstag und möchten Ihre Freundin Mia einladen. Schreiben Sie ihr einen Brief.',
-    addressee: 'Ihre Freundin Mia',
+    id: 3, type: 'informal',
+    title: 'Geburtstagseinladung',
+    instruction: 'Ihre Freundin Lena hat Ihnen eine Einladung geschickt. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Lena Wagner',
+      subject: 'Mein Geburtstag – du bist eingeladen!',
+      body: `Liebe/r [Name],
+
+ich feiere nächsten Samstag meinen Geburtstag und würde mich riesig freuen, wenn du kommen könntest! Die Party beginnt um 19 Uhr bei mir zu Hause. Es wird Essen geben, Musik und natürlich viele gemeinsame Freunde.
+
+Du musst nichts mitbringen, aber wenn du magst, kannst du etwas zu trinken mitbringen. Kannst du kommen?
+
+Herzliche Grüße,
+Lena`,
+    },
+    addressee: 'Lena',
     points: [
-      'Erzählen Sie ihr von der Feier (Datum, Uhrzeit, Ort).',
-      'Beschreiben Sie die Art der Feier (z. B. Abendessen, Grillen im Freien).',
-      'Sagen Sie, wer noch eingeladen ist.',
-      'Sagen Sie, ob sie etwas mitbringen soll (Essen, ein Getränk, ein Geschenk usw.).',
-      'Bitten Sie sie, bis zu einem bestimmten Datum zu bestätigen, ob sie kommen kann.',
+      'Bedanken Sie sich für die Einladung und bestätigen Sie, dass Sie kommen.',
+      'Fragen Sie, wie viele Personen kommen werden.',
+      'Bieten Sie an, etwas beizutragen (Essen, Getränke oder Hilfe beim Vorbereiten).',
+      'Schlagen Sie vor, sich am nächsten Tag noch einmal zu treffen.',
     ],
   },
   {
-    id: 24, type: 'informal', format: 'Brief',
+    id: 4, type: 'informal',
     title: 'Neue Arbeitsstelle',
-    situation: 'Sie haben kürzlich eine neue Stelle angetreten. Schreiben Sie Ihrem Freund Max einen Brief und erzählen Sie ihm davon.',
-    addressee: 'Ihren Freund Max',
+    instruction: 'Ihr Freund Max hat Ihnen eine E-Mail geschrieben. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Max Schreiber',
+      subject: 'Wie läuft die neue Stelle?',
+      body: `Hey [Name],
+
+ich wollte mal fragen, wie es dir bei der neuen Arbeit geht! Du hast letzte Woche angefangen, oder? Macht es dir Spaß? Wie sind die Kollegen?
+
+Bei mir gibt es auch Neuigkeiten – ich überlege selbst, den Job zu wechseln. Vielleicht können wir uns bald treffen und reden?
+
+Bis bald,
+Max`,
+    },
+    addressee: 'Max',
     points: [
-      'Beschreiben Sie Ihren neuen Arbeitsplatz und was Sie dort machen.',
-      'Erzählen Sie, was Ihnen an der neuen Stelle am besten gefällt.',
-      'Erwähnen Sie eine Schwierigkeit oder Herausforderung, auf die Sie gestoßen sind.',
-      'Vergleichen Sie die neue Stelle mit Ihrer früheren Arbeit.',
-      'Fragen Sie Max, wie es ihm bei der Arbeit geht und was er so macht.',
+      'Beschreiben Sie Ihre neue Arbeitsstelle und was Sie dort machen.',
+      'Erzählen Sie, was Ihnen besonders gut gefällt.',
+      'Erwähnen Sie eine Schwierigkeit, auf die Sie gestoßen sind.',
+      'Fragen Sie nach seinen Neuigkeiten und schlagen Sie ein Treffen vor.',
     ],
   },
   {
-    id: 25, type: 'informal', format: 'Brief',
+    id: 5, type: 'informal',
     title: 'Deutsch lernen',
-    situation: 'Sie lernen seit einigen Monaten Deutsch und machen gute Fortschritte. Schreiben Sie Ihrer Freundin Sofia einen Brief über Ihre Erfahrungen.',
-    addressee: 'Ihre Freundin Sofia',
+    instruction: 'Ihre Freundin Sofia hat Ihnen geschrieben. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Sofia Reyes',
+      subject: 'Du lernst Deutsch?',
+      body: `Liebe/r [Name],
+
+ich habe gehört, dass du Deutsch lernst – das ist ja toll! Wie lange machst du das schon? Findest du es sehr schwer? Ich überlege auch, eine neue Sprache zu lernen.
+
+Magst du mir erzählen, wie du lernst und ob es dir Spaß macht?
+
+Viele Grüße,
+Sofia`,
+    },
+    addressee: 'Sofia',
     points: [
-      'Erklären Sie, warum Sie angefangen haben, Deutsch zu lernen.',
-      'Beschreiben Sie, wie Sie lernen (Kurse, Apps, Lesen, Gespräche usw.).',
-      'Erzählen Sie, was Sie am schwierigsten finden.',
-      'Teilen Sie einen lustigen oder peinlichen Sprachfehler mit, den Sie gemacht haben.',
-      'Fragen Sie, ob Sofia auch eine Fremdsprache lernen möchte und welche.',
+      'Erklären Sie, warum Sie Deutsch lernen.',
+      'Beschreiben Sie, wie Sie lernen (Kurs, App, Bücher usw.).',
+      'Nennen Sie etwas, das Sie besonders schwierig finden.',
+      'Erzählen Sie einen lustigen Sprachfehler, den Sie gemacht haben.',
     ],
   },
   {
-    id: 26, type: 'informal', format: 'Brief',
-    title: 'Stadtempfehlung — Leipzig',
-    situation: 'Sie haben letzten Monat Leipzig besucht und waren begeistert. Schreiben Sie Ihrem Freund Ben und empfehlen Sie ihm, die Stadt zu besuchen.',
-    addressee: 'Ihren Freund Ben',
+    id: 6, type: 'informal',
+    title: 'Stadtempfehlung',
+    instruction: 'Ihr Freund Ben hat Ihnen eine E-Mail geschrieben. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Ben Carter',
+      subject: 'Deutschland besuchen – hast du Tipps?',
+      body: `Hey [Name],
+
+ich plane dieses Jahr, Deutschland zu besuchen, und brauche deine Hilfe! Welche Stadt würdest du mir empfehlen? Was gibt es dort zu sehen?
+
+Am liebsten möchte ich etwas Besonderes erleben – kein normaler Touristenweg. Hast du Tipps für mich?
+
+Viele Grüße,
+Ben`,
+    },
+    addressee: 'Ben',
     points: [
-      'Erklären Sie, wann und warum Sie in Leipzig waren.',
-      'Beschreiben Sie, was Ihnen an der Stadt am besten gefallen hat.',
-      'Empfehlen Sie mindestens zwei Sehenswürdigkeiten oder Aktivitäten.',
+      'Empfehlen Sie eine deutsche Stadt und erklären Sie warum.',
+      'Beschreiben Sie mindestens zwei Sehenswürdigkeiten oder Aktivitäten.',
       'Geben Sie praktische Tipps (Unterkunft, Verkehr, beste Reisezeit).',
       'Schlagen Sie vor, die Stadt eines Tages gemeinsam zu besuchen.',
     ],
   },
   {
-    id: 27, type: 'informal', format: 'Brief',
+    id: 7, type: 'informal',
     title: 'Problem mit Mitbewohner',
-    situation: 'Sie haben ein Problem mit Ihrem Mitbewohner und brauchen den Rat Ihrer Freundin Anna. Schreiben Sie ihr einen Brief.',
-    addressee: 'Ihre Freundin Anna',
+    instruction: 'Ihre Freundin Anna hat Ihnen geschrieben. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Anna Köhler',
+      subject: 'Ich brauche deinen Rat!',
+      body: `Liebe/r [Name],
+
+ich habe ein Problem mit meinem Mitbewohner und weiß nicht, was ich tun soll. Er ist nie ordentlich, lässt Geschirr in der Küche stehen und kommt nachts laut nach Hause. Ich habe ihn schon zweimal angesprochen, aber nichts ändert sich.
+
+Was würdest du an meiner Stelle machen?
+
+Liebe Grüße,
+Anna`,
+    },
+    addressee: 'Anna',
     points: [
-      'Beschreiben Sie kurz die Wohnsituation (WG, wie lange Sie zusammenwohnen).',
-      'Erklären Sie, was das Problem ist.',
-      'Sagen Sie, wie das Problem Ihren Alltag beeinflusst.',
-      'Beschreiben Sie, was Sie bereits versucht haben, um es zu lösen.',
-      'Bitten Sie Anna um ihren Rat und ihre Meinung.',
+      'Zeigen Sie Verständnis für ihr Problem.',
+      'Fragen Sie nach weiteren Details zur Situation.',
+      'Geben Sie mindestens zwei konkrete Ratschläge.',
+      'Schlagen Sie vor, das Thema gemeinsam beim nächsten Treffen zu besprechen.',
     ],
   },
   {
-    id: 28, type: 'informal', format: 'Brief',
-    title: 'Wochenendpläne',
-    situation: 'Sie planen ein interessantes Wochenende und möchten Ihren Freund Jonas einladen, mitzumachen. Schreiben Sie ihm einen Brief.',
-    addressee: 'Ihren Freund Jonas',
-    points: [
-      'Erklären Sie, was Sie an dem Wochenende planen.',
-      'Sagen Sie, warum Sie diese Aktivitäten ausgewählt haben.',
-      'Fragen Sie Jonas, ob er mitkommen möchte.',
-      'Geben Sie die praktischen Details an (wann, wo man sich trifft, was man mitbringen soll).',
-      'Fragen Sie, ob er Vorschläge oder Wünsche hat.',
-    ],
-  },
-  {
-    id: 29, type: 'informal', format: 'Brief',
+    id: 8, type: 'informal',
     title: 'Neues Hobby',
-    situation: 'Sie haben kürzlich ein neues Hobby begonnen und sind sehr begeistert davon. Schreiben Sie Ihrer Freundin Clara einen Brief und erzählen Sie ihr davon.',
-    addressee: 'Ihre Freundin Clara',
+    instruction: 'Ihre Freundin Clara hat Ihnen eine E-Mail geschrieben. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Clara Nowak',
+      subject: 'Mein neues Hobby!',
+      body: `Liebe/r [Name],
+
+ich wollte dir unbedingt von meinem neuen Hobby erzählen: Ich male jetzt Aquarelle! Es macht mir unglaublich viel Spaß.
+
+Hast du auch ein Hobby, das dir viel bedeutet? Ich würde gerne mehr davon hören. Vielleicht können wir uns bald treffen?
+
+Bis bald,
+Clara`,
+    },
+    addressee: 'Clara',
     points: [
-      'Stellen Sie das Hobby vor und erklären Sie, wie Sie es entdeckt haben.',
-      'Beschreiben Sie, was Ihnen daran am meisten Spaß macht.',
-      'Erzählen Sie, wie viel Zeit und Geld Sie dafür aufwenden.',
-      'Erwähnen Sie, ob Sie durch dieses Hobby neue Leute kennengelernt haben.',
-      'Fragen Sie Clara, ob sie ein Hobby hat, das ihr besonders am Herzen liegt.',
+      'Freuen Sie sich für Clara und stellen Sie eine Frage zu ihrem Hobby.',
+      'Erzählen Sie von Ihrem eigenen Hobby und wie Sie es entdeckt haben.',
+      'Beschreiben Sie, was Ihnen daran am besten gefällt.',
+      'Machen Sie einen konkreten Plan, sich zu treffen.',
     ],
   },
   {
-    id: 30, type: 'informal', format: 'Brief',
+    id: 9, type: 'informal',
     title: 'Alltag in Deutschland',
-    situation: 'Ihre Brieffreundin Ana aus Spanien hat Sie nach Ihrem Alltag in Deutschland gefragt. Schreiben Sie ihr zurück.',
-    addressee: 'Ihre Brieffreundin Ana',
+    instruction: 'Ihre Brieffreundin Ana aus Spanien hat Ihnen geschrieben. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Ana García',
+      subject: 'Wie ist das Leben in Deutschland?',
+      body: `Liebe/r [Name],
+
+ich freue mich so, dass wir uns regelmäßig schreiben! Ich wollte dich schon lange fragen: Wie ist das Leben in Deutschland? Was ist ein typischer Tag bei dir?
+
+Gibt es etwas, das dich überrascht oder begeistert hat? Ich stelle mir Deutschland immer sehr ordentlich und pünktlich vor!
+
+Liebe Grüße aus Spanien,
+Ana`,
+    },
+    addressee: 'Ana',
     points: [
-      'Beschreiben Sie Ihren typischen Alltag (Arbeit / Studium, Tagesroutine).',
-      'Erzählen Sie ihr von etwas Typisch-Deutschem, das Sie überrascht oder beeindruckt hat.',
-      'Beschreiben Sie Ihre Wohngegend und wie es dort ist.',
-      'Erzählen Sie, was Ihnen an Ihrer Heimat fehlt — oder was Ihnen an Deutschland besonders gut gefällt.',
-      'Stellen Sie Ana Fragen über ihren eigenen Alltag, um das Gespräch weiterzuführen.',
+      'Beschreiben Sie Ihren typischen Alltag in Deutschland.',
+      'Erzählen Sie etwas Typisch-Deutsches, das Sie überrascht hat.',
+      'Beschreiben Sie Ihre Wohngegend.',
+      'Stellen Sie Ana zwei Fragen über ihren eigenen Alltag.',
+    ],
+  },
+  {
+    id: 10, type: 'informal',
+    title: 'Wochenendausflug',
+    instruction: 'Ihr Freund Jonas hat Ihnen eine E-Mail geschrieben. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Jonas Braun',
+      subject: 'Pläne fürs Wochenende?',
+      body: `Hey [Name],
+
+hast du dieses Wochenende schon etwas vor? Ich hätte total Lust auf einen Ausflug – vielleicht in die Natur oder eine andere Stadt. Ich bin für alles offen!
+
+Was denkst du? Schreib mir schnell!
+
+Bis bald,
+Jonas`,
+    },
+    addressee: 'Jonas',
+    points: [
+      'Begrüßen Sie seine Idee und schlagen Sie eine konkrete Aktivität vor.',
+      'Erklären Sie, warum Sie diese Aktivität gewählt haben.',
+      'Nennen Sie die praktischen Details (wo, wann, was mitbringen).',
+      'Fragen Sie, ob Jonas besondere Wünsche hat.',
+    ],
+  },
+
+  // ── Halbformal ────────────────────────────────────────────────────────────────
+  {
+    id: 11, type: 'halbformal',
+    title: 'Verpasste Prüfung',
+    instruction: 'Ihre Lehrerin Frau Schmidt hat Ihnen eine E-Mail geschickt. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Frau Schmidt',
+      subject: 'Ihre Abwesenheit bei der Prüfung',
+      body: `Guten Tag,
+
+ich habe bemerkt, dass Sie bei der Deutschprüfung am Dienstag nicht anwesend waren. Ich mache mir Sorgen und möchte wissen, ob es Ihnen gut geht.
+
+Könnten Sie mir bitte mitteilen, was passiert ist? Falls Sie krank waren, benötige ich ein ärztliches Attest. Ich hoffe, wir finden gemeinsam eine Lösung.
+
+Mit freundlichen Grüßen,
+Frau Schmidt`,
+    },
+    addressee: 'Frau Schmidt',
+    points: [
+      'Entschuldigen Sie sich für die Abwesenheit und erklären Sie den Grund.',
+      'Erwähnen Sie, dass Sie ein ärztliches Attest haben.',
+      'Fragen Sie, ob Sie die Prüfung nachholen können.',
+      'Fragen Sie, welchen Unterrichtsstoff Sie verpasst haben.',
+    ],
+  },
+  {
+    id: 12, type: 'halbformal',
+    title: 'Gemeinsamer Garten',
+    instruction: 'Ihr Nachbar Herr Fischer hat Ihnen eine E-Mail geschickt. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Herr Fischer',
+      subject: 'Unser gemeinsamer Garten',
+      body: `Guten Tag,
+
+ich wollte Ihnen wegen unseres gemeinsamen Gartens schreiben. Ich habe den Eindruck, dass es zu einem Missverständnis bezüglich der Nutzung gekommen ist. Letzte Woche hat meine Familie den Garten für ein kleines Fest nutzen wollen, aber das war leider schwierig.
+
+Ich würde mich freuen, wenn wir darüber sprechen könnten.
+
+Mit freundlichen Grüßen,
+Herr Fischer`,
+    },
+    addressee: 'Herrn Fischer',
+    points: [
+      'Bestätigen Sie den Empfang seiner E-Mail und zeigen Sie Verständnis.',
+      'Erklären Sie Ihre Perspektive zur Gartensituation.',
+      'Schlagen Sie eine faire Lösung oder Regelung vor.',
+      'Laden Sie ihn zu einem persönlichen Gespräch ein.',
+    ],
+  },
+  {
+    id: 13, type: 'halbformal',
+    title: 'Flexible Arbeitszeiten',
+    instruction: 'Ihre Chefin Frau Hoffmann hat Ihnen geantwortet. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Frau Hoffmann',
+      subject: 'Ihre Anfrage – Arbeitszeiten',
+      body: `Guten Tag,
+
+ich habe Ihre Anfrage wegen einer vorübergehenden Änderung Ihrer Arbeitszeiten erhalten. Ich verstehe, dass Sie eine private Situation bewältigen müssen.
+
+Bevor ich eine Entscheidung treffe, würde ich gerne mehr Details wissen: Welche Zeiten genau möchten Sie ändern und für wie lange? Wie stellen Sie sich vor, Ihre Aufgaben zu erledigen?
+
+Mit freundlichen Grüßen,
+Frau Hoffmann`,
+    },
+    addressee: 'Frau Hoffmann',
+    points: [
+      'Bedanken Sie sich für ihre schnelle Antwort.',
+      'Erklären Sie kurz die private Situation (ohne zu viele Details).',
+      'Nennen Sie genau, welche Zeiten Sie ändern möchten und für wie lange.',
+      'Beschreiben Sie, wie Ihre Aufgaben trotzdem pünktlich erledigt werden können.',
+    ],
+  },
+  {
+    id: 14, type: 'halbformal',
+    title: 'Stundenplanänderung',
+    instruction: 'Die Koordinatorin Ihrer Sprachschule hat Ihnen geschrieben. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Sprachschule Berliner Tor – Koordination',
+      subject: 'Änderung Ihres Kursplans',
+      body: `Sehr geehrte/r Teilnehmer/in,
+
+wir möchten Sie informieren, dass Ihr Deutschkurs ab nächster Woche verlegt wird. Der Kurs findet künftig mittwochs von 18:00 bis 20:00 Uhr statt, anstatt wie bisher dienstags.
+
+Wir hoffen, dass diese Änderung für Sie akzeptabel ist. Bei Fragen stehen wir Ihnen gerne zur Verfügung.
+
+Mit freundlichen Grüßen,
+Das Koordinationsteam`,
+    },
+    addressee: 'die Koordinatorin der Sprachschule',
+    points: [
+      'Erklären Sie, dass die neue Zeit ein Problem für Sie ist.',
+      'Beschreiben Sie den Konflikt (z. B. Arbeit oder Kinderbetreuung).',
+      'Fragen Sie, ob Sie in eine andere Gruppe wechseln können.',
+      'Fragen Sie, was mit den Stunden passiert, die Sie verpassen werden.',
+    ],
+  },
+  {
+    id: 15, type: 'halbformal',
+    title: 'Waschmaschine kaputt',
+    instruction: 'Ihre Vermieterin Frau Becker hat Ihnen eine E-Mail geschrieben. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Frau Becker',
+      subject: 'Alles in Ordnung in der Wohnung?',
+      body: `Guten Tag,
+
+ich hoffe, Sie fühlen sich in der Wohnung wohl! Ich wollte kurz nachfragen, ob alles in Ordnung ist und ob es etwas gibt, das repariert werden sollte.
+
+Bitte zögern Sie nicht, sich zu melden, wenn etwas nicht stimmt.
+
+Mit freundlichen Grüßen,
+Frau Becker`,
+    },
+    addressee: 'Frau Becker',
+    points: [
+      'Bedanken Sie sich für ihre Nachfrage.',
+      'Berichten Sie, dass die Waschmaschine seit drei Tagen kaputt ist.',
+      'Erklären Sie, wie das Problem Ihren Alltag beeinträchtigt.',
+      'Bitten Sie um einen Techniker und nennen Sie passende Termine.',
+    ],
+  },
+  {
+    id: 16, type: 'halbformal',
+    title: 'Abwesenheit – Kind krank',
+    instruction: 'Der Klassenlehrer Herr Weber hat Ihnen eine E-Mail geschickt. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Herr Weber',
+      subject: 'Abwesenheit von Lena',
+      body: `Guten Tag,
+
+ich wollte Sie bezüglich der Abwesenheit Ihrer Tochter Lena kontaktieren. Sie war diese Woche nicht in der Schule, und ich habe bisher keine Entschuldigung erhalten.
+
+Ich mache mir ein bisschen Sorgen und würde gerne wissen, ob alles in Ordnung ist. Bitte melden Sie sich baldmöglichst.
+
+Mit freundlichen Grüßen,
+Herr Weber`,
+    },
+    addressee: 'Herrn Weber',
+    points: [
+      'Entschuldigen Sie das Fehlen Ihres Kindes und nennen Sie den Grund.',
+      'Nennen Sie die genauen Fehlzeiten (Datum).',
+      'Erwähnen Sie, dass Sie ein ärztliches Attest haben.',
+      'Fragen Sie nach dem versäumten Stoff und wie Ihr Kind aufholen kann.',
+    ],
+  },
+  {
+    id: 17, type: 'halbformal',
+    title: 'Sportverein',
+    instruction: 'Das Sekretariat des FC Grüntal hat Ihnen geantwortet. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'FC Grüntal – Sekretariat',
+      subject: 'Ihre Mitgliedsanfrage',
+      body: `Sehr geehrte/r Interessent/in,
+
+vielen Dank für Ihr Interesse am FC Grüntal! Wir freuen uns immer über neue Mitglieder.
+
+Damit wir Ihnen besser helfen können, würden wir gerne mehr über Sie erfahren: Welche Erfahrungen haben Sie im Fußball, und auf welchem Niveau spielen Sie?
+
+Mit sportlichen Grüßen,
+Das Sekretariat`,
+    },
+    addressee: 'das Sekretariat des FC Grüntal',
+    points: [
+      'Beschreiben Sie Ihre Fußballerfahrung und Ihr aktuelles Niveau.',
+      'Fragen Sie nach den Trainingszeiten und -orten.',
+      'Erkundigen Sie sich nach dem Mitgliedsbeitrag.',
+      'Fragen Sie, ob es die Möglichkeit eines Schnuppertrainings gibt.',
+    ],
+  },
+  {
+    id: 18, type: 'halbformal',
+    title: 'Ehrenamt',
+    instruction: 'Die Koordinatorin des Bürgerhaus Westend hat Ihnen geantwortet. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Bürgerhaus Westend – Koordination',
+      subject: 'Ihre Ehrenamts-Anfrage',
+      body: `Sehr geehrte/r Bewerber/in,
+
+vielen Dank für Ihr Interesse, sich im Bürgerhaus Westend ehrenamtlich zu engagieren! Wir suchen immer engagierte Menschen.
+
+Damit wir Sie besser einsetzen können, hätten wir gerne mehr Informationen: Welche Fähigkeiten bringen Sie mit? Wie viel Zeit pro Woche könnten Sie investieren?
+
+Mit freundlichen Grüßen,
+Das Koordinationsteam`,
+    },
+    addressee: 'die Koordinatorin des Bürgerhaus Westend',
+    points: [
+      'Beschreiben Sie Ihre relevanten Fähigkeiten oder Erfahrungen.',
+      'Nennen Sie, wie viel Zeit pro Woche Sie investieren können.',
+      'Fragen Sie, welche konkreten Tätigkeiten aktuell gesucht werden.',
+      'Fragen Sie nach den nächsten Schritten, um mitmachen zu können.',
+    ],
+  },
+
+  // ── Formal ───────────────────────────────────────────────────────────────────
+  {
+    id: 19, type: 'formal',
+    title: 'Sprachkurs – Rückfrage',
+    instruction: 'Die Sprachschule Berliner Tor hat auf Ihre Anfrage geantwortet. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Sprachschule Berliner Tor',
+      subject: 'Re: Informationsanfrage Deutschkurse',
+      body: `Sehr geehrte Damen und Herren,
+
+vielen Dank für Ihr Interesse an unseren Deutschkursen! Wir bieten Kurse auf verschiedenen Niveaustufen von A1 bis C1 an.
+
+Unsere Kurse finden montags bis freitags statt, von 09:00–12:00 Uhr oder von 17:00–20:00 Uhr. Für genauere Informationen zu Preisen und Anmeldung freuen wir uns auf Ihre weiteren Fragen.
+
+Mit freundlichen Grüßen,
+Sprachschule Berliner Tor`,
+    },
+    addressee: 'die Sprachschule Berliner Tor',
+    points: [
+      'Bedanken Sie sich für die Informationen.',
+      'Fragen Sie, ob der Kurs für das Niveau B1 geeignet ist.',
+      'Erkundigen Sie sich nach den Kursgebühren und möglichen Ermäßigungen.',
+      'Fragen Sie, wie und bis wann man sich anmelden kann.',
+    ],
+  },
+  {
+    id: 20, type: 'formal',
+    title: 'Online-Shop – Rückgabe',
+    instruction: 'Der Kundenservice hat Ihnen geantwortet. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Modehaus Online – Kundenservice',
+      subject: 'Re: Beschwerde Bestellnummer #45821',
+      body: `Sehr geehrte/r Kunde/Kundin,
+
+vielen Dank für Ihre Nachricht. Es tut uns leid zu hören, dass Sie das falsche Produkt erhalten haben.
+
+Damit wir Ihnen helfen können, benötigen wir noch einige Informationen: Können Sie uns bitte genau beschreiben, was Sie erhalten haben? Dann werden wir sofort für Sie tätig.
+
+Mit freundlichen Grüßen,
+Kundenservice Modehaus Online`,
+    },
+    addressee: 'den Kundenservice von Modehaus Online',
+    points: [
+      'Bestätigen Sie Ihre Bestelldetails (Datum, bestelltes Produkt, Bestellnummer).',
+      'Beschreiben Sie genau, was Sie stattdessen erhalten haben.',
+      'Erklären Sie, dass Sie das falsche Produkt bereits zurückgeschickt haben oder es zurückschicken möchten.',
+      'Fordern Sie eine Rückerstattung oder die Lieferung des richtigen Produkts und setzen Sie eine Frist.',
+    ],
+  },
+  {
+    id: 21, type: 'formal',
+    title: 'Hotel – Beschwerde',
+    instruction: 'Der Manager des Hotel Seeblick hat Ihnen geantwortet. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Hotel Seeblick – Direktion',
+      subject: 'Re: Ihre Beschwerde',
+      body: `Sehr geehrte/r Gast,
+
+vielen Dank für Ihre Rückmeldung zu Ihrem Aufenthalt. Es tut uns sehr leid, dass Ihr Besuch nicht Ihren Erwartungen entsprochen hat.
+
+Damit wir Ihren Fall prüfen können, benötigen wir weitere Details: Welche konkreten Probleme haben Sie erlebt? Haben Sie sich während des Aufenthalts bereits an das Personal gewandt?
+
+Mit freundlichen Grüßen,
+Hotel Seeblick – Direktion`,
+    },
+    addressee: 'die Direktion des Hotel Seeblick',
+    points: [
+      'Nennen Sie Datum und Art Ihrer Buchung.',
+      'Beschreiben Sie die Probleme, die Sie erlebt haben (mindestens zwei).',
+      'Erklären Sie, wie das Personal reagiert hat.',
+      'Nennen Sie klar, welche Entschädigung Sie erwarten.',
+    ],
+  },
+  {
+    id: 22, type: 'formal',
+    title: 'Deutsche Bahn – Entschädigung',
+    instruction: 'Die Deutsche Bahn hat auf Ihre Beschwerde geantwortet. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Deutsche Bahn – Kundenservice',
+      subject: 'Re: Ihre Fahrgastrechte-Anfrage',
+      body: `Sehr geehrte/r Fahrgast,
+
+wir haben Ihre Beschwerde erhalten. Für die Bearbeitung gemäß EU-Fahrgastrechten benötigen wir noch folgende Angaben: Datum der Reise, Zugnummer, betroffene Strecke sowie Angaben zur Verspätung oder Stornierung.
+
+Sobald wir diese Informationen haben, werden wir Ihren Fall prüfen.
+
+Mit freundlichen Grüßen,
+Deutsche Bahn Kundenservice`,
+    },
+    addressee: 'den Kundenservice der Deutschen Bahn',
+    points: [
+      'Nennen Sie Datum, Zugnummer und betroffene Strecke.',
+      'Beschreiben Sie, was passiert ist (Verspätung oder Stornierung).',
+      'Erklären Sie, welche Folgen Sie erlitten haben (verpasster Termin, Zusatzkosten).',
+      'Bitten Sie um Entschädigung gemäß EU-Fahrgastrechten und setzen Sie eine Antwortfrist.',
+    ],
+  },
+  {
+    id: 23, type: 'formal',
+    title: 'Arzttermin bestätigen',
+    instruction: 'Die Arztpraxis Dr. Müller hat Ihnen geantwortet. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Arztpraxis Dr. Müller',
+      subject: 'Terminbestätigung',
+      body: `Guten Tag,
+
+wir können Ihnen folgenden Termin anbieten: Donnerstag, 27. Juli, um 10:30 Uhr.
+
+Bitte bestätigen Sie diesen Termin bis morgen. Kommen Sie außerdem mit Ihrer Versicherungskarte. Haben Sie Allergien oder nehmen Sie regelmäßig Medikamente?
+
+Mit freundlichen Grüßen,
+Praxis Dr. Müller`,
+    },
+    addressee: 'die Arztpraxis Dr. Müller',
+    points: [
+      'Bestätigen Sie den Termin.',
+      'Beschreiben Sie kurz, warum Sie zum Arzt kommen.',
+      'Beantworten Sie die Frage zu Allergien und Medikamenten.',
+      'Fragen Sie, ob Sie sich besonders auf den Termin vorbereiten müssen.',
+    ],
+  },
+  {
+    id: 24, type: 'formal',
+    title: 'Wohnungsbesichtigung',
+    instruction: 'Ein Vermieter hat auf Ihre Wohnungsanfrage geantwortet. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'Peter Lange – Vermieter',
+      subject: 'Re: Anfrage Wohnung Goethestraße 12',
+      body: `Sehr geehrte/r Interessent/in,
+
+vielen Dank für Ihr Interesse an der Wohnung in der Goethestraße 12. Die Wohnung hat 65 m², liegt im 3. Stockwerk und ist in einem sehr guten Zustand. Die Gesamtmiete beträgt 950 € inklusive Nebenkosten.
+
+Ich biete Ihnen einen Besichtigungstermin an. Wären Sie am Dienstag oder Mittwoch nächster Woche verfügbar?
+
+Mit freundlichen Grüßen,
+Peter Lange`,
+    },
+    addressee: 'Herrn Lange',
+    points: [
+      'Bedanken Sie sich und bestätigen Sie Ihr Interesse.',
+      'Fragen Sie, ob Haustiere in der Wohnung erlaubt sind.',
+      'Nennen Sie, welcher der vorgeschlagenen Termine Ihnen passt.',
+      'Fragen Sie, welche Unterlagen Sie zur Besichtigung mitbringen sollen.',
+    ],
+  },
+  {
+    id: 25, type: 'formal',
+    title: 'Krankenkasse – Rechnung',
+    instruction: 'Ihre Krankenkasse hat Ihnen geantwortet. Schreiben Sie eine Antwort.',
+    incomingEmail: {
+      from: 'AOK – Kundenservice',
+      subject: 'Re: Ihre Anfrage zur Arztrechnung',
+      body: `Sehr geehrte/r Versicherte/r,
+
+wir haben Ihre Anfrage bezüglich der erhaltenen Rechnung erhalten. Damit wir Ihren Fall prüfen können, benötigen wir weitere Informationen: Ihre Versicherungsnummer, das Datum der Behandlung sowie den Namen des Arztes.
+
+Bitte senden Sie uns diese Angaben baldmöglichst zu.
+
+Mit freundlichen Grüßen,
+AOK Kundenservice`,
+    },
+    addressee: 'den Kundenservice der AOK',
+    points: [
+      'Nennen Sie Ihre Versicherungsnummer und persönliche Daten.',
+      'Nennen Sie Datum und Art der Behandlung sowie den Arzt.',
+      'Erklären Sie, warum Sie glauben, dass die Behandlung übernommen werden sollte.',
+      'Bitten Sie um Klärung und darum, dass die Rechnung direkt beglichen wird.',
     ],
   },
 ]
@@ -418,21 +628,27 @@ async function evaluateWithGemini(prompt, userText) {
 
   const typeLabel = prompt.type === 'formal' ? 'förmlich' : prompt.type === 'informal' ? 'informell' : 'halbförmlich'
 
-  const systemPrompt = `You are an official TELC B1 German exam examiner. Evaluate the student's letter strictly using the TELC B1 Schreiben Teil 1 marking scheme (45 points total).
+  const systemPrompt = `You are an official TELC B1 German exam examiner. Evaluate the student's reply strictly using the TELC B1 Schreiben Teil 1 marking scheme (45 points total).
 
-WRITING TASK (as it appeared on the exam):
-Register: ${typeLabel} (${prompt.format})
-Situation: ${prompt.situation}
+EXAM TASK:
+The student received the following email and must write a reply in German.
+Register: ${typeLabel}
 Addressee: ${prompt.addressee}
 
-Required content points (student must address all 5):
+INCOMING EMAIL (what the student received):
+From: ${prompt.incomingEmail.from}
+Subject: ${prompt.incomingEmail.subject}
+Body:
+${prompt.incomingEmail.body}
+
+REQUIRED REPLY POINTS (student must address all ${prompt.points.length}):
 ${prompt.points.map((p, i) => `${i + 1}. ${p}`).join('\n')}
 
-STUDENT'S RESPONSE:
+STUDENT'S REPLY:
 ${userText}
 
 SCORING GUIDE:
-1. INHALT (Content) — 15 points: Score each of the 5 content points 0–3 (3=fully addressed, 2=partially, 1=barely, 0=missing).
+1. INHALT (Content) — 15 points: Score each content point 0–3 (3=fully addressed, 2=partially, 1=barely, 0=missing). Total = sum of all point scores, max 15.
 2. KOMMUNIKATIVE GESTALTUNG (Communication) — 15 points: Rate salutation (0–3), structure (0–3), register consistency (0–3), connectors (0–3), clarity (0–3).
 3. FORMALE RICHTIGKEIT (Accuracy) — 15 points: Rate grammar (0–5), vocabulary (0–5), spelling/punctuation (0–5).
 
@@ -441,10 +657,6 @@ Return ONLY valid JSON exactly like this (no markdown, no extra text):
   "inhalt": {
     "score": <0-15>,
     "points": [
-      {"point": "<exact bullet text>", "score": <0-3>, "comment": "<one sentence in English>"},
-      {"point": "<exact bullet text>", "score": <0-3>, "comment": "<one sentence in English>"},
-      {"point": "<exact bullet text>", "score": <0-3>, "comment": "<one sentence in English>"},
-      {"point": "<exact bullet text>", "score": <0-3>, "comment": "<one sentence in English>"},
       {"point": "<exact bullet text>", "score": <0-3>, "comment": "<one sentence in English>"}
     ]
   },
@@ -550,10 +762,10 @@ export default function Writing() {
   return (
     <div className="max-w-4xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Schreiben</h1>
-      <p className="text-base text-gray-400 mb-8">TELC B1 Writing Practice</p>
+      <p className="text-base text-gray-400 mb-8">TELC B1 · Schreiben Teil 1 · {PROMPTS.length} tasks</p>
 
       <div className="flex gap-1 bg-gray-100 p-1 rounded-2xl mb-8 w-fit">
-        {[['practice', 'Daily Practice'], ['tips', 'Writing Tips']].map(([key, label]) => (
+        {[['practice', 'Practice'], ['tips', 'Tips']].map(([key, label]) => (
           <button
             key={key}
             onClick={() => setTab(key)}
@@ -593,70 +805,80 @@ function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, e
     halbformal: 'bg-amber-100 text-amber-700',
     informal:   'bg-green-100 text-green-700',
   }
-  const TYPE_LABEL = {
-    formal: 'Förmlich', halbformal: 'Halbförmlich', informal: 'Informell',
-  }
-  const wordOk = wordCount >= 80 && wordCount <= 150
-  const wordLow = wordCount > 0 && wordCount < 80
+  const TYPE_LABEL = { formal: 'Förmlich', halbformal: 'Halbförmlich', informal: 'Informell' }
+  const wordOk  = wordCount >= 70 && wordCount <= 120
+  const wordLow = wordCount > 0 && wordCount < 70
 
   return (
     <div className="space-y-5">
-      {/* Exam-style prompt card */}
+      {/* Task header */}
       <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
-        {/* Header bar */}
         <div className="flex items-center justify-between px-6 py-3 bg-slate-50 border-b border-gray-100">
-          <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">TELC B1 · Schreiben · Teil 1</span>
-          </div>
+          <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">TELC B1 · Schreiben · Teil 1</span>
           <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold ${TYPE_COLOR[prompt.type]}`}>
             {TYPE_LABEL[prompt.type]}
           </span>
         </div>
+        <div className="px-6 pt-5 pb-6">
+          <p className="text-base text-gray-800 leading-relaxed mb-5">{prompt.instruction}</p>
 
-        {/* Body */}
-        <div className="px-6 pt-6 pb-5">
-          {/* Situation */}
-          <p className="text-base text-gray-800 leading-relaxed mb-6">{prompt.situation}</p>
+          {/* Incoming email */}
+          <div className="bg-slate-50 border border-gray-200 rounded-2xl overflow-hidden mb-5">
+            <div className="px-4 py-3 border-b border-gray-200 space-y-1">
+              <div className="flex gap-2 text-sm">
+                <span className="text-gray-400 w-14 flex-shrink-0">Von:</span>
+                <span className="font-medium text-gray-800">{prompt.incomingEmail.from}</span>
+              </div>
+              <div className="flex gap-2 text-sm">
+                <span className="text-gray-400 w-14 flex-shrink-0">Betreff:</span>
+                <span className="font-medium text-gray-800">{prompt.incomingEmail.subject}</span>
+              </div>
+            </div>
+            <div className="px-4 py-4">
+              <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-line">
+                {prompt.incomingEmail.body}
+              </p>
+            </div>
+          </div>
 
-          {/* Points */}
+          {/* Reply points */}
           <p className="text-sm font-semibold text-gray-500 mb-3">Schreiben Sie zu folgenden Punkten:</p>
-          <ul className="space-y-2.5 mb-6">
+          <ul className="space-y-2.5 mb-5">
             {prompt.points.map((p, i) => (
               <li key={i} className="flex gap-3 items-start">
-                <span className="text-gray-400 font-medium mt-0.5 select-none flex-shrink-0">–</span>
+                <span className="w-5 h-5 rounded-full bg-indigo-100 text-indigo-700 text-xs font-bold flex items-center justify-center flex-shrink-0 mt-0.5">
+                  {i + 1}
+                </span>
                 <span className="text-base text-gray-800 leading-relaxed">{p}</span>
               </li>
             ))}
           </ul>
 
-          {/* Footer instruction */}
-          <div className="border-t border-dashed border-gray-200 pt-4 flex flex-wrap gap-x-6 gap-y-1">
+          <div className="border-t border-dashed border-gray-200 pt-4">
             <p className="text-sm text-gray-500">
               Schreiben Sie <strong className="text-gray-700">etwa 80 Wörter</strong>.
-            </p>
-            <p className="text-sm text-gray-500">
-              Schreiben Sie {prompt.type === 'informal' ? 'einen Brief' : `eine ${TYPE_LABEL[prompt.type].toLowerCase().replace('halbförmlich', 'halbförmliche').replace('förmlich', 'förmliche')} ${prompt.format}`} an: <strong className="text-gray-700">{prompt.addressee}</strong>.
+              Vergessen Sie Anrede und Gruß nicht.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Answer area or feedback */}
+      {/* Answer or feedback */}
       {!feedback ? (
         <>
           <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
             <div className="flex items-center justify-between px-5 pt-4 pb-2 border-b border-gray-100">
-              <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Your Letter</span>
+              <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Ihre Antwort</span>
               <span className={`text-xs font-semibold tabular-nums ${
-                wordOk ? 'text-green-600' : wordLow ? 'text-amber-500' : wordCount > 150 ? 'text-red-500' : 'text-gray-400'
+                wordOk ? 'text-green-600' : wordLow ? 'text-amber-500' : wordCount > 120 ? 'text-red-500' : 'text-gray-400'
               }`}>
-                {wordCount} words {wordOk ? '✓' : wordCount > 0 ? '(aim for 80–150)' : ''}
+                {wordCount} Wörter{wordOk ? ' ✓' : wordCount > 0 ? ' (Ziel: ~80)' : ''}
               </span>
             </div>
             <textarea
               value={text}
               onChange={e => setText(e.target.value)}
-              placeholder={`Begin your ${prompt.type === 'formal' ? 'formal' : prompt.type === 'informal' ? 'informal' : 'semi-formal'} letter here…\n\nRemember to include an appropriate greeting and closing.`}
+              placeholder={`Beginnen Sie Ihre Antwort hier …\n\nDenken Sie an: Anrede · alle Punkte · passenden Gruß`}
               className="w-full px-5 py-4 text-base text-gray-900 leading-relaxed resize-none focus:outline-none min-h-[280px]"
             />
           </div>
@@ -680,7 +902,7 @@ function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, e
             {submitting ? (
               <>
                 <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                Gemini is evaluating…
+                Gemini bewertet …
               </>
             ) : 'Submit for AI Feedback'}
           </button>
@@ -795,7 +1017,7 @@ function FeedbackPanel({ feedback, onReset, text }) {
 
       <details className="bg-white rounded-3xl shadow-sm overflow-hidden">
         <summary className="px-6 py-4 cursor-pointer text-sm font-semibold text-gray-500 hover:bg-slate-50 list-none flex items-center justify-between">
-          <span>Your submitted letter</span>
+          <span>Your submitted reply</span>
           <span className="text-gray-400 text-xs">▼</span>
         </summary>
         <div className="px-6 pb-5 border-t border-gray-100">
@@ -807,7 +1029,7 @@ function FeedbackPanel({ feedback, onReset, text }) {
         onClick={onReset}
         className="w-full py-4 border-2 border-gray-200 text-gray-600 font-semibold rounded-2xl hover:border-indigo-300 hover:text-indigo-600 active:scale-[0.98] transition-all text-base"
       >
-        Try again with a new letter
+        Try again with a new reply
       </button>
     </div>
   )
@@ -829,12 +1051,16 @@ function ScorePillar({ label, score, max, color }) {
 function TipsTab() {
   return (
     <div className="space-y-5">
-
       <div className="bg-white rounded-3xl shadow-sm p-6">
-        <h2 className="text-base font-bold text-gray-800 mb-4">TELC B1 Schreiben — Scoring (45 pts)</h2>
+        <h2 className="text-base font-bold text-gray-800 mb-4">TELC B1 Schreiben Teil 1 — How it works</h2>
+        <div className="bg-indigo-50 border border-indigo-200 rounded-2xl px-5 py-4 mb-4">
+          <p className="text-sm text-indigo-800 leading-relaxed">
+            You receive a <strong>real email from someone</strong> (friend, teacher, company). You must <strong>write a reply</strong> that addresses all required bullet points. Aim for <strong>about 80 words</strong>. Use an appropriate greeting and closing.
+          </p>
+        </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
           {[
-            { label: 'Inhalt', pts: '15', desc: '5 content points × 3 pts each. Address every bullet point clearly.' },
+            { label: 'Inhalt', pts: '15', desc: '4 content points × up to 3 pts each. Address every bullet point clearly.' },
             { label: 'Kommunikation', pts: '15', desc: 'Greeting, structure, register, connectors, clarity — 3 pts each.' },
             { label: 'Genauigkeit', pts: '15', desc: 'Grammar 5 pts, Vocabulary 5 pts, Spelling & Punctuation 5 pts.' },
           ].map(c => (
@@ -848,57 +1074,47 @@ function TipsTab() {
             </div>
           ))}
         </div>
-        <p className="text-xs text-gray-400 mt-4">Pass mark: <strong className="text-gray-600">36 / 45 (80%)</strong>. Writing time: ~30 minutes. Aim for 80–150 words.</p>
+        <p className="text-xs text-gray-400 mt-4">Pass mark: <strong className="text-gray-600">36 / 45 (80%)</strong>. Writing time: ~30 minutes.</p>
       </div>
 
       {[
         {
-          type: 'Förmlich', badge: 'bg-indigo-100 text-indigo-700',
-          when: 'Authorities (Ämter), companies, hotels, unknown persons, job applications.',
-          salutation: ['Sehr geehrte Damen und Herren,', 'Sehr geehrter Herr [Name],', 'Sehr geehrte Frau [Name],'],
-          closing: ['Mit freundlichen Grüßen,', 'Mit freundlichem Gruß,'],
-          pronoun: 'Sie (immer)',
+          type: 'Informell', badge: 'bg-green-100 text-green-700',
+          when: 'Friends, family, pen pals.',
+          salutation: ['Liebe Mia,', 'Lieber Jonas,', 'Hallo Ben,'],
+          closing: ['Liebe Grüße,', 'Viele Grüße,', 'Bis bald,'],
+          pronoun: 'du / ihr',
           phrases: [
-            'Ich schreibe Ihnen bezüglich …',
-            'Hiermit möchte ich mich für … bewerben.',
-            'Könnten Sie mir bitte … mitteilen?',
-            'Ich würde gern wissen, ob …',
-            'Vielen Dank für Ihre Mühe.',
-            'Ich freue mich auf Ihre Antwort.',
+            'Wie geht es dir?', 'Stell dir vor …!', 'Es wäre super, wenn …',
+            'Ich freue mich schon riesig!', 'Was hältst du davon?', 'Ich wollte dir schnell schreiben …',
           ],
-          avoid: 'Casual language, du-form, exclamation marks for requests.',
+          avoid: 'Overly formal phrases, Sie-form.',
         },
         {
           type: 'Halbförmlich', badge: 'bg-amber-100 text-amber-700',
-          when: 'Teachers, doctors, neighbours, employers you know, club coordinators.',
-          salutation: ['Guten Tag, Frau [Name],', 'Liebe Frau [Name],', 'Lieber Herr [Name],'],
+          when: 'Teachers, doctors, neighbours, employers you know.',
+          salutation: ['Guten Tag, Frau Schmidt,', 'Liebe Frau Becker,', 'Sehr geehrter Herr Weber,'],
           closing: ['Herzliche Grüße,', 'Viele Grüße,', 'Mit freundlichen Grüßen,'],
-          pronoun: 'Sie (still formal — only switch to du if invited)',
+          pronoun: 'Sie (still formal — only du if invited)',
           phrases: [
-            'Ich hoffe, es geht Ihnen gut.',
-            'Ich wollte Sie kurz fragen, ob …',
-            'Ich wäre Ihnen sehr dankbar, wenn …',
-            'Könnten Sie mir bitte … schicken?',
-            'Danke im Voraus für Ihre Hilfe.',
-            'Ich freue mich auf Ihre Rückmeldung.',
+            'Ich hoffe, es geht Ihnen gut.', 'Ich wollte Sie kurz fragen, ob …',
+            'Ich wäre Ihnen sehr dankbar, wenn …', 'Danke im Voraus für Ihre Hilfe.',
+            'Ich freue mich auf Ihre Rückmeldung.', 'Mit freundlicher Bitte um …',
           ],
-          avoid: 'Overly stiff phrases; overly casual slang.',
+          avoid: 'Overly stiff phrases; casual slang.',
         },
         {
-          type: 'Informell', badge: 'bg-green-100 text-green-700',
-          when: 'Friends, family, pen pals, flatmates.',
-          salutation: ['Liebe / Lieber [Name],', 'Hallo [Name],', 'Hey [Name],'],
-          closing: ['Liebe Grüße,', 'Viele Grüße,', 'Bis bald,', 'Tschüss,'],
-          pronoun: 'du / ihr',
+          type: 'Förmlich', badge: 'bg-indigo-100 text-indigo-700',
+          when: 'Companies, authorities, hotels, unknown persons.',
+          salutation: ['Sehr geehrte Damen und Herren,', 'Sehr geehrter Herr Lange,', 'Sehr geehrte Frau Hoffmann,'],
+          closing: ['Mit freundlichen Grüßen,', 'Mit freundlichem Gruß,'],
+          pronoun: 'Sie (immer)',
           phrases: [
-            'Wie geht es dir?',
-            'Stell dir vor, …!',
-            'Ich wollte dir schnell schreiben, weil …',
-            'Was hältst du davon?',
-            'Es wäre super, wenn du …',
-            'Ich freue mich schon riesig darauf!',
+            'Ich schreibe Ihnen bezüglich …', 'Hiermit möchte ich …',
+            'Könnten Sie mir bitte … mitteilen?', 'Ich bitte Sie um …',
+            'Vielen Dank für Ihre Mühe.', 'Ich freue mich auf Ihre Antwort.',
           ],
-          avoid: 'Overly formal phrases; Sie-form with friends.',
+          avoid: 'du-form, exclamation marks for requests, casual language.',
         },
       ].map(lt => (
         <div key={lt.type} className="bg-white rounded-3xl shadow-sm p-6">
@@ -928,37 +1144,14 @@ function TipsTab() {
       ))}
 
       <div className="bg-white rounded-3xl shadow-sm p-6">
-        <h2 className="text-base font-bold text-gray-800 mb-4">Useful Connectors (Konnektoren)</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          {[
-            { label: 'Adding information', words: ['außerdem', 'zusätzlich', 'zudem', 'darüber hinaus', 'auch'] },
-            { label: 'Contrast / Concession', words: ['jedoch', 'allerdings', 'trotzdem', 'obwohl', 'zwar … aber'] },
-            { label: 'Cause / Reason', words: ['deshalb', 'deswegen', 'daher', 'darum', 'wegen + Genitiv'] },
-            { label: 'Purpose / Goal', words: ['damit', 'um … zu', 'zum Zweck'] },
-            { label: 'Time sequence', words: ['zunächst', 'dann', 'danach', 'schließlich', 'zuerst'] },
-            { label: 'Listing / Emphasis', words: ['erstens', 'zweitens', 'außerdem', 'vor allem', 'besonders'] },
-          ].map(g => (
-            <div key={g.label}>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">{g.label}</p>
-              <div className="flex flex-wrap gap-1.5">
-                {g.words.map(w => (
-                  <span key={w} className="text-xs bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-lg font-medium">{w}</span>
-                ))}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <div className="bg-white rounded-3xl shadow-sm p-6">
-        <h2 className="text-base font-bold text-gray-800 mb-4">Common Mistakes to Avoid</h2>
+        <h2 className="text-base font-bold text-gray-800 mb-4">Common Mistakes</h2>
         <ul className="space-y-3">
           {[
-            ['Missing bullet points', 'Read all 5 points before you start. Tick each off as you write. Even a brief mention scores 1 point.'],
-            ['Wrong register', 'Formal = Sie + Sehr geehrte/r. Informal = du + Liebe/r. Mixing registers costs Kommunikation points.'],
-            ['No greeting / closing', 'Always include a proper salutation and closing. These alone are worth up to 6 points.'],
-            ['Too short or too long', 'Aim for 80–150 words. Too short = missing content. Too long = more errors. Quality over quantity.'],
-            ['Forgetting connectors', 'Use at least 3 connectors (deshalb, außerdem, jedoch, etc.) to score well in structure.'],
+            ['Missing bullet points', 'Read all points before you start. Tick each off as you write. Even a brief mention scores 1 point.'],
+            ['Wrong register', 'Informal = du. Formal/semi-formal = Sie. Mixing registers costs Kommunikation points.'],
+            ['No greeting or closing', 'Always include a proper salutation and a closing line. These are easy free points.'],
+            ['Too short', 'Under 60 words = missing content. Aim for about 80 words. Quality over quantity.'],
+            ['Forgetting connectors', 'Use deshalb, außerdem, obwohl, trotzdem to connect ideas and score well in structure.'],
             ['Capital nouns', 'Every German noun is capitalised. Der Tisch, die Prüfung, das Leben — always!'],
           ].map(([title, desc]) => (
             <li key={title} className="flex gap-3 items-start">
@@ -970,6 +1163,29 @@ function TipsTab() {
             </li>
           ))}
         </ul>
+      </div>
+
+      <div className="bg-white rounded-3xl shadow-sm p-6">
+        <h2 className="text-base font-bold text-gray-800 mb-4">Useful Connectors</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {[
+            { label: 'Adding information', words: ['außerdem', 'zusätzlich', 'zudem', 'auch', 'darüber hinaus'] },
+            { label: 'Contrast / Concession', words: ['jedoch', 'allerdings', 'trotzdem', 'obwohl', 'zwar … aber'] },
+            { label: 'Cause / Reason', words: ['deshalb', 'deswegen', 'daher', 'weil', 'denn'] },
+            { label: 'Purpose / Goal', words: ['damit', 'um … zu', 'zum Zweck'] },
+            { label: 'Time sequence', words: ['zunächst', 'dann', 'danach', 'schließlich', 'zuerst'] },
+            { label: 'Emphasis', words: ['vor allem', 'besonders', 'insbesondere', 'leider', 'natürlich'] },
+          ].map(g => (
+            <div key={g.label}>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">{g.label}</p>
+              <div className="flex flex-wrap gap-1.5">
+                {g.words.map(w => (
+                  <span key={w} className="text-xs bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-lg font-medium">{w}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )
