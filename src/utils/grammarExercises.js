@@ -2347,9 +2347,9 @@ export const exercises = {
     },
   ],
 
-  // ─── Klasse K13 ──────────────────────────────────────────────────────────────
+  // ─── Klasse K13 — moved to dedicated Verben page ─────────────────────────────
 
-  verben_mit_pr_positionen: [
+  verben_mit_pr_positionen_DISABLED: [
     {
       id: 'vmp_1',
       question: 'Wir haben uns ___ das neue Stadtprogramm informiert.',
