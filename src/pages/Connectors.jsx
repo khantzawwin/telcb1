@@ -1,4 +1,8 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { doc, setDoc } from 'firebase/firestore'
+import { db } from '../firebase'
+import { useAuth } from '../contexts/AuthContext'
+import { getTodayKey } from '../utils/srs'
 
 // ─── Exercise data ─────────────────────────────────────────────────────────────
 
@@ -474,11 +478,22 @@ export default function Connectors() {
 const SESSION_SIZE = 30
 
 function ExerciseTab() {
+  const { user } = useAuth()
   const [questions, setQuestions] = useState(() => shuffle(EXERCISES).slice(0, SESSION_SIZE))
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState(null)
   const [score, setScore] = useState(0)
   const [done, setDone] = useState(false)
+
+  useEffect(() => {
+    if (done && user) {
+      setDoc(
+        doc(db, 'users', user.uid, 'sessions', getTodayKey()),
+        { connectors: { completed: true, completedAt: new Date().toISOString() } },
+        { merge: true }
+      ).catch(() => {})
+    }
+  }, [done, user])
 
   const q = questions[index]
   const isCorrect = selected === q?.answer

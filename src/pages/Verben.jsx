@@ -1,4 +1,8 @@
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect } from 'react'
+import { doc, setDoc } from 'firebase/firestore'
+import { db } from '../firebase'
+import { useAuth } from '../contexts/AuthContext'
+import { getTodayKey } from '../utils/srs'
 
 // ─── Exercise data — A2 + B1 verbs from easy-deutsch.de PDF ──────────────────
 
@@ -502,12 +506,23 @@ export default function Verben() {
 // ─── Exercise tab ─────────────────────────────────────────────────────────────
 
 function ExerciseTab() {
+  const { user } = useAuth()
   const SESSION_SIZE = 50
   const [questions, setQuestions] = useState(() => shuffle(EXERCISES).slice(0, SESSION_SIZE))
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState(null)
   const [score, setScore] = useState(0)
   const [done, setDone] = useState(false)
+
+  useEffect(() => {
+    if (done && user) {
+      setDoc(
+        doc(db, 'users', user.uid, 'sessions', getTodayKey()),
+        { verben: { completed: true, completedAt: new Date().toISOString() } },
+        { merge: true }
+      ).catch(() => {})
+    }
+  }, [done, user])
 
   const q = questions[index]
   const isCorrect = selected === q?.answer

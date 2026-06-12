@@ -737,13 +737,20 @@ export default function Writing() {
     try {
       const result = await evaluateWithGemini(todayPrompt, text)
       setFeedback(result)
-      await setDoc(doc(db, 'users', user.uid, 'writing', todayKey), {
-        promptId: todayPrompt.id,
-        promptTitle: todayPrompt.title,
-        text,
-        result,
-        submittedAt: new Date().toISOString(),
-      })
+      await Promise.all([
+        setDoc(doc(db, 'users', user.uid, 'writing', todayKey), {
+          promptId: todayPrompt.id,
+          promptTitle: todayPrompt.title,
+          text,
+          result,
+          submittedAt: new Date().toISOString(),
+        }),
+        setDoc(
+          doc(db, 'users', user.uid, 'sessions', todayKey),
+          { writing: { completed: true, completedAt: new Date().toISOString() } },
+          { merge: true }
+        ),
+      ])
     } catch (e) {
       setError(e.message === 'no_api_key' ? 'api_key' : e.message)
     } finally {

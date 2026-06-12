@@ -207,7 +207,13 @@ function ActivityHeatmap({ uid }) {
         const map = {}
         snap.forEach(d => {
           const data = d.data()
-          map[d.id] = (data.morning?.completed ? 1 : 0) + (data.evening?.completed ? 1 : 0)
+          map[d.id] = (
+            (data.morning?.completed    ? 1 : 0) +
+            (data.evening?.completed    ? 1 : 0) +
+            (data.verben?.completed     ? 1 : 0) +
+            (data.connectors?.completed ? 1 : 0) +
+            (data.writing?.completed    ? 1 : 0)
+          )
         })
         setActivityMap(map)
       } catch {
@@ -236,15 +242,16 @@ function ActivityHeatmap({ uid }) {
     if (dateStr > toStr) return 'bg-transparent'
     const count = activityMap[dateStr] || 0
     if (count === 0) return 'bg-gray-100'
-    if (count === 1) return 'bg-indigo-200'
-    return 'bg-indigo-500'
+    if (count <= 2) return 'bg-indigo-200'
+    if (count <= 4) return 'bg-indigo-400'
+    return 'bg-indigo-600'
   }
 
   function cellTitle(day, dateStr) {
     if (dateStr > toStr) return ''
     const count = activityMap[dateStr] || 0
     const label = day.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
-    return count === 0 ? `${label}: no activity` : `${label}: ${count} session${count > 1 ? 's' : ''} completed`
+    return count === 0 ? `${label}: no activity` : `${label}: ${count}/5 activities completed`
   }
 
   return (
@@ -253,7 +260,7 @@ function ActivityHeatmap({ uid }) {
         <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Study Activity</p>
         {!heatLoading && (
           <p className="text-xs text-gray-400">
-            {Object.values(activityMap).reduce((a, b) => a + b, 0)} sessions · last 3 months
+            {Object.values(activityMap).reduce((a, b) => a + b, 0)} activities · last 3 months
           </p>
         )}
       </div>
@@ -313,7 +320,7 @@ function ActivityHeatmap({ uid }) {
             {/* Legend */}
             <div className="flex items-center gap-2 mt-3 ml-5">
               <span className="text-[10px] text-gray-400">Less</span>
-              {['bg-gray-100', 'bg-indigo-200', 'bg-indigo-500'].map(c => (
+              {['bg-gray-100', 'bg-indigo-200', 'bg-indigo-400', 'bg-indigo-600'].map(c => (
                 <div key={c} className={`w-3 h-3 rounded-sm ${c}`} />
               ))}
               <span className="text-[10px] text-gray-400">More</span>
