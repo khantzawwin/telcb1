@@ -221,7 +221,7 @@ const EXERCISES = [
   { id: 'vp_77', verb: 'sich sorgen + ???', question: 'Sie sorgt sich sehr ___ die Gesundheit ihrer alten Mutter.', options: ['um', 'für', 'an', 'über'], answer: 'um', explanation: 'sich sorgen UM + Akkusativ = to worry about / be concerned about someone or something.' },
 
   // ── rechnen mit ──
-  { id: 'vp_78', verb: 'rechnen + ??? (erwarten)', question: 'Mit so vielen Schwierigkeiten hatte ich wirklich nicht gerechnet.', options: ['mit', 'auf', 'für', 'an'], answer: 'mit', explanation: 'rechnen MIT + Dativ = to count on / expect / reckon with something (often in negative or surprised contexts).' },
+  { id: 'vp_78', verb: 'rechnen + ??? (erwarten)', question: 'Ich hatte wirklich nicht ___ so vielen Schwierigkeiten gerechnet.', options: ['mit', 'auf', 'für', 'an'], answer: 'mit', explanation: 'rechnen MIT + Dativ = to count on / expect / reckon with something (often in negative or surprised contexts).' },
 
   // ── einverstanden sein ──
   { id: 'vp_79', verb: 'einverstanden sein + ???', question: 'Ich bin vollkommen ___ deinem Vorschlag einverstanden — lass uns das so machen!', options: ['mit', 'für', 'an', 'zu'], answer: 'mit', explanation: 'einverstanden sein MIT + Dativ = to agree with / be in agreement with something.' },

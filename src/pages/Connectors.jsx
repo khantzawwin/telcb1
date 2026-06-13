@@ -559,9 +559,6 @@ function ExerciseTab() {
       </div>
 
       <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
-        <div className="px-6 py-3 bg-slate-50 border-b border-gray-100">
-          <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">{q.group}</span>
-        </div>
         <div className="px-6 pt-6 pb-5">
           <p className="text-lg text-gray-900 font-medium leading-relaxed mb-6">
             {q.question.split('___').map((part, i, arr) => (
