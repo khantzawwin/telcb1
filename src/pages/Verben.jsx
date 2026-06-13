@@ -474,6 +474,14 @@ function shuffle(arr) {
   return a
 }
 
+// Pick `size` random questions and shuffle each question's options so the
+// correct answer isn't always in the same position.
+function buildSession(exercises, size) {
+  return shuffle(exercises)
+    .slice(0, size)
+    .map(q => ({ ...q, options: shuffle(q.options) }))
+}
+
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function Verben() {
@@ -508,7 +516,7 @@ export default function Verben() {
 function ExerciseTab() {
   const { user } = useAuth()
   const SESSION_SIZE = 50
-  const [questions, setQuestions] = useState(() => shuffle(EXERCISES).slice(0, SESSION_SIZE))
+  const [questions, setQuestions] = useState(() => buildSession(EXERCISES, SESSION_SIZE))
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState(null)
   const [score, setScore] = useState(0)
@@ -544,7 +552,7 @@ function ExerciseTab() {
   }
 
   const handleRestart = () => {
-    setQuestions(shuffle(EXERCISES).slice(0, SESSION_SIZE))
+    setQuestions(buildSession(EXERCISES, SESSION_SIZE))
     setIndex(0)
     setSelected(null)
     setScore(0)
