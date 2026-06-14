@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { doc, setDoc } from 'firebase/firestore'
 import { db } from '../firebase'
 import { useAuth } from '../contexts/AuthContext'
+import { useNavGuard } from '../contexts/NavGuardContext'
 import { getTodayKey } from '../utils/srs'
 
 // ─── Exercise data ─────────────────────────────────────────────────────────────
@@ -487,6 +488,7 @@ const SESSION_SIZE = 30
 
 function ExerciseTab() {
   const { user } = useAuth()
+  const { setGuard } = useNavGuard()
   const [questions, setQuestions] = useState(() => buildSession(EXERCISES, SESSION_SIZE))
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState(null)
@@ -502,6 +504,13 @@ function ExerciseTab() {
       ).catch(() => {})
     }
   }, [done, user])
+
+  // Warn before navigating away mid-session so progress isn't lost accidentally.
+  useEffect(() => {
+    const inProgress = !done && (index > 0 || selected !== null)
+    setGuard(inProgress ? 'Leaving this page will reset your current exercise session. Are you sure?' : null)
+    return () => setGuard(null)
+  }, [done, index, selected, setGuard])
 
   const q = questions[index]
   const isCorrect = selected === q?.answer

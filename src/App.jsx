@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { AuthProvider } from './contexts/AuthContext'
 import { NotesProvider } from './contexts/NotesContext'
+import { NavGuardProvider } from './contexts/NavGuardContext'
 import ProtectedRoute from './components/ProtectedRoute'
 import Layout from './components/Layout'
 import Login from './pages/Login'
@@ -45,7 +46,9 @@ export default function App() {
     <BrowserRouter>
       <AuthProvider>
         <NotesProvider>
-          <AppRoutes />
+          <NavGuardProvider>
+            <AppRoutes />
+          </NavGuardProvider>
         </NotesProvider>
       </AuthProvider>
     </BrowserRouter>

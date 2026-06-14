@@ -1,6 +1,7 @@
 import { NavLink, useNavigate, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import { useAuth } from '../contexts/AuthContext'
+import { useNavGuard } from '../contexts/NavGuardContext'
 
 // Desktop sidebar + primary bottom-nav (5 items)
 const primaryNavItems = [
@@ -22,8 +23,12 @@ const navItems = [...primaryNavItems, ...secondaryNavItems]
 
 export default function Layout({ children }) {
   const { user, logOut } = useAuth()
+  const { confirmNav } = useNavGuard()
   const navigate = useNavigate()
   const location = useLocation()
+
+  // Block in-app navigation when a page has unsaved work (e.g. active exercise).
+  const handleNavClick = (e) => { if (!confirmNav()) e.preventDefault() }
   const [menuOpen, setMenuOpen] = useState(false)
   const [moreOpen, setMoreOpen] = useState(false)
 
@@ -51,6 +56,7 @@ export default function Layout({ children }) {
               key={to}
               to={to}
               end={end}
+              onClick={handleNavClick}
               className={({ isActive }) =>
                 `flex items-center gap-3 px-4 py-3 rounded-xl text-base font-medium transition-colors ${
                   isActive
@@ -130,6 +136,7 @@ export default function Layout({ children }) {
                 <NavLink
                   key={to}
                   to={to}
+                  onClick={handleNavClick}
                   className={({ isActive }) =>
                     `flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
                       isActive
@@ -158,7 +165,7 @@ export default function Layout({ children }) {
                 key={to}
                 to={to}
                 end={end}
-                onClick={() => setMoreOpen(false)}
+                onClick={(e) => { if (!confirmNav()) { e.preventDefault(); return } setMoreOpen(false) }}
                 className={({ isActive }) =>
                   `flex-1 flex flex-col items-center justify-center py-2.5 gap-1 text-[11px] font-medium transition-colors ${
                     isActive ? 'text-indigo-600' : 'text-gray-500'
