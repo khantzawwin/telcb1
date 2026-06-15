@@ -383,30 +383,30 @@ const SECTIONS = [
 ]
 
 const QUICK_TABLE = [
-  { meaning: 'and', connectors: ['und'] },
-  { meaning: 'or', connectors: ['oder'] },
-  { meaning: 'but', connectors: ['aber'] },
-  { meaning: 'not A but B', connectors: ['sondern'] },
-  { meaning: 'because', connectors: ['weil', 'denn'] },
-  { meaning: 'therefore', connectors: ['deshalb', 'deswegen', 'darum'] },
-  { meaning: 'nevertheless', connectors: ['trotzdem'] },
-  { meaning: 'that', connectors: ['dass'] },
-  { meaning: 'whether', connectors: ['ob'] },
-  { meaning: 'if / whenever', connectors: ['wenn'] },
-  { meaning: 'in case', connectors: ['falls'] },
-  { meaning: 'when (past, once)', connectors: ['als'] },
-  { meaning: 'although', connectors: ['obwohl'] },
-  { meaning: 'while', connectors: ['während'] },
-  { meaning: 'before', connectors: ['bevor'] },
-  { meaning: 'after', connectors: ['nachdem'] },
-  { meaning: 'so that (goal)', connectors: ['damit'] },
-  { meaning: 'so that (result)', connectors: ['sodass'] },
-  { meaning: 'by doing', connectors: ['indem'] },
-  { meaning: 'since then', connectors: ['seitdem'] },
-  { meaning: 'both … and', connectors: ['sowohl … als auch'] },
-  { meaning: 'neither … nor', connectors: ['weder … noch'] },
-  { meaning: 'either … or', connectors: ['entweder … oder'] },
-  { meaning: 'the more … the more', connectors: ['je … desto'] },
+  { meaning: 'and', asks: 'Aufzählung', connectors: ['und'] },
+  { meaning: 'or', asks: 'Alternative', connectors: ['oder'] },
+  { meaning: 'but', asks: 'Gegensatz', connectors: ['aber'] },
+  { meaning: 'not A but B', asks: 'Korrektur', connectors: ['sondern'] },
+  { meaning: 'because', asks: 'warum?', connectors: ['weil', 'denn'] },
+  { meaning: 'therefore', asks: 'welche Folge?', connectors: ['deshalb', 'deswegen', 'darum'] },
+  { meaning: 'nevertheless', asks: 'Gegengrund', connectors: ['trotzdem'] },
+  { meaning: 'that', asks: 'was?', connectors: ['dass'] },
+  { meaning: 'whether', asks: 'ja oder nein?', connectors: ['ob'] },
+  { meaning: 'if / whenever', asks: 'wann? / Bedingung', connectors: ['wenn'] },
+  { meaning: 'in case', asks: 'Bedingung', connectors: ['falls'] },
+  { meaning: 'when (past, once)', asks: 'wann? (einmalig)', connectors: ['als'] },
+  { meaning: 'although', asks: 'Gegengrund', connectors: ['obwohl'] },
+  { meaning: 'while', asks: 'wann? (gleichzeitig)', connectors: ['während'] },
+  { meaning: 'before', asks: 'wann? (vorher)', connectors: ['bevor'] },
+  { meaning: 'after', asks: 'wann? (danach)', connectors: ['nachdem'] },
+  { meaning: 'so that (goal)', asks: 'wozu? (Ziel)', connectors: ['damit'] },
+  { meaning: 'so that (result)', asks: 'welche Folge?', connectors: ['sodass'] },
+  { meaning: 'by doing', asks: 'wie? (Mittel)', connectors: ['indem'] },
+  { meaning: 'since then', asks: 'seit wann?', connectors: ['seitdem'] },
+  { meaning: 'both … and', asks: 'Aufzählung (+)', connectors: ['sowohl … als auch'] },
+  { meaning: 'neither … nor', asks: 'Aufzählung (−)', connectors: ['weder … noch'] },
+  { meaning: 'either … or', asks: 'Alternative', connectors: ['entweder … oder'] },
+  { meaning: 'the more … the more', asks: 'Proportion', connectors: ['je … desto'] },
 ]
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -761,19 +761,29 @@ function QuickTable() {
         <p className="text-sm font-bold text-gray-800">Quick Decision Table</p>
         <p className="text-xs text-gray-400 mt-0.5">Find the right connector by meaning. Useful during the writing section of the exam.</p>
       </div>
-      <div className="divide-y divide-gray-50">
-        {QUICK_TABLE.map(({ meaning, connectors }) => (
-          <div key={meaning} className="flex items-center px-6 py-3 gap-4">
-            <span className="text-sm text-gray-500 min-w-[10rem] flex-shrink-0">{meaning}</span>
-            <div className="flex flex-wrap gap-1.5">
-              {connectors.map(c => (
-                <span key={c} className="text-sm font-bold text-gray-900 bg-gray-50 border border-gray-200 px-3 py-0.5 rounded-xl">
-                  {c}
-                </span>
-              ))}
-            </div>
+      <div className="overflow-x-auto">
+        <div className="min-w-[34rem]">
+          <div className="flex items-center px-6 py-2 gap-4 bg-slate-50 border-b border-gray-100">
+            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest w-24 flex-shrink-0">Meaning</span>
+            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest w-32 flex-shrink-0">Asks / Function</span>
+            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Connector</span>
           </div>
-        ))}
+          <div className="divide-y divide-gray-50">
+            {QUICK_TABLE.map(({ meaning, asks, connectors }) => (
+              <div key={meaning} className="flex items-center px-6 py-3 gap-4">
+                <span className="text-sm text-gray-500 w-24 flex-shrink-0">{meaning}</span>
+                <span className="text-sm text-indigo-600 font-medium w-32 flex-shrink-0">{asks}</span>
+                <div className="flex flex-wrap gap-1.5">
+                  {connectors.map(c => (
+                    <span key={c} className="text-sm font-bold text-gray-900 bg-gray-50 border border-gray-200 px-3 py-0.5 rounded-xl whitespace-nowrap">
+                      {c}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
   )

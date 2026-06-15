@@ -483,6 +483,23 @@ function buildSession(exercises, size) {
     .map(q => ({ ...q, options: shuffle(q.options) }))
 }
 
+// Reshuffle a fixed set of questions (used for the "review mistakes" round).
+function reshuffle(exercises) {
+  return shuffle(exercises).map(q => ({ ...q, options: shuffle(q.options) }))
+}
+
+// "sich freuen + ??? (etwas Zukünftiges)" → "sich freuen"
+function baseVerb(verb) {
+  return verb.split('+')[0].trim()
+}
+
+// Pull the governed case out of the explanation text for the memory chip.
+function detectCase(explanation = '') {
+  if (/akkusativ/i.test(explanation)) return 'Akkusativ'
+  if (/dativ/i.test(explanation)) return 'Dativ'
+  return null
+}
+
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function Verben() {
@@ -517,12 +534,14 @@ export default function Verben() {
 function ExerciseTab() {
   const { user } = useAuth()
   const { setGuard } = useNavGuard()
-  const SESSION_SIZE = 30
+  const SESSION_SIZE = 10
   const [questions, setQuestions] = useState(() => buildSession(EXERCISES, SESSION_SIZE))
   const [index, setIndex] = useState(0)
   const [selected, setSelected] = useState(null)
   const [score, setScore] = useState(0)
   const [done, setDone] = useState(false)
+  const [mistakes, setMistakes] = useState([])   // questions answered wrong this round
+  const [isReview, setIsReview] = useState(false)
 
   useEffect(() => {
     if (done && user) {
@@ -549,6 +568,7 @@ function ExerciseTab() {
     if (answered) return
     setSelected(opt)
     if (opt === q.answer) setScore(s => s + 1)
+    else setMistakes(m => m.some(x => x.id === q.id) ? m : [...m, q])
   }
 
   const handleNext = () => {
@@ -565,27 +585,57 @@ function ExerciseTab() {
     setIndex(0)
     setSelected(null)
     setScore(0)
+    setMistakes([])
+    setIsReview(false)
+    setDone(false)
+  }
+
+  // Re-drill only the questions missed this round (active recall on weak items).
+  const handleReviewMistakes = () => {
+    setQuestions(reshuffle(mistakes))
+    setIndex(0)
+    setSelected(null)
+    setScore(0)
+    setMistakes([])
+    setIsReview(true)
     setDone(false)
   }
 
   if (done) {
     const pct = Math.round((score / questions.length) * 100)
+    const missed = mistakes.length
     return (
       <div className="bg-white rounded-3xl shadow-sm p-8 text-center">
+        {isReview && (
+          <p className="text-[10px] font-bold uppercase tracking-widest text-indigo-400 mb-3">Review round</p>
+        )}
         <div className={`text-5xl font-bold mb-2 ${pct >= 70 ? 'text-green-600' : 'text-amber-500'}`}>
           {score}/{questions.length}
         </div>
         <p className="text-gray-500 mb-1">{pct}% correct</p>
         <p className="text-sm text-gray-400 mb-8">
-          {pct >= 90 ? 'Excellent! You have a strong command of verb + preposition.' :
-           pct >= 70 ? 'Good work! Review the ones you missed in the Reference List.' :
-           'Keep practicing! Use the Reference List to review the patterns.'}
+          {missed === 0 ? 'Perfect — every pattern correct! 🎉' :
+           pct >= 70 ? `You missed ${missed}. Drill them now while they're fresh.` :
+           `${missed} to review. Repetition is how these patterns stick.`}
         </p>
+
+        {missed > 0 && (
+          <button
+            onClick={handleReviewMistakes}
+            className="w-full sm:w-auto px-8 py-3 bg-indigo-600 text-white font-semibold rounded-2xl hover:bg-indigo-700 transition-all mb-3 sm:mb-0 sm:mr-3"
+          >
+            Review {missed} mistake{missed > 1 ? 's' : ''} →
+          </button>
+        )}
         <button
           onClick={handleRestart}
-          className="px-8 py-3 bg-indigo-600 text-white font-semibold rounded-2xl hover:bg-indigo-700 transition-all"
+          className={`w-full sm:w-auto px-8 py-3 font-semibold rounded-2xl transition-all ${
+            missed > 0
+              ? 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              : 'bg-indigo-600 text-white hover:bg-indigo-700'
+          }`}
         >
-          Try again (new shuffle)
+          New session
         </button>
       </div>
     )
@@ -595,7 +645,10 @@ function ExerciseTab() {
     <div className="space-y-4">
       {/* Progress */}
       <div className="flex items-center justify-between text-sm text-gray-400 mb-1">
-        <span>Question {index + 1} of {questions.length}</span>
+        <span>
+          {isReview && <span className="font-semibold text-indigo-500">Review · </span>}
+          Question {index + 1} of {questions.length}
+        </span>
         <span>{score} correct</span>
       </div>
       <div className="w-full h-1.5 bg-gray-100 rounded-full overflow-hidden">
@@ -650,6 +703,29 @@ function ExerciseTab() {
               )
             })}
           </div>
+
+          {/* Memory pattern — the collocation to actually memorise */}
+          {answered && (() => {
+            const caseLabel = detectCase(q.explanation)
+            return (
+              <div className="rounded-2xl border-2 border-indigo-200 bg-indigo-50 p-4 mb-3 text-center">
+                <p className="text-[10px] font-bold uppercase tracking-widest text-indigo-400 mb-2">
+                  Remember this pattern
+                </p>
+                <p className="text-xl font-bold text-gray-900 flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+                  <span>{baseVerb(q.verb)}</span>
+                  <span className="text-indigo-600 underline decoration-2 underline-offset-4">{q.answer}</span>
+                  {caseLabel && (
+                    <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${
+                      caseLabel === 'Akkusativ' ? 'bg-rose-100 text-rose-700' : 'bg-teal-100 text-teal-700'
+                    }`}>
+                      + {caseLabel}
+                    </span>
+                  )}
+                </p>
+              </div>
+            )
+          })()}
 
           {/* Explanation */}
           {answered && (
