@@ -1,5 +1,10 @@
 import { useState } from 'react'
 
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY
+const GEMINI_URL = GEMINI_API_KEY
+  ? `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${GEMINI_API_KEY}`
+  : null
+
 // ─── Teil 2 debates — each person gets a different perspective article ──────────
 
 const TEIL2_DEBATES = [
@@ -373,6 +378,56 @@ function randomPick(arr, exclude) {
   return pick
 }
 
+// ─── Example dialogue (Gemini) ──────────────────────────────────────────────────
+
+async function generateDialog(promptText) {
+  if (!GEMINI_URL) throw new Error('no_api_key')
+  const res = await fetch(GEMINI_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: promptText }] }],
+      generationConfig: { temperature: 0.4, maxOutputTokens: 2000 },
+    }),
+  })
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}))
+    throw new Error(err?.error?.message || `API error ${res.status}`)
+  }
+  const data = await res.json()
+  const raw = data.candidates?.[0]?.content?.parts?.[0]?.text || ''
+  const jsonStr = raw.replace(/```json\n?|\n?```/g, '').trim()
+  return JSON.parse(jsonStr)
+}
+
+function teil2Prompt(debate, persons) {
+  const cards = debate.cards.slice(0, persons)
+  const speakers = PERSON_LABELS.slice(0, persons).join(', ')
+  return `You are a German B1 teacher. Create a MODEL example dialogue for TELC B1 Sprechen Teil 2 "Gespräch über ein Thema".
+Topic: ${debate.theme}
+There are ${persons} speakers (${speakers}). Each has read a short article from a DIFFERENT perspective:
+${cards.map((c, i) => `Speaker ${PERSON_LABELS[i]} — "${c.headline}": ${c.text}`).join('\n')}
+
+Write a natural SPOKEN dialogue in German at a REALISTIC CEFR B1 level — like good B1 learners would really speak, NOT native speakers and NOT B2/C1. Each speaker first briefly summarizes their own article in their OWN simple words (1-2 sentences), then they discuss the topic together: share opinions, agree and disagree politely, ask each other questions, and give personal examples. STRICT LANGUAGE RULES: use simple everyday words and short sentences; use only basic connectors (und, aber, weil, denn, deshalb, dann, trotzdem, außerdem); avoid rare or abstract vocabulary, idioms, Passiv and complicated grammar. Use typical spoken B1 phrases (Ich finde, dass …; Das sehe ich anders …; Wie ist das bei dir?). Keep each turn 1-3 sentences. 10-14 turns total, alternating speakers.
+
+Return ONLY valid JSON (no markdown, no extra text):
+{"dialog":[{"speaker":"A","text":"..."},{"speaker":"B","text":"..."}]}`
+}
+
+function teil3Prompt(teil3, persons) {
+  const speakers = PERSON_LABELS.slice(0, persons).join(', ')
+  return `You are a German B1 teacher. Create a MODEL example dialogue for TELC B1 Sprechen Teil 3 "Gemeinsam etwas planen".
+Task: ${teil3.task}
+Situation: ${teil3.situation}
+There are ${persons} speakers (${speakers}). They must discuss and agree on ALL of these points:
+${teil3.points.map((p, i) => `${i + 1}. ${p}`).join('\n')}
+
+Write a natural SPOKEN dialogue in German at a REALISTIC CEFR B1 level — like good B1 learners would really speak, NOT native speakers and NOT B2/C1. The speakers make suggestions, react to each other, negotiate, and reach a concrete agreement that covers EVERY point above. STRICT LANGUAGE RULES: use simple everyday words and short sentences; use only basic connectors (und, aber, weil, denn, deshalb, dann, trotzdem, außerdem); avoid rare or abstract vocabulary, idioms, Passiv and complicated grammar. Use typical planning phrases (Ich schlage vor, dass …; Wie wäre es, wenn …?; Einverstanden!; Das finde ich gut, weil …). End with one turn that briefly summarizes the agreed plan. Keep each turn 1-3 sentences. 10-14 turns total, alternating speakers.
+
+Return ONLY valid JSON (no markdown, no extra text):
+{"dialog":[{"speaker":"A","text":"..."},{"speaker":"B","text":"..."}]}`
+}
+
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function Sprechen() {
@@ -483,6 +538,12 @@ function PracticeTab() {
                   Vorbereitungszeit: ca. 2 Minuten. Dauer: <strong className="text-gray-700">ca. 5 Minuten</strong>.
                 </p>
               </div>
+
+              <DialogBlock
+                key={`t2-${debate.theme}-${persons}`}
+                persons={persons}
+                buildPrompt={() => teil2Prompt(debate, persons)}
+              />
             </div>
           </div>
 
@@ -513,6 +574,12 @@ function PracticeTab() {
                   Machen Sie Vorschläge und reagieren Sie auf die Vorschläge der anderen. Finden Sie am Ende eine gemeinsame Lösung. Dauer: <strong className="text-gray-700">ca. 5 Minuten</strong>.
                 </p>
               </div>
+
+              <DialogBlock
+                key={`t3-${teil3.task}-${persons}`}
+                persons={persons}
+                buildPrompt={() => teil3Prompt(teil3, persons)}
+              />
             </div>
           </div>
 
@@ -538,6 +605,86 @@ function PracticeTab() {
           </div>
         </>
       )}
+    </div>
+  )
+}
+
+// ─── Example dialogue block ─────────────────────────────────────────────────────
+
+function DialogBlock({ persons, buildPrompt }) {
+  const [status, setStatus] = useState('idle') // idle | loading | done | error
+  const [dialog, setDialog] = useState(null)
+  const [error, setError] = useState(null)
+
+  const load = async () => {
+    setStatus('loading')
+    setError(null)
+    try {
+      const result = await generateDialog(buildPrompt())
+      setDialog(result.dialog || [])
+      setStatus('done')
+    } catch (e) {
+      setError(e.message === 'no_api_key' ? 'api_key' : e.message)
+      setStatus('error')
+    }
+  }
+
+  if (status === 'done' && dialog) {
+    return (
+      <div className="mt-5 border-t border-gray-100 pt-5">
+        <div className="flex items-center justify-between mb-4">
+          <p className="text-xs font-bold text-gray-500 uppercase tracking-widest">Beispieldialog — Example dialogue</p>
+          <button onClick={load} className="text-xs font-semibold text-indigo-600 hover:text-indigo-700">
+            Regenerate
+          </button>
+        </div>
+        <div className="space-y-3">
+          {dialog.map((turn, i) => {
+            const ci = PERSON_LABELS.indexOf(turn.speaker)
+            const color = CARD_COLORS[ci >= 0 ? ci : 0]
+            return (
+              <div key={i} className="flex gap-3">
+                <span className={`w-8 h-8 rounded-full flex-shrink-0 font-bold text-sm flex items-center justify-center ${color.badge}`}>
+                  {turn.speaker}
+                </span>
+                <p className="text-sm text-gray-800 leading-relaxed bg-slate-50 rounded-2xl rounded-tl-sm px-4 py-2.5 flex-1">
+                  {turn.text}
+                </p>
+              </div>
+            )
+          })}
+        </div>
+        <p className="text-xs text-gray-400 mt-4 italic">
+          AI-generated model dialogue. Use it as inspiration — your own examples and reactions score best.
+        </p>
+      </div>
+    )
+  }
+
+  return (
+    <div className="mt-5 border-t border-gray-100 pt-5">
+      {error === 'api_key' && (
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl px-5 py-4 text-sm text-amber-800 mb-3">
+          <strong>API key missing.</strong> Add <code className="bg-amber-100 px-1 rounded">VITE_GEMINI_API_KEY</code> to your <code className="bg-amber-100 px-1 rounded">.env.local</code> file and rebuild.
+        </div>
+      )}
+      {error && error !== 'api_key' && (
+        <div className="bg-red-50 border border-red-200 rounded-2xl px-5 py-4 text-sm text-red-700 mb-3">
+          Gemini error: {error}. Please try again.
+        </div>
+      )}
+      <button
+        onClick={load}
+        disabled={status === 'loading' || !GEMINI_API_KEY}
+        className="w-full py-3.5 border-2 border-indigo-200 text-indigo-700 font-semibold rounded-2xl hover:bg-indigo-50 active:scale-[0.98] transition-all disabled:opacity-40 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+      >
+        {status === 'loading' ? (
+          <>
+            <div className="w-4 h-4 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+            Beispieldialog wird erstellt …
+          </>
+        ) : '💬 Show example dialogue'}
+      </button>
     </div>
   )
 }

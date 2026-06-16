@@ -266,9 +266,9 @@ Jonas`,
       subject: 'Ihre Abwesenheit bei der Prüfung',
       body: `Guten Tag,
 
-ich habe bemerkt, dass Sie bei der Deutschprüfung am Dienstag nicht anwesend waren. Ich mache mir Sorgen und möchte wissen, ob es Ihnen gut geht.
+ich habe gesehen, dass Sie bei der Deutschprüfung am Dienstag nicht da waren. Ich mache mir Sorgen und möchte wissen, ob es Ihnen gut geht.
 
-Könnten Sie mir bitte mitteilen, was passiert ist? Falls Sie krank waren, benötige ich ein ärztliches Attest. Ich hoffe, wir finden gemeinsam eine Lösung.
+Können Sie mir bitte schreiben, was passiert ist? Wenn Sie krank waren, brauche ich ein ärztliches Attest. Ich hoffe, wir finden zusammen eine Lösung.
 
 Mit freundlichen Grüßen,
 Frau Schmidt`,
@@ -290,7 +290,7 @@ Frau Schmidt`,
       subject: 'Unser gemeinsamer Garten',
       body: `Guten Tag,
 
-ich wollte Ihnen wegen unseres gemeinsamen Gartens schreiben. Ich habe den Eindruck, dass es zu einem Missverständnis bezüglich der Nutzung gekommen ist. Letzte Woche hat meine Familie den Garten für ein kleines Fest nutzen wollen, aber das war leider schwierig.
+ich schreibe Ihnen wegen unseres gemeinsamen Gartens. Ich glaube, es gibt ein kleines Problem damit, wie wir den Garten benutzen. Letzte Woche wollte meine Familie im Garten ein kleines Fest feiern, aber das war leider nicht möglich.
 
 Ich würde mich freuen, wenn wir darüber sprechen könnten.
 
@@ -314,9 +314,9 @@ Herr Fischer`,
       subject: 'Ihre Anfrage – Arbeitszeiten',
       body: `Guten Tag,
 
-ich habe Ihre Anfrage wegen einer vorübergehenden Änderung Ihrer Arbeitszeiten erhalten. Ich verstehe, dass Sie eine private Situation bewältigen müssen.
+ich habe Ihre Nachricht bekommen. Sie möchten Ihre Arbeitszeiten für kurze Zeit ändern. Ich verstehe, dass Sie gerade eine schwierige private Situation haben.
 
-Bevor ich eine Entscheidung treffe, würde ich gerne mehr Details wissen: Welche Zeiten genau möchten Sie ändern und für wie lange? Wie stellen Sie sich vor, Ihre Aufgaben zu erledigen?
+Bevor ich entscheide, möchte ich aber mehr wissen: Welche Zeiten genau möchten Sie ändern und wie lange? Und wie wollen Sie Ihre Arbeit trotzdem schaffen?
 
 Mit freundlichen Grüßen,
 Frau Hoffmann`,
@@ -338,9 +338,9 @@ Frau Hoffmann`,
       subject: 'Änderung Ihres Kursplans',
       body: `Sehr geehrte/r Teilnehmer/in,
 
-wir möchten Sie informieren, dass Ihr Deutschkurs ab nächster Woche verlegt wird. Der Kurs findet künftig mittwochs von 18:00 bis 20:00 Uhr statt, anstatt wie bisher dienstags.
+wir möchten Sie informieren, dass Ihr Deutschkurs ab nächster Woche zu einer anderen Zeit stattfindet. Der Kurs ist ab jetzt mittwochs von 18:00 bis 20:00 Uhr und nicht mehr dienstags.
 
-Wir hoffen, dass diese Änderung für Sie akzeptabel ist. Bei Fragen stehen wir Ihnen gerne zur Verfügung.
+Wir hoffen, dass diese Änderung für Sie in Ordnung ist. Bei Fragen helfen wir Ihnen gerne.
 
 Mit freundlichen Grüßen,
 Das Koordinationsteam`,
@@ -362,9 +362,9 @@ Das Koordinationsteam`,
       subject: 'Alles in Ordnung in der Wohnung?',
       body: `Guten Tag,
 
-ich hoffe, Sie fühlen sich in der Wohnung wohl! Ich wollte kurz nachfragen, ob alles in Ordnung ist und ob es etwas gibt, das repariert werden sollte.
+ich hoffe, Sie fühlen sich in der Wohnung wohl! Ich wollte kurz fragen, ob alles in Ordnung ist und ob es etwas gibt, das man reparieren sollte.
 
-Bitte zögern Sie nicht, sich zu melden, wenn etwas nicht stimmt.
+Bitte melden Sie sich, wenn etwas nicht funktioniert.
 
 Mit freundlichen Grüßen,
 Frau Becker`,
@@ -386,9 +386,9 @@ Frau Becker`,
       subject: 'Abwesenheit von Lena',
       body: `Guten Tag,
 
-ich wollte Sie bezüglich der Abwesenheit Ihrer Tochter Lena kontaktieren. Sie war diese Woche nicht in der Schule, und ich habe bisher keine Entschuldigung erhalten.
+ich schreibe Ihnen wegen Ihrer Tochter Lena. Sie war diese Woche nicht in der Schule, und ich habe bis jetzt keine Entschuldigung von Ihnen bekommen.
 
-Ich mache mir ein bisschen Sorgen und würde gerne wissen, ob alles in Ordnung ist. Bitte melden Sie sich baldmöglichst.
+Ich mache mir ein bisschen Sorgen und möchte gerne wissen, ob alles in Ordnung ist. Bitte melden Sie sich so schnell wie möglich.
 
 Mit freundlichen Grüßen,
 Herr Weber`,
@@ -434,9 +434,9 @@ Das Sekretariat`,
       subject: 'Ihre Ehrenamts-Anfrage',
       body: `Sehr geehrte/r Bewerber/in,
 
-vielen Dank für Ihr Interesse, sich im Bürgerhaus Westend ehrenamtlich zu engagieren! Wir suchen immer engagierte Menschen.
+vielen Dank, dass Sie im Bürgerhaus Westend ehrenamtlich helfen möchten! Wir suchen immer Menschen, die gerne helfen.
 
-Damit wir Sie besser einsetzen können, hätten wir gerne mehr Informationen: Welche Fähigkeiten bringen Sie mit? Wie viel Zeit pro Woche könnten Sie investieren?
+Damit wir die richtige Aufgabe für Sie finden, möchten wir mehr über Sie wissen: Was können Sie gut? Wie viel Zeit pro Woche haben Sie?
 
 Mit freundlichen Grüßen,
 Das Koordinationsteam`,
@@ -460,9 +460,9 @@ Das Koordinationsteam`,
       subject: 'Re: Informationsanfrage Deutschkurse',
       body: `Sehr geehrte Damen und Herren,
 
-vielen Dank für Ihr Interesse an unseren Deutschkursen! Wir bieten Kurse auf verschiedenen Niveaustufen von A1 bis C1 an.
+vielen Dank für Ihr Interesse an unseren Deutschkursen! Wir bieten Kurse auf verschiedenen Stufen von A1 bis C1 an.
 
-Unsere Kurse finden montags bis freitags statt, von 09:00–12:00 Uhr oder von 17:00–20:00 Uhr. Für genauere Informationen zu Preisen und Anmeldung freuen wir uns auf Ihre weiteren Fragen.
+Unsere Kurse finden montags bis freitags statt, von 09:00–12:00 Uhr oder von 17:00–20:00 Uhr. Wenn Sie mehr über die Preise und die Anmeldung wissen möchten, schreiben Sie uns gerne.
 
 Mit freundlichen Grüßen,
 Sprachschule Berliner Tor`,
@@ -484,9 +484,9 @@ Sprachschule Berliner Tor`,
       subject: 'Re: Beschwerde Bestellnummer #45821',
       body: `Sehr geehrte/r Kunde/Kundin,
 
-vielen Dank für Ihre Nachricht. Es tut uns leid zu hören, dass Sie das falsche Produkt erhalten haben.
+vielen Dank für Ihre Nachricht. Es tut uns leid, dass Sie das falsche Produkt bekommen haben.
 
-Damit wir Ihnen helfen können, benötigen wir noch einige Informationen: Können Sie uns bitte genau beschreiben, was Sie erhalten haben? Dann werden wir sofort für Sie tätig.
+Damit wir Ihnen helfen können, brauchen wir noch ein paar Informationen: Können Sie uns bitte genau beschreiben, was Sie bekommen haben? Dann kümmern wir uns sofort darum.
 
 Mit freundlichen Grüßen,
 Kundenservice Modehaus Online`,
@@ -508,9 +508,9 @@ Kundenservice Modehaus Online`,
       subject: 'Re: Ihre Beschwerde',
       body: `Sehr geehrte/r Gast,
 
-vielen Dank für Ihre Rückmeldung zu Ihrem Aufenthalt. Es tut uns sehr leid, dass Ihr Besuch nicht Ihren Erwartungen entsprochen hat.
+vielen Dank für Ihre Nachricht über Ihren Aufenthalt. Es tut uns sehr leid, dass Ihr Besuch Ihnen nicht gefallen hat.
 
-Damit wir Ihren Fall prüfen können, benötigen wir weitere Details: Welche konkreten Probleme haben Sie erlebt? Haben Sie sich während des Aufenthalts bereits an das Personal gewandt?
+Damit wir Ihr Problem prüfen können, brauchen wir mehr Informationen: Welche Probleme hatten Sie genau? Haben Sie während Ihres Aufenthalts schon mit dem Personal gesprochen?
 
 Mit freundlichen Grüßen,
 Hotel Seeblick – Direktion`,
@@ -532,9 +532,9 @@ Hotel Seeblick – Direktion`,
       subject: 'Re: Ihre Fahrgastrechte-Anfrage',
       body: `Sehr geehrte/r Fahrgast,
 
-wir haben Ihre Beschwerde erhalten. Für die Bearbeitung gemäß EU-Fahrgastrechten benötigen wir noch folgende Angaben: Datum der Reise, Zugnummer, betroffene Strecke sowie Angaben zur Verspätung oder Stornierung.
+vielen Dank für Ihre Beschwerde. Damit wir Ihnen helfen können, brauchen wir noch einige Informationen: das Datum der Reise, die Zugnummer, die Strecke und was genau passiert ist (Verspätung oder ausgefallener Zug).
 
-Sobald wir diese Informationen haben, werden wir Ihren Fall prüfen.
+Wenn wir diese Informationen haben, prüfen wir Ihren Fall.
 
 Mit freundlichen Grüßen,
 Deutsche Bahn Kundenservice`,
@@ -580,9 +580,9 @@ Praxis Dr. Müller`,
       subject: 'Re: Anfrage Wohnung Goethestraße 12',
       body: `Sehr geehrte/r Interessent/in,
 
-vielen Dank für Ihr Interesse an der Wohnung in der Goethestraße 12. Die Wohnung hat 65 m², liegt im 3. Stockwerk und ist in einem sehr guten Zustand. Die Gesamtmiete beträgt 950 € inklusive Nebenkosten.
+vielen Dank für Ihr Interesse an der Wohnung in der Goethestraße 12. Die Wohnung hat 65 m², liegt im 3. Stock und ist in einem sehr guten Zustand. Die Miete ist 950 € inklusive Nebenkosten.
 
-Ich biete Ihnen einen Besichtigungstermin an. Wären Sie am Dienstag oder Mittwoch nächster Woche verfügbar?
+Ich möchte Ihnen die Wohnung gerne zeigen. Hätten Sie am Dienstag oder Mittwoch nächster Woche Zeit?
 
 Mit freundlichen Grüßen,
 Peter Lange`,
@@ -604,9 +604,9 @@ Peter Lange`,
       subject: 'Re: Ihre Anfrage zur Arztrechnung',
       body: `Sehr geehrte/r Versicherte/r,
 
-wir haben Ihre Anfrage bezüglich der erhaltenen Rechnung erhalten. Damit wir Ihren Fall prüfen können, benötigen wir weitere Informationen: Ihre Versicherungsnummer, das Datum der Behandlung sowie den Namen des Arztes.
+vielen Dank für Ihre Nachricht wegen Ihrer Rechnung. Damit wir Ihren Fall prüfen können, brauchen wir noch mehr Informationen: Ihre Versicherungsnummer, das Datum der Behandlung und den Namen des Arztes.
 
-Bitte senden Sie uns diese Angaben baldmöglichst zu.
+Bitte schicken Sie uns diese Informationen so schnell wie möglich.
 
 Mit freundlichen Grüßen,
 AOK Kundenservice`,
@@ -679,7 +679,8 @@ Return ONLY valid JSON exactly like this (no markdown, no extra text):
   },
   "total": <0-45>,
   "level": "<A2|B1-|B1|B1+|B2>",
-  "summary": "<2-3 encouraging sentences in English>"
+  "summary": "<2-3 encouraging sentences in English>",
+  "musterbrief": "<A complete model reply IN GERMAN written at a REALISTIC CEFR B1 / telc B1 level — like a good B1 student would write, NOT a native speaker and NOT B2/C1. STRICT LANGUAGE RULES: use simple, common everyday words; short and clear sentences (mostly main clauses, plus easy subordinate clauses with weil/dass/wenn); use ONLY basic B1 connectors (und, aber, denn, deshalb, weil, dann, außerdem, trotzdem); AVOID rare, formal or abstract vocabulary, idioms, Passiv, Konjunktiv I, and complicated Konjunktiv II (only simple forms like 'ich würde gern …' and 'könnten Sie …' are allowed); avoid long compound nouns. It MUST use the correct register (${typeLabel}), open with a fitting Anrede for ${prompt.addressee}, clearly address ALL ${prompt.points.length} points in simple language, end with a fitting Gruß, and be about 80 words. Use \\n for line breaks after the greeting and before the closing. The result should be something a real B1 student could realistically write themselves.>"
 }`
 
   const res = await fetch(GEMINI_URL, {
@@ -687,7 +688,7 @@ Return ONLY valid JSON exactly like this (no markdown, no extra text):
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
       contents: [{ parts: [{ text: systemPrompt }] }],
-      generationConfig: { temperature: 0.1, maxOutputTokens: 1800 },
+      generationConfig: { temperature: 0.1, maxOutputTokens: 2400 },
     }),
   })
 
@@ -924,7 +925,7 @@ function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, e
 // ─── Feedback panel ───────────────────────────────────────────────────────────
 
 function FeedbackPanel({ feedback, onReset, text }) {
-  const { inhalt, kommunikation, genauigkeit, total, level, summary } = feedback
+  const { inhalt, kommunikation, genauigkeit, total, level, summary, musterbrief } = feedback
   const pct = Math.round((total / 45) * 100)
   const grade = total >= 36 ? 'Passed ✓' : total >= 27 ? 'Close' : 'Not passed'
 
@@ -1021,6 +1022,22 @@ function FeedbackPanel({ feedback, onReset, text }) {
         <p className="text-sm font-bold text-green-700 mb-1">Overall Feedback</p>
         <p className="text-sm text-green-800 leading-relaxed">{summary}</p>
       </div>
+
+      {/* Model answer — how a full-mark reply could look */}
+      {musterbrief && (
+        <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
+          <div className="flex items-center gap-2 px-6 py-4 bg-indigo-50 border-b border-indigo-100">
+            <span className="text-base">✍️</span>
+            <div>
+              <p className="text-sm font-bold text-indigo-800">Musterlösung — Model Answer</p>
+              <p className="text-xs text-indigo-500">An example reply that would score full marks. Compare it with yours.</p>
+            </div>
+          </div>
+          <div className="px-6 py-5">
+            <p className="text-sm text-gray-800 leading-relaxed whitespace-pre-line">{musterbrief}</p>
+          </div>
+        </div>
+      )}
 
       <details className="bg-white rounded-3xl shadow-sm overflow-hidden">
         <summary className="px-6 py-4 cursor-pointer text-sm font-semibold text-gray-500 hover:bg-slate-50 list-none flex items-center justify-between">
