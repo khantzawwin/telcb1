@@ -12,16 +12,16 @@ const TEIL2_DEBATES = [
     theme: 'Alleine reisen',
     cards: [
       {
-        headline: 'Allein reisen: Freiheit pur',
-        text: 'Immer mehr Menschen entscheiden sich für Solotrips — und das aus gutem Grund. Wer allein reist, kann seinen Urlaub komplett nach eigenen Wünschen planen: kein Warten, keine Kompromisse. Man lernt sich selbst besser kennen und ist viel offener für neue Bekanntschaften. Studien zeigen, dass Alleinreisende kommunikativer sind als Gruppenreisende. Laut einer Umfrage des Deutschen Reiseverbands gaben 78 Prozent der Befragten an, ein Solotrip habe ihr Selbstbewusstsein deutlich gestärkt.',
+        headline: 'Allein reisen: Freiheit und Abenteuer',
+        text: 'Immer mehr Menschen reisen allein — und das ist sehr gut so. Wer allein reist, kann jeden Tag selbst entscheiden, was er macht. Es gibt keine Kompromisse und kein Warten. Man lernt neue Menschen kennen und wird mutiger und selbstständiger. Studien zeigen: Alleinreisende sind offener für neue Erfahrungen. Ein Solotrip ist eine der besten Möglichkeiten, sich selbst besser kennenzulernen.',
       },
       {
-        headline: 'Allein auf Reisen — riskant und einsam?',
-        text: 'Allein in fremde Länder zu fahren klingt abenteuerlich, birgt aber Risiken. Wer allein reist, muss alle Probleme selbst lösen: ein verpasster Zug oder eine Erkrankung können schnell zur Belastung werden. Sicherheitsexperten warnen besonders Frauen vor bestimmten Reisezielen. Dazu kommt die Einsamkeit: Schöne Erlebnisse verlieren an Wert, wenn niemand dabei ist. Und finanziell ist Alleinreisen teurer — Einzelzimmer kosten bis zu 40 Prozent mehr als in der Gruppe.',
+        headline: 'Allein auf Reisen — riskant und teuer',
+        text: 'Allein in fremde Länder zu fahren klingt toll, aber es gibt auch Probleme. Wenn man krank wird oder den Zug verpasst, muss man alles allein lösen. Das kann sehr stressig sein. Sicherheitsexperten warnen besonders Frauen vor einigen Reisezielen. Außerdem ist es oft teuer: Ein Einzelzimmer kostet bis zu 40 Prozent mehr als ein Zimmer in der Gruppe. Und manchmal ist man einfach einsam.',
       },
       {
-        headline: 'Sicher allein reisen: So klappt\'s',
-        text: 'Alleinreisen ist weder per se gefährlich noch immer paradiesisch — es kommt auf die Vorbereitung an. Wer gut plant, Reiseziele sorgfältig auswählt und lokale Kontakte knüpft, erlebt das Beste beider Welten: die Freiheit des Solotrips und die Sicherheit eines organisierten Urlaubs. Reise-Apps, Online-Communities und Hostels mit Gemeinschaftsbereichen machen es heute leichter denn je, allein zu reisen und trotzdem Menschen kennenzulernen. Entscheidend ist nicht ob, sondern wie gut man vorbereitet ist.',
+        headline: 'Gut vorbereitet allein reisen',
+        text: 'Alleinreisen ist nicht immer gefährlich — aber auch nicht immer einfach. Es kommt auf die Vorbereitung an. Wer gut plant und das Reiseziel gut auswählt, kann tolle Erfahrungen machen. Heute gibt es viele Möglichkeiten: Apps, Online-Communities und Hostels helfen dabei, andere Reisende kennenzulernen. So hat man die Freiheit des Solotrips und trotzdem soziale Kontakte.',
       },
     ],
   },
@@ -30,15 +30,15 @@ const TEIL2_DEBATES = [
     cards: [
       {
         headline: 'Homeoffice: Mehr Freiheit, mehr Leistung',
-        text: 'Seit der Pandemie hat das Homeoffice einen festen Platz in der Arbeitswelt gefunden — zu Recht. Studien zeigen, dass Mitarbeiter zu Hause produktiver arbeiten: weniger Unterbrechungen, kein Pendelstress, mehr Konzentration. Familien profitieren von der Flexibilität, berufliche und private Aufgaben besser zu kombinieren. Eine Umfrage des Instituts für Arbeitsmarktforschung ergab, dass 68 Prozent der Beschäftigten im Homeoffice zufriedener mit ihrer Work-Life-Balance sind als ihre Kollegen im Büro.',
+        text: 'Seit der Pandemie arbeiten viele Menschen von zu Hause — und das funktioniert gut. Studien zeigen: Mitarbeiter im Homeoffice sind produktiver. Es gibt weniger Unterbrechungen und keinen Stress beim Pendeln. Familien können Beruf und Familie besser kombinieren. Eine Umfrage hat ergeben, dass fast 70 Prozent der Menschen im Homeoffice zufriedener sind als ihre Kollegen im Büro.',
       },
       {
-        headline: 'Homeoffice: Isolation statt Integration',
-        text: 'So praktisch das Homeoffice klingt — die Risiken werden oft unterschätzt. Viele Beschäftigte berichten von Einsamkeit, fehlender Trennung zwischen Arbeit und Freizeit und ständiger Erreichbarkeit. Besonders junge Mitarbeiter leiden unter mangelndem Austausch mit Kollegen. Kreative Teamarbeit funktioniert am besten im persönlichen Gespräch. Studien zeigen außerdem, dass Heimarbeiter seltener befördert werden. Für Eltern kleiner Kinder ist konzentriertes Arbeiten zu Hause oft kaum möglich.',
+        headline: 'Homeoffice: Einsamkeit und kein Feierabend',
+        text: 'Das Homeoffice klingt praktisch, aber es gibt auch Probleme. Viele Menschen fühlen sich einsam und vermissen den Kontakt zu Kollegen. Die Grenze zwischen Arbeit und Freizeit ist unscharf — man ist immer erreichbar. Besonders junge Mitarbeiter brauchen den Kontakt zu Kollegen, um zu lernen. Für Eltern mit kleinen Kindern ist konzentriertes Arbeiten zu Hause oft sehr schwierig.',
       },
       {
         headline: 'Hybrid-Modell: Das Beste aus beiden Welten',
-        text: 'Weder reines Homeoffice noch tägliches Büro — das Hybrid-Modell setzt sich immer mehr durch. Zwei bis drei Tage im Büro ermöglichen persönlichen Austausch und Teamarbeit. Die restlichen Tage zu Hause bieten Konzentration und Flexibilität. Laut einer Studie des Fraunhofer-Instituts bevorzugen 74 Prozent der Beschäftigten diese Kombination. Auch Unternehmen profitieren: Sie können Bürofläche reduzieren und gleichzeitig die Teamkultur erhalten. Das Hybrid-Modell ist für viele der pragmatischste Weg nach vorn.',
+        text: 'Weder nur Homeoffice noch täglich ins Büro — das Hybrid-Modell ist eine gute Lösung. Zwei oder drei Tage im Büro ermöglichen Teamarbeit und persönliche Gespräche. Die anderen Tage zu Hause bieten Ruhe und Flexibilität. Laut einer Studie möchten fast 75 Prozent der Beschäftigten diese Kombination. Auch Firmen sparen dabei Geld, weil sie weniger Bürofläche brauchen.',
       },
     ],
   },
@@ -47,15 +47,15 @@ const TEIL2_DEBATES = [
     cards: [
       {
         headline: 'Soziale Medien: Verbunden mit der Welt',
-        text: 'Facebook, Instagram und Co. werden oft kritisiert — dabei bieten sie enorme Vorteile. Soziale Medien ermöglichen es, Kontakt zu Freunden und Familie weltweit zu halten und Neuigkeiten sofort zu erfahren. Für viele kleine Unternehmen sind sie unverzichtbar: kostenlose Werbung, direkter Kundenkontakt, schnelles Feedback. Gesellschaftlich spielen sie eine wichtige Rolle: Bürgerbewegungen können über soziale Medien Millionen mobilisieren, wie zuletzt die Klimabewegung gezeigt hat.',
+        text: 'Soziale Medien werden oft kritisiert, aber sie haben viele Vorteile. Man kann Kontakt zu Freunden und Familie auf der ganzen Welt halten. Kleine Unternehmen können dort kostenlos Werbung machen und direkt mit Kunden sprechen. Außerdem können Menschen über soziale Medien für wichtige Themen kämpfen — zum Beispiel für den Klimaschutz. Sie verbinden Menschen weltweit.',
       },
       {
-        headline: 'Soziale Medien: Sucht, Neid und Fehlinformation',
-        text: 'Soziale Medien haben eine Schattenseite, die immer deutlicher wird. Studien belegen, dass regelmäßige Nutzung bei Jugendlichen zu Angstzuständen, Schlafproblemen und negativem Körperbild führt. Algorithmen bevorzugen emotionalen, oft falschen Inhalt — Fehlinformation verbreitet sich viermal schneller als korrekte Nachrichten. Viele Nutzer verbringen täglich über drei Stunden auf Plattformen, ohne es zu merken. Suchtforscher vergleichen das Design sozialer Medien offen mit dem von Spielautomaten.',
+        headline: 'Soziale Medien: Sucht und falsche Informationen',
+        text: 'Soziale Medien haben eine gefährliche Seite. Studien zeigen, dass viele Jugendliche durch soziale Medien Angst bekommen, schlechter schlafen und sich nicht mehr gut fühlen. Falsche Informationen verbreiten sich dort sehr schnell. Viele Nutzer merken nicht, wie viel Zeit sie dort verbringen — oft mehr als drei Stunden pro Tag. Es ist schwer, damit aufzuhören.',
       },
       {
-        headline: 'Soziale Medien brauchen strengere Regeln',
-        text: 'Die Debatte endet oft in Extremen: vollständige Ablehnung oder unkritische Begeisterung. Dabei liegt die Lösung in klaren gesetzlichen Regeln für Plattformen. Die EU hat mit dem Digital Services Act bereits einen wichtigen Schritt gemacht — Plattformen müssen Falschinformationen bekämpfen und für Minderjährige bessere Schutzmaßnahmen einführen. Soziale Medien können ein wertvolles Werkzeug sein, wenn sie verantwortungsvoll betrieben werden. Regulierung statt Verbote ist der richtige Ansatz.',
+        headline: 'Soziale Medien brauchen klare Regeln',
+        text: 'Soziale Medien sind weder nur schlecht noch nur gut. Die Lösung liegt in klaren Regeln für die Plattformen. Die EU hat schon erste Gesetze gemacht: Plattformen müssen falsche Informationen bekämpfen und Kinder besser schützen. Soziale Medien können nützlich sein, wenn sie verantwortungsvoll genutzt werden. Klare Regeln sind wichtiger als ein komplettes Verbot.',
       },
     ],
   },
@@ -63,16 +63,16 @@ const TEIL2_DEBATES = [
     theme: 'Vegane Ernährung',
     cards: [
       {
-        headline: 'Vegan essen: Gut für Mensch und Erde',
-        text: 'Der Trend zur veganen Ernährung hat handfeste Vorteile. Wer auf tierische Produkte verzichtet, senkt laut Studien sein Risiko für Herzerkrankungen und Diabetes deutlich. Gleichzeitig ist vegane Ernährung klimafreundlich: Die Tierhaltung verursacht mehr Treibhausgasemissionen als der gesamte Verkehrssektor. Moderne vegane Produkte sind vielfältig, lecker und in fast jedem Supermarkt erhältlich. Wer gut plant, kann sich vollwertig und gesund ernähren — ohne auf Genuss zu verzichten.',
+        headline: 'Vegan essen: Gut für Gesundheit und Umwelt',
+        text: 'Vegane Ernährung ist gut für die Gesundheit und für die Umwelt. Wer keine tierischen Produkte isst, hat laut Studien ein kleineres Risiko für Herzprobleme und Diabetes. Außerdem verursacht die Tierhaltung sehr viel CO₂ — mehr als alle Autos und Flugzeuge zusammen. Heute gibt es viele leckere vegane Produkte in jedem Supermarkt. Mit guter Planung kann man sich gesund und vegan ernähren.',
       },
       {
-        headline: 'Vegan: Nährstoffmangel und hohe Kosten',
-        text: 'Eine rein vegane Ernährung klingt gesund, birgt aber Risiken. Ohne sorgfältige Planung fehlen wichtige Nährstoffe wie Vitamin B12, Eisen und Omega-3-Fettsäuren — dauerhafter Mangel kann zu ernsthaften Erkrankungen führen. Vegane Ersatzprodukte sind oft teuer und stark verarbeitet. Für Menschen mit niedrigem Einkommen ist eine ausgewogene vegane Ernährung kaum erschwinglich. Für Kinder und ältere Menschen kann der vollständige Verzicht ohne ärztliche Begleitung gefährlich sein.',
+        headline: 'Vegan: Nicht immer gesund und oft teuer',
+        text: 'Vegane Ernährung klingt gesund, hat aber Risiken. Ohne gute Planung fehlen wichtige Nährstoffe wie Vitamin B12 und Eisen. Das kann zu gesundheitlichen Problemen führen. Vegane Ersatzprodukte sind oft teuer — für Menschen mit wenig Geld ist das schwierig. Für Kinder und ältere Menschen ist eine vegane Ernährung ohne Arztberatung manchmal gefährlich.',
       },
       {
         headline: 'Weniger Fleisch — aber nicht gleich vegan',
-        text: 'Müssen wir wirklich komplett auf tierische Produkte verzichten? Ernährungsexperten sagen: Nein. Eine flexitarische Ernährung — weniger Fleisch, mehr Gemüse, aber kein vollständiger Verzicht — ist für die meisten realistischer und gesünder. Wer einmal pro Woche auf Fleisch verzichtet, reduziert seinen CO₂-Fußabdruck bereits erheblich. Regional und saisonal einzukaufen ist oft umweltfreundlicher als importierte Sojaprodukte. Der Mittelweg zwischen Genuss und Verantwortung ist oft der nachhaltigste.',
+        text: 'Müssen wir komplett auf Fleisch verzichten? Experten sagen: Nein. Weniger Fleisch essen ist für die meisten Menschen einfacher und auch sehr gut für die Umwelt. Wer einmal pro Woche auf Fleisch verzichtet, hilft schon sehr viel. Regional und saisonal einkaufen ist oft besser für die Umwelt als importierte Sojaprodukte. Man muss nicht perfekt vegan sein, um etwas zu verändern.',
       },
     ],
   },
@@ -81,15 +81,15 @@ const TEIL2_DEBATES = [
     cards: [
       {
         headline: 'Elektroautos: Die Zukunft des Fahrens',
-        text: 'Elektroautos sind der wichtigste Schritt zur Reduzierung von CO₂-Emissionen im Verkehr. In Städten verbessern sie die Luftqualität spürbar. Die Technologie entwickelt sich rasant — moderne E-Autos schaffen 400 bis 600 Kilometer pro Ladung. Betriebskosten sind deutlich günstiger: Strom kostet weniger als Benzin, Wartung ist einfacher. Viele Länder fördern den Kauf mit Prämien. Die Zukunft gehört dem Elektromotor — das ist keine Frage mehr des Ob, sondern des Wann.',
+        text: 'Elektroautos sind wichtig für den Klimaschutz. In Städten verbessern sie die Luftqualität. Moderne Elektroautos können 400 bis 600 Kilometer mit einer Ladung fahren. Sie sind günstiger zu betreiben: Strom kostet weniger als Benzin, und die Wartung ist einfacher. Viele Länder geben beim Kauf Geld dazu. Die Zukunft gehört dem Elektroauto — das ist sicher.',
       },
       {
-        headline: 'Elektroautos: Teuer, ladeabhängig, nicht wirklich grün',
-        text: 'Elektroautos gelten als Lösung für die Klimakrise — doch die Realität ist komplizierter. Die Produktion einer Batterie verursacht enorme CO₂-Mengen und verbraucht seltene Rohstoffe wie Kobalt, deren Abbau oft unter schlechten Bedingungen stattfindet. Das Ladenetz ist noch unzureichend, auf langen Strecken bleibt Reichweitenangst ein reales Problem. Der Kaufpreis liegt deutlich über dem von Verbrennern. Wenn der Strom aus Kohle kommt, ist die Ökobilanz kaum besser.',
+        headline: 'Elektroautos: Teuer und nicht wirklich grün',
+        text: 'Elektroautos gelten als gut für die Umwelt, aber es ist komplizierter. Die Produktion einer Batterie braucht viel Energie und seltene Rohstoffe. Das Ladenetz ist noch nicht gut genug — auf langen Strecken ist das ein echtes Problem. Der Kaufpreis ist viel höher als bei normalen Autos. Wenn der Strom aus Kohle kommt, ist ein Elektroauto auch nicht wirklich gut für die Umwelt.',
       },
       {
-        headline: 'Statt Elektroauto: lieber den Nahverkehr stärken',
-        text: 'Die Diskussion dreht sich zu sehr um das Auto — und zu wenig darum, ob wir überhaupt so viele Autos brauchen. Investitionen in Bus, Bahn und Fahrradwege wären klimafreundlicher als der massenhafte Umstieg auf Elektroautos. Ein gut ausgebauter Nahverkehr kommt allen zugute — nicht nur denen, die sich ein neues Auto leisten können. Städte wie Wien oder Amsterdam zeigen, dass eine autoarme Infrastruktur funktioniert und die Lebensqualität steigert.',
+        headline: 'Lieber mehr Bus und Bahn als Elektroautos',
+        text: 'Wir reden zu viel über Autos und zu wenig darüber, ob wir wirklich so viele Autos brauchen. Investitionen in Busse, Bahnen und Fahrradwege wären besser für das Klima als viele Elektroautos. Ein guter öffentlicher Nahverkehr hilft allen Menschen — nicht nur denen, die sich ein neues Auto leisten können. Städte wie Wien zeigen, dass weniger Autos möglich ist und die Lebensqualität verbessert.',
       },
     ],
   },
@@ -98,15 +98,15 @@ const TEIL2_DEBATES = [
     cards: [
       {
         headline: 'Großstadtleben: Alles nah, alles möglich',
-        text: 'Das Leben in der Großstadt bietet Chancen, die auf dem Land undenkbar sind: Kulturangebote, kurze Wege zur Arbeit und ein breites Netzwerk an Kontakten. Öffentliche Verkehrsmittel machen ein Auto überflüssig. Jobangebote sind vielfältiger, Gehälter meist höher. Gerade für junge Menschen ist die Stadt der Ort, an dem man sich entfalten, neue Ideen ausprobieren und internationale Kontakte knüpfen kann. Kein Wunder, dass immer mehr Menschen in Ballungszentren ziehen.',
+        text: 'Das Leben in der Großstadt hat viele Vorteile. Es gibt viel Kultur, kurze Wege zur Arbeit und viele Menschen. Mit Bus und Bahn braucht man kein Auto. Es gibt mehr Jobangebote und oft bessere Gehälter. Besonders für junge Menschen ist die Stadt ein guter Ort: Man kann neue Ideen ausprobieren und viele Kontakte knüpfen. Deshalb ziehen immer mehr Menschen in die Städte.',
       },
       {
         headline: 'Raus aufs Land: Ruhe, Natur, Gemeinschaft',
-        text: 'Immer mehr Menschen entscheiden sich bewusst für das Landleben — und bereuen es selten. Günstigere Mieten ermöglichen den Traum vom eigenen Haus. Kinder wachsen in der Natur auf, mit weniger Lärm und mehr Platz. Mit Homeoffice ist Pendeln in die Stadt oft gar nicht mehr nötig. Studien zeigen, dass Landbewohner im Schnitt gesünder und zufriedener sind als Stadtbewohner — weniger Stress, bessere Luft und ein stärkeres Gemeinschaftsgefühl.',
+        text: 'Immer mehr Menschen entscheiden sich für das Landleben — und sind sehr zufrieden damit. Die Mieten sind günstiger, und viele können sich ein eigenes Haus leisten. Kinder haben mehr Platz und können in der Natur aufwachsen. Mit Homeoffice muss man nicht mehr jeden Tag pendeln. Studien zeigen, dass Menschen auf dem Land oft gesünder und glücklicher sind — weniger Stress und bessere Luft.',
       },
       {
         headline: 'Kleinstädte: Das Beste aus Stadt und Land',
-        text: 'Wer sich zwischen Großstadt und tiefem Land nicht entscheiden kann, übersieht oft eine dritte Option: die Kleinstadt. Mit 20.000 bis 100.000 Einwohnern bieten Kleinstädte viele Vorteile beider Welten — kulturelles Angebot, bezahlbares Wohnen und echte Gemeinschaft. Der öffentliche Nahverkehr ist ausreichend, Natur ist nah, der Stress einer Metropole bleibt fern. Laut einer aktuellen Umfrage ist die Lebenszufriedenheit in deutschen Mittelstädten überdurchschnittlich hoch.',
+        text: 'Wer sich nicht zwischen Großstadt und Land entscheiden kann, sollte eine Kleinstadt anschauen. Mit 20.000 bis 100.000 Einwohnern bietet sie vieles von beiden: Kultur, günstige Wohnungen und echten Zusammenhalt. Es gibt guten öffentlichen Nahverkehr, und die Natur ist nah. Der Stress einer großen Stadt fehlt. Laut einer Umfrage sind Menschen in deutschen Kleinstädten besonders zufrieden mit ihrem Leben.',
       },
     ],
   },
@@ -114,16 +114,16 @@ const TEIL2_DEBATES = [
     theme: 'Haustiere in der Stadt',
     cards: [
       {
-        headline: 'Haustiere machen glücklich — auch in der Großstadt',
-        text: 'Wissenschaftliche Studien belegen: Haustiere senken Stress, reduzieren den Blutdruck und schützen vor Einsamkeit. Für ältere Menschen sind Tiere oft der wichtigste soziale Kontakt. Hunde bringen ihre Besitzer regelmäßig nach draußen — das fördert Bewegung und soziale Begegnungen. Auch für Kinder ist der Umgang mit Tieren wertvoll: Sie lernen Verantwortung und Empathie. In deutschen Städten gibt es heute viele Grünflächen, die das Halten von Haustieren gut möglich machen.',
+        headline: 'Haustiere machen glücklich — auch in der Stadt',
+        text: 'Wissenschaftler sagen: Haustiere machen uns glücklich. Sie helfen gegen Stress und Einsamkeit. Für ältere Menschen sind Tiere oft sehr wichtig. Hunde bringen ihre Besitzer nach draußen — das ist gut für die Gesundheit. Kinder lernen durch Tiere Verantwortung und Mitgefühl. In deutschen Städten gibt es heute viele Parks und Grünflächen, wo man mit Haustieren spazieren gehen kann.',
       },
       {
-        headline: 'Tiere in der Wohnung: Belastung für alle',
-        text: 'Haustiere in der Stadt zu halten ist für das Tier oft alles andere als artgerecht. Ein Hund, der zehn Stunden allein in einer kleinen Wohnung verbringt, leidet. Lärm, Allergien und Konflikte mit Nachbarn sind häufige Folgen. Kosten werden unterschätzt: Futter, Tierarzt und Pflege summieren sich schnell auf mehrere Tausend Euro pro Jahr. Viele Tiere landen nach wenigen Monaten im Tierheim, weil Besitzer die Verantwortung unterschätzt haben.',
+        headline: 'Tiere in der Wohnung: Schwierig für alle',
+        text: 'Haustiere in der Wohnung zu halten ist oft nicht gut für das Tier. Ein Hund, der den ganzen Tag allein in einer kleinen Wohnung ist, leidet. Lärm, Allergien und Probleme mit Nachbarn sind häufig. Die Kosten werden oft unterschätzt: Futter, Tierarzt und Pflege kosten pro Jahr sehr viel Geld. Viele Tiere landen im Tierheim, weil die Besitzer die Verantwortung nicht erwartet haben.',
       },
       {
-        headline: 'Katzen: Das ideale Haustier für Stadtmenschen',
-        text: 'Die Frage, ob Haustiere in der Stadt sinnvoll sind, hängt stark von der Tierart ab. Während Hunde in kleinen Wohnungen leiden können, sind Katzen wesentlich anpassungsfähiger. Sie brauchen keinen Auslauf, beschäftigen sich weitgehend selbst und sind auch für Berufstätige gut geeignet. Statistiken zeigen, dass Katzen das beliebteste Haustier Deutschlands sind. Mit einem Kratzbaum, Spielzeug und etwas Aufmerksamkeit am Abend sind sie glücklich und bereichern das Leben ihrer Besitzer.',
+        headline: 'Katzen: Das ideale Haustier für die Stadt',
+        text: 'Ob ein Haustier in der Stadt passt, hängt sehr vom Tier ab. Hunde brauchen viel Platz und Bewegung — das ist in kleinen Wohnungen schwierig. Katzen sind viel besser geeignet: Sie brauchen keinen Auslauf und beschäftigen sich selbst. Katzen sind das beliebteste Haustier in Deutschland. Mit einem Kratzbaum und etwas Aufmerksamkeit am Abend sind sie glücklich und angenehme Mitbewohner.',
       },
     ],
   },
@@ -131,16 +131,16 @@ const TEIL2_DEBATES = [
     theme: 'Smartphones für Kinder',
     cards: [
       {
-        headline: 'Smartphones für Kinder: Sicherheit und Bildung',
-        text: 'Ein Smartphone ist für Kinder heute oft eine Notwendigkeit. Eltern können ihre Kinder jederzeit erreichen — ein wichtiges Sicherheitsgefühl für beide Seiten. Lern-Apps vermitteln Wissen spielerisch und bereiten Kinder auf die digitale Arbeitswelt vor. Wer früh einen verantwortungsvollen Umgang lernt, kann später kritischer mit Medien umgehen. Entscheidend ist nicht das Gerät selbst, sondern wie Eltern und Lehrer den Umgang begleiten und klare Grenzen setzen.',
+        headline: 'Smartphones für Kinder: Sicherheit und Lernen',
+        text: 'Ein Smartphone ist für Kinder heute oft sehr nützlich. Eltern können ihre Kinder jederzeit anrufen — das ist ein gutes Sicherheitsgefühl für beide. Lern-Apps machen das Lernen interessant und bereiten Kinder auf die digitale Welt vor. Wer früh lernt, verantwortungsvoll mit dem Handy umzugehen, kann später besser mit Medien umgehen. Wichtig ist, wie Eltern und Lehrer die Kinder dabei begleiten.',
       },
       {
         headline: 'Zu viel Bildschirm — Kinder brauchen keine Smartphones',
-        text: 'Immer mehr Studien warnen vor den Risiken von Smartphones für Kinder. Bildschirmzeit verdrängt Bewegung, Kreativspiel und echte soziale Kontakte. Cybermobbing und Social-Media-Sucht treffen Kinder besonders hart — ihr Gehirn kann mit diesen Reizen noch nicht umgehen. Die Weltgesundheitsorganisation empfiehlt für Kinder unter fünf Jahren keine Bildschirmzeit. Experten sind sich einig: Kinder brauchen echte Erfahrungen, Bewegung und persönliche Beziehungen.',
+        text: 'Immer mehr Studien zeigen: Smartphones sind gefährlich für Kinder. Bildschirmzeit verdrängt Bewegung, Kreativität und echte Freundschaften. Mobbing im Internet und Handysucht treffen Kinder besonders stark. Die Weltgesundheitsorganisation empfiehlt für Kinder unter fünf Jahren gar keine Bildschirmzeit. Kinder brauchen echte Erlebnisse, Bewegung und persönliche Beziehungen — kein Handy.',
       },
       {
-        headline: 'Erst ab 12: Ein sinnvoller Kompromiss',
-        text: 'Weder ein generelles Verbot noch unbeschränkter Zugang — viele Experten empfehlen ein gestaffeltes Modell: Kinder unter 12 Jahren sollten kein eigenes Smartphone besitzen, ältere dagegen schon, aber mit klaren Regeln. Bildschirmzeitbeschränkungen und keine sozialen Medien vor dem 14. Lebensjahr sind entscheidend. Frankreich hat 2023 Smartphones an Schulen vollständig verboten — mit positiven Rückmeldungen von Eltern und Lehrern. Technik ist nicht das Problem — fehlende Begleitung ist es.',
+        headline: 'Erst ab 12: Ein vernünftiger Kompromiss',
+        text: 'Weder ein totales Verbot noch unbegrenzte Nutzung — Experten empfehlen klare Regeln. Kinder unter 12 Jahren sollten kein eigenes Smartphone haben. Ältere Kinder können ein Handy bekommen, aber mit festen Regeln: begrenzte Bildschirmzeit und kein Zugang zu sozialen Medien vor dem 14. Geburtstag. Frankreich hat Handys an Schulen verboten — mit positiven Ergebnissen. Das Problem ist nicht das Handy, sondern fehlende Begleitung.',
       },
     ],
   },
@@ -148,16 +148,16 @@ const TEIL2_DEBATES = [
     theme: 'Kostenloser Nahverkehr',
     cards: [
       {
-        headline: 'Kostenloses Fahren: Gut für Klima und Gesellschaft',
-        text: 'Ein kostenloser öffentlicher Nahverkehr könnte die Mobilität grundlegend verändern. Weniger Autos bedeuten weniger Stau, Lärm und CO₂. Menschen mit niedrigem Einkommen würden enorm entlastet. Städte wie Luxemburg haben diesen Schritt bereits gewagt — mit positiven Ergebnissen. Ein barrierefreies Nahverkehrsangebot ohne Hemmschwelle beim Ticketkauf ist der effektivste Weg zur echten Verkehrswende. Die Investition rechnet sich langfristig durch gesparte Straßeninfrastruktur.',
+        headline: 'Kostenloses Fahren: Gut für Klima und alle',
+        text: 'Kostenloser öffentlicher Nahverkehr könnte vieles verändern. Weniger Autos bedeuten weniger Stau, Lärm und CO₂. Menschen mit wenig Geld würden sehr davon profitieren. Luxemburg hat diesen Schritt schon gemacht — mit guten Ergebnissen. Wenn der Nahverkehr kostenlos ist, steigen mehr Menschen vom Auto um. Das ist gut für alle.',
       },
       {
-        headline: 'Gratisbusse lösen das Problem nicht',
-        text: 'Die Idee des kostenlosen Nahverkehrs klingt gut, ist aber trügerisch: Kostenlos bedeutet nicht umsonst. Die Finanzierung müsste durch Steuergelder erfolgen und belastet andere Bereiche wie Bildung. Studien zeigen, dass kostenlose Tickets vor allem Fußgänger zum Umsteigen bewegen — nicht Autofahrer. Das eigentliche Problem bleibt: Das Angebot auf dem Land ist zu gering, Fahrzeuge überfüllt, Verbindungen unzuverlässig. Investitionen in Qualität würden mehr bringen.',
+        headline: 'Gratis-Tickets lösen das Problem nicht',
+        text: 'Kostenloser Nahverkehr klingt gut, ist aber nicht so einfach. "Kostenlos" bedeutet nur: Jemand anderes zahlt — in diesem Fall die Steuerzahler. Studien zeigen, dass kostenlose Tickets vor allem Fußgänger und Radfahrer zum Umsteigen bringen — nicht Autofahrer. Das eigentliche Problem bleibt: Das Angebot auf dem Land ist zu klein, Busse und Bahnen sind zu voll und zu unzuverlässig. Mehr Qualität wäre wichtiger.',
       },
       {
-        headline: 'Günstig statt gratis: Ein kluger Kompromiss',
-        text: 'Der Streit zwischen kostenlosem Nahverkehr und vollem Ticketpreis verdeckt eine pragmatische Lösung: starke Subventionierung. Das Neun-Euro-Ticket hat gezeigt, dass niedrige Preise die Nutzung drastisch steigern — ohne das System zu überlasten. Ein Jahresticket für rund 29 Euro im Monat wäre fair: erschwinglich für alle, finanzierbar und Anreiz genug, auf das Auto zu verzichten. Der Preis ist eine Barriere — muss aber nicht auf null sinken, um zu wirken.',
+        headline: 'Günstig statt gratis: Ein kluger Mittelweg',
+        text: 'Zwischen kostenlosem Nahverkehr und vollen Preisen gibt es einen guten Mittelweg: günstige Tickets. Das Neun-Euro-Ticket hat gezeigt, dass niedrige Preise viele Menschen zum Umsteigen bringen. Ein günstiges Jahresticket — zum Beispiel 29 Euro pro Monat — wäre für die meisten erschwinglich und ein guter Grund, das Auto öfter stehen zu lassen. Der Preis ist ein Problem — aber er muss nicht null sein, um zu helfen.',
       },
     ],
   },
@@ -165,16 +165,16 @@ const TEIL2_DEBATES = [
     theme: 'Tempolimit auf der Autobahn',
     cards: [
       {
-        headline: 'Tempolimit: Sicherer, sauberer, stressfreier',
-        text: 'Deutschland ist eines der wenigen Länder ohne generelles Tempolimit auf der Autobahn — das sollte sich ändern. Ein Limit von 130 km/h würde den CO₂-Ausstoß spürbar senken. Sicherheitsexperten sind sich einig: Niedrigere Geschwindigkeit bedeutet kürzere Bremswege und weniger tödliche Unfälle. In Frankreich und Österreich gibt es seit Jahrzehnten Tempolimits, ohne dass der Autoverkehr darunter gelitten hat. Das Argument der persönlichen Freiheit zählt wenig, wenn es um Menschenleben geht.',
+        headline: 'Tempolimit: Sicherer und besser für die Umwelt',
+        text: 'Deutschland ist eines der wenigen Länder ohne Tempolimit auf der Autobahn. Das sollte sich ändern. Ein Limit von 130 km/h würde CO₂ sparen. Experten sind sich einig: Langsamer fahren bedeutet kürzere Bremswege und weniger schwere Unfälle. In Frankreich und Österreich gibt es seit vielen Jahren Tempolimits — ohne Probleme. Sicherheit ist wichtiger als Freiheit auf der Autobahn.',
       },
       {
         headline: 'Freie Fahrt: Warum ein Tempolimit falsch wäre',
-        text: 'Ein generelles Tempolimit auf deutschen Autobahnen wäre ein unnötiger Eingriff in die persönliche Freiheit. Deutsche Autobahnen sind statistisch sicherer als viele Straßen mit Tempolimit, weil sie besonders gut ausgebaut sind. Die CO₂-Einsparung wäre minimal — weniger als ein Prozent der deutschen Gesamtemissionen. Moderne Autos sind auf Autobahngeschwindigkeit ausgelegt. Wer die Umwelt schützen will, sollte lieber auf Flugreisen verzichten.',
+        text: 'Ein Tempolimit auf deutschen Autobahnen wäre ein unnötiger Eingriff. Deutsche Autobahnen sind sehr sicher — sie sind besonders gut gebaut. Die CO₂-Einsparung wäre sehr klein — weniger als ein Prozent der deutschen Gesamtemissionen. Moderne Autos sind für hohe Geschwindigkeiten gebaut. Wer wirklich die Umwelt schützen will, sollte lieber weniger fliegen.',
       },
       {
-        headline: 'Flexibles Tempolimit: Eine intelligente Lösung',
-        text: 'Das Entweder-oder — generelles Tempolimit oder freie Fahrt — greift zu kurz. Viele Experten sprechen sich für ein situationsabhängiges Limit aus: 130 km/h als Richtwert, aber Ausnahmen auf ausgewählten, gut ausgebauten Strecken. Intelligente Verkehrssysteme können Limits je nach Wetterlage, Tageszeit und Verkehrsaufkommen automatisch anpassen. In anderen europäischen Ländern ist das bereits Standard. So wird weder die Freiheit der Fahrer pauschal eingeschränkt, noch werden Sicherheit und Umwelt ignoriert.',
+        headline: 'Flexibles Tempolimit: Eine clevere Lösung',
+        text: 'Entweder immer Tempolimit oder immer freie Fahrt — das ist zu einfach gedacht. Viele Experten empfehlen ein flexibles System: 130 km/h als normales Limit, aber Ausnahmen auf gut gebauten Strecken. Computer können das Limit je nach Wetter und Verkehr automatisch anpassen. Das gibt es in anderen Ländern schon. So wird niemand unnötig eingeschränkt, und trotzdem sind Sicherheit und Umwelt geschützt.',
       },
     ],
   },
@@ -183,15 +183,15 @@ const TEIL2_DEBATES = [
     cards: [
       {
         headline: 'Vier Tage arbeiten, glücklicher leben',
-        text: 'Die Viertagewoche ist mehr als eine utopische Idee — sie funktioniert. Großangelegte Studien in Island und Großbritannien zeigen: Mitarbeiter sind an vier Tagen genauso produktiv wie an fünf, leiden aber deutlich weniger unter Burnout. Ein freier Tag mehr verbessert die Work-Life-Balance und stärkt Familien. Unternehmen profitieren durch weniger Krankheitstage. Angesichts des Fachkräftemangels könnte die Viertagewoche ein entscheidender Vorteil im Wettbewerb um Talente werden.',
+        text: 'Die Viertagewoche funktioniert. Große Studien in Island und Großbritannien zeigen: Mitarbeiter arbeiten an vier Tagen genauso viel wie an fünf — aber sie fühlen sich viel besser. Weniger Erschöpfung, weniger Krankheitstage. Ein freier Tag mehr ist gut für die Familie und für die Gesundheit. Firmen können damit außerdem leichter gute Mitarbeiter finden.',
       },
       {
-        headline: 'Vier Tage — gut gemeint, schlecht durchdacht',
-        text: 'Die Viertagewoche ist für viele Branchen nicht umsetzbar. Im Gesundheitswesen, im Handel oder in der Gastronomie hängt die Versorgung davon ab, dass jemand präsent ist — fünf oder sieben Tage. Wenn Arbeit auf vier Tage verdichtet wird, steigt der Druck pro Tag erheblich. Für Führungskräfte bedeutet das oft, dass Mails abends bearbeitet werden. In global vernetzten Märkten kann Deutschland es sich kaum leisten, weniger zu arbeiten als die Konkurrenz.',
+        headline: 'Vier Tage — gut gemeint, aber nicht für alle',
+        text: 'Die Viertagewoche ist nicht für alle Berufe möglich. Im Krankenhaus, im Supermarkt oder in der Gastronomie muss jemand fünf oder sieben Tage da sein. Wenn man die gleiche Arbeit auf vier Tage verteilt, ist jeder Tag anstrengender. Für viele bedeutet das mehr Druck, nicht weniger. Deutschland kann es sich kaum leisten, weniger zu arbeiten als andere Länder.',
       },
       {
         headline: 'Flexible Arbeitszeit: Besser als die Viertagewoche',
-        text: 'Statt einer starren Viertagewoche fordern immer mehr Experten echte Flexibilität. Wer morgens früher anfängt und nachmittags die Kinder abholt, oder in Projektphasen mehr und in ruhigen Zeiten weniger arbeitet, ist produktiver und zufriedener. Vertrauensarbeitszeit — Ergebnisse statt Anwesenheit messen — ist für viele Branchen der bessere Ansatz. Studien zeigen: Nicht die Anzahl der Arbeitstage ist entscheidend, sondern die Kontrolle über die eigene Zeit.',
+        text: 'Statt einer festen Viertagewoche fordern immer mehr Experten mehr Flexibilität. Wer selbst entscheiden kann, wann und wie er arbeitet, ist produktiver und zufriedener. Ergebnisse zählen — nicht Anwesenheitszeit. Studien zeigen: Nicht die Anzahl der Arbeitstage ist entscheidend, sondern die Kontrolle über die eigene Zeit. Flexible Arbeitszeit ist für viele Berufe besser geeignet als eine feste Viertagewoche.',
       },
     ],
   },
@@ -199,16 +199,16 @@ const TEIL2_DEBATES = [
     theme: 'Studieren im Ausland',
     cards: [
       {
-        headline: 'Im Ausland studieren: Mehr als nur ein Abschluss',
-        text: 'Ein Auslandssemester ist eine der wertvollsten Investitionen in die eigene Zukunft. Man lernt nicht nur die Sprache, sondern auch eine andere Kultur und internationale Denkweisen kennen. Arbeitgeber schätzen Auslandserfahrung enorm — sie zeigt Eigeninitiative und interkulturelle Kompetenz. Programme wie Erasmus+ machen es durch Stipendien finanziell möglich. Wer im Ausland studiert hat, blickt offener auf die Welt und hat oft ein weltweites Netzwerk aufgebaut.',
+        headline: 'Im Ausland studieren: Eine tolle Erfahrung',
+        text: 'Ein Auslandssemester ist eine der besten Erfahrungen im Studium. Man lernt eine andere Kultur und eine Sprache kennen. Arbeitgeber schätzen Auslandserfahrung sehr — sie zeigt, dass man selbstständig und offen ist. Programme wie Erasmus+ geben Geld dazu, damit es auch für Menschen mit wenig Geld möglich ist. Nach einem Auslandssemester sieht man die Welt anders.',
       },
       {
-        headline: 'Auslandsstudium: Teuer, stressig, oft überschätzt',
-        text: 'Ein Studium im Ausland wird häufig romantisiert — die Realität ist ernüchternder. Sprachbarrieren und bürokratische Hürden bei der Anerkennung von Studienleistungen sind echte Herausforderungen. Viele kehren mit verzögertem Abschluss zurück, weil Kurse nicht anerkannt werden. Sozialer Druck — "du musst ins Ausland" — führt dazu, dass manche gehen, obwohl sie es nicht wollen. Hochwertige Bildung ist auch in Deutschland möglich, ohne Familie für Jahre zu verlassen.',
+        headline: 'Auslandsstudium: Stressig und oft schwierig',
+        text: 'Studium im Ausland wird oft zu positiv gesehen. Es gibt viele Schwierigkeiten: Sprachprobleme und viel Papierkram bei der Anerkennung von Kursen. Viele Studierende kommen mit Verzögerung zurück, weil ihre Kurse nicht anerkannt werden. Manchmal fühlen sie sich unter Druck gesetzt — "du musst ins Ausland". Aber gute Bildung ist auch in Deutschland möglich, ohne die Familie lange zu verlassen.',
       },
       {
         headline: 'Praktikum im Ausland: Die clevere Alternative',
-        text: 'Wer internationale Erfahrung will, muss nicht jahrelang im Ausland studieren. Ein Praktikum oder eine Ausbildungsphase im Ausland — drei bis sechs Monate — bietet oft mehr praktischen Nutzen bei weniger finanziellem Risiko. Man sammelt Berufserfahrung, verbessert Sprachkenntnisse und lernt eine andere Arbeitskultur kennen, ohne den eigenen Abschluss zu gefährden. Für Arbeitgeber ist praktische Auslandserfahrung oft wertvoller als ein ausländisches Studienzeugnis.',
+        text: 'Wer internationale Erfahrungen machen will, muss nicht ein ganzes Jahr im Ausland studieren. Ein Praktikum im Ausland — drei bis sechs Monate — ist oft besser. Man sammelt praktische Berufserfahrung, verbessert die Sprache und lernt eine andere Arbeitskultur kennen. Das finanzielle Risiko ist kleiner. Für viele Arbeitgeber ist praktische Auslandserfahrung sogar wichtiger als ein ausländisches Studienzeugnis.',
       },
     ],
   },
@@ -216,16 +216,16 @@ const TEIL2_DEBATES = [
     theme: 'Fast Fashion',
     cards: [
       {
-        headline: 'Günstige Mode: Ein Recht für alle',
-        text: 'Mode war lange ein Luxusgut, das sich nur wohlhabende Menschen leisten konnten. Fast Fashion hat das verändert: Heute kann jeder stilvoll gekleidet sein, ohne ein Vermögen auszugeben. Für Familien mit kleinem Budget ist günstige Kleidung eine Notwendigkeit. Außerdem entwickelt sich die Branche: Viele Anbieter setzen auf recycelte Materialien und transparentere Lieferketten. Wer günstig kauft und Kleidung lange trägt, handelt durchaus vernünftig.',
+        headline: 'Günstige Mode: Für alle erschwinglich',
+        text: 'Günstige Mode ist wichtig. Früher konnten sich nur reiche Menschen neue Kleidung kaufen. Heute kann jeder modisch gekleidet sein, ohne viel Geld auszugeben. Für Familien mit wenig Geld ist günstige Kleidung sehr wichtig. Außerdem verbessert sich die Branche: Immer mehr Anbieter nutzen recycelte Materialien. Wer günstig kauft und Kleidung lange trägt, handelt durchaus vernünftig.',
       },
       {
-        headline: 'Fast Fashion: Ein System auf Kosten der Erde',
-        text: 'Fast Fashion ist eine der umweltschädlichsten Industrien der Welt. Die Modeindustrie verursacht acht Prozent der globalen CO₂-Emissionen — mehr als Luft- und Schifffahrt zusammen. Tonnenweise Kleidung landet ungetragen auf Deponien in Ghana oder Chile. Für eine Jeans werden bis zu 8.000 Liter Wasser verbraucht. Näherinnen in Bangladesch arbeiten für Hungerlöhne. Wer Fast Fashion kauft, finanziert ein System, das auf Ausbeutung und Wegwerfkultur basiert.',
+        headline: 'Fast Fashion: Schlecht für Umwelt und Menschen',
+        text: 'Fast Fashion ist eine der schlimmsten Industrien für die Umwelt. Die Modeindustrie verursacht acht Prozent der weltweiten CO₂-Emissionen — mehr als alle Flugzeuge und Schiffe zusammen. Viele Kleidungsstücke werden nie getragen und landen auf Mülldeponien. Für eine Jeans braucht man bis zu 8.000 Liter Wasser. Näherinnen in armen Ländern arbeiten für sehr wenig Geld. Das ist kein faires System.',
       },
       {
         headline: 'Die Lösung: Secondhand statt Fast Fashion',
-        text: 'Die Antwort auf Fast Fashion muss keine teure Designerkleidung sein. Der Secondhand-Markt boomt: Auf Plattformen wie Vinted oder in lokalen Läden findet man modische Kleidung zu günstigen Preisen, ohne neue Ressourcen zu verbrauchen. Wer secondhand kauft, spart Geld, reduziert Müll und schont die Umwelt. Der Trend ist besonders bei jungen Menschen angekommen: Laut einer Umfrage kaufen 68 Prozent der unter 30-Jährigen regelmäßig gebrauchte Kleidung. Nachhaltig und erschwinglich ist kein Widerspruch.',
+        text: 'Die Antwort auf Fast Fashion muss keine teure Designerkleidung sein. Secondhand ist eine gute Lösung. Auf Plattformen wie Vinted oder in lokalen Secondhand-Läden findet man modische Kleidung zu günstigen Preisen — ohne neue Ressourcen zu verbrauchen. Man spart Geld und hilft der Umwelt gleichzeitig. Laut einer Umfrage kaufen fast 70 Prozent der unter 30-Jährigen regelmäßig gebrauchte Kleidung.',
       },
     ],
   },
@@ -234,15 +234,15 @@ const TEIL2_DEBATES = [
     cards: [
       {
         headline: 'Schuluniform: Gleiche Chancen für alle',
-        text: 'In vielen Ländern sind Schuluniformen selbstverständlich — aus guten Gründen. Kleidung ist an deutschen Schulen ein täglicher Statusmarker: Teure Markenschuhe erzeugen Druck und Mobbing. Eine Schuluniform beseitigt diese Unterschiede und schafft Gemeinschaft. Für Eltern und Kinder entfällt der morgendliche Stress der Kleiderwahl. Studien aus Großbritannien und Japan zeigen: Schulen mit Uniformen haben oft ein ruhigeres Lernklima und weniger Mobbing.',
+        text: 'In vielen Ländern gibt es Schuluniformen — und das hat gute Gründe. Kleidung ist an deutschen Schulen oft ein Statussymbol: Teure Schuhe und Marken erzeugen Druck und Mobbing. Eine Schuluniform macht alle gleich und schafft ein Gemeinschaftsgefühl. Morgens muss man nicht lange überlegen, was man anzieht. Studien aus Großbritannien zeigen: Schulen mit Uniformen haben oft weniger Mobbing und ein besseres Lernklima.',
       },
       {
-        headline: 'Schuluniform: Einschränkung statt Gleichheit',
-        text: 'Schuluniformen klingen nach Gleichheit — schränken aber die Persönlichkeitsentwicklung ein. Kleidung ist Teil der Identität, besonders in der Jugend. Jugendliche sollen lernen, eigene Entscheidungen zu treffen — das gelingt nicht in Uniform. Die Anschaffungskosten sind für manche Familien höher als normale Alltagskleidung. Soziale Unterschiede lassen sich mit einer Uniform kaum verstecken: Schuhe, Taschen und Accessoires bleiben Statussymbole.',
+        headline: 'Schuluniform: Sie schränkt die Persönlichkeit ein',
+        text: 'Schuluniformen klingen nach Gleichheit, aber sie schränken die Persönlichkeit ein. Kleidung ist Teil der Identität, besonders für Jugendliche. Sie sollen lernen, eigene Entscheidungen zu treffen — auch beim Anziehen. Die Kosten sind für manche Familien höher als normale Alltagskleidung. Außerdem kann man soziale Unterschiede nicht wirklich verstecken: Schuhe, Taschen und Handys bleiben sichtbare Statussymbole.',
       },
       {
-        headline: 'Dresscode statt Uniform: Ein vernünftiger Mittelweg',
-        text: 'Weder eine strenge Schuluniform noch völlig ungeregelte Kleidung — viele Schulen setzen erfolgreich auf Dresscodes. Klare Regeln (keine Logos, dezente Farben, angemessene Kleidung) schaffen ein ruhigeres Schulumfeld, ohne die Persönlichkeitsentwicklung zu unterdrücken. Jugendliche können innerhalb des Rahmens ihren eigenen Stil ausdrücken. Dieses Modell ist in Großbritannien weit verbreitet und wird von Eltern und Schülern deutlich besser akzeptiert als eine vollständige Uniform.',
+        headline: 'Kleidungsregeln statt Uniform: Ein guter Mittelweg',
+        text: 'Weder strenge Uniform noch keine Regeln — viele Schulen machen es besser mit einem Dresscode. Klare Regeln wie "keine großen Logos, dezente Farben, angemessene Kleidung" schaffen ein ruhigeres Schulklima, ohne die Persönlichkeit einzuschränken. Jugendliche können trotzdem ihren eigenen Stil zeigen. Dieses Modell ist in Großbritannien verbreitet und wird von Eltern und Schülern besser akzeptiert als eine komplette Uniform.',
       },
     ],
   },
@@ -251,15 +251,151 @@ const TEIL2_DEBATES = [
     cards: [
       {
         headline: 'Tierversuche retten Menschenleben',
-        text: 'Tierversuche haben in der Medizingeschichte Millionen von Menschenleben gerettet. Insulin, Antibiotika und viele Krebstherapien wurden durch Tierversuche entwickelt. Kein anderes Modell kann den komplexen menschlichen Organismus vollständig ersetzen. Moderne Labore unterliegen strengen ethischen Regeln. Ohne Tierversuche könnten neue Medikamente nicht sicher auf den Markt gebracht werden. Die Forschung arbeitet intensiv an Alternativen — aber diese sind noch nicht reif genug.',
+        text: 'Tierversuche haben in der Medizin viele Menschenleben gerettet. Insulin, Antibiotika und viele Medikamente gegen Krebs wurden durch Tierversuche entwickelt. Kein anderes Modell kann den menschlichen Körper vollständig ersetzen. Labors arbeiten heute nach strengen ethischen Regeln. Ohne Tierversuche könnten neue Medikamente nicht sicher auf den Markt kommen. Die Forschung sucht nach Alternativen, aber sie sind noch nicht gut genug.',
       },
       {
         headline: 'Tierversuche: Grausam und oft nutzlos',
-        text: 'Jedes Jahr sterben in Deutschland fast drei Millionen Tiere in Laborversuchen — oft für Ergebnisse, die auf den Menschen kaum übertragbar sind. 90 Prozent der Substanzen, die in Tierversuchen als sicher gelten, scheitern trotzdem in klinischen Tests. Die genetischen Unterschiede zwischen Mäusen und Menschen sind zu groß. Moderne Alternativen liefern oft präzisere Ergebnisse. Es ist Zeit, die Abhängigkeit von Tierversuchen zu beenden.',
+        text: 'Jedes Jahr sterben in Deutschland fast drei Millionen Tiere in Laborversuchen. Aber 90 Prozent der Substanzen, die in Tierversuchen sicher wirken, funktionieren beim Menschen trotzdem nicht. Die Unterschiede zwischen Tieren und Menschen sind zu groß. Moderne Alternativmethoden liefern oft bessere Ergebnisse. Es ist Zeit, weniger auf Tierversuche zu setzen und neue Methoden zu fördern.',
       },
       {
-        headline: 'Digitale Modelle: Die Zukunft der Forschung',
-        text: 'Die Frage ist nicht ob wir Tierversuche sofort abschaffen, sondern wie wir den Übergang zu besseren Methoden beschleunigen. Computergestützte Modelle, Organoide aus menschlichen Stammzellen und KI-gestützte Wirkstofftests liefern in vielen Bereichen bereits präzisere Ergebnisse als Tierversuche. Die EU investiert Milliarden in die Entwicklung solcher Alternativen. Ein klares Zieldatum für den schrittweisen Ausstieg aus Tierversuchen würde die Forschung in die richtige Richtung lenken.',
+        headline: 'Neue Methoden: Die Zukunft der Forschung',
+        text: 'Die Frage ist nicht, ob wir Tierversuche sofort abschaffen, sondern wie wir schneller zu besseren Methoden kommen. Computermodelle und neue Labortechnologien können in vielen Bereichen schon heute genauso gut testen wie Tierversuche. Die EU investiert viel Geld in diese neuen Methoden. Ein klares Ziel für den schrittweisen Ausstieg aus Tierversuchen würde die Forschung in die richtige Richtung lenken.',
+      },
+    ],
+  },
+  {
+    theme: 'Online-Shopping',
+    cards: [
+      {
+        headline: 'Online-Shopping: Bequem und günstig',
+        text: 'Online-Shopping macht das Leben einfacher. Man kann zu jeder Zeit von zu Hause aus einkaufen — auch nachts oder am Sonntag. Die Preise sind oft günstiger als im Geschäft, und man kann leicht vergleichen. Besonders für Menschen auf dem Land oder mit wenig Zeit ist das ideal. Die Ware kommt direkt nach Hause, und wenn etwas nicht passt, kann man es einfach zurückschicken.',
+      },
+      {
+        headline: 'Online-Shopping: Schlecht für Städte und Umwelt',
+        text: 'Online-Shopping hat auch viele Nachteile. Immer mehr kleine Geschäfte in den Innenstädten müssen schließen, weil die Menschen online kaufen. Das macht die Städte leer und unattraktiv. Außerdem entsteht viel Müll durch Verpackungen, und die vielen Lieferautos verschmutzen die Luft. Viele Pakete werden zurückgeschickt — das ist teuer und schlecht für die Umwelt. Im Geschäft kann man die Ware vorher anfassen und sofort mitnehmen.',
+      },
+      {
+        headline: 'Beides kombinieren: online und im Geschäft',
+        text: 'Man muss sich nicht zwischen online und Geschäft entscheiden. Viele Menschen schauen sich Produkte erst im Internet an und kaufen sie dann im Laden — oder umgekehrt. Für große oder wichtige Dinge geht man besser ins Geschäft und lässt sich beraten. Für einfache Sachen ist Online-Shopping praktisch. Wer bewusst einkauft und nicht alles bestellt, kann beide Vorteile nutzen und trotzdem die lokalen Geschäfte unterstützen.',
+      },
+    ],
+  },
+  {
+    theme: 'E-Books oder gedruckte Bücher',
+    cards: [
+      {
+        headline: 'E-Books: Praktisch und platzsparend',
+        text: 'E-Books haben viele Vorteile. Auf einem kleinen E-Reader kann man Hunderte Bücher speichern — perfekt für den Urlaub. Man braucht kein schweres Buch mehr zu tragen. E-Books sind oft günstiger und sofort verfügbar: Man kauft ein Buch und kann gleich anfangen zu lesen. Man kann die Schrift größer machen und auch im Dunkeln lesen. Außerdem spart man Papier und schont so die Umwelt.',
+      },
+      {
+        headline: 'Gedruckte Bücher: Das echte Leseerlebnis',
+        text: 'Ein gedrucktes Buch ist durch nichts zu ersetzen. Viele Menschen lieben es, eine Seite umzublättern und den Geruch von Papier. Man bekommt keine Kopfschmerzen vom Bildschirm und ist nicht abgelenkt von Nachrichten. Ein gedrucktes Buch braucht keinen Strom und keine Batterie. Man kann es leicht verschenken oder weitergeben. Studien zeigen außerdem, dass man Texte auf Papier oft besser versteht und behält.',
+      },
+      {
+        headline: 'Beides hat seinen Platz',
+        text: 'E-Books und gedruckte Bücher schließen sich nicht aus. Viele Menschen nutzen E-Books auf Reisen oder für die Arbeit und lesen zu Hause lieber gedruckte Bücher. Es kommt auf die Situation an. Wichtig ist vor allem, dass man überhaupt liest — egal in welcher Form. Wer flexibel ist, kann die Vorteile beider Formate genießen.',
+      },
+    ],
+  },
+  {
+    theme: 'Bargeldlos bezahlen',
+    cards: [
+      {
+        headline: 'Ohne Bargeld: Schnell und modern',
+        text: 'Mit Karte oder Handy zu bezahlen ist schnell und praktisch. Man muss kein Geld mehr zählen und kein Wechselgeld zurückbekommen. Das spart Zeit an der Kasse. Man muss auch nicht zur Bank gehen, um Geld abzuheben. Bei Diebstahl kann man die Karte sofort sperren — bei Bargeld ist das Geld einfach weg. In vielen Ländern ist bargeldloses Bezahlen schon ganz normal.',
+      },
+      {
+        headline: 'Bargeld: Sicher und für alle da',
+        text: 'Bargeld hat wichtige Vorteile. Man behält besser den Überblick über sein Geld, weil man sieht, wie viel man ausgibt. Beim Bezahlen mit Karte werden viele Daten gespeichert — das ist schlecht für den Datenschutz. Nicht alle Menschen haben eine Karte oder ein Smartphone, zum Beispiel ältere Menschen. Und wenn der Strom oder das Internet ausfällt, kann man nur noch mit Bargeld bezahlen.',
+      },
+      {
+        headline: 'Beide Möglichkeiten anbieten',
+        text: 'Am besten sollte man überall mit Karte und mit Bargeld bezahlen können. So kann jeder selbst entscheiden, was er lieber nutzt. Für kleine Beträge ist Bargeld oft praktisch, für große Beträge die Karte. Niemand sollte gezwungen werden, nur auf eine Art zu bezahlen. Ein Nebeneinander von beiden Möglichkeiten ist die fairste Lösung für alle.',
+      },
+    ],
+  },
+  {
+    theme: 'Computerspiele',
+    cards: [
+      {
+        headline: 'Computerspiele: Mehr als nur Zeitvertreib',
+        text: 'Computerspiele werden oft kritisiert, aber sie haben viele Vorteile. Sie machen Spaß und helfen, nach einem stressigen Tag zu entspannen. Viele Spiele fördern logisches Denken, Reaktion und Kreativität. Online-Spiele verbinden Menschen aus der ganzen Welt — man spielt zusammen und findet Freunde. Manche Spiele sind sogar auf Englisch und helfen so beim Sprachenlernen. E-Sport ist heute ein richtiger Beruf geworden.',
+      },
+      {
+        headline: 'Computerspiele: Gefahr von Sucht und Isolation',
+        text: 'Zu viele Computerspiele können gefährlich sein. Manche Menschen, besonders Jugendliche, spielen so viel, dass sie Schule, Sport und echte Freunde vergessen. Sie sitzen stundenlang vor dem Bildschirm und bewegen sich zu wenig. Manche Spiele sind sehr gewalttätig. Außerdem kosten viele Spiele heute extra Geld, und Kinder geben oft zu viel aus. Sucht nach Computerspielen ist ein echtes Problem geworden.',
+      },
+      {
+        headline: 'Mit Maß und Regeln spielen',
+        text: 'Computerspiele sind weder nur gut noch nur schlecht — es kommt auf das richtige Maß an. Wer klare Zeiten festlegt und auch andere Hobbys hat, für den sind Spiele eine schöne Freizeitbeschäftigung. Besonders bei Kindern sollten Eltern darauf achten, welche Spiele gespielt werden und wie lange. Bewegung, Freunde und Schule müssen weiter wichtig bleiben. Mit guten Regeln sind Computerspiele kein Problem.',
+      },
+    ],
+  },
+  {
+    theme: 'Künstliche Intelligenz im Alltag',
+    cards: [
+      {
+        headline: 'KI: Eine große Hilfe im Alltag',
+        text: 'Künstliche Intelligenz macht unser Leben einfacher. Sie hilft beim Übersetzen, beim Schreiben von Texten und beim Suchen von Informationen. In der Medizin kann KI Krankheiten früh erkennen und so Leben retten. Im Auto warnt sie vor Gefahren. Viele langweilige Aufgaben kann die KI übernehmen, sodass Menschen mehr Zeit für wichtige Dinge haben. KI ist ein nützliches Werkzeug für die Zukunft.',
+      },
+      {
+        headline: 'KI: Wir verlieren die Kontrolle',
+        text: 'Künstliche Intelligenz bringt auch große Gefahren. Viele Menschen haben Angst, dass die KI ihre Arbeitsplätze wegnimmt. Manche Texte und Bilder von der KI sind falsch, aber sehen echt aus — so verbreiten sich Lügen. Außerdem sammelt KI viele persönliche Daten. Wenn wir uns zu sehr auf die KI verlassen, verlernen wir vielleicht, selbst zu denken. Es ist gefährlich, wenn Maschinen wichtige Entscheidungen für uns treffen.',
+      },
+      {
+        headline: 'KI nutzen, aber mit klaren Regeln',
+        text: 'Künstliche Intelligenz wird nicht verschwinden — deshalb müssen wir lernen, gut mit ihr umzugehen. KI kann uns helfen, aber der Mensch muss die Kontrolle behalten. Wir brauchen klare Gesetze, die zum Beispiel den Datenschutz und die Sicherheit regeln. In der Schule sollte man lernen, die KI sinnvoll und kritisch zu nutzen. So können wir die Vorteile nutzen und die Risiken begrenzen.',
+      },
+    ],
+  },
+  {
+    theme: 'Online-Unterricht oder Präsenzunterricht',
+    cards: [
+      {
+        headline: 'Online lernen: Flexibel und bequem',
+        text: 'Online-Unterricht hat viele Vorteile. Man kann von zu Hause aus lernen und spart die Zeit für den Weg zur Schule. Das ist besonders gut für Menschen, die weit weg wohnen oder arbeiten. Viele Kurse kann man aufnehmen und später noch einmal anschauen. Man kann in seinem eigenen Tempo lernen. Online-Kurse sind oft auch günstiger, und man kann an Kursen aus der ganzen Welt teilnehmen.',
+      },
+      {
+        headline: 'Präsenzunterricht: Echter Kontakt zählt',
+        text: 'Im Klassenzimmer lernt man oft besser als allein zu Hause. Man kann dem Lehrer sofort Fragen stellen und bekommt direkt eine Antwort. Der Kontakt zu anderen Lernenden ist wichtig: Man motiviert sich gegenseitig und macht Übungen zusammen. Besonders beim Sprechenlernen ist der persönliche Kontakt sehr wichtig. Zu Hause gibt es oft Ablenkungen, und manche Menschen verlieren die Motivation, wenn sie allein lernen.',
+      },
+      {
+        headline: 'Die Mischung macht es: Blended Learning',
+        text: 'Die beste Lösung ist oft eine Mischung aus beidem. Theorie und einfache Themen kann man gut online lernen. Für Diskussionen, Sprechübungen und Fragen trifft man sich im Klassenzimmer. So spart man Zeit und hat trotzdem den wichtigen persönlichen Kontakt. Viele Schulen und Universitäten nutzen heute dieses Modell. Es verbindet die Flexibilität des Online-Lernens mit den Vorteilen des Präsenzunterrichts.',
+      },
+    ],
+  },
+  {
+    theme: 'Ehrenamt und freiwillige Arbeit',
+    cards: [
+      {
+        headline: 'Ehrenamt: Gut für die Gesellschaft und für uns selbst',
+        text: 'Freiwillige Arbeit ist für alle wertvoll. Menschen, die ehrenamtlich helfen, unterstützen andere — zum Beispiel ältere Menschen, Flüchtlinge oder Kinder. Gleichzeitig tut es einem selbst gut: Man lernt neue Leute kennen, sammelt Erfahrungen und fühlt sich nützlich. Viele Bereiche wie Sportvereine oder die Feuerwehr funktionieren nur, weil Menschen freiwillig helfen. Ehrenamt macht die Gesellschaft stärker und menschlicher.',
+      },
+      {
+        headline: 'Ehrenamt: Eine Aufgabe für den Staat',
+        text: 'Ehrenamt ist gut gemeint, aber es gibt Probleme. Viele wichtige Aufgaben werden von Freiwilligen gemacht, obwohl der Staat dafür verantwortlich sein sollte. So spart der Staat Geld auf Kosten der Helfer. Nicht jeder hat Zeit für ein Ehrenamt — wer viel arbeitet oder Kinder hat, kann das oft nicht. Manche Menschen fühlen sich auch unter Druck gesetzt zu helfen. Wichtige Arbeit sollte fair bezahlt werden.',
+      },
+      {
+        headline: 'Ehrenamt fördern und anerkennen',
+        text: 'Ehrenamt ist wichtig, aber Freiwillige sollten nicht allein gelassen werden. Der Staat sollte das Ehrenamt unterstützen — zum Beispiel mit Geld für Material oder mit Versicherungen. Auch Anerkennung ist wichtig: Wer hilft, sollte gelobt werden, etwa mit einem Zertifikat. Gleichzeitig muss der Staat seine eigenen Aufgaben erfüllen. So bleibt Ehrenamt eine freiwillige und schöne Sache und wird nicht zur Pflicht.',
+      },
+    ],
+  },
+  {
+    theme: 'Urlaub im eigenen Land oder im Ausland',
+    cards: [
+      {
+        headline: 'Urlaub im eigenen Land: Schön und nachhaltig',
+        text: 'Urlaub im eigenen Land hat viele Vorteile. Man muss nicht weit fahren und spart so Zeit und Geld. Es gibt keine Sprachprobleme, und man kennt das Essen und die Kultur. Außerdem ist es besser für die Umwelt, weil man nicht fliegen muss. Man unterstützt die Wirtschaft im eigenen Land. Oft kennt man die schönen Orte direkt vor der Haustür gar nicht — es gibt viel zu entdecken.',
+      },
+      {
+        headline: 'Urlaub im Ausland: Neue Welten entdecken',
+        text: 'Eine Reise ins Ausland ist eine besondere Erfahrung. Man lernt fremde Kulturen, neue Sprachen und anderes Essen kennen. Das erweitert den eigenen Horizont und macht offener für andere Menschen. In vielen Ländern gibt es Sonne und Strand, die es zu Hause nicht gibt. Man kann berühmte Sehenswürdigkeiten besuchen. Solche Reisen bleiben oft das ganze Leben in Erinnerung.',
+      },
+      {
+        headline: 'Auf die Reise kommt es an, nicht auf die Entfernung',
+        text: 'Ob im eigenen Land oder im Ausland — beide Arten von Urlaub haben ihren Wert. Es kommt darauf an, was man möchte. Wer Ruhe und Erholung sucht, findet das auch in der Nähe. Wer Abenteuer und neue Kulturen will, fährt ins Ausland. Man kann beides kombinieren: mal eine große Reise, mal Urlaub in der Nähe. Wichtig ist, dass man sich erholt und schöne Momente erlebt.',
       },
     ],
   },
@@ -717,6 +853,118 @@ function TipsTab() {
         <p className="text-xs text-gray-400 mt-4">
           Preparation time: 20 minutes (with notes allowed). The exam itself takes ~15 minutes and is usually done in pairs.
         </p>
+      </div>
+
+      {/* Teil 1 deep-dive */}
+      <div className="bg-white rounded-3xl shadow-sm p-6">
+        <div className="flex items-baseline gap-2 mb-1 flex-wrap">
+          <span className="text-indigo-600 font-bold">Teil 1</span>
+          <h2 className="text-base font-bold text-gray-800">Kontaktaufnahme — sich vorstellen</h2>
+        </div>
+        <p className="text-xs text-gray-500 leading-relaxed mb-4">
+          You introduce yourself to your partner. This part is fixed and easy to prepare — learn a few solid sentences and you start the exam with confidence.
+        </p>
+
+        {/* Sie oder du? */}
+        <div className="bg-amber-50 border border-amber-100 rounded-2xl p-4 mb-4">
+          <p className="text-sm font-bold text-amber-800 mb-1.5">Sie oder du? 🤔</p>
+          <p className="text-xs text-amber-900/80 leading-relaxed">
+            Your exam partner is another learner, usually around your age, so <strong>„du" is normal and accepted</strong> in Teil 1–3. If your partner is clearly older or you feel unsure, <strong>„Sie" is the safe choice</strong> and never wrong.
+          </p>
+          <p className="text-xs text-amber-900/80 leading-relaxed mt-2">
+            The one real rule: <strong>pick one and stay consistent</strong>. Mixing „du" and „Sie" with the same person is the most common mistake. Decide in the first sentence — e.g. <em>„Sollen wir uns duzen?"</em> — and keep it for the whole exam. With the <strong>examiner</strong>, always use „Sie".
+          </p>
+        </div>
+
+        {/* What to mention */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Mention these points:</p>
+        <div className="grid grid-cols-2 gap-2 mb-4">
+          {[
+            ['Name', 'Ich heiße … / Mein Name ist …'],
+            ['Herkunft', 'Ich komme aus … / Ich bin in … geboren.'],
+            ['Wohnort', 'Ich wohne jetzt in / seit … in …'],
+            ['Familie', 'Ich bin verheiratet / ledig / habe … Kinder.'],
+            ['Beruf / Studium', 'Ich arbeite als … / Ich studiere …'],
+            ['Sprachen', 'Ich spreche … und lerne Deutsch seit …'],
+            ['Hobbys', 'In meiner Freizeit … / Ich interessiere mich für …'],
+            ['Warum Deutsch?', 'Ich lerne Deutsch, weil …'],
+          ].map(([label, ex]) => (
+            <div key={label} className="bg-slate-50 rounded-xl px-3 py-2">
+              <p className="text-xs font-bold text-gray-700">{label}</p>
+              <p className="text-[11px] text-gray-500 leading-snug mt-0.5">{ex}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* How to ask du/Sie */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">How to ask „du" or „Sie":</p>
+        <div className="space-y-2 mb-4">
+          {[
+            ['Sollen wir „du" sagen?', 'Shall we say „du"? (simplest)'],
+            ['Wollen wir uns duzen?', 'Shall we use „du" with each other?'],
+            ['Ist es okay für dich, wenn wir uns duzen?', 'Is it okay with you if we use „du"?'],
+            ['Können wir uns duzen oder lieber siezen?', 'Can we use „du", or rather „Sie"?'],
+            ['Gerne, sag einfach „du" zu mir.', 'Sure, just say „du" to me. (answer)'],
+            ['Ja, lass uns „du" sagen.', 'Yes, let\'s say „du". (answer)'],
+          ].map(([de, en]) => (
+            <div key={de} className="bg-slate-50 rounded-xl px-3 py-2">
+              <p className="text-sm font-medium text-indigo-700">{de}</p>
+              <p className="text-[11px] text-gray-500 leading-snug mt-0.5">{en}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Opening the conversation */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Starting & greeting:</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {[
+            'Hallo, ich freue mich, dich kennenzulernen.',
+            'Darf ich anfangen?',
+            'Möchtest du anfangen oder soll ich?',
+            'Schön, dass wir zusammen die Prüfung machen.',
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-indigo-50 text-indigo-700">{p}</span>
+          ))}
+        </div>
+
+        {/* Asking your partner */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Asking your partner back:</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {[
+            'Und du, wie heißt du?',
+            'Woher kommst du?',
+            'Was machst du beruflich?',
+            'Wie lange lernst du schon Deutsch?',
+            'Was sind deine Hobbys?',
+            'Hast du Familie hier?',
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-green-50 text-green-700">{p}</span>
+          ))}
+        </div>
+
+        {/* If you don't understand / closing */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">If you don't understand & closing:</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {[
+            'Kannst du das bitte wiederholen?',
+            'Wie bitte? Das habe ich nicht verstanden.',
+            'Was bedeutet das genau?',
+            'Es war schön, dich kennenzulernen.',
+            'Danke für das Gespräch!',
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-rose-50 text-rose-700">{p}</span>
+          ))}
+        </div>
+
+        <div className="bg-slate-50 rounded-2xl p-4">
+          <p className="text-xs font-semibold text-gray-700 mb-1">💡 Quick tips</p>
+          <ul className="space-y-1.5 text-xs text-gray-600 leading-relaxed">
+            <li>• Don't just recite a list — speak in full sentences and connect ideas with <em>und, aber, weil, deshalb</em>.</li>
+            <li>• <strong>Ask your partner questions too</strong> — Teil 1 is a small conversation, not a monologue.</li>
+            <li>• Prepare 5–6 sentences you can say smoothly; it calms your nerves and makes a strong first impression.</li>
+            <li>• A friendly greeting and a smile count: <em>„Hallo, ich freue mich."</em></li>
+          </ul>
+        </div>
       </div>
 
       {/* Phrase banks */}
