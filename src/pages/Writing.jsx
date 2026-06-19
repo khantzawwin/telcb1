@@ -703,6 +703,64 @@ Return ONLY valid JSON exactly like this (no markdown, no extra text):
   return JSON.parse(jsonStr)
 }
 
+// ─── Gemini topic generation ──────────────────────────────────────────────────
+
+async function generateTopicWithGemini() {
+  if (!GEMINI_URL) throw new Error('no_api_key')
+
+  const registers = [
+    { type: 'informal', label: 'informell (du-Form, an einen Freund / eine Freundin / ein Familienmitglied)' },
+    { type: 'halbformal', label: 'halbförmlich (Sie-Form, an z. B. eine Lehrerin, einen Nachbarn, einen Arzt, einen Chef, den man kennt)' },
+    { type: 'formal', label: 'förmlich (Sie-Form, an eine Firma, eine Behörde, ein Hotel, eine unbekannte Person)' },
+  ]
+  const pick = registers[Math.floor(Math.random() * registers.length)]
+
+  const systemPrompt = `You are a TELC B1 German exam author. Create ONE new, original "Schreiben Teil 1" task: an incoming email that a student receives, plus 4 points the student must cover in the reply.
+
+REGISTER for this task: ${pick.label}
+
+STRICT LANGUAGE RULES for the incoming email (it must be realistic CEFR B1 / telc B1):
+- Use simple, common everyday words and short, clear sentences.
+- Use ONLY basic B1 connectors (und, aber, denn, deshalb, weil, dann, außerdem, trotzdem).
+- AVOID rare/abstract/formal vocabulary, idioms, Passiv, Konjunktiv I, long compound nouns.
+- The incoming email should be about 50–70 words and match the register exactly.
+- Choose a fresh everyday theme (e.g. a course, a party, a trip, a problem with a product, an apartment, a job, a hobby, an appointment, lost property, a complaint, a favour). Be creative and avoid clichés.
+
+Return ONLY valid JSON exactly like this (no markdown, no extra text):
+{
+  "type": "${pick.type}",
+  "title": "<short German title, 1–3 words>",
+  "instruction": "<one German sentence telling the student who wrote and that they must reply, e.g. 'Sie haben eine E-Mail von ... bekommen. Schreiben Sie eine Antwort.'>",
+  "incomingEmail": {
+    "from": "<sender full name, or a company/office name for formal>",
+    "subject": "<short German subject line>",
+    "body": "<the incoming email in German at B1 level, using \\n for line breaks, starting with a fitting Anrede and ending with a fitting Gruß. Use [Name] as the placeholder for the student's name.>"
+  },
+  "addressee": "<who the student writes back to — a first name for informal, 'Frau X'/'Herr Y' for halbformal, or the company/office for formal>",
+  "points": ["<point 1 in German>", "<point 2>", "<point 3>", "<point 4>"]
+}`
+
+  const res = await fetch(GEMINI_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      contents: [{ parts: [{ text: systemPrompt }] }],
+      generationConfig: { temperature: 1.0, maxOutputTokens: 1200 },
+    }),
+  })
+
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}))
+    throw new Error(err?.error?.message || `API error ${res.status}`)
+  }
+
+  const data = await res.json()
+  const raw = data.candidates?.[0]?.content?.parts?.[0]?.text || ''
+  const jsonStr = raw.replace(/```json\n?|\n?```/g, '').trim()
+  const parsed = JSON.parse(jsonStr)
+  return { ...parsed, id: `gen-${Date.now()}`, generated: true }
+}
+
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function Writing() {
@@ -713,9 +771,13 @@ export default function Writing() {
   const [feedback, setFeedback] = useState(null)
   const [error, setError] = useState(null)
   const [loadingPrev, setLoadingPrev] = useState(true)
+  const [genPrompt, setGenPrompt] = useState(null)
+  const [generating, setGenerating] = useState(false)
+  const [genError, setGenError] = useState(null)
 
   const todayKey = getTodayKey()
   const todayPrompt = PROMPTS[Math.floor(Date.now() / 86400000) % PROMPTS.length]
+  const activePrompt = genPrompt || todayPrompt
   const wordCount = text.trim() ? text.trim().split(/\s+/).length : 0
 
   useEffect(() => {
@@ -736,12 +798,12 @@ export default function Writing() {
     setSubmitting(true)
     setError(null)
     try {
-      const result = await evaluateWithGemini(todayPrompt, text)
+      const result = await evaluateWithGemini(activePrompt, text)
       setFeedback(result)
       await Promise.all([
         setDoc(doc(db, 'users', user.uid, 'writing', todayKey), {
-          promptId: todayPrompt.id,
-          promptTitle: todayPrompt.title,
+          promptId: activePrompt.id,
+          promptTitle: activePrompt.title,
           text,
           result,
           submittedAt: new Date().toISOString(),
@@ -756,6 +818,22 @@ export default function Writing() {
       setError(e.message === 'no_api_key' ? 'api_key' : e.message)
     } finally {
       setSubmitting(false)
+    }
+  }
+
+  const handleGenerate = async () => {
+    setGenerating(true)
+    setGenError(null)
+    try {
+      const newPrompt = await generateTopicWithGemini()
+      setGenPrompt(newPrompt)
+      setText('')
+      setFeedback(null)
+      setError(null)
+    } catch (e) {
+      setGenError(e.message === 'no_api_key' ? 'api_key' : e.message)
+    } finally {
+      setGenerating(false)
     }
   }
 
@@ -788,7 +866,7 @@ export default function Writing() {
 
       {tab === 'practice' ? (
         <PracticeTab
-          prompt={todayPrompt}
+          prompt={activePrompt}
           text={text}
           setText={setText}
           wordCount={wordCount}
@@ -797,6 +875,11 @@ export default function Writing() {
           error={error}
           onSubmit={handleSubmit}
           onReset={() => { setFeedback(null); setText('') }}
+          isGenerated={!!genPrompt}
+          generating={generating}
+          genError={genError}
+          onGenerate={handleGenerate}
+          onClearGenerated={() => { setGenPrompt(null); setGenError(null); setText(''); setFeedback(null) }}
         />
       ) : (
         <TipsTab />
@@ -807,7 +890,7 @@ export default function Writing() {
 
 // ─── Practice tab ─────────────────────────────────────────────────────────────
 
-function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, error, onSubmit, onReset }) {
+function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, error, onSubmit, onReset, isGenerated, generating, genError, onGenerate, onClearGenerated }) {
   const TYPE_COLOR = {
     formal:     'bg-indigo-100 text-indigo-700',
     halbformal: 'bg-amber-100 text-amber-700',
@@ -819,6 +902,50 @@ function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, e
 
   return (
     <div className="space-y-5">
+      {/* Topic source + generate control */}
+      <div className="flex items-center justify-between gap-3 flex-wrap">
+        <span className="text-sm text-gray-500">
+          {isGenerated
+            ? '✨ AI-generated topic'
+            : 'Today\'s task'}
+        </span>
+        <div className="flex items-center gap-2">
+          {isGenerated && !generating && (
+            <button
+              onClick={onClearGenerated}
+              className="text-sm font-medium text-gray-500 hover:text-gray-700 px-3 py-2 rounded-xl hover:bg-gray-100 transition-colors"
+            >
+              Back to daily task
+            </button>
+          )}
+          <button
+            onClick={onGenerate}
+            disabled={generating || !GEMINI_API_KEY}
+            className="flex items-center gap-2 text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 px-4 py-2 rounded-xl transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
+          >
+            {generating ? (
+              <>
+                <span className="w-4 h-4 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+                Generating …
+              </>
+            ) : (
+              <>✨ Generate new topic</>
+            )}
+          </button>
+        </div>
+      </div>
+
+      {genError === 'api_key' && (
+        <div className="bg-amber-50 border border-amber-200 rounded-2xl px-5 py-4 text-sm text-amber-800">
+          <strong>API key missing.</strong> Add <code className="bg-amber-100 px-1 rounded">VITE_GEMINI_API_KEY=your_key</code> to your <code className="bg-amber-100 px-1 rounded">.env.local</code> file and rebuild.
+        </div>
+      )}
+      {genError && genError !== 'api_key' && (
+        <div className="bg-red-50 border border-red-200 rounded-2xl px-5 py-4 text-sm text-red-700">
+          Could not generate a topic: {genError}. Please try again.
+        </div>
+      )}
+
       {/* Task header */}
       <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
         <div className="flex items-center justify-between px-6 py-3 bg-slate-50 border-b border-gray-100">
@@ -1108,8 +1235,21 @@ function TipsTab() {
           salutation: ['Liebe Mia,', 'Lieber Jonas,', 'Hallo Ben,'],
           closing: ['Liebe Grüße,', 'Viele Grüße,', 'Bis bald,'],
           pronoun: 'du / ihr',
+          openers: [
+            'Vielen Dank für deine E-Mail!',
+            'Danke für deine Nachricht.',
+            'Schön, von dir zu hören!',
+            'Tut mir leid, dass ich erst jetzt antworte.',
+            'Wie geht es dir?',
+          ],
+          closers: [
+            'Ich freue mich auf deine Antwort.',
+            'Schreib mir bald zurück!',
+            'Melde dich, wenn du Fragen hast.',
+            'Wir sehen / hören uns bald!',
+          ],
           phrases: [
-            'Wie geht es dir?', 'Stell dir vor …!', 'Es wäre super, wenn …',
+            'Stell dir vor …!', 'Es wäre super, wenn …',
             'Ich freue mich schon riesig!', 'Was hältst du davon?', 'Ich wollte dir schnell schreiben …',
           ],
           avoid: 'Overly formal phrases, Sie-form.',
@@ -1120,10 +1260,22 @@ function TipsTab() {
           salutation: ['Guten Tag, Frau Schmidt,', 'Liebe Frau Becker,', 'Sehr geehrter Herr Weber,'],
           closing: ['Herzliche Grüße,', 'Viele Grüße,', 'Mit freundlichen Grüßen,'],
           pronoun: 'Sie (still formal — only du if invited)',
+          openers: [
+            'Vielen Dank für Ihre E-Mail.',
+            'Danke für Ihre Nachricht.',
+            'Vielen Dank für Ihre schnelle Antwort.',
+            'Ich hoffe, es geht Ihnen gut.',
+          ],
+          closers: [
+            'Ich freue mich auf Ihre Rückmeldung.',
+            'Vielen Dank im Voraus.',
+            'Über eine baldige Antwort würde ich mich freuen.',
+            'Bei Fragen können Sie mich gerne anrufen.',
+          ],
           phrases: [
-            'Ich hoffe, es geht Ihnen gut.', 'Ich wollte Sie kurz fragen, ob …',
+            'Ich wollte Sie kurz fragen, ob …',
             'Ich wäre Ihnen sehr dankbar, wenn …', 'Danke im Voraus für Ihre Hilfe.',
-            'Ich freue mich auf Ihre Rückmeldung.', 'Mit freundlicher Bitte um …',
+            'Mit freundlicher Bitte um …',
           ],
           avoid: 'Overly stiff phrases; casual slang.',
         },
@@ -1133,10 +1285,21 @@ function TipsTab() {
           salutation: ['Sehr geehrte Damen und Herren,', 'Sehr geehrter Herr Lange,', 'Sehr geehrte Frau Hoffmann,'],
           closing: ['Mit freundlichen Grüßen,', 'Mit freundlichem Gruß,'],
           pronoun: 'Sie (immer)',
+          openers: [
+            'Vielen Dank für Ihre E-Mail.',
+            'Ich schreibe Ihnen bezüglich …',
+            'Hiermit möchte ich …',
+            'Mit großem Interesse habe ich Ihre Anzeige gelesen.',
+          ],
+          closers: [
+            'Ich freue mich auf Ihre Antwort.',
+            'Über eine positive Rückmeldung würde ich mich sehr freuen.',
+            'Vielen Dank für Ihre Mühe.',
+            'Für weitere Fragen stehe ich Ihnen gerne zur Verfügung.',
+          ],
           phrases: [
-            'Ich schreibe Ihnen bezüglich …', 'Hiermit möchte ich …',
             'Könnten Sie mir bitte … mitteilen?', 'Ich bitte Sie um …',
-            'Vielen Dank für Ihre Mühe.', 'Ich freue mich auf Ihre Antwort.',
+            'Ich würde gern wissen, ob …',
           ],
           avoid: 'du-form, exclamation marks for requests, casual language.',
         },
@@ -1156,8 +1319,28 @@ function TipsTab() {
               {lt.closing.map(s => <p key={s} className="text-sm text-gray-700 font-medium italic mb-0.5">{s}</p>)}
             </div>
           </div>
-          <p className="text-xs text-gray-500 mb-3"><strong>Pronoun:</strong> {lt.pronoun}</p>
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Key Phrases</p>
+          <p className="text-xs text-gray-500 mb-4"><strong>Pronoun:</strong> {lt.pronoun}</p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+            <div>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Opening lines</p>
+              <div className="space-y-1.5">
+                {lt.openers.map(s => (
+                  <p key={s} className="text-sm text-gray-700 bg-slate-50 rounded-lg px-3 py-1.5">{s}</p>
+                ))}
+              </div>
+            </div>
+            <div>
+              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Closing lines</p>
+              <div className="space-y-1.5">
+                {lt.closers.map(s => (
+                  <p key={s} className="text-sm text-gray-700 bg-slate-50 rounded-lg px-3 py-1.5">{s}</p>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Other useful phrases</p>
           <div className="flex flex-wrap gap-2 mb-3">
             {lt.phrases.map(p => (
               <span key={p} className="text-xs bg-slate-100 text-gray-700 px-3 py-1.5 rounded-xl font-medium">{p}</span>

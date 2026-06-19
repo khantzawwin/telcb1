@@ -967,78 +967,204 @@ function TipsTab() {
         </div>
       </div>
 
-      {/* Phrase banks */}
-      {[
-        {
-          title: 'Giving your opinion',
-          color: 'bg-indigo-50 text-indigo-700',
-          phrases: [
+      {/* ── Teil 2 deep-dive ─────────────────────────────────── */}
+      <div className="bg-white rounded-3xl shadow-sm p-6">
+        <div className="flex items-baseline gap-2 mb-1 flex-wrap">
+          <span className="text-indigo-600 font-bold">Teil 2</span>
+          <h2 className="text-base font-bold text-gray-800">Gespräch über ein Thema</h2>
+        </div>
+        <p className="text-xs text-gray-500 leading-relaxed mb-4">
+          You and your partner each get a short text on the same topic, but from a different angle. First summarize your text, listen to your partner's summary, then discuss and give your own opinion.
+        </p>
+
+        {/* Step structure */}
+        <div className="bg-indigo-50 border border-indigo-100 rounded-2xl p-4 mb-4">
+          <p className="text-sm font-bold text-indigo-800 mb-2">How to structure it ✅</p>
+          <ol className="space-y-1.5 text-xs text-indigo-900/80 leading-relaxed list-decimal list-inside">
+            <li><strong>Summarize your text</strong> in 2–3 sentences (what is it about?).</li>
+            <li><strong>Say the main opinion</strong> of your text.</li>
+            <li><strong>Listen</strong> to your partner and react to their text.</li>
+            <li><strong>Give your own opinion</strong> with a reason and an example.</li>
+            <li><strong>Ask your partner</strong> what they think.</li>
+          </ol>
+        </div>
+
+        {/* How to START — the key tip the user asked for */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">How to start — summarize your text:</p>
+        <div className="space-y-2 mb-4">
+          {[
+            ['In meinem Text geht es um …', 'My text is about …'],
+            ['Mein Text handelt von …', 'My text is about / deals with …'],
+            ['In meinem Text / Artikel steht, dass …', 'In my text/article it says that …'],
+            ['Der Text sagt, dass …', 'The text says that …'],
+            ['In meinem Text wird über … gesprochen.', 'My text talks about …'],
+            ['Es geht um das Thema …', 'It is about the topic …'],
+          ].map(([de, en]) => (
+            <div key={de} className="bg-slate-50 rounded-xl px-3 py-2">
+              <p className="text-sm font-medium text-indigo-700">{de}</p>
+              <p className="text-[11px] text-gray-500 leading-snug mt-0.5">{en}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Reporting the text's opinion */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Reporting the text's opinion:</p>
+        <div className="space-y-2 mb-4">
+          {[
+            ['Die Person / Der Autor meint, dass …', 'The person/author thinks that …'],
+            ['Laut meinem Text …', 'According to my text …'],
+            ['Im Text steht, dass … ein Vorteil / Nachteil ist.', 'The text says that … is an advantage/disadvantage.'],
+            ['Der Text ist für / gegen …', 'The text is for/against …'],
+          ].map(([de, en]) => (
+            <div key={de} className="bg-slate-50 rounded-xl px-3 py-2">
+              <p className="text-sm font-medium text-indigo-700">{de}</p>
+              <p className="text-[11px] text-gray-500 leading-snug mt-0.5">{en}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Reacting to partner's text */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Reacting to your partner's text:</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {[
+            'In deinem Text geht es um etwas anderes.',
+            'Dein Text sagt …, aber mein Text sagt …',
+            'Das ist interessant! In meinem Text steht …',
+            'Mein Text hat eine andere Meinung.',
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-sky-50 text-sky-700">{p}</span>
+          ))}
+        </div>
+
+        {/* Giving opinion */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Giving your own opinion:</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {[
             'Ich finde, dass …',
             'Meiner Meinung nach …',
             'Ich bin der Meinung, dass …',
             'Ich denke / glaube, dass …',
-            'Für mich ist es wichtig, dass …',
             'Aus meiner Sicht …',
-          ],
-        },
-        {
-          title: 'Agreeing & disagreeing',
-          color: 'bg-green-50 text-green-700',
-          phrases: [
-            'Da stimme ich dir / Ihnen zu.',
+            'Ich habe die Erfahrung gemacht, dass …',
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-indigo-50 text-indigo-700">{p}</span>
+          ))}
+        </div>
+
+        {/* Agreeing & disagreeing */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Agreeing & disagreeing:</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {[
+            'Da stimme ich dir zu.',
             'Das sehe ich genauso.',
-            'Du hast / Sie haben recht.',
+            'Du hast recht.',
             'Das stimmt, aber …',
             'Da bin ich anderer Meinung.',
             'Das sehe ich ein bisschen anders, weil …',
-          ],
-        },
-        {
-          title: 'Making suggestions (Teil 3)',
-          color: 'bg-amber-50 text-amber-700',
-          phrases: [
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-green-50 text-green-700">{p}</span>
+          ))}
+        </div>
+
+        {/* Asking partner */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Bringing your partner in:</p>
+        <div className="flex flex-wrap gap-2">
+          {[
+            'Und was meinst du dazu?',
+            'Wie ist das bei dir?',
+            'Hast du damit Erfahrungen gemacht?',
+            'Was steht in deinem Text?',
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-rose-50 text-rose-700">{p}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Teil 3 deep-dive ─────────────────────────────────── */}
+      <div className="bg-white rounded-3xl shadow-sm p-6">
+        <div className="flex items-baseline gap-2 mb-1 flex-wrap">
+          <span className="text-indigo-600 font-bold">Teil 3</span>
+          <h2 className="text-base font-bold text-gray-800">Gemeinsam etwas planen</h2>
+        </div>
+        <p className="text-xs text-gray-500 leading-relaxed mb-4">
+          You get a planning task with points. Make suggestions, react to your partner's ideas, and agree on a concrete plan together. The goal is a real decision at the end.
+        </p>
+
+        {/* Step structure */}
+        <div className="bg-amber-50 border border-amber-100 rounded-2xl p-4 mb-4">
+          <p className="text-sm font-bold text-amber-800 mb-2">How to structure it ✅</p>
+          <ol className="space-y-1.5 text-xs text-amber-900/80 leading-relaxed list-decimal list-inside">
+            <li><strong>Make a suggestion</strong> for the first point.</li>
+            <li><strong>React</strong> to your partner's idea (agree or suggest something else).</li>
+            <li><strong>Go through all points</strong> together — take turns.</li>
+            <li><strong>Agree</strong> on a decision for each point.</li>
+            <li><strong>Summarize the final plan</strong> at the end.</li>
+          </ol>
+        </div>
+
+        {/* Making suggestions */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Making suggestions:</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {[
             'Ich schlage vor, dass wir …',
             'Wie wäre es, wenn wir …?',
             'Wir könnten doch …',
             'Was hältst du davon, wenn …?',
-            'Hast du eine bessere Idee?',
             'Vielleicht sollten wir …',
-          ],
-        },
-        {
-          title: 'Reacting to suggestions (Teil 3)',
-          color: 'bg-rose-50 text-rose-700',
-          phrases: [
+            'Hast du eine Idee?',
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-amber-50 text-amber-700">{p}</span>
+          ))}
+        </div>
+
+        {/* Reacting to suggestions */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Reacting to suggestions:</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {[
             'Das ist eine gute Idee!',
             'Einverstanden!',
             'Ja, das machen wir so.',
             'Das finde ich nicht so gut, weil …',
             'Ich weiß nicht, ob das klappt …',
             'Können wir nicht lieber …?',
-          ],
-        },
-        {
-          title: 'Keeping the conversation going',
-          color: 'bg-sky-50 text-sky-700',
-          phrases: [
-            'Und was meinst du dazu?',
-            'Wie ist das bei dir?',
-            'Hast du damit Erfahrungen gemacht?',
-            'Entschuldigung, können Sie das bitte wiederholen?',
-            'Was bedeutet das genau?',
-            'Also, zusammenfassend können wir sagen …',
-          ],
-        },
-      ].map(group => (
-        <div key={group.title} className="bg-white rounded-3xl shadow-sm p-6">
-          <h2 className="text-base font-bold text-gray-800 mb-4">{group.title}</h2>
-          <div className="flex flex-wrap gap-2">
-            {group.phrases.map(p => (
-              <span key={p} className={`text-sm px-3 py-1.5 rounded-xl font-medium ${group.color}`}>{p}</span>
-            ))}
-          </div>
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-rose-50 text-rose-700">{p}</span>
+          ))}
         </div>
-      ))}
+
+        {/* Reaching a decision */}
+        <p className="text-sm font-semibold text-gray-800 mb-2">Reaching a decision & summarizing:</p>
+        <div className="flex flex-wrap gap-2">
+          {[
+            'Gut, dann machen wir das so.',
+            'Wir sind uns einig.',
+            'Also, wir treffen uns am … um … Uhr.',
+            'Zusammenfassend können wir sagen, dass …',
+            'Dann ist alles geplant!',
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-green-50 text-green-700">{p}</span>
+          ))}
+        </div>
+      </div>
+
+      {/* ── If you don't understand (Teil 2 & 3) ─────────────── */}
+      <div className="bg-white rounded-3xl shadow-sm p-6">
+        <h2 className="text-base font-bold text-gray-800 mb-1">If you don't understand (Teil 2 & 3)</h2>
+        <p className="text-xs text-gray-500 leading-relaxed mb-4">
+          Never stay silent — asking is normal and even shows good communication skills.
+        </p>
+        <div className="flex flex-wrap gap-2">
+          {[
+            'Entschuldigung, kannst du das bitte wiederholen?',
+            'Wie bitte? Das habe ich nicht verstanden.',
+            'Was bedeutet das genau?',
+            'Kannst du das anders sagen?',
+            'Meinst du, dass …?',
+          ].map(p => (
+            <span key={p} className="text-sm px-3 py-1.5 rounded-xl font-medium bg-sky-50 text-sky-700">{p}</span>
+          ))}
+        </div>
+      </div>
 
       {/* Common mistakes */}
       <div className="bg-white rounded-3xl shadow-sm p-6">
