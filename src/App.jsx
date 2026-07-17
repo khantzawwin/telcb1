@@ -12,6 +12,7 @@ import Grammar from './pages/Grammar'
 import Writing from './pages/Writing'
 import Sprechen from './pages/Sprechen'
 import Verben from './pages/Verben'
+import Werden from './pages/Werden'
 import Connectors from './pages/Connectors'
 
 function AppRoutes() {
@@ -31,6 +32,7 @@ function AppRoutes() {
                 <Route path="/writing" element={<Writing />} />
                 <Route path="/sprechen" element={<Sprechen />} />
                 <Route path="/verben" element={<Verben />} />
+                <Route path="/werden" element={<Werden />} />
                 <Route path="/connectors" element={<Connectors />} />
               </Routes>
             </Layout>

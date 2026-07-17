@@ -10818,3 +10818,246 @@ Certain German verbs always pair with a specific preposition. You must memorize 
 
 > Wir warten seit einer Stunde auf den Bus.
 > *(We have been waiting for the bus for an hour.)*
+
+## Exam Strategy — Schreiben: auf eine E-Mail antworten
+
+> **Thema des Kapitels:** *Ernährung und Gesundheit* (Nutrition and health).
+> *(All text-based — no audio. Includes a model answer for the Prüfungsaufgabe.)*
+
+### Format & Vorgehensweise
+
+- You answer **one private or semi-formal e-mail** and must include **4 Leitpunkte** (guide points).
+- Respond appropriately to the e-mail + cover **all 4 points** at **B1 level**.
+- **Zeit:** 30 Minuten · **Bewertung:** max. 45 Punkte.
+
+**Steps:** ① Read the e-mail (~5 min), underline key points. ② Make short notes per Leitpunkt. ③ Choose a sensible order + Betreff, Anrede, intro, close. ④ Write, joining points with connectors; vary word order; check spelling, word order and punctuation. The **Anrede must match the Grußformel** in formality.
+
+---
+
+### Redemittel — building blocks
+
+| Part | Phrases |
+|---|---|
+| Anrede | *informell:* Liebe(r) … / Hallo … · *halbformell:* Liebe/r Frau/Herr … / Hallo Frau/Herr … · *formell:* Sehr geehrte Damen und Herren / Sehr geehrte/r Frau/Herr … |
+| Einleitung | vielen Dank für deine/Ihre E-Mail · es tut mir leid, dass … · schön, von dir zu hören · ich habe mich über deine Nachricht gefreut |
+| Hauptteil | du hast gefragt, ob/wie/wann … · ich finde deine Idee gut, … · was mich angeht, … · ich würde gern … · am liebsten … |
+| Vorschlag/Bitte | Lass uns … / Wollen wir …? · Hättest du Lust, …? · Könntest du mir sagen, …? · Schreib mir bitte, … |
+| Schluss | ich freue mich auf deine/Ihre Antwort · Antworte mir bald · melde dich · bis bald |
+| Grußformel | *informell:* Liebe Grüße / Alles Liebe / Bis bald! · *halbformell:* Viele Grüße / Herzliche Grüße / Beste Grüße · *formell:* Mit freundlichen Grüßen / Freundliche Grüße / Mit besten Grüßen |
+
+### Anrede & Grußformel by formality (Ex. 5b)
+
+- **Anrede formell:** Sehr geehrte Damen und Herren · Sehr geehrte/r Frau/Herr …
+- **Anrede halbformell:** Liebe/r Frau/Herr … · Guten Tag, Frau/Herr … · Hallo Frau/Herr …
+- **Anrede informell:** Hallo (Vorname) · Hi
+- **Gruß formell:** Freundliche Grüße · Mit freundlichen Grüßen · Mit besten Grüßen · Beste Grüße
+- **Gruß halbformell:** Viele Grüße · Herzliche Grüße
+- **Gruß informell:** Liebe Grüße · Alles Liebe · Bis bald!
+
+### Connectors (Ex. 4) — verb position
+
+- Verb at the **end**: weil, obwohl, damit, da, dass.
+- Verb in **2nd** position: deshalb, trotzdem.
+- "Position 0" (normal order follows): denn, aber, oder, doch.
+
+---
+
+### Ernährung & Gesundheit — Vocabulary
+
+das Nahrungsmittel/Lebensmittel · die Mahlzeit · die Ernährung · die Ernährungsumstellung · die Essgewohnheiten (pl.) · die Kalorie · der Nährwert · der Geschmack · schmackhaft · der Fleischkonsum · der Verzicht · vegan · vegetarisch · vollwertig · die Mischkost · die Allergie · die Unverträglichkeit.
+**Verbs:** sich (gesund) ernähren · zubereiten (sep.) · umstellen (sep.) · abnehmen/zunehmen (sep.) · verzichten (auf + Akk.) · reduzieren · integrieren · aufhören.
+
+---
+
+### Exercise Answer Keys
+
+**Ex. 1a (Redemittel):** 1 geehrte · 2 freuen · 3 informieren · 4 Zunächst · 5 Bescheid · 6 mitteilen · 7 Grüßen.
+**Ex. 1b (syllable words):** das Nahrungsmittel · die Kalorie · der Geschmack · zubereiten · abnehmen · umstellen · verzichten · … · vegetarisch. *(One item ending "-hung" is unclear from the page.)*
+**Ex. 1c (right word):** 1 ernähren · 2 integrieren · 3 aufhören · 4 reduzieren.
+**Ex. 1e (quiz, two correct each):** 1 a/d · 2 a/c · 3 b/d · 4 a/b · 5 a/c · 6 b/d · 7 b/c.
+
+**Ex. 2a (Yolanda):** option **2** (she's looking for a new hobby / leisure activity).
+**Ex. 2c (4 Leitpunkte):** 1 wie es Ihnen geht · 4 Gartenverein für Anfänger geeignet? · 5 wo sich die Mitglieder treffen · 6 wann das nächste Treffen ist. *(Not 2, 3.)*
+**Ex. 2d (Wanda → Carlos should answer):** how much money to transfer · travel together (car or train?) · which sport activities · interest in wellness/sauna.
+
+**Ex. 3a (App points):** 1-c · 2-a · 3-b · 4-d.
+
+**Ex. 4a (join):**
+1. Ich musste meine Essgewohnheiten ändern, **weil** ich gesundheitliche Probleme hatte.
+2. … habe ich drei Kilo abgenommen, **obwohl** ich ab und zu noch Süßigkeiten esse.
+3. Meine Herzprobleme sind besser geworden, **doch** ich muss weiter auf meine Ernährung achten.
+4. Die Umstellung war nicht leicht, **aber** mittlerweile habe ich mich daran gewöhnt.
+**Ex. 4b (connector):** 1 oder · 2 damit · 3 deshalb · 4 aber · 5 da.
+
+**Ex. 5a (e-mail order):** Hallo Murat, → danke für deine Mail / ich gratuliere dir … → Deswegen habe ich mich zu einem 10-km-Lauf angemeldet … → Die nächsten drei Monate werde ich trainieren … → Hättest du nicht Lust mitzumachen? … → Liebe Grüße, Ian.
+
+**Ex. 6 (typical errors):** missing subject ("habe **ich** mich verletzt") · spelling (Arzt, früh, konnte, Krankenhaus, WhatsApp) · capitalise nouns · connect ideas + vary word order · Anrede must match Gruß.
+
+---
+
+### Ex. 7 — Prüfungsaufgabe: Model Answer (reply to Fiona)
+
+*4 points: why you didn't write · what you like to eat · restaurant or cook at home · when to meet.*
+
+> **Betreff:** Schön, von dir zu hören!
+>
+> Liebe Fiona,
+>
+> vielen Dank für deine E-Mail! Es tut mir leid, dass ich so lange nicht geschrieben habe, aber ich hatte in den letzten Wochen sehr viel Stress auf der Arbeit.
+>
+> Schön, dass dir das neue Restaurant so gut gefallen hat. Ich esse eigentlich fast alles gern, am liebsten aber Gemüsegerichte und Pasta. Fleisch esse ich nur selten, deshalb finde ich ein vegetarisches Restaurant super.
+>
+> Lass uns auf jeden Fall dorthin gehen, wenn ich dich besuche. Zu Hause kochen können wir ja ein anderes Mal.
+>
+> Hast du am nächsten Wochenende Zeit? Dann könnte ich am Samstag zu dir kommen.
+>
+> Ich freue mich auf deine Antwort!
+>
+> Viele Grüße
+> [dein Name]
+
+*Why it scores: all 4 points covered · Anrede matches Gruß · connectors (aber, deshalb, wenn, dann) · clear intro–main–close · varied sentences.*
+
+---
+
+## Klasse K15 — Pronomen & Häufige Verwechslungen (Pronouns & Common Confusions)
+
+### Grammar
+
+#### Personalpronomen — Deklination nach Fällen (ich / mich / mir)
+
+Personal pronouns replace a noun (ich, du, er …). Their form changes with the **case** — just like articles do. The case is decided by the pronoun's **role in the sentence**, not by the person.
+
+- **Nominativ** = the subject (who does the action): **Ich** schlafe.
+- **Akkusativ** = the direct object (accusative verbs like *sehen, haben, fragen*): Er sieht **mich**.
+- **Dativ** = the indirect object (dative verbs like *helfen, danken, gehören*; and after dative prepositions *mit, bei, zu, von*): Er hilft **mir**.
+
+**The full table**
+
+| Person | Nominativ | Akkusativ | Dativ |
+|---|---|---|---|
+| 1. Sg. (I) | ich | **mich** | **mir** |
+| 2. Sg. (you) | du | **dich** | **dir** |
+| 3. Sg. m (he) | er | **ihn** | **ihm** |
+| 3. Sg. f (she) | sie | sie | **ihr** |
+| 3. Sg. n (it) | es | es | **ihm** |
+| 1. Pl. (we) | wir | uns | uns |
+| 2. Pl. (you all) | ihr | euch | euch |
+| 3. Pl. (they) | sie | sie | **ihnen** |
+| Höflich (you, formal) | Sie | Sie | **Ihnen** |
+
+> *Memory hook:* the **-ch** forms are Akkusativ (mi**ch**, di**ch**), the **-r / -m** forms are Dativ (mi**r**, di**r**, ih**m**, ih**r**, ihne**n**). "Give it **to** someone" → Dativ.
+
+> Kannst du **mir** helfen? Ich sehe **dich** morgen.
+> *(Can you help me? I'll see you tomorrow.)*
+
+---
+
+#### Possessivartikel & Possessivpronomen (mein, dein, sein …)
+
+A possessive shows **who owns** something (my, your, his …). First pick the right **stem** for the owner, then add the **same endings as *ein / kein*** (they agree with the owned noun's gender + case — NOT the owner's).
+
+**Step 1 — the stem (depends on the owner)**
+
+| Owner | Stem | Owner | Stem |
+|---|---|---|---|
+| ich | **mein** | wir | **unser** |
+| du | **dein** | ihr | **euer** |
+| er / es | **sein** | sie (Pl.) | **ihr** |
+| sie (she) | **ihr** | Sie (formal) | **Ihr** |
+
+**Step 2 — the ending (agrees with the owned noun, like *ein/kein*)**
+
+| Fall | Maskulin | Neutrum | Feminin | Plural |
+|---|---|---|---|---|
+| **Nominativ** | mein | mein | mein**e** | mein**e** |
+| **Akkusativ** | mein**en** | mein | mein**e** | mein**e** |
+| **Dativ** | mein**em** | mein**em** | mein**er** | mein**en** |
+| **Genitiv** | mein**es** | mein**es** | mein**er** | mein**er** |
+
+> ⚠️ *euer* drops the second **e** when an ending is added: euer → **eure** Kinder, **eurem** Freund.
+
+> Das ist **mein** Bruder. Ich helfe **meinem** Bruder. Ich kenne **seine** Schwester.
+> *(That's my brother. I help my brother. I know his sister.)*
+
+---
+
+#### wurde, würde, wird, worden, geworden — die Formen von werden
+
+These five look almost identical but do very different jobs. The key split: **wurde** is real past, **würde** is hypothetical (Konjunktiv II).
+
+| Form | Job | Beispiel |
+|---|---|---|
+| **wird** | Präsens of *werden* / Passiv Präsens / Futur | Er **wird** Arzt. · Das Haus **wird** gebaut. |
+| **wurde** | Präteritum of *werden* / Passiv Präteritum (real past!) | Er **wurde** krank. · Das Haus **wurde** gebaut. |
+| **würde** | Konjunktiv II — *would* (hypothetical / polite) | Ich **würde** dir helfen. · **Würden** Sie bitte warten? |
+| **worden** | Partizip in **Passiv Perfekt** (never "geworden" here) | Das Haus ist gebaut **worden**. |
+| **geworden** | Partizip when *werden* is a **full verb** (to become) | Er ist Arzt **geworden**. |
+
+> *The trap:* **wurde** = "became / was (done)" — it really happened. **würde** = "would" — it is imagined or conditional. One letter (**ü**) changes reality into hypothesis.
+
+> *worden vs geworden:* if there is another Partizip in front → **worden** (passive). If *werden* stands alone meaning "become" → **geworden**.
+
+> Früher **wurde** hier viel geraucht. Heute **würde** das niemand mehr machen.
+> *(People used to smoke a lot here. Today nobody would do that anymore.)*
+
+---
+
+#### war/wäre & hatte/hätte — Indikativ oder Konjunktiv II?
+
+Same trap as wurde/würde, now for *sein*, *haben* and the modals. **Indikativ** = it was really so. **Konjunktiv II** (usually with an Umlaut) = it is hypothetical, a wish, or polite.
+
+| Indikativ (real) | Konjunktiv II (hypothetical / polite) | Meaning |
+|---|---|---|
+| war | **wäre** | was → would be |
+| hatte | **hätte** | had → would have |
+| wurde | **würde** | became → would |
+| konnte | **könnte** | could (past) → could (maybe) |
+| musste | **müsste** | had to → would have to |
+| durfte | **dürfte** | was allowed → might |
+
+> *Signal words for Konjunktiv II:* **wenn** (if), an deiner Stelle (in your place), a wish, or a polite request. → use **wäre / hätte / würde**.
+
+> Ich **hatte** gestern keine Zeit. — real.
+> **Hätte** ich mehr Zeit, **würde** ich mehr lesen. — hypothetical.
+
+---
+
+#### seit, vor, bis, bevor, während — Zeitwörter richtig verwenden
+
+These little time words are constantly mixed up. Watch **which case** or **clause type** each one needs.
+
+| Wort | Typ | Bedeutung | Beispiel |
+|---|---|---|---|
+| **seit** | Präp. + **Dativ** | since / for (started in past, still going) | **seit** einem Jahr, **seit** 2020 |
+| **vor** | Präp. + **Dativ** | ago (finished point in the past) | **vor** drei Tagen |
+| **bis** | Präp. / Konjunktion | until (end point) | **bis** Montag · **bis** ich komme |
+| **bevor** | Konjunktion (Nebensatz) | before (an action) | **bevor** ich gehe, esse ich |
+| **während** | Präp. + **Genitiv** / Konjunktion | during / while (at the same time) | **während** des Essens · **während** er kocht |
+
+> *seit vs. vor:* **seit** = the action is **still going** (seit zwei Jahren = for two years, still now). **vor** = a **finished** point (vor zwei Jahren = two years ago).
+
+> *bis vs. bevor:* **bis** marks an **end point** (until then). **bevor** introduces a **clause** describing an earlier action.
+
+> **Seit** einem Monat lerne ich Deutsch. **Vor** einem Jahr konnte ich noch kein Wort.
+> *(I've been learning German for a month. A year ago I couldn't say a word.)*
+
+---
+
+#### das oder dass? seit oder seid? — Häufig verwechselte Wörter
+
+Look-alike words that sound the same (or nearly) but are grammatically different. Learn one quick test for each.
+
+| Verwechslung | Wort 1 | Wort 2 | Schneller Test |
+|---|---|---|---|
+| **das / dass** | **das** = Artikel / Relativpronomen (the / which) | **dass** = Konjunktion (that) | Can you swap it for *dieses / jenes / welches*? → **das**. If not → **dass**. |
+| **seit / seid** | **seit** = Zeit (since / for) | **seid** = *ihr* + sein (you are) | Is the subject **ihr**? → **seid**. About time? → **seit**. |
+| **wenn / wann / wen** | **wenn** = if / whenever · **wann** = when (question) | **wen** = whom (Akkusativ of *wer*) | A question about time → **wann**. A condition → **wenn**. Asking "whom?" → **wen**. |
+
+> **Das** Buch, **das** ich lese, ist so gut, **dass** ich nicht aufhören kann.
+> *(The book that I'm reading is so good that I can't stop.)*
+
+> **Seit** wann **seid** ihr schon hier?
+> *(Since when have you been here?)*
+
+---
