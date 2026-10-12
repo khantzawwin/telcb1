@@ -3,6 +3,10 @@ import { doc, getDoc, setDoc } from 'firebase/firestore'
 import { db } from '../firebase'
 import { useAuth } from '../contexts/AuthContext'
 import { getTodayKey } from '../utils/srs'
+import NotesTopicLinks from '../components/NotesTopicLinks'
+import UpNext from '../components/UpNext'
+import { ReferenceSection } from '../components/DrillLayout'
+import { WRITING_TOPICS } from '../utils/grammarThemes'
 
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY
 const GEMINI_URL = GEMINI_API_KEY
@@ -765,7 +769,6 @@ Return ONLY valid JSON exactly like this (no markdown, no extra text):
 
 export default function Writing() {
   const { user } = useAuth()
-  const [tab, setTab] = useState('practice')
   const [text, setText] = useState('')
   const [submitting, setSubmitting] = useState(false)
   const [feedback, setFeedback] = useState(null)
@@ -848,24 +851,9 @@ export default function Writing() {
   return (
     <div className="max-w-4xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Schreiben</h1>
-      <p className="text-base text-gray-400 mb-8">TELC B1 · Schreiben Teil 1 · {PROMPTS.length} tasks</p>
+      <p className="text-base text-gray-500 mb-8">TELC B1 · Schreiben Teil 1 · {PROMPTS.length} tasks</p>
 
-      <div className="flex gap-1 bg-gray-100 p-1 rounded-2xl mb-8 w-fit">
-        {[['practice', 'Practice'], ['tips', 'Tips']].map(([key, label]) => (
-          <button
-            key={key}
-            onClick={() => setTab(key)}
-            className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
-              tab === key ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
-            }`}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
-
-      {tab === 'practice' ? (
-        <PracticeTab
+      <PracticeTab
           prompt={activePrompt}
           text={text}
           setText={setText}
@@ -881,9 +869,16 @@ export default function Writing() {
           onGenerate={handleGenerate}
           onClearGenerated={() => { setGenPrompt(null); setGenError(null); setText(''); setFeedback(null) }}
         />
-      ) : (
-        <TipsTab />
-      )}
+
+      {feedback && <UpNext current="writing" className="mt-6" />}
+
+      <div className="mt-10">
+        <ReferenceSection title="Tips: Schreiben Teil 1">
+          <TipsTab />
+        </ReferenceSection>
+      </div>
+
+      <NotesTopicLinks topicIds={WRITING_TOPICS} />
     </div>
   )
 }
@@ -906,7 +901,7 @@ function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, e
       <div className="flex items-center justify-between gap-3 flex-wrap">
         <span className="text-sm text-gray-500">
           {isGenerated
-            ? '✨ AI-generated topic'
+            ? 'AI-generated topic'
             : 'Today\'s task'}
         </span>
         <div className="flex items-center gap-2">
@@ -929,7 +924,7 @@ function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, e
                 Generating …
               </>
             ) : (
-              <>✨ Generate new topic</>
+              <>Generate new topic</>
             )}
           </button>
         </div>
@@ -949,7 +944,7 @@ function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, e
       {/* Task header */}
       <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
         <div className="flex items-center justify-between px-6 py-3 bg-slate-50 border-b border-gray-100">
-          <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">TELC B1 · Schreiben · Teil 1</span>
+          <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">TELC B1 · Schreiben · Teil 1</span>
           <span className={`px-2.5 py-0.5 rounded-full text-xs font-bold ${TYPE_COLOR[prompt.type]}`}>
             {TYPE_LABEL[prompt.type]}
           </span>
@@ -961,11 +956,11 @@ function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, e
           <div className="bg-slate-50 border border-gray-200 rounded-2xl overflow-hidden mb-5">
             <div className="px-4 py-3 border-b border-gray-200 space-y-1">
               <div className="flex gap-2 text-sm">
-                <span className="text-gray-400 w-14 flex-shrink-0">Von:</span>
+                <span className="text-gray-500 w-14 flex-shrink-0">Von:</span>
                 <span className="font-medium text-gray-800">{prompt.incomingEmail.from}</span>
               </div>
               <div className="flex gap-2 text-sm">
-                <span className="text-gray-400 w-14 flex-shrink-0">Betreff:</span>
+                <span className="text-gray-500 w-14 flex-shrink-0">Betreff:</span>
                 <span className="font-medium text-gray-800">{prompt.incomingEmail.subject}</span>
               </div>
             </div>
@@ -1003,9 +998,9 @@ function PracticeTab({ prompt, text, setText, wordCount, submitting, feedback, e
         <>
           <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
             <div className="flex items-center justify-between px-5 pt-4 pb-2 border-b border-gray-100">
-              <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Ihre Antwort</span>
+              <span className="text-xs font-semibold text-gray-500 uppercase tracking-widest">Ihre Antwort</span>
               <span className={`text-xs font-semibold tabular-nums ${
-                wordOk ? 'text-green-600' : wordLow ? 'text-amber-500' : wordCount > 120 ? 'text-red-500' : 'text-gray-400'
+                wordOk ? 'text-green-600' : wordLow ? 'text-amber-500' : wordCount > 120 ? 'text-red-500' : 'text-gray-500'
               }`}>
                 {wordCount} Wörter{wordOk ? ' ✓' : wordCount > 0 ? ' (Ziel: ~80)' : ''}
               </span>
@@ -1111,8 +1106,8 @@ function FeedbackPanel({ feedback, onReset, text }) {
             ['Clarity', kommunikation.clarity, 3],
           ].map(([label, score, max]) => (
             <div key={label} className="text-center bg-slate-50 rounded-2xl py-3 px-2">
-              <p className="text-xs text-gray-400 mb-1">{label}</p>
-              <p className="text-lg font-bold text-gray-900">{score}<span className="text-xs text-gray-400">/{max}</span></p>
+              <p className="text-xs text-gray-500 mb-1">{label}</p>
+              <p className="text-lg font-bold text-gray-900">{score}<span className="text-xs text-gray-500">/{max}</span></p>
             </div>
           ))}
         </div>
@@ -1128,8 +1123,8 @@ function FeedbackPanel({ feedback, onReset, text }) {
             ['Spelling', genauigkeit.spelling, 5],
           ].map(([label, score, max]) => (
             <div key={label} className="text-center bg-slate-50 rounded-2xl py-3">
-              <p className="text-xs text-gray-400 mb-1 leading-tight">{label}</p>
-              <p className="text-lg font-bold text-gray-900">{score}<span className="text-xs text-gray-400">/{max}</span></p>
+              <p className="text-xs text-gray-500 mb-1 leading-tight">{label}</p>
+              <p className="text-lg font-bold text-gray-900">{score}<span className="text-xs text-gray-500">/{max}</span></p>
             </div>
           ))}
         </div>
@@ -1169,7 +1164,7 @@ function FeedbackPanel({ feedback, onReset, text }) {
       <details className="bg-white rounded-3xl shadow-sm overflow-hidden">
         <summary className="px-6 py-4 cursor-pointer text-sm font-semibold text-gray-500 hover:bg-slate-50 list-none flex items-center justify-between">
           <span>Your submitted reply</span>
-          <span className="text-gray-400 text-xs">▼</span>
+          <span className="text-gray-500 text-xs">▼</span>
         </summary>
         <div className="px-6 pb-5 border-t border-gray-100">
           <p className="text-sm text-gray-700 leading-relaxed whitespace-pre-wrap mt-4">{text}</p>
@@ -1219,13 +1214,13 @@ function TipsTab() {
               <div className="flex items-baseline gap-2 mb-2">
                 <span className="font-bold text-gray-900">{c.label}</span>
                 <span className="text-indigo-600 font-bold text-lg">{c.pts}</span>
-                <span className="text-gray-400 text-xs">Pt.</span>
+                <span className="text-gray-500 text-xs">Pt.</span>
               </div>
               <p className="text-xs text-gray-600 leading-relaxed">{c.desc}</p>
             </div>
           ))}
         </div>
-        <p className="text-xs text-gray-400 mt-4">Pass mark: <strong className="text-gray-600">36 / 45 (80%)</strong>. Writing time: ~30 minutes.</p>
+        <p className="text-xs text-gray-500 mt-4">Pass mark: <strong className="text-gray-600">36 / 45 (80%)</strong>. Writing time: ~30 minutes.</p>
       </div>
 
       {[
@@ -1311,11 +1306,11 @@ function TipsTab() {
           <p className="text-xs text-gray-500 mb-4"><strong>When:</strong> {lt.when}</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Salutation</p>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Salutation</p>
               {lt.salutation.map(s => <p key={s} className="text-sm text-gray-700 font-medium italic mb-0.5">{s}</p>)}
             </div>
             <div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Closing</p>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Closing</p>
               {lt.closing.map(s => <p key={s} className="text-sm text-gray-700 font-medium italic mb-0.5">{s}</p>)}
             </div>
           </div>
@@ -1323,7 +1318,7 @@ function TipsTab() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Opening lines</p>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Opening lines</p>
               <div className="space-y-1.5">
                 {lt.openers.map(s => (
                   <p key={s} className="text-sm text-gray-700 bg-slate-50 rounded-lg px-3 py-1.5">{s}</p>
@@ -1331,7 +1326,7 @@ function TipsTab() {
               </div>
             </div>
             <div>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Closing lines</p>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Closing lines</p>
               <div className="space-y-1.5">
                 {lt.closers.map(s => (
                   <p key={s} className="text-sm text-gray-700 bg-slate-50 rounded-lg px-3 py-1.5">{s}</p>
@@ -1340,7 +1335,7 @@ function TipsTab() {
             </div>
           </div>
 
-          <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">Other useful phrases</p>
+          <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">Other useful phrases</p>
           <div className="flex flex-wrap gap-2 mb-3">
             {lt.phrases.map(p => (
               <span key={p} className="text-xs bg-slate-100 text-gray-700 px-3 py-1.5 rounded-xl font-medium">{p}</span>
@@ -1384,7 +1379,7 @@ function TipsTab() {
             { label: 'Emphasis', words: ['vor allem', 'besonders', 'insbesondere', 'leider', 'natürlich'] },
           ].map(g => (
             <div key={g.label}>
-              <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-2">{g.label}</p>
+              <p className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">{g.label}</p>
               <div className="flex flex-wrap gap-1.5">
                 {g.words.map(w => (
                   <span key={w} className="text-xs bg-indigo-50 text-indigo-700 px-2.5 py-1 rounded-lg font-medium">{w}</span>

@@ -40,15 +40,31 @@ function parseVocabulary(block) {
     else if (catLine.includes('adjective') || catLine.includes('adverb')) type = 'adjective'
     else if (catLine.includes('phrase') || catLine.includes('expression')) type = 'phrase'
 
-    // Split entries by horizontal rule
-    const entries = cat.split(/\n---+\n/)
-    for (const entry of entries) {
-      const word = parseWordEntry(entry.trim(), type)
-      if (word) words.push(word)
+    // Each entry starts at a headword line: **word** (info) — *translation*.
+    // Splitting on headwords (not on ---) keeps the first entry under a
+    // heading and entries that follow a bold sub-heading like **Weight**.
+    const lines = cat.split('\n').slice(1)
+    let current = null
+    for (const line of lines) {
+      if (HEADWORD.test(line)) {
+        if (current) pushWord(words, current, type)
+        current = [line]
+      } else if (current) {
+        current.push(line)
+      }
     }
+    if (current) pushWord(words, current, type)
   }
 
   return words
+}
+
+const HEADWORD = /^\*\*[^*\n]+\*\*[^\n]*?[—–-]\s*\*[^*\n]+\*/
+
+function pushWord(words, lines, type) {
+  const text = lines.join('\n').replace(/\n---+\s*$/, '').trim()
+  const word = parseWordEntry(text, type)
+  if (word) words.push(word)
 }
 
 function parseWordEntry(text, type) {

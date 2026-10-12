@@ -2847,3 +2847,8 @@ export function matchTopicId(topicId) {
   }
   return null
 }
+
+// Exact match first, then fuzzy prefix match
+export function findExercises(topicId) {
+  return getExercisesForTopic(topicId) || getExercisesForTopic(matchTopicId(topicId))
+}

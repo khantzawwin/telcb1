@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import { doc, setDoc } from 'firebase/firestore'
 import { db } from '../firebase'
 import { useAuth } from '../contexts/AuthContext'
+import { BackToGrammar, ReferenceSection, PracticeHeading } from '../components/DrillLayout'
+import UpNext from '../components/UpNext'
 import { useNavGuard } from '../contexts/NavGuardContext'
 import { getTodayKey } from '../utils/srs'
 
@@ -431,53 +433,27 @@ function buildSession(exercises, size) {
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function Connectors() {
-  const [tab, setTab] = useState('exercise')
-  const [refSection, setRefSection] = useState('A')
 
   return (
     <div className="max-w-3xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
+      <BackToGrammar to="/grammar#konnektoren" label="Konnektoren & Nebensätze" />
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Konnektoren</h1>
-      <p className="text-base text-gray-400 mb-8">TELC B1 · 27 connectors · 30 questions per session from a pool of {EXERCISES.length}</p>
+      <p className="text-base text-gray-500 mb-8">TELC B1 · 27 connectors · 30 questions per session from a pool of {EXERCISES.length}</p>
 
-      <div className="flex gap-1 bg-gray-100 p-1 rounded-2xl mb-6 w-fit">
-        {[['exercise', 'Exercise'], ['reference', 'Reference']].map(([key, label]) => (
-          <button
-            key={key}
-            onClick={() => setTab(key)}
-            className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
-              tab === key ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
-            }`}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
+      <ReferenceSection>
+        <div className="space-y-10">
+          {SECTIONS.map(section => (
+            <div key={section.id}>
+              <h3 className="text-lg font-bold text-gray-900 mb-3">{section.id} · {section.title}</h3>
+              <SectionView section={section} />
+            </div>
+          ))}
+          <QuickTable />
+        </div>
+      </ReferenceSection>
 
-      {tab === 'exercise' ? (
-        <ExerciseTab />
-      ) : (
-        <>
-          <div className="flex gap-1.5 mb-6 overflow-x-auto pb-1">
-            {[...SECTIONS.map(s => s.id), 'Table'].map(key => (
-              <button
-                key={key}
-                onClick={() => setRefSection(key)}
-                className={`px-4 py-2 rounded-xl text-sm font-semibold whitespace-nowrap flex-shrink-0 transition-all ${
-                  refSection === key
-                    ? 'bg-indigo-100 text-indigo-700'
-                    : 'bg-gray-100 text-gray-500 hover:text-gray-700'
-                }`}
-              >
-                {key}
-              </button>
-            ))}
-          </div>
-          {refSection === 'Table'
-            ? <QuickTable />
-            : <SectionView section={SECTIONS.find(s => s.id === refSection)} />
-          }
-        </>
-      )}
+      <PracticeHeading />
+      <ExerciseTab />
     </div>
   )
 }
@@ -547,9 +523,9 @@ function ExerciseTab() {
           {score}/{questions.length}
         </div>
         <p className="text-gray-500 mb-1">{pct}% correct</p>
-        <p className="text-sm text-gray-400 mb-8">
+        <p className="text-sm text-gray-500 mb-8">
           {pct >= 90 ? 'Excellent! You have a strong grasp of German connectors.' :
-           pct >= 70 ? 'Good work! Review the tricky pairs in the Reference tab.' :
+           pct >= 70 ? 'Good work! Review the tricky pairs in the Reference above.' :
            'Keep practicing! Focus on the word order rules in sections A, B, and C.'}
         </p>
         <button
@@ -558,13 +534,14 @@ function ExerciseTab() {
         >
           Try again (new shuffle)
         </button>
+        <UpNext current="drill" className="mt-6 text-left" />
       </div>
     )
   }
 
   return (
     <div className="space-y-4">
-      <div className="flex items-center justify-between text-sm text-gray-400 mb-1">
+      <div className="flex items-center justify-between text-sm text-gray-500 mb-1">
         <span>Question {index + 1} of {questions.length}</span>
         <span>{score} correct</span>
       </div>
@@ -600,7 +577,7 @@ function ExerciseTab() {
               if (answered) {
                 if (opt === q.answer) style = 'bg-green-50 text-green-700 border border-green-300 font-semibold'
                 else if (opt === selected) style = 'bg-red-50 text-red-600 border border-red-300'
-                else style = 'bg-gray-50 text-gray-400 border border-gray-100'
+                else style = 'bg-gray-50 text-gray-500 border border-gray-100'
               }
               return (
                 <button
@@ -670,7 +647,7 @@ function ConnectorCard({ item, section }) {
         <span className={`text-lg font-bold px-4 py-1 rounded-2xl border ${section.chipBg}`}>
           {item.word}
         </span>
-        <span className="text-sm text-gray-400">{item.meaning}</span>
+        <span className="text-sm text-gray-500">{item.meaning}</span>
       </div>
 
       <div className="px-6 pb-5 space-y-3">
@@ -690,7 +667,7 @@ function ConnectorCard({ item, section }) {
 
         {item.commonVerbs && (
           <div>
-            <p className="text-xs text-gray-400 mb-2">Common verbs used with dass:</p>
+            <p className="text-xs text-gray-500 mb-2">Common verbs used with dass:</p>
             <div className="flex flex-wrap gap-1.5">
               {item.commonVerbs.map(v => (
                 <span key={v} className={`text-xs font-medium px-2.5 py-0.5 rounded-lg border ${section.chipBg}`}>{v}</span>
@@ -701,7 +678,7 @@ function ConnectorCard({ item, section }) {
 
         {item.use && (
           <div>
-            <p className="text-xs text-gray-400 mb-2">Use for:</p>
+            <p className="text-xs text-gray-500 mb-2">Use for:</p>
             <div className="flex flex-wrap gap-1.5">
               {item.use.map(u => (
                 <span key={u} className="text-xs bg-gray-50 border border-gray-200 text-gray-600 px-2.5 py-0.5 rounded-lg">{u}</span>
@@ -721,7 +698,7 @@ function ConnectorCard({ item, section }) {
           <div className="grid grid-cols-2 gap-2">
             {item.compare.map((c, i) => (
               <div key={i} className="bg-gray-50 rounded-2xl px-4 py-3 border border-gray-100">
-                <p className="text-xs text-gray-400 mb-1">{c.label}</p>
+                <p className="text-xs text-gray-500 mb-1">{c.label}</p>
                 <p className="text-sm font-mono text-gray-800 leading-relaxed">{c.example}</p>
               </div>
             ))}
@@ -759,14 +736,14 @@ function QuickTable() {
     <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
       <div className="px-6 py-4 border-b border-gray-100">
         <p className="text-sm font-bold text-gray-800">Quick Decision Table</p>
-        <p className="text-xs text-gray-400 mt-0.5">Find the right connector by meaning. Useful during the writing section of the exam.</p>
+        <p className="text-xs text-gray-500 mt-0.5">Find the right connector by meaning. Useful during the writing section of the exam.</p>
       </div>
       <div className="overflow-x-auto">
         <div className="min-w-[34rem]">
           <div className="flex items-center px-6 py-2 gap-4 bg-slate-50 border-b border-gray-100">
-            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest w-24 flex-shrink-0">Meaning</span>
-            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest w-32 flex-shrink-0">Asks / Function</span>
-            <span className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Connector</span>
+            <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest w-24 flex-shrink-0">Meaning</span>
+            <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest w-32 flex-shrink-0">Asks / Function</span>
+            <span className="text-[10px] font-bold text-gray-500 uppercase tracking-widest">Connector</span>
           </div>
           <div className="divide-y divide-gray-50">
             {QUICK_TABLE.map(({ meaning, asks, connectors }) => (

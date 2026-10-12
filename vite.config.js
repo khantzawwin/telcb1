@@ -9,9 +9,9 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'notes.md'],
       manifest: {
-        name: 'TELC B1 Trainer',
-        short_name: 'B1 Trainer',
-        description: 'German B1 spaced repetition flashcards and grammar practice',
+        name: 'TELC B Trainer',
+        short_name: 'TELC B',
+        description: 'German TELC B spaced repetition flashcards and grammar practice',
         theme_color: '#4F46E5',
         background_color: '#F9FAFB',
         display: 'standalone',

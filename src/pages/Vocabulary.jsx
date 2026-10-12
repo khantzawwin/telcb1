@@ -1,5 +1,8 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { useAuth } from '../contexts/AuthContext'
 import { useNotes } from '../contexts/NotesContext'
+import { useReviewStats } from '../utils/useReviewStats'
 
 const TYPE_LABELS = { noun: 'Noun', verb: 'Verb', adjective: 'Adj', phrase: 'Phrase', other: 'Other' }
 const TYPE_COLORS = {
@@ -33,6 +36,8 @@ export default function Vocabulary() {
     <div className="max-w-6xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-7">Vocabulary</h1>
 
+      <ReviewCard cards={cards} />
+
       {/* Filters */}
       <div className="space-y-3 mb-7">
         <input
@@ -46,7 +51,7 @@ export default function Vocabulary() {
           <select
             value={typeFilter}
             onChange={e => setTypeFilter(e.target.value)}
-            className="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-base bg-white focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="flex-1 min-w-0 px-4 py-3 border border-gray-200 rounded-xl text-base bg-white focus:outline-none focus:ring-2 focus:ring-indigo-400"
           >
             <option value="all">All types</option>
             {Object.entries(TYPE_LABELS).map(([k, v]) => <option key={k} value={k}>{v}</option>)}
@@ -54,12 +59,12 @@ export default function Vocabulary() {
           <select
             value={lessonFilter}
             onChange={e => setLessonFilter(e.target.value)}
-            className="flex-1 px-4 py-3 border border-gray-200 rounded-xl text-base bg-white focus:outline-none focus:ring-2 focus:ring-indigo-400"
+            className="flex-1 min-w-0 px-4 py-3 border border-gray-200 rounded-xl text-base bg-white focus:outline-none focus:ring-2 focus:ring-indigo-400"
           >
             <option value="all">All lessons</option>
-            {lessons.map(l => <option key={l.number} value={l.number}>L{l.number}</option>)}
+            {lessons.map(l => <option key={l.number} value={l.number}>{l.title}</option>)}
           </select>
-          <span className="text-sm text-gray-400 self-center whitespace-nowrap">{filtered.length} words</span>
+          <span className="text-sm text-gray-500 self-center whitespace-nowrap">{filtered.length} words</span>
         </div>
       </div>
 
@@ -74,9 +79,48 @@ export default function Vocabulary() {
           />
         ))}
         {filtered.length === 0 && (
-          <div className="col-span-2 text-center py-16 text-gray-400 text-base">No words match.</div>
+          <div className="col-span-2 text-center py-16 text-gray-500 text-base">No words match.</div>
         )}
       </div>
+    </div>
+  )
+}
+
+// Today's flashcard review — opens the SRS session at /vocabulary/review
+function ReviewCard({ cards }) {
+  const { user } = useAuth()
+  const { stats, slot, sessionAvailable, loading } = useReviewStats(user, cards)
+  const ready = Math.min(stats.due + stats.new, 20)
+
+  return (
+    <div className="bg-indigo-600 rounded-3xl p-6 sm:p-7 text-white mb-7 flex flex-col sm:flex-row sm:items-center gap-4">
+      <div className="flex-1">
+        <p className="text-indigo-200 text-sm font-semibold uppercase tracking-widest mb-1 capitalize">
+          {slot} flashcards
+        </p>
+        <h2 className="text-2xl font-bold">
+          {loading ? '…' : sessionAvailable ? `${ready} cards ready` : 'Review complete ✓'}
+        </h2>
+        {!loading && (
+          <p className="text-indigo-200 text-sm mt-1">
+            {sessionAvailable
+              ? `${stats.due} due · ${stats.new} new`
+              : 'Come back for the next session.'}
+          </p>
+        )}
+      </div>
+      {!loading && (sessionAvailable ? (
+        <Link
+          to="/vocabulary/review"
+          className="self-start sm:self-auto bg-white text-indigo-700 font-semibold text-base px-6 py-3 rounded-2xl hover:bg-indigo-50 active:scale-95 transition-all"
+        >
+          Start review →
+        </Link>
+      ) : (
+        <Link to="/vocabulary/review?anyway=1" className="self-start sm:self-auto text-indigo-100 text-sm font-medium hover:text-white py-2">
+          Review anyway →
+        </Link>
+      ))}
     </div>
   )
 }
@@ -90,14 +134,14 @@ function WordRow({ card, isOpen, onToggle }) {
       >
         <div className="flex-1 min-w-0">
           <span className="font-semibold text-gray-900 text-base">{card.word}</span>
-          {card.info && <span className="text-gray-400 text-sm ml-2">{card.info}</span>}
+          {card.info && <span className="text-gray-500 text-sm ml-2">{card.info}</span>}
         </div>
         <span className="text-sm text-gray-500 flex-shrink-0 hidden sm:block">{card.translation}</span>
         <span className={`text-sm px-2.5 py-0.5 rounded-full font-medium flex-shrink-0 ${TYPE_COLORS[card.type] || TYPE_COLORS.other}`}>
           {TYPE_LABELS[card.type] || card.type}
         </span>
         <svg
-          className={`w-4 h-4 text-gray-400 flex-shrink-0 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          className={`w-4 h-4 text-gray-500 flex-shrink-0 transition-transform ${isOpen ? 'rotate-180' : ''}`}
           fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
         >
           <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
@@ -107,7 +151,7 @@ function WordRow({ card, isOpen, onToggle }) {
       {isOpen && (
         <div className="px-5 pb-5 border-t border-gray-100">
           <p className="text-indigo-600 text-sm font-medium mt-3 mb-2">
-            L{card.lesson} — {card.lessonTitle}
+            {card.lessonTitle}
           </p>
 
           {/* Show translation prominently on mobile */}

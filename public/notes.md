@@ -9614,9 +9614,14 @@ Regelmäßig | Perfekt: **hat behandelt**
 
 **aufmerksam** — *attentive*
 - Komparativ: aufmerksamer · Superlativ: am aufmerksamsten
+- *jemanden auf etwas aufmerksam machen* = to draw someone's attention to something
+- Noun: *die Aufmerksamkeit* = attention
 
 > Bitte seien Sie im Unterricht aufmerksam.
 > *(Please be attentive in class.)*
+
+> Der Polizist hört den Leuten aufmerksam zu.
+> *(The police officer listens attentively to the people.)*
 
 ---
 
@@ -11059,5 +11064,189 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 
 > **Seit** wann **seid** ihr schon hier?
 > *(Since when have you been here?)*
+
+---
+
+## Klasse K17 — Verbrechen, Gesundheit & Zauberei (Crime, Health & Magic)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**der Verbrecher** (pl. die Verbrecher) — *criminal* — (female: die Verbrecherin, pl. -innen)
+- Ein Verbrecher macht schlechte Dinge, wie z. B. Menschen angreifen, stehlen usw.
+- Related: *das Verbrechen* = crime · *ein Verbrechen begehen* = to commit a crime
+
+> Die Polizei hat den Verbrecher verhaftet.
+> *(The police arrested the criminal.)*
+
+---
+
+**der Eisbrecher** (pl. die Eisbrecher) — *icebreaker (getting-to-know-you activity)*
+- ① A short game or activity at the start of a course or meeting so people relax and get to know each other
+- ② Literally: a ship that breaks through ice
+- *das Eis brechen* = to break the ice
+
+> Unsere Lehrerin hat den Eisbrecher für den ersten Tag geplant.
+> *(Our teacher planned the icebreaker for the first day.)*
+
+---
+
+**der Zauberer** (pl. die Zauberer) — *magician / wizard* — (female: die Zauberin, pl. -innen)
+- *der Zaubertrick* = magic trick · *die Zauberei* = magic
+- Verb: *zaubern* = to do magic
+
+> Im Zirkus hat der Zauberer uns zum Lachen gebracht.
+> *(At the circus the magician made us laugh.)*
+
+---
+
+**der Stammkunde** (pl. die Stammkunden) — *regular customer* — (female: die Stammkundin, pl. -innen)
+- ⚠️ n-Deklination: *den / dem / des Stammkunden* → *Wir begrüßen unseren Stammkunden.*
+- Related: *der Stammgast* = regular (in a café / restaurant / pub)
+
+> Jeden Morgen kommt ein Stammkunde in meine Cafeteria und trinkt einen Espresso.
+> *(Every morning a regular customer comes into my cafeteria and drinks an espresso.)*
+
+---
+
+#### Verbs
+
+**verhaften** — *to arrest*
+- Perfekt: **hat verhaftet** (no ge-: ver- prefix)
+- Synonym: *festnehmen* · Noun: *die Verhaftung* = arrest
+
+> Die Polizei hat den Verbrecher verhaftet.
+> *(The police arrested the criminal.)*
+
+---
+
+**behandeln** — *to treat (a patient / an illness)*
+- Perfekt: **hat behandelt**
+- Also: *ein Thema behandeln* = to deal with a topic · *jemanden gut/schlecht behandeln* = to treat someone well/badly
+- Noun: *die Behandlung* = treatment
+
+> Die Pflegehelfer können den Patienten nicht behandeln.
+> *(The care assistants can't treat the patient.)*
+
+---
+
+**sich wohlfühlen** (auch: sich wohl fühlen) — *to feel good / comfortable / at ease*
+- Perfekt: **hat sich wohlgefühlt**
+- *sich bei jemandem / in einer Stadt wohlfühlen* = to feel at home with someone / in a city
+- Opposite: *sich unwohl fühlen* = to feel unwell / uncomfortable
+
+> Wenn ich mich wohlfühle, gehe ich spazieren.
+> *(When I feel good, I go for a walk.)*
+
+---
+
+**verurteilen** — *to sentence / to convict (in court)*
+- Perfekt: **hat verurteilt**
+- *jemanden zu + Dat. verurteilen* → *zu drei Jahren Haft verurteilen* = to sentence to three years in prison
+- Also: to condemn (strongly criticise) → *Die Regierung verurteilt den Angriff.*
+- Related: *das Urteil* = verdict · *der Richter / die Richterin* = judge
+
+> Nur der Richter kann einen Verbrecher verurteilen.
+> *(Only the judge can sentence a criminal.)*
+
+---
+
+**zaubern** — *to do magic / to conjure*
+- Perfekt: **hat gezaubert**
+- *etwas aus dem Hut zaubern* = to pull something out of a hat
+
+> Der Zauberer hat ein Kaninchen aus dem Hut gezaubert.
+> *(The magician pulled a rabbit out of the hat.)*
+
+---
+
+**loben** — *to praise*
+- Perfekt: **hat gelobt**
+- *jemanden für etwas loben* = to praise someone for something
+- Noun: *das Lob* = praise · Opposite: *kritisieren*
+
+> Ich lobe meine Kollegin, weil sie sehr fleißig ist.
+> *(I praise my colleague because she is very hard-working.)*
+
+---
+
+**vernehmen** — *to question / interrogate (officially, police or court)*
+- Irregular: vernimmt – vernahm – **hat vernommen**
+- Official questioning of a witness (*der Zeuge*) or suspect. Informal questions on the street = *befragen*
+- Noun: *die Vernehmung* = interrogation · (literary: *vernehmen* = to hear)
+
+> Die Polizei vernimmt die Zeugin auf der Wache.
+> *(The police question the witness at the station.)*
+
+---
+
+**überleben** — *to survive*
+- Perfekt: **hat überlebt** (inseparable, no ge-)
+- *einen Unfall / eine Krankheit überleben* = to survive an accident / an illness
+- Noun: *der / die Überlebende* = survivor
+
+> Der Mann hat überlebt, weil er sofort die Polizei angerufen hat.
+> *(The man survived because he called the police immediately.)*
+
+---
+
+**anfordern** — *to request / to order (formally)*
+- Separable: *Ich fordere … an.* · Perfekt: **hat angefordert**
+- *etwas bei / von jemandem anfordern* → *Unterlagen anfordern, einen Krankenwagen anfordern*
+- ⚠️ Not the same as **auffordern** (to tell someone to do something), see below
+
+> Ich fordere bei der Schule ein Zeugnis an.
+> *(I am requesting a certificate from the school.)*
+
+---
+
+**auffordern** — *to ask / tell someone to do something*
+- Separable: *Er fordert mich auf, …* · Perfekt: **hat aufgefordert**
+- *jemanden auffordern, etwas zu tun* / *jemanden zu etwas auffordern*
+- ⚠️ **anfordern** = request a *thing* · **auffordern** = ask a *person* to *do* something
+
+> Denys fordert Kiril auf, nicht zu sprechen.
+> *(Denys tells Kiril not to speak.)*
+
+---
+
+**züchten** — *to breed (animals) / to grow (plants)*
+- Perfekt: **hat gezüchtet**
+- Related: *der Züchter / die Züchterin* = breeder · *die Zucht* = breeding
+
+> Elena züchtet Katzen.
+> *(Elena breeds cats.)*
+
+---
+
+**betreuen** — *to look after / to take care of / to supervise*
+- Perfekt: **hat betreut** (be- prefix, no ge-)
+- Related: *die Betreuung* = care, supervision · *der Betreuer / die Betreuerin* = carer, supervisor
+
+> Die Erzieherin betreut die Kinder.
+> *(The nursery teacher looks after the children.)*
+
+---
+
+#### Adjectives
+
+**bewusstlos** — *unconscious*
+- Opposite: *bei Bewusstsein* = conscious
+- *das Bewusstsein verlieren* = to lose consciousness
+
+> Der Polizist findet den Mann bewusstlos auf der Straße.
+> *(The police officer finds the man unconscious in the street.)*
+
+---
+
+**akut** — *acute (sudden and severe); urgent*
+- ① Medical: *akute Schmerzen, eine akute Krankheit* · opposite: *chronisch*
+- ② Urgent / pressing: *ein akutes Problem, akute Gefahr*
+
+> Nachdem er vom Fahrrad gefallen ist, hat er akute Schmerzen im Knie.
+> *(After falling off his bike, he has acute pain in his knee.)*
 
 ---

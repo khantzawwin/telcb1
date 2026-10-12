@@ -1,4 +1,12 @@
 import { useState } from 'react'
+import { doc, setDoc } from 'firebase/firestore'
+import { db } from '../firebase'
+import { useAuth } from '../contexts/AuthContext'
+import { getTodayKey } from '../utils/srs'
+import { ReferenceSection } from '../components/DrillLayout'
+import UpNext from '../components/UpNext'
+import NotesTopicLinks from '../components/NotesTopicLinks'
+import { SPEAKING_TOPICS } from '../utils/grammarThemes'
 
 const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY
 const GEMINI_URL = GEMINI_API_KEY
@@ -567,28 +575,20 @@ Return ONLY valid JSON (no markdown, no extra text):
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function Sprechen() {
-  const [tab, setTab] = useState('practice')
-
   return (
     <div className="max-w-4xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Sprechen</h1>
-      <p className="text-base text-gray-400 mb-8">TELC B1 Speaking Practice</p>
+      <p className="text-base text-gray-500 mb-8">TELC B1 Speaking Practice</p>
 
-      <div className="flex gap-1 bg-gray-100 p-1 rounded-2xl mb-8 w-fit">
-        {[['practice', 'Practice'], ['tips', 'Speaking Tips']].map(([key, label]) => (
-          <button
-            key={key}
-            onClick={() => setTab(key)}
-            className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
-              tab === key ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
-            }`}
-          >
-            {label}
-          </button>
-        ))}
+      <PracticeTab />
+
+      <div className="mt-10">
+        <ReferenceSection title="Speaking tips">
+          <TipsTab />
+        </ReferenceSection>
       </div>
 
-      {tab === 'practice' ? <PracticeTab /> : <TipsTab />}
+      <NotesTopicLinks topicIds={SPEAKING_TOPICS} />
     </div>
   )
 }
@@ -596,29 +596,40 @@ export default function Sprechen() {
 // ─── Practice tab ─────────────────────────────────────────────────────────────
 
 function PracticeTab() {
+  const { user } = useAuth()
   const [persons, setPersons] = useState(2)
-  const [debate, setDebate] = useState(null)
-  const [teil3, setTeil3] = useState(null)
+  // A task is ready as soon as the page opens
+  const [debate, setDebate] = useState(() => randomPick(TEIL2_DEBATES))
+  const [teil3, setTeil3] = useState(() => randomPick(TEIL3_TASKS))
+  const [marked, setMarked] = useState(false)
 
   const generate = () => {
     setDebate(d => randomPick(TEIL2_DEBATES, d))
     setTeil3(t => randomPick(TEIL3_TASKS, t))
   }
 
+  const markPractised = async () => {
+    setMarked(true)
+    if (!user) return
+    await setDoc(
+      doc(db, 'users', user.uid, 'sessions', getTodayKey()),
+      { sprechen: { completed: true, completedAt: new Date().toISOString() } },
+      { merge: true }
+    ).catch(() => {})
+  }
+
   return (
     <div className="space-y-5">
-      {/* Setup card */}
-      <div className="bg-white rounded-3xl shadow-sm p-6">
-        <p className="text-sm font-semibold text-gray-500 mb-3">How many people are practicing?</p>
-        <div className="flex gap-2 mb-5">
+      {/* Setup bar */}
+      <div className="flex items-center gap-3">
+        <div className="flex bg-gray-100 rounded-xl p-1" role="group" aria-label="Number of people">
           {[2, 3].map(n => (
             <button
               key={n}
               onClick={() => setPersons(n)}
-              className={`flex-1 py-3 rounded-2xl text-base font-semibold transition-all ${
-                persons === n
-                  ? 'bg-indigo-600 text-white'
-                  : 'bg-gray-100 text-gray-500 hover:bg-gray-200'
+              aria-pressed={persons === n}
+              className={`px-4 py-2 rounded-lg text-sm font-semibold transition-colors ${
+                persons === n ? 'bg-white text-indigo-700 shadow-sm' : 'text-gray-500 hover:text-gray-700'
               }`}
             >
               {n} people
@@ -627,9 +638,9 @@ function PracticeTab() {
         </div>
         <button
           onClick={generate}
-          className="w-full py-4 bg-indigo-600 text-white text-base font-semibold rounded-2xl hover:bg-indigo-700 active:scale-[0.98] transition-all"
+          className="ml-auto px-4 py-2.5 text-sm font-semibold text-indigo-700 bg-indigo-50 hover:bg-indigo-100 rounded-xl transition-colors"
         >
-          {debate ? 'Generate new topics' : 'Generate topics'}
+          New task
         </button>
       </div>
 
@@ -658,7 +669,7 @@ function PracticeTab() {
                         <span className={`text-xs font-bold uppercase tracking-widest ${color.text}`}>
                           Karte {PERSON_LABELS[i]}
                         </span>
-                        <span className="text-xs text-gray-400">· Person {PERSON_LABELS[i]}</span>
+                        <span className="text-xs text-gray-500">· Person {PERSON_LABELS[i]}</span>
                       </div>
                       <div className="p-4 bg-white">
                         <h3 className="text-sm font-bold text-gray-900 leading-snug mb-2">{card.headline}</h3>
@@ -700,7 +711,7 @@ function PracticeTab() {
               <ul className="space-y-2.5 mb-6">
                 {teil3.points.map((p, i) => (
                   <li key={i} className="flex gap-3 items-start">
-                    <span className="text-gray-400 font-medium mt-0.5 select-none flex-shrink-0">–</span>
+                    <span className="text-gray-500 font-medium mt-0.5 select-none flex-shrink-0">–</span>
                     <span className="text-base text-gray-800 leading-relaxed">{p}</span>
                   </li>
                 ))}
@@ -739,6 +750,18 @@ function PracticeTab() {
               ))}
             </div>
           </div>
+
+          {/* Done → counts on Home's Today list */}
+          {marked ? (
+            <UpNext current="speaking" />
+          ) : (
+            <button
+              onClick={markPractised}
+              className="w-full py-4 rounded-2xl text-base font-semibold border-2 border-green-200 text-green-700 hover:bg-green-50 active:scale-[0.98] transition-all"
+            >
+              ✓ Mark as practised
+            </button>
+          )}
         </>
       )}
     </div>
@@ -790,7 +813,7 @@ function DialogBlock({ persons, buildPrompt }) {
             )
           })}
         </div>
-        <p className="text-xs text-gray-400 mt-4 italic">
+        <p className="text-xs text-gray-500 mt-4 italic">
           AI-generated model dialogue. Use it as inspiration — your own examples and reactions score best.
         </p>
       </div>
@@ -819,7 +842,7 @@ function DialogBlock({ persons, buildPrompt }) {
             <div className="w-4 h-4 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
             Beispieldialog wird erstellt …
           </>
-        ) : '💬 Show example dialogue'}
+        ) : 'Show example dialogue'}
       </button>
     </div>
   )
@@ -844,13 +867,13 @@ function TipsTab() {
               <div className="flex items-baseline gap-2 mb-1 flex-wrap">
                 <span className="text-indigo-600 font-bold">{t.teil}</span>
                 <span className="font-bold text-gray-900">{t.name}</span>
-                <span className="text-gray-400 text-xs">{t.time}</span>
+                <span className="text-gray-500 text-xs">{t.time}</span>
               </div>
               <p className="text-xs text-gray-600 leading-relaxed">{t.desc}</p>
             </div>
           ))}
         </div>
-        <p className="text-xs text-gray-400 mt-4">
+        <p className="text-xs text-gray-500 mt-4">
           Preparation time: 20 minutes (with notes allowed). The exam itself takes ~15 minutes and is usually done in pairs.
         </p>
       </div>

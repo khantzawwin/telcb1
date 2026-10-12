@@ -1,56 +1,19 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { doc, getDoc, collection, query, orderBy, startAt, endAt, getDocs } from 'firebase/firestore'
+import { collection, query, orderBy, startAt, endAt, getDocs } from 'firebase/firestore'
 import { documentId } from 'firebase/firestore'
 import { db } from '../firebase'
 import { useAuth } from '../contexts/AuthContext'
-import { useNotes } from '../contexts/NotesContext'
-import { getTodayKey, getSessionSlot, isDueForReview } from '../utils/srs'
+import { useTodayPlan } from '../utils/useTodayPlan'
 
 export default function Dashboard() {
   const { user } = useAuth()
-  const { cards, grammarTopics, loading } = useNotes()
-  const [sessionDone, setSessionDone] = useState({ morning: false, evening: false })
-  const [stats, setStats] = useState({ due: 0, new: 0, total: 0 })
-  const [loadingData, setLoadingData] = useState(true)
-
-  useEffect(() => {
-    if (!user || !cards.length) return
-    loadProgress()
-  }, [user, cards])
-
-  const loadProgress = async () => {
-    try {
-      const [progressDoc, sessionDoc] = await Promise.all([
-        getDoc(doc(db, 'users', user.uid, 'meta', 'cardProgress')),
-        getDoc(doc(db, 'users', user.uid, 'sessions', getTodayKey())),
-      ])
-      const progressMap = progressDoc.exists() ? progressDoc.data() : {}
-      const sessionData = sessionDoc.exists() ? sessionDoc.data() : {}
-
-      setSessionDone({
-        morning: sessionData.morning?.completed || false,
-        evening: sessionData.evening?.completed || false,
-      })
-
-      let due = 0, newCards = 0
-      for (const card of cards) {
-        const p = progressMap[card.id]
-        if (!p) newCards++
-        else if (isDueForReview(p)) due++
-      }
-      setStats({ due, new: newCards, total: cards.length })
-    } finally {
-      setLoadingData(false)
-    }
-  }
-
-  const slot = getSessionSlot()
-  const sessionAvailable = slot === 'morning' ? !sessionDone.morning : !sessionDone.evening
+  const { tasks, review, loading } = useTodayPlan()
+  const { stats } = review
   const firstName = user?.displayName?.split(' ')[0] || 'there'
-  const todayTopic = grammarTopics[Math.floor(Date.now() / 86400000) % (grammarTopics.length || 1)]
+  const doneCount = tasks.filter(t => t.done).length
 
-  if (loading || loadingData) {
+  if (loading) {
     return (
       <div className="flex items-center justify-center h-64">
         <div className="w-6 h-6 border-2 border-indigo-500 border-t-transparent rounded-full animate-spin" />
@@ -61,66 +24,56 @@ export default function Dashboard() {
   return (
     <div className="max-w-5xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
       {/* Greeting */}
-      <div className="mb-8">
+      <div className="mb-7">
         <h1 className="text-3xl sm:text-4xl font-bold text-gray-900">Hallo, {firstName}!</h1>
         <p className="text-base text-gray-500 mt-1">
           {new Date().toLocaleDateString('en-GB', { weekday: 'long', day: 'numeric', month: 'long' })}
         </p>
       </div>
 
-      {/* Session CTA */}
-      <div className="bg-indigo-600 rounded-3xl p-6 sm:p-8 text-white mb-6">
-        <p className="text-indigo-200 text-sm font-semibold uppercase tracking-widest mb-1.5 capitalize">
-          {slot} session
-        </p>
-        <h2 className="text-2xl sm:text-3xl font-bold mb-2">
-          {sessionAvailable
-            ? `${Math.min(stats.due + stats.new, 20)} cards ready`
-            : 'Session complete ✓'}
-        </h2>
-        <p className="text-indigo-200 text-base mb-5">
-          {sessionAvailable
-            ? `${stats.due} due for review · ${stats.new} new`
-            : 'Great work! Come back for your next session.'}
-        </p>
-        {sessionAvailable && (
-          <Link
-            to="/flashcards"
-            className="inline-block bg-white text-indigo-700 font-semibold text-base px-6 py-3 rounded-2xl hover:bg-indigo-50 active:scale-95 transition-all"
-          >
-            Start Flashcards →
-          </Link>
-        )}
+      {/* Today — one tap into each task */}
+      <div className="bg-white rounded-3xl shadow-sm overflow-hidden mb-6">
+        <div className="flex items-center justify-between px-6 pt-5 pb-3">
+          <h2 className="text-lg font-bold text-gray-900">Today</h2>
+          <span className={`text-sm font-semibold ${doneCount === tasks.length ? 'text-green-700' : 'text-gray-500'}`}>
+            {doneCount} / {tasks.length} done
+          </span>
+        </div>
+        <ul className="divide-y divide-gray-100">
+          {tasks.map(task => (
+            <li key={task.key}>
+              <Link
+                to={task.to}
+                className="flex items-center gap-4 px-6 py-4 hover:bg-gray-50 active:bg-gray-100 transition-colors"
+              >
+                <span
+                  className={`w-7 h-7 rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold ${
+                    task.done ? 'bg-green-100 text-green-700' : 'border-2 border-gray-300'
+                  }`}
+                  aria-label={task.done ? 'Done' : 'Not done yet'}
+                >
+                  {task.done && '✓'}
+                </span>
+                <span className="flex-1 min-w-0">
+                  <span className={`block text-base font-semibold ${task.done ? 'text-gray-500' : 'text-gray-900'}`}>
+                    {task.title}
+                  </span>
+                  <span className="block text-sm text-gray-500 truncate">{task.detail}</span>
+                </span>
+                <span className={`text-sm font-semibold flex-shrink-0 ${task.done ? 'text-gray-500' : 'text-indigo-600'}`}>
+                  {task.done ? 'Again' : 'Start'} ›
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
       </div>
 
-      {/* Stats grid */}
-      <div className="grid grid-cols-3 gap-4 mb-6">
-        <StatCard label="Total" value={stats.total} icon={<BookIcon />} iconBg="bg-indigo-100" iconColor="text-indigo-600" />
-        <StatCard label="Due today" value={stats.due} icon={<ClockIcon />} iconBg="bg-amber-100" iconColor="text-amber-600" />
-        <StatCard label="New" value={stats.new} icon={<SparkleIcon />} iconBg="bg-green-100" iconColor="text-green-600" />
-      </div>
-
-      {/* Grammar + Sessions */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-        <div className="bg-white rounded-3xl shadow-sm p-6">
-          <div className="flex items-center justify-between mb-3">
-            <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Grammar of the Day</p>
-            <Link to="/grammar" className="text-sm text-indigo-600 font-medium">Practice →</Link>
-          </div>
-          {todayTopic ? (
-            <p className="font-semibold text-gray-900 text-base leading-snug">{todayTopic.title}</p>
-          ) : (
-            <p className="text-base text-gray-400">No grammar topics yet.</p>
-          )}
-        </div>
-
-        <div className="bg-white rounded-3xl shadow-sm p-6">
-          <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-4">Today's Sessions</p>
-          <div className="flex gap-3">
-            <SessionBadge label="Morning" done={sessionDone.morning} />
-            <SessionBadge label="Evening" done={sessionDone.evening} />
-          </div>
-        </div>
+      {/* Stats */}
+      <div className="grid grid-cols-3 gap-3 mb-6">
+        <StatCard label="Words" value={stats.total} />
+        <StatCard label="Due" value={stats.due} />
+        <StatCard label="New" value={stats.new} />
       </div>
 
       {/* Activity heatmap */}
@@ -131,25 +84,11 @@ export default function Dashboard() {
 
 // ── Sub-components ──────────────────────────────────────────────────────────
 
-function StatCard({ label, value, icon, iconBg, iconColor }) {
+function StatCard({ label, value }) {
   return (
-    <div className="bg-white rounded-3xl shadow-sm p-5 text-center">
-      <div className={`w-10 h-10 ${iconBg} rounded-2xl flex items-center justify-center mx-auto mb-3`}>
-        <span className={`w-5 h-5 ${iconColor}`}>{icon}</span>
-      </div>
-      <div className="text-3xl font-bold text-gray-900">{value}</div>
-      <div className="text-sm text-gray-400 mt-1">{label}</div>
-    </div>
-  )
-}
-
-function SessionBadge({ label, done }) {
-  return (
-    <div className={`flex items-center gap-2.5 px-5 py-3 rounded-2xl text-base font-medium ${
-      done ? 'bg-green-50 text-green-700' : 'bg-gray-100 text-gray-500'
-    }`}>
-      <span className="text-lg">{done ? '✓' : '○'}</span>
-      {label}
+    <div className="bg-white rounded-2xl shadow-sm px-4 py-3.5 text-center">
+      <div className="text-2xl font-bold text-gray-900">{value}</div>
+      <div className="text-sm text-gray-500">{label}</div>
     </div>
   )
 }
@@ -212,7 +151,11 @@ function ActivityHeatmap({ uid }) {
             (data.evening?.completed    ? 1 : 0) +
             (data.verben?.completed     ? 1 : 0) +
             (data.connectors?.completed ? 1 : 0) +
-            (data.writing?.completed    ? 1 : 0)
+            (data.werden?.completed     ? 1 : 0) +
+            (data.vergangenheit?.completed ? 1 : 0) +
+            (data.konjunktiv?.completed ? 1 : 0) +
+            (data.writing?.completed    ? 1 : 0) +
+            (data.sprechen?.completed   ? 1 : 0)
           )
         })
         setActivityMap(map)
@@ -259,7 +202,7 @@ function ActivityHeatmap({ uid }) {
       <div className="flex items-center justify-between mb-4">
         <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Study Activity</p>
         {!heatLoading && (
-          <p className="text-xs text-gray-400">
+          <p className="text-xs text-gray-500">
             {Object.values(activityMap).reduce((a, b) => a + b, 0)} activities · last 3 months
           </p>
         )}
@@ -281,7 +224,7 @@ function ActivityHeatmap({ uid }) {
             {/* Month labels */}
             <div className="flex gap-1 mb-1 ml-5">
               {weeks.map((_, wi) => (
-                <div key={wi} className="w-3 text-[10px] text-gray-400 leading-none overflow-visible whitespace-nowrap">
+                <div key={wi} className="w-3 text-[10px] text-gray-500 leading-none overflow-visible whitespace-nowrap">
                   {monthLabels[wi] || ''}
                 </div>
               ))}
@@ -292,7 +235,7 @@ function ActivityHeatmap({ uid }) {
               <div className="flex flex-col gap-1 mr-1">
                 {DAY_LABELS.map((label, i) => (
                   <div key={i} className="w-4 h-3 flex items-center">
-                    <span className="text-[10px] text-gray-400 leading-none">{label}</span>
+                    <span className="text-[10px] text-gray-500 leading-none">{label}</span>
                   </div>
                 ))}
               </div>
@@ -319,11 +262,11 @@ function ActivityHeatmap({ uid }) {
 
             {/* Legend */}
             <div className="flex items-center gap-2 mt-3 ml-5">
-              <span className="text-[10px] text-gray-400">Less</span>
+              <span className="text-[10px] text-gray-500">Less</span>
               {['bg-gray-100', 'bg-indigo-200', 'bg-indigo-400', 'bg-indigo-600'].map(c => (
                 <div key={c} className={`w-3 h-3 rounded-sm ${c}`} />
               ))}
-              <span className="text-[10px] text-gray-400">More</span>
+              <span className="text-[10px] text-gray-500">More</span>
             </div>
           </div>
         </div>
@@ -333,29 +276,3 @@ function ActivityHeatmap({ uid }) {
 }
 
 // ── Inline SVG icons ─────────────────────────────────────────────────────────
-
-function BookIcon() {
-  return (
-    <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-      <path strokeLinecap="round" strokeLinejoin="round"
-        d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-    </svg>
-  )
-}
-
-function ClockIcon() {
-  return (
-    <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-      <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-    </svg>
-  )
-}
-
-function SparkleIcon() {
-  return (
-    <svg fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-      <path strokeLinecap="round" strokeLinejoin="round"
-        d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
-    </svg>
-  )
-}

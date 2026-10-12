@@ -1,42 +1,25 @@
-import { NavLink, useNavigate, useLocation } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { NavLink, useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 import { useNavGuard } from '../contexts/NavGuardContext'
 
-// Desktop sidebar + primary bottom-nav (5 items)
-const primaryNavItems = [
+// Desktop sidebar + mobile bottom-nav. Vocab and Grammar stay active on their sub-pages.
+const navItems = [
   { to: '/', label: 'Home', icon: HomeIcon, end: true },
   { to: '/vocabulary', label: 'Vocab', icon: BookIcon },
-  { to: '/flashcards', label: 'Cards', icon: CardsIcon },
-  { to: '/verben', label: 'Verbs', icon: LinkIcon },
-  { to: '/connectors', label: 'Connect', icon: ConnectIcon },
-]
-
-// Overflow — desktop sidebar shows these too, mobile bottom-nav hides them in "More"
-const secondaryNavItems = [
   { to: '/grammar', label: 'Grammar', icon: PencilIcon },
-  { to: '/werden', label: 'werden', icon: TransformIcon },
   { to: '/writing', label: 'Writing', icon: WriteIcon },
   { to: '/sprechen', label: 'Speaking', icon: ChatIcon },
 ]
-
-const navItems = [...primaryNavItems, ...secondaryNavItems]
 
 export default function Layout({ children }) {
   const { user, logOut } = useAuth()
   const { confirmNav } = useNavGuard()
   const navigate = useNavigate()
-  const location = useLocation()
 
   // Block in-app navigation when a page has unsaved work (e.g. active exercise).
   const handleNavClick = (e) => { if (!confirmNav()) e.preventDefault() }
   const [menuOpen, setMenuOpen] = useState(false)
-  const [moreOpen, setMoreOpen] = useState(false)
-
-  const secondaryPaths = secondaryNavItems.map(n => n.to)
-  const isOnSecondaryRoute = secondaryPaths.includes(location.pathname)
-
-  useEffect(() => { setMoreOpen(false) }, [location.pathname])
 
   const handleLogOut = async () => {
     await logOut()
@@ -81,7 +64,7 @@ export default function Layout({ children }) {
             />
             <p className="text-sm font-medium text-gray-800 truncate">{user?.displayName}</p>
           </div>
-          <button onClick={handleLogOut} className="text-sm text-gray-400 hover:text-gray-600">
+          <button onClick={handleLogOut} className="text-sm text-gray-500 hover:text-gray-600">
             Sign out
           </button>
         </div>
@@ -121,52 +104,22 @@ export default function Layout({ children }) {
       {/* ── Main content ─────────────────────────── */}
       <main
         className="md:ml-64 min-h-screen pb-20 md:pb-0"
-        onClick={() => { setMenuOpen(false); setMoreOpen(false) }}
+        onClick={() => setMenuOpen(false)}
       >
         {children}
       </main>
 
       {/* ── Mobile bottom nav ─────────────────────────── */}
       <nav className="md:hidden fixed bottom-0 inset-x-0 z-20">
-        {/* More panel — slides up above the bar */}
-        {moreOpen && (
-          <div className="bg-white border-t border-gray-100 rounded-t-2xl shadow-lg overflow-hidden">
-            <div className="px-3 pt-3 pb-2">
-              <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest px-2 mb-1.5">More</p>
-              {secondaryNavItems.map(({ to, label, icon: Icon }) => (
-                <NavLink
-                  key={to}
-                  to={to}
-                  onClick={handleNavClick}
-                  className={({ isActive }) =>
-                    `flex items-center gap-3 px-4 py-3 rounded-xl text-sm font-medium transition-colors ${
-                      isActive
-                        ? 'bg-indigo-100 text-indigo-700'
-                        : 'text-gray-600 hover:bg-gray-100'
-                    }`
-                  }
-                >
-                  {({ isActive }) => (
-                    <>
-                      <Icon className={`w-5 h-5 flex-shrink-0 ${isActive ? 'text-indigo-600' : 'text-gray-400'}`} />
-                      {label}
-                    </>
-                  )}
-                </NavLink>
-              ))}
-            </div>
-          </div>
-        )}
-
         {/* Bar */}
         <div className="bg-white border-t border-gray-200 safe-bottom">
           <div className="flex">
-            {primaryNavItems.map(({ to, label, icon: Icon, end }) => (
+            {navItems.map(({ to, label, icon: Icon, end }) => (
               <NavLink
                 key={to}
                 to={to}
                 end={end}
-                onClick={(e) => { if (!confirmNav()) { e.preventDefault(); return } setMoreOpen(false) }}
+                onClick={handleNavClick}
                 className={({ isActive }) =>
                   `flex-1 flex flex-col items-center justify-center py-2.5 gap-1 text-[11px] font-medium transition-colors ${
                     isActive ? 'text-indigo-600' : 'text-gray-500'
@@ -175,23 +128,12 @@ export default function Layout({ children }) {
               >
                 {({ isActive }) => (
                   <>
-                    <Icon className={`w-5 h-5 ${isActive ? 'text-indigo-600' : 'text-gray-400'}`} />
+                    <Icon className={`w-5 h-5 ${isActive ? 'text-indigo-600' : 'text-gray-500'}`} />
                     {label}
                   </>
                 )}
               </NavLink>
             ))}
-
-            {/* More button */}
-            <button
-              onClick={(e) => { e.stopPropagation(); setMoreOpen(o => !o) }}
-              className={`flex-1 flex flex-col items-center justify-center py-2.5 gap-1 text-[11px] font-medium transition-colors ${
-                moreOpen || isOnSecondaryRoute ? 'text-indigo-600' : 'text-gray-500'
-              }`}
-            >
-              <MoreIcon className={`w-5 h-5 ${moreOpen || isOnSecondaryRoute ? 'text-indigo-600' : 'text-gray-400'}`} />
-              More
-            </button>
           </div>
         </div>
       </nav>
@@ -203,11 +145,11 @@ function AppLogo() {
   return (
     <div className="flex items-center gap-3">
       <div className="w-9 h-9 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
-        <span className="text-white text-sm font-bold">B1</span>
+        <span className="text-white text-sm font-bold">B</span>
       </div>
       <div>
-        <p className="text-base font-semibold text-gray-900 leading-tight">TELC B1</p>
-        <p className="text-sm text-gray-400 leading-tight">Trainer</p>
+        <p className="text-base font-semibold text-gray-900 leading-tight">TELC B</p>
+        <p className="text-sm text-gray-500 leading-tight">Trainer</p>
       </div>
     </div>
   )
@@ -229,14 +171,6 @@ function BookIcon({ className }) {
   )
 }
 
-function CardsIcon({ className }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-    </svg>
-  )
-}
-
 function PencilIcon({ className }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -253,24 +187,6 @@ function ChatIcon({ className }) {
   )
 }
 
-function LinkIcon({ className }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
-    </svg>
-  )
-}
-
-function ConnectIcon({ className }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <rect x="2" y="9" width="6" height="6" rx="1" />
-      <rect x="16" y="9" width="6" height="6" rx="1" />
-      <line x1="8" y1="12" x2="16" y2="12" strokeLinecap="round" />
-    </svg>
-  )
-}
-
 function WriteIcon({ className }) {
   return (
     <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -279,21 +195,3 @@ function WriteIcon({ className }) {
   )
 }
 
-function TransformIcon({ className }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v6h6M20 20v-6h-6M20 8a8 8 0 00-14.9-2M4 16a8 8 0 0014.9 2" />
-    </svg>
-  )
-}
-
-function MoreIcon({ className }) {
-  return (
-    <svg className={className} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-      <rect x="3" y="3" width="7" height="7" rx="1.5" />
-      <rect x="14" y="3" width="7" height="7" rx="1.5" />
-      <rect x="3" y="14" width="7" height="7" rx="1.5" />
-      <rect x="14" y="14" width="7" height="7" rx="1.5" />
-    </svg>
-  )
-}

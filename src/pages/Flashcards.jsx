@@ -1,4 +1,7 @@
 import { useEffect, useState } from 'react'
+import { Link, useSearchParams } from 'react-router-dom'
+import UpNext from '../components/UpNext'
+import ResultIcon from '../components/ResultIcon'
 import { doc, getDoc, setDoc } from 'firebase/firestore'
 import { db } from '../firebase'
 import { useAuth } from '../contexts/AuthContext'
@@ -29,6 +32,9 @@ export default function Flashcards() {
   const [progressMap, setProgressMap] = useState({})
   const [sessionDone, setSessionDone] = useState(false)
   const [loadingSession, setLoadingSession] = useState(true)
+  // ?anyway=1 (from "Review anyway") skips the already-done screen
+  const [searchParams] = useSearchParams()
+  const anyway = searchParams.get('anyway') === '1'
 
   const slot = getSessionSlot()
   const todayKey = getTodayKey()
@@ -46,8 +52,11 @@ export default function Flashcards() {
       ])
       const pMap = progressDoc.exists() ? progressDoc.data() : {}
       const sData = sessionDoc.exists() ? sessionDoc.data() : {}
+      const done = sData[slot]?.completed || false
       setProgressMap(pMap)
-      setSessionDone(sData[slot]?.completed || false)
+      setSessionDone(done)
+      // Start straight away — no separate start screen
+      if (!done || anyway) setSession(selectSessionCards(cards, pMap, 20))
     } finally {
       setLoadingSession(false)
     }
@@ -106,13 +115,7 @@ export default function Flashcards() {
     return <SessionAlreadyDone slot={slot} onAnyway={startSession} />
   }
 
-  if (!session) {
-    const dueCount = cards.filter(c => {
-      const p = progressMap[c.id]
-      return !p || new Date(p.nextReview) <= new Date()
-    }).length
-    return <StartScreen slot={slot} dueCount={Math.min(dueCount, 20)} onStart={startSession} />
-  }
+  if (!session) return null
 
   const card = session[cardIndex]
   const progress = (cardIndex + 1) / session.length
@@ -153,17 +156,17 @@ export default function Flashcards() {
         <div className="flex-1 min-h-0 overflow-y-auto flex flex-col items-center justify-center p-5 sm:p-10">
           {/* Type badge */}
           <span className="inline-flex items-center px-3 py-1 rounded-full text-xs font-semibold bg-gray-100 text-gray-500 uppercase tracking-wider mb-6">
-            {card.type} · L{card.lesson}
+            {card.type}
           </span>
 
           {!flipped ? (
             <div className="text-center">
               <p className="text-4xl sm:text-5xl font-bold text-gray-900 leading-tight mb-1">{card.word}</p>
-              {card.info && <p className="text-gray-400 text-base mb-2">{card.info}</p>}
+              {card.info && <p className="text-gray-500 text-base mb-2">{card.info}</p>}
               <div className="flex justify-center mt-3 mb-5">
                 <SpeakerButton text={card.word} />
               </div>
-              <div className="inline-flex items-center gap-1.5 text-gray-400 text-sm bg-gray-100 px-4 py-2 rounded-full">
+              <div className="inline-flex items-center gap-1.5 text-gray-500 text-sm bg-gray-100 px-4 py-2 rounded-full">
                 <TapIcon />
                 tap to reveal
               </div>
@@ -178,12 +181,12 @@ export default function Flashcards() {
               {card.example && (
                 <div className="bg-slate-50 rounded-2xl px-4 py-4 text-left max-w-lg mx-auto">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs font-semibold text-gray-400 uppercase tracking-widest">Beispiel</span>
+                    <span className="text-xs font-semibold text-gray-500 uppercase tracking-widest">Beispiel</span>
                     <SpeakerButton text={card.example} size="sm" />
                   </div>
                   <p className="text-base text-gray-700 italic leading-relaxed">{card.example}</p>
                   {card.exampleTranslation && (
-                    <p className="text-sm text-gray-400 mt-2 leading-relaxed">{card.exampleTranslation}</p>
+                    <p className="text-sm text-gray-500 mt-2 leading-relaxed">{card.exampleTranslation}</p>
                   )}
                 </div>
               )}
@@ -254,7 +257,7 @@ function SpeakerButton({ text, size = 'md' }) {
       className={`${sizeClass} flex items-center justify-center rounded-full transition-all flex-shrink-0
         ${speaking
           ? 'bg-indigo-100 text-indigo-600 scale-110'
-          : 'text-gray-400 hover:text-indigo-500 hover:bg-indigo-50'
+          : 'text-gray-500 hover:text-indigo-500 hover:bg-indigo-50'
         }`}
     >
       {speaking ? <SpeakerWaveIcon className={iconSize} /> : <SpeakerIcon className={iconSize} />}
@@ -281,41 +284,20 @@ function SpeakerWaveIcon({ className }) {
 
 // ── Screens ───────────────────────────────────────────────────────────────────
 
-function StartScreen({ slot, dueCount, onStart }) {
-  return (
-    <div className="flex items-center justify-center min-h-[calc(100vh-56px)] md:min-h-screen px-6">
-      <div className="bg-white rounded-3xl shadow-sm p-10 text-center max-w-sm w-full">
-        <div className="w-20 h-20 bg-indigo-100 rounded-3xl flex items-center justify-center mx-auto mb-6">
-          <span className="text-4xl">🃏</span>
-        </div>
-        <h2 className="text-2xl font-bold text-gray-900 mb-2 capitalize">{slot} Session</h2>
-        <p className="text-gray-400 mb-8 text-base">{dueCount} cards ready to review</p>
-        <button
-          onClick={onStart}
-          className="w-full bg-indigo-600 text-white font-semibold py-4 rounded-2xl text-base hover:bg-indigo-700 active:scale-[0.98] transition-all"
-        >
-          Start Session
-        </button>
-      </div>
-    </div>
-  )
-}
-
 function SessionAlreadyDone({ slot, onAnyway }) {
   return (
     <div className="flex items-center justify-center min-h-[calc(100vh-56px)] md:min-h-screen px-6">
       <div className="bg-white rounded-3xl shadow-sm p-10 text-center max-w-sm w-full">
-        <div className="w-20 h-20 bg-green-100 rounded-3xl flex items-center justify-center mx-auto mb-6">
-          <span className="text-4xl">✅</span>
-        </div>
+        <ResultIcon tone="perfect" size="lg" />
         <h2 className="text-2xl font-bold text-gray-900 mb-2 capitalize">{slot} session done!</h2>
-        <p className="text-gray-400 mb-8 text-base">Come back later for your next session.</p>
+        <p className="text-gray-500 mb-8 text-base">Come back later for your next session.</p>
         <button
           onClick={onAnyway}
           className="w-full border-2 border-gray-200 text-gray-600 font-semibold py-4 rounded-2xl text-base hover:border-indigo-300 hover:text-indigo-600 active:scale-[0.98] transition-all"
         >
           Practice anyway
         </button>
+        <BackToVocab />
       </div>
     </div>
   )
@@ -329,11 +311,9 @@ function CompletionScreen({ total, correct, slot }) {
   return (
     <div className="flex items-center justify-center min-h-[calc(100vh-56px)] md:min-h-screen px-6">
       <div className="bg-white rounded-3xl shadow-sm p-10 text-center max-w-sm w-full">
-        <div className={`w-20 h-20 ${isPerfect ? 'bg-green-100' : isGood ? 'bg-indigo-100' : 'bg-amber-100'} rounded-3xl flex items-center justify-center mx-auto mb-6`}>
-          <span className="text-4xl">{isPerfect ? '🎉' : isGood ? '💪' : '📖'}</span>
-        </div>
+        <ResultIcon tone={isPerfect ? 'perfect' : isGood ? 'good' : 'study'} size="lg" />
         <h2 className="text-2xl font-bold text-gray-900 mb-1">Session complete!</h2>
-        <p className="text-gray-400 mb-8 text-base">{correct} of {total} cards correct</p>
+        <p className="text-gray-500 mb-8 text-base">{correct} of {total} cards correct</p>
 
         {/* Score ring */}
         <div className="relative w-28 h-28 mx-auto mb-8">
@@ -354,11 +334,21 @@ function CompletionScreen({ total, correct, slot }) {
           </div>
         </div>
 
-        <p className="text-sm text-gray-400">
+        <p className="text-sm text-gray-500">
           {slot === 'morning' ? 'Evening session available after 14:00.' : 'See you tomorrow!'}
         </p>
+        <UpNext current="flashcards" className="mt-6" />
+        <BackToVocab />
       </div>
     </div>
+  )
+}
+
+function BackToVocab() {
+  return (
+    <Link to="/vocabulary" className="inline-block mt-4 py-2 text-sm font-medium text-gray-500 hover:text-indigo-600">
+      ← Back to Vocab
+    </Link>
   )
 }
 

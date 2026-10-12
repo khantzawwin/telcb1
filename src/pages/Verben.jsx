@@ -2,6 +2,8 @@ import { useState, useMemo, useEffect } from 'react'
 import { doc, setDoc } from 'firebase/firestore'
 import { db } from '../firebase'
 import { useAuth } from '../contexts/AuthContext'
+import { BackToGrammar, ReferenceSection, PracticeHeading } from '../components/DrillLayout'
+import UpNext from '../components/UpNext'
 import { useNavGuard } from '../contexts/NavGuardContext'
 import { getTodayKey } from '../utils/srs'
 
@@ -503,28 +505,19 @@ function detectCase(explanation = '') {
 // ─── Main component ───────────────────────────────────────────────────────────
 
 export default function Verben() {
-  const [tab, setTab] = useState('exercise')
 
   return (
     <div className="max-w-3xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
+      <BackToGrammar to="/grammar#verben" label="Verben mit Präpositionen" />
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Verben mit Präpositionen</h1>
-      <p className="text-base text-gray-400 mb-8">Fill-in-the-blank practice · A2 + B1 · 50 questions per session from a pool of {EXERCISES.length}</p>
+      <p className="text-base text-gray-500 mb-8">Fill-in-the-blank practice · A2 + B1 · 50 questions per session from a pool of {EXERCISES.length}</p>
 
-      <div className="flex gap-1 bg-gray-100 p-1 rounded-2xl mb-8 w-fit">
-        {[['exercise', 'Exercise'], ['reference', 'Reference List']].map(([key, label]) => (
-          <button
-            key={key}
-            onClick={() => setTab(key)}
-            className={`px-5 py-2.5 rounded-xl text-sm font-semibold transition-all ${
-              tab === key ? 'bg-white text-gray-900 shadow-sm' : 'text-gray-500 hover:text-gray-700'
-            }`}
-          >
-            {label}
-          </button>
-        ))}
-      </div>
+      <ReferenceSection title="Reference list">
+        <ReferenceTab />
+      </ReferenceSection>
 
-      {tab === 'exercise' ? <ExerciseTab /> : <ReferenceTab />}
+      <PracticeHeading />
+      <ExerciseTab />
     </div>
   )
 }
@@ -613,7 +606,7 @@ function ExerciseTab() {
           {score}/{questions.length}
         </div>
         <p className="text-gray-500 mb-1">{pct}% correct</p>
-        <p className="text-sm text-gray-400 mb-8">
+        <p className="text-sm text-gray-500 mb-8">
           {missed === 0 ? 'Perfect — every pattern correct! 🎉' :
            pct >= 70 ? `You missed ${missed}. Drill them now while they're fresh.` :
            `${missed} to review. Repetition is how these patterns stick.`}
@@ -637,6 +630,7 @@ function ExerciseTab() {
         >
           New session
         </button>
+        <UpNext current="drill" className="mt-6 text-left" />
       </div>
     )
   }
@@ -644,7 +638,7 @@ function ExerciseTab() {
   return (
     <div className="space-y-4">
       {/* Progress */}
-      <div className="flex items-center justify-between text-sm text-gray-400 mb-1">
+      <div className="flex items-center justify-between text-sm text-gray-500 mb-1">
         <span>
           {isReview && <span className="font-semibold text-indigo-500">Review · </span>}
           Question {index + 1} of {questions.length}
@@ -661,7 +655,7 @@ function ExerciseTab() {
       {/* Question card */}
       <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
         <div className="px-6 py-3 bg-slate-50 border-b border-gray-100">
-          <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">{q.verb}</span>
+          <span className="text-xs font-bold text-gray-500 uppercase tracking-widest">{q.verb}</span>
         </div>
         <div className="px-6 pt-6 pb-5">
           {/* Sentence */}
@@ -689,7 +683,7 @@ function ExerciseTab() {
               if (answered) {
                 if (opt === q.answer) style = 'bg-green-50 text-green-700 border border-green-300 font-semibold'
                 else if (opt === selected) style = 'bg-red-50 text-red-600 border border-red-300'
-                else style = 'bg-gray-50 text-gray-400 border border-gray-100'
+                else style = 'bg-gray-50 text-gray-500 border border-gray-100'
               }
               return (
                 <button
@@ -867,7 +861,7 @@ function ReferenceTab() {
       <div className="bg-white rounded-3xl shadow-sm overflow-hidden">
         <div className="px-6 py-4 border-b border-gray-100">
           <p className="text-sm font-bold text-gray-800">Which case does each preposition take?</p>
-          <p className="text-xs text-gray-400 mt-0.5">With fixed verb + preposition expressions, the verb determines the case — but most prepositions always use the same one.</p>
+          <p className="text-xs text-gray-500 mt-0.5">With fixed verb + preposition expressions, the verb determines the case — but most prepositions always use the same one.</p>
         </div>
 
         <div className="divide-y divide-gray-100">
@@ -938,7 +932,7 @@ function ReferenceTab() {
       </div>
 
       {/* ── Verb groups ── */}
-      <p className="text-xs text-gray-400 px-1">Tap a preposition below to see all verbs and example sentences.</p>
+      <p className="text-xs text-gray-500 px-1">Tap a preposition below to see all verbs and example sentences.</p>
       {VERB_GROUPS.map((group) => {
         const key = `${group.preposition}-${group.case}`
         const isOpen = open === key
@@ -953,9 +947,9 @@ function ReferenceTab() {
                   {group.preposition}
                 </span>
                 <span className="text-sm text-gray-500">+ {group.case}</span>
-                <span className="text-xs text-gray-400">({group.verbs.length} verbs)</span>
+                <span className="text-xs text-gray-500">({group.verbs.length} verbs)</span>
               </div>
-              <svg className={`w-4 h-4 text-gray-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <svg className={`w-4 h-4 text-gray-500 transition-transform ${isOpen ? 'rotate-180' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
               </svg>
             </button>
@@ -965,7 +959,7 @@ function ReferenceTab() {
                 {group.verbs.map((v, j) => (
                   <div key={j} className={`px-6 py-4 ${j < group.verbs.length - 1 ? 'border-b border-gray-50' : ''}`}>
                     <p className="text-sm font-bold text-gray-900">{v.verb}</p>
-                    <p className="text-xs text-gray-400 mt-0.5">{v.english}</p>
+                    <p className="text-xs text-gray-500 mt-0.5">{v.english}</p>
                     <p className="text-xs text-gray-600 mt-1.5 italic leading-relaxed">{v.example}</p>
                   </div>
                 ))}

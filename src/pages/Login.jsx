@@ -32,9 +32,9 @@ export default function Login() {
         {/* Logo */}
         <div className="text-center mb-8">
           <div className="w-20 h-20 bg-indigo-600 rounded-3xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-indigo-200">
-            <span className="text-white text-3xl font-bold">B1</span>
+            <span className="text-white text-3xl font-bold">B</span>
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">TELC B1 Trainer</h1>
+          <h1 className="text-2xl font-bold text-gray-900">TELC B Trainer</h1>
           <p className="text-sm text-gray-500 mt-2 leading-relaxed">
             Spaced repetition · Grammar practice<br />Progress tracked to your account
           </p>
@@ -63,7 +63,7 @@ export default function Login() {
           {error && <p className="text-xs text-red-500 text-center mt-3">{error}</p>}
         </div>
 
-        <p className="text-center text-xs text-gray-400 mt-6">
+        <p className="text-center text-xs text-gray-500 mt-6">
           For personal study use only.
         </p>
       </div>
