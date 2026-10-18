@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react'
 import { doc, getDoc } from 'firebase/firestore'
 import { db } from '../firebase'
+import { sessionKeyFor } from '../contexts/LevelContext'
 import { getTodayKey, getSessionSlot, isDueForReview } from './srs'
 
 // Flashcard review status for today: due/new/total counts and which
-// sessions (morning/evening) are already done.
-export function useReviewStats(user, cards) {
+// sessions (morning/evening) are already done. `cards` is the current level's
+// deck; B2 sessions are stored as b2_morning / b2_evening.
+export function useReviewStats(user, cards, level = 'B1') {
   const [sessionDone, setSessionDone] = useState({ morning: false, evening: false })
   const [stats, setStats] = useState({ due: 0, new: 0, total: 0 })
   const [loading, setLoading] = useState(true)
@@ -24,8 +26,8 @@ export function useReviewStats(user, cards) {
         const sessionData = sessionDoc.exists() ? sessionDoc.data() : {}
 
         setSessionDone({
-          morning: sessionData.morning?.completed || false,
-          evening: sessionData.evening?.completed || false,
+          morning: sessionData[sessionKeyFor(level, 'morning')]?.completed || false,
+          evening: sessionData[sessionKeyFor(level, 'evening')]?.completed || false,
         })
 
         let due = 0, newCards = 0
@@ -41,7 +43,7 @@ export function useReviewStats(user, cards) {
     }
     load()
     return () => { cancelled = true }
-  }, [user, cards])
+  }, [user, cards, level])
 
   const slot = getSessionSlot()
   const sessionAvailable = slot === 'morning' ? !sessionDone.morning : !sessionDone.evening

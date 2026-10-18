@@ -5,10 +5,17 @@ import { VERB_GROUPS, IRREGULAR_VERBS } from '../data/irregularVerbs'
 
 const SESSION_SIZE = 20
 
-export default function Vergangenheit() {
+// Used by B1 (/grammar/vergangenheit/practice) and B2 (/grammar/b2/vergangenheit).
+// B2 keeps the verb groups on their own page, so it passes verbGroupsLink instead.
+export default function Vergangenheit({
+  back = { to: '/grammar#vergangenheit', label: 'Zeitformen der Vergangenheit' },
+  sessionKey = 'vergangenheit',
+  verbGroupsLink = null,
+  makeDrill = makeSession,
+}) {
   return (
     <div className="max-w-3xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
-      <BackToGrammar to="/grammar#vergangenheit" label="Zeitformen der Vergangenheit" />
+      <BackToGrammar to={back.to} label={back.label} />
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-2">Die Vergangenheit</h1>
       <p className="text-base text-gray-500 mb-8">
         Perfekt, Präteritum & Plusquamperfekt · Partizip II · {IRREGULAR_VERBS.length} unregelmäßige Verben
@@ -21,15 +28,17 @@ export default function Vergangenheit() {
         <ReferenceSection title="Partizip II bilden">
           <PartizipGuide />
         </ReferenceSection>
-        <ReferenceSection title={`Unregelmäßige Verben nach Gruppen (${IRREGULAR_VERBS.length})`}>
-          <VerbGroups />
-        </ReferenceSection>
+        {verbGroupsLink || (
+          <ReferenceSection title={`Unregelmäßige Verben nach Gruppen (${IRREGULAR_VERBS.length})`}>
+            <VerbGroups />
+          </ReferenceSection>
+        )}
       </div>
 
       <PracticeHeading />
       <ChoiceDrill
-        makeSession={makeSession}
-        sessionKey="vergangenheit"
+        makeSession={makeDrill}
+        sessionKey={sessionKey}
         perfectText="Perfect — every form correct!"
       />
     </div>
@@ -163,7 +172,7 @@ function PartizipGuide() {
 
 // ─── Learn: irregular verbs by vowel group ────────────────────────────────────
 
-function VerbGroups() {
+export function VerbGroups({ groups = VERB_GROUPS }) {
   return (
     <div className="space-y-5">
       <p className="text-base text-gray-700 leading-relaxed">
@@ -171,7 +180,7 @@ function VerbGroups() {
         Read the pattern as <strong>Infinitiv – Präteritum – Partizip II</strong>.
         <span className="text-gray-500"> „ist" = Perfekt with sein, „hat" = with haben.</span>
       </p>
-      {VERB_GROUPS.map(g => (
+      {groups.map(g => (
         <div key={g.id} className="bg-white rounded-3xl shadow-sm p-5 sm:p-6">
           <div className="flex items-baseline justify-between gap-3 mb-1">
             <h3 className="text-lg font-bold text-indigo-700">{g.label}</h3>
@@ -216,9 +225,9 @@ function VerbGroups() {
 // Plusquamperfekt). Wrong options are the typical learner mistakes:
 // regularised forms (gebleibt, findete), ge + infinitive (gebleiben), etc.
 
-function makeSession() {
-  const auxVerbs = IRREGULAR_VERBS.filter(v => !v.both)
-  const picks = shuffle(IRREGULAR_VERBS).slice(0, SESSION_SIZE)
+export function makeSession(verbs = IRREGULAR_VERBS, size = SESSION_SIZE) {
+  const auxVerbs = verbs.filter(v => !v.both).length ? verbs.filter(v => !v.both) : IRREGULAR_VERBS.filter(v => !v.both)
+  const picks = shuffle(verbs).slice(0, size)
   return picks.map((v, i) => {
     const type = i % 5 < 2 ? 'part' : i % 5 < 4 ? 'prat' : 'aux'
     const q = type === 'aux'

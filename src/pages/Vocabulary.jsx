@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import { useNotes } from '../contexts/NotesContext'
+import { useLevel } from '../contexts/LevelContext'
 import { useReviewStats } from '../utils/useReviewStats'
 
 const TYPE_LABELS = { noun: 'Noun', verb: 'Verb', adjective: 'Adj', phrase: 'Phrase', other: 'Other' }
@@ -14,7 +15,9 @@ const TYPE_COLORS = {
 }
 
 export default function Vocabulary() {
+  // Only the current level's words (B1 or B2)
   const { lessons, cards, loading, error } = useNotes()
+  const { level } = useLevel()
   const [search, setSearch] = useState('')
   const [typeFilter, setTypeFilter] = useState('all')
   const [lessonFilter, setLessonFilter] = useState('all')
@@ -34,9 +37,9 @@ export default function Vocabulary() {
 
   return (
     <div className="max-w-6xl mx-auto px-6 sm:px-10 py-8 sm:py-12">
-      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-7">Vocabulary</h1>
+      <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-7">{level} Wortschatz</h1>
 
-      <ReviewCard cards={cards} />
+      <ReviewCard cards={cards} level={level} />
 
       {/* Filters */}
       <div className="space-y-3 mb-7">
@@ -61,7 +64,7 @@ export default function Vocabulary() {
             onChange={e => setLessonFilter(e.target.value)}
             className="flex-1 min-w-0 px-4 py-3 border border-gray-200 rounded-xl text-base bg-white focus:outline-none focus:ring-2 focus:ring-indigo-400"
           >
-            <option value="all">All lessons</option>
+            <option value="all">All {level === 'B2' ? 'classes' : 'lessons'}</option>
             {lessons.map(l => <option key={l.number} value={l.number}>{l.title}</option>)}
           </select>
           <span className="text-sm text-gray-500 self-center whitespace-nowrap">{filtered.length} words</span>
@@ -87,16 +90,16 @@ export default function Vocabulary() {
 }
 
 // Today's flashcard review — opens the SRS session at /vocabulary/review
-function ReviewCard({ cards }) {
+function ReviewCard({ cards, level }) {
   const { user } = useAuth()
-  const { stats, slot, sessionAvailable, loading } = useReviewStats(user, cards)
+  const { stats, slot, sessionAvailable, loading } = useReviewStats(user, cards, level)
   const ready = Math.min(stats.due + stats.new, 20)
 
   return (
     <div className="bg-indigo-600 rounded-3xl p-6 sm:p-7 text-white mb-7 flex flex-col sm:flex-row sm:items-center gap-4">
       <div className="flex-1">
         <p className="text-indigo-200 text-sm font-semibold uppercase tracking-widest mb-1 capitalize">
-          {slot} flashcards
+          {level} · {slot} flashcards
         </p>
         <h2 className="text-2xl font-bold">
           {loading ? '…' : sessionAvailable ? `${ready} cards ready` : 'Review complete ✓'}

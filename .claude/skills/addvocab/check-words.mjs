@@ -15,7 +15,7 @@ for (const w of words) {
     missing++
     console.log(`✗ ${w} — not found as a card`)
   } else {
-    for (const c of hits) console.log(`✓ ${c.word} — ${c.translation} · ${c.lessonTitle}${c.example ? '' : ' · (no example)'}`)
+    for (const c of hits) console.log(`✓ ${c.word} — ${c.translation} · ${c.level} · ${c.lessonTitle}${c.example ? '' : ' · (no example)'}`)
   }
 }
 console.log(`${cards.length} cards total${missing ? ` · ${missing} missing` : ''}`)

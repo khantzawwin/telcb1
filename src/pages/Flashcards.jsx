@@ -6,6 +6,7 @@ import { doc, getDoc, setDoc } from 'firebase/firestore'
 import { db } from '../firebase'
 import { useAuth } from '../contexts/AuthContext'
 import { useNotes } from '../contexts/NotesContext'
+import { useLevel, sessionKeyFor } from '../contexts/LevelContext'
 import { calculateNextReview, selectSessionCards, getTodayKey, getSessionSlot } from '../utils/srs'
 
 const RATINGS = [
@@ -23,7 +24,9 @@ function cancelSpeech() {
 
 export default function Flashcards() {
   const { user } = useAuth()
+  // Cards are already only the current level (B1 or B2)
   const { cards, loading } = useNotes()
+  const { level } = useLevel()
   const [session, setSession] = useState(null)
   const [cardIndex, setCardIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
@@ -37,12 +40,14 @@ export default function Flashcards() {
   const anyway = searchParams.get('anyway') === '1'
 
   const slot = getSessionSlot()
+  // Each level has its own morning/evening review (B2: b2_morning, b2_evening)
+  const slotKey = sessionKeyFor(level, slot)
   const todayKey = getTodayKey()
 
   useEffect(() => {
     if (!user || !cards.length) return
     init()
-  }, [user, cards])
+  }, [user, cards, level])
 
   const init = async () => {
     try {
@@ -52,11 +57,11 @@ export default function Flashcards() {
       ])
       const pMap = progressDoc.exists() ? progressDoc.data() : {}
       const sData = sessionDoc.exists() ? sessionDoc.data() : {}
-      const done = sData[slot]?.completed || false
+      const done = sData[slotKey]?.completed || false
       setProgressMap(pMap)
       setSessionDone(done)
       // Start straight away — no separate start screen
-      if (!done || anyway) setSession(selectSessionCards(cards, pMap, 20))
+      setSession(!done || anyway ? pickCards(pMap) : null)
     } finally {
       setLoadingSession(false)
     }
@@ -64,12 +69,17 @@ export default function Flashcards() {
 
   const startSession = () => {
     cancelSpeech()
-    const sessionCards = selectSessionCards(cards, progressMap, 20)
-    setSession(sessionCards)
+    setSession(pickCards(progressMap))
     setCardIndex(0)
     setFlipped(false)
     setResults([])
     setSessionComplete(false)
+  }
+
+  // Due + new cards first; when nothing is due (small deck), review a random 20
+  const pickCards = (pMap) => {
+    const selected = selectSessionCards(cards, pMap, 20)
+    return selected.length ? selected : [...cards].sort(() => Math.random() - 0.5).slice(0, 20)
   }
 
   const handleRate = async (rating) => {
@@ -88,7 +98,7 @@ export default function Flashcards() {
     if (cardIndex + 1 >= session.length) {
       const correct = newResults.filter(r => r.rating >= 2).length
       await setDoc(doc(db, 'users', user.uid, 'sessions', todayKey), {
-        [slot]: { completed: true, cardsReviewed: session.length, correct, completedAt: new Date().toISOString() }
+        [slotKey]: { completed: true, cardsReviewed: session.length, correct, completedAt: new Date().toISOString() }
       }, { merge: true })
       setSessionDone(true)
       setSessionComplete(true)
@@ -133,6 +143,7 @@ export default function Flashcards() {
                     h-[calc(100dvh-116px)] md:h-dvh overflow-hidden">
       {/* Progress */}
       <div className="flex items-center gap-3 mb-3 flex-shrink-0">
+        <span className="text-xs font-bold text-indigo-700 bg-indigo-50 px-2 py-0.5 rounded-full">{level}</span>
         <div className="flex-1 bg-gray-200 rounded-full h-2">
           <div
             className="bg-indigo-500 h-2 rounded-full transition-all duration-300"

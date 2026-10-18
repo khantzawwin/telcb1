@@ -1,21 +1,35 @@
-import { NavLink, useNavigate } from 'react-router-dom'
+import { NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 import { useAuth } from '../contexts/AuthContext'
 import { useNavGuard } from '../contexts/NavGuardContext'
+import { useLevel } from '../contexts/LevelContext'
 
 // Desktop sidebar + mobile bottom-nav. Vocab and Grammar stay active on their sub-pages.
-const navItems = [
+// Writing and Speaking are B1 exam practice, so they only show in B1.
+const NAV_ITEMS = [
   { to: '/', label: 'Home', icon: HomeIcon, end: true },
   { to: '/vocabulary', label: 'Vocab', icon: BookIcon },
   { to: '/grammar', label: 'Grammar', icon: PencilIcon },
-  { to: '/writing', label: 'Writing', icon: WriteIcon },
-  { to: '/sprechen', label: 'Speaking', icon: ChatIcon },
+  { to: '/writing', label: 'Writing', icon: WriteIcon, b1Only: true },
+  { to: '/sprechen', label: 'Speaking', icon: ChatIcon, b1Only: true },
 ]
 
 export default function Layout({ children }) {
   const { user, logOut } = useAuth()
   const { confirmNav } = useNavGuard()
   const navigate = useNavigate()
+  const { pathname } = useLocation()
+  const { level, setLevel } = useLevel()
+  const navItems = NAV_ITEMS.filter(i => level === 'B1' || !i.b1Only)
+
+  // Switching level keeps you in the same section (Vocab → Vocab), but on
+  // that level's main page, since sub-pages belong to one level.
+  const switchLevel = next => {
+    if (next === level || !confirmNav()) return
+    setLevel(next)
+    const section = NAV_ITEMS.find(i => !i.end && pathname.startsWith(i.to))
+    navigate(section && (next === 'B1' || !section.b1Only) ? section.to : '/')
+  }
 
   // Block in-app navigation when a page has unsaved work (e.g. active exercise).
   const handleNavClick = (e) => { if (!confirmNav()) e.preventDefault() }
@@ -30,8 +44,9 @@ export default function Layout({ children }) {
     <div className="min-h-screen bg-slate-50">
       {/* ── Desktop sidebar ─────────────────────────── */}
       <aside className="hidden md:flex flex-col w-64 bg-white border-r border-gray-200 fixed h-full z-20">
-        <div className="px-5 py-5 border-b border-gray-100">
-          <AppLogo />
+        <div className="px-5 py-5 border-b border-gray-100 space-y-4">
+          <AppLogo level={level} />
+          <LevelSwitch level={level} onChange={switchLevel} />
         </div>
 
         <nav className="flex-1 px-3 py-4 space-y-1">
@@ -71,8 +86,9 @@ export default function Layout({ children }) {
       </aside>
 
       {/* ── Mobile top bar ─────────────────────────── */}
-      <header className="md:hidden sticky top-0 z-20 bg-white border-b border-gray-200 flex items-center justify-between px-4 py-3 safe-top">
-        <AppLogo />
+      <header className="md:hidden sticky top-0 z-20 bg-white border-b border-gray-200 flex items-center justify-between gap-3 px-4 py-3 safe-top">
+        <AppLogo level={level} compact />
+        <LevelSwitch level={level} onChange={switchLevel} className="ml-auto" />
         <button
           onClick={() => setMenuOpen(o => !o)}
           className="p-2 rounded-lg text-gray-500 hover:bg-gray-100"
@@ -141,16 +157,36 @@ export default function Layout({ children }) {
   )
 }
 
-function AppLogo() {
+function AppLogo({ level, compact = false }) {
   return (
     <div className="flex items-center gap-3">
       <div className="w-9 h-9 bg-indigo-600 rounded-lg flex items-center justify-center flex-shrink-0">
-        <span className="text-white text-sm font-bold">B</span>
+        <span className="text-white text-sm font-bold">{level}</span>
       </div>
-      <div>
-        <p className="text-base font-semibold text-gray-900 leading-tight">TELC B</p>
+      <div className={compact ? 'hidden min-[380px]:block' : ''}>
+        <p className="text-base font-semibold text-gray-900 leading-tight">TELC {level}</p>
         <p className="text-sm text-gray-500 leading-tight">Trainer</p>
       </div>
+    </div>
+  )
+}
+
+// B2 | B1 segmented control. Each level has its own words, grammar and plan.
+function LevelSwitch({ level, onChange, className = '' }) {
+  return (
+    <div role="group" aria-label="Exam level" className={`flex p-1 bg-gray-100 rounded-xl ${className}`}>
+      {['B2', 'B1'].map(l => (
+        <button
+          key={l}
+          onClick={() => onChange(l)}
+          aria-pressed={level === l}
+          className={`flex-1 min-w-[3.25rem] min-h-[40px] px-3 rounded-lg text-sm font-bold transition-colors ${
+            level === l ? 'bg-white text-indigo-700 shadow-sm' : 'text-gray-500 hover:text-gray-800'
+          }`}
+        >
+          {l}
+        </button>
+      ))}
     </div>
   )
 }

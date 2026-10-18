@@ -1,3 +1,7 @@
+// Klasse sections from this number on are the B2 course (new school, Oct 2026).
+// Everything before (Lektion 1–n, Klasse K1–K15) is B1.
+export const B2_FROM_KLASSE = 17
+
 export function parseNotes(markdown) {
   const lessons = []
   const lessonBlocks = markdown.split(/\n(?=## (?:Lektion|Klasse))/).filter(Boolean)
@@ -15,7 +19,9 @@ export function parseNotes(markdown) {
     const vocabulary = parseVocabulary(block)
     const grammar = parseGrammar(block)
 
-    lessons.push({ number: lessonNum, title: lessonTitle, vocabulary, grammar })
+    const level = klasseMatch && parseInt(klasseMatch[1]) >= B2_FROM_KLASSE ? 'B2' : 'B1'
+
+    lessons.push({ number: lessonNum, title: lessonTitle, level, vocabulary, grammar })
   }
 
   lessons.sort((a, b) => a.number - b.number)
@@ -147,6 +153,7 @@ export function buildCardList(lessons) {
         type: word.type,
         lesson: lesson.number,
         lessonTitle: lesson.title,
+        level: lesson.level,
         info: word.info,
         notes: word.notes,
         example: word.examples[0]?.german || '',

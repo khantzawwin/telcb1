@@ -4587,6 +4587,9 @@ Perfekt: **hat weggeworfen**
 > Das sogenannte Kleingedruckte im Vertrag ist sehr wichtig.
 > *(The so-called fine print in the contract is very important.)*
 
+> Das sogenannte Coronavirus hat 2020 die ganze Welt verändert.
+> *(The so-called coronavirus changed the whole world in 2020.)*
+
 ---
 
 **wert** — *worth / worthy*
@@ -4834,6 +4837,7 @@ Used to express that two things increase or change together.
 ---
 
 **die Angehörige / der Angehörige** (pl. die Angehörigen) — *relative / family member*
+- = *die Verwandten* (people from your family) · ⚠️ adjective noun: *ein Angehöriger, eine Angehörige*
 > Die Angehörigen warten nervös im Wartezimmer.
 > *(The relatives are nervously waiting in the waiting room.)*
 
@@ -5030,6 +5034,9 @@ Perfekt: **hat gelitten**
 
 > Der Patient braucht dringend eine Operation.
 > *(The patient urgently needs an operation.)*
+
+> Ich muss dringend auf die Toilette.
+> *(I urgently need to go to the toilet.)*
 
 ---
 
@@ -11187,6 +11194,7 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 - Perfekt: **hat überlebt** (inseparable, no ge-)
 - *einen Unfall / eine Krankheit überleben* = to survive an accident / an illness
 - Noun: *der / die Überlebende* = survivor
+- ⚠️ überleben takes a direct object (Akk.), no *bei*: ~~bei einem Unfall überleben~~ → *einen Unfall überleben*
 
 > Der Mann hat überlebt, weil er sofort die Polizei angerufen hat.
 > *(The man survived because he called the police immediately.)*
@@ -11197,6 +11205,7 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 - Separable: *Ich fordere … an.* · Perfekt: **hat angefordert**
 - *etwas bei / von jemandem anfordern* → *Unterlagen anfordern, einen Krankenwagen anfordern*
 - ⚠️ Not the same as **auffordern** (to tell someone to do something), see below
+- ⚠️ "a job requires a skill" = **erfordern**, not anfordern: *Die Arbeit erfordert Teamfähigkeit.*
 
 > Ich fordere bei der Schule ein Zeugnis an.
 > *(I am requesting a certificate from the school.)*
@@ -11233,6 +11242,16 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 
 #### Adjectives
 
+**aufmerksam** — *attentive / attentively*
+- *jemandem aufmerksam zuhören* = to listen to sb. attentively
+- *jemanden auf etwas aufmerksam machen* = to draw sb.'s attention to sth.
+- Noun: *die Aufmerksamkeit* = attention
+
+> Der Polizist hört den Leuten aufmerksam zu.
+> *(The police officer listens attentively to the people.)*
+
+---
+
 **bewusstlos** — *unconscious*
 - Opposite: *bei Bewusstsein* = conscious
 - *das Bewusstsein verlieren* = to lose consciousness
@@ -11248,5 +11267,326 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 
 > Nachdem er vom Fahrrad gefallen ist, hat er akute Schmerzen im Knie.
 > *(After falling off his bike, he has acute pain in his knee.)*
+
+---
+
+## Klasse K19 — Bewerbung & Beruf (Applications & Work)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**der Zuschlag** (pl. die Zuschläge) — *extra pay / bonus on top of wages (e.g. +10 %)*
+- *der Nachtzuschlag / Wochenendzuschlag / Feiertagszuschlag* = extra pay for nights / weekends / holidays
+- ① Also: surcharge (*ein Zuschlag für das Gepäck*)
+- ⚠️ Not the same as **der Zuschuss** (a contribution towards costs), see below
+
+> Yavuz' Frau bekommt oft Zuschläge, weil sie nachts und am Wochenende arbeitet.
+> *(Yavuz's wife often gets extra pay because she works nights and weekends.)*
+
+---
+
+**die Prämie** (pl. die Prämien) — *bonus (one-off payment)*
+- *eine Prämie bekommen / zahlen* · Synonym: *der Bonus*
+- ① Also: insurance premium (*die Versicherungsprämie*)
+
+> Porsche zahlt den Mitarbeitern jedes Jahr eine Prämie von etwa 8.000 Euro.
+> *(Porsche pays its employees a bonus of about 8,000 euros every year.)*
+
+---
+
+**der Zuschuss** (pl. die Zuschüsse) — *subsidy / contribution (paying part of the cost)*
+- *einen Zuschuss zu + Dat. / für + Akk. geben / bekommen*
+- Typical at work: *Zuschuss zum Kantinenessen, zum Jobticket*
+
+> Die Firma gibt einen Zuschuss zum Essen in der Kantine.
+> *(The company pays part of the cost of meals in the canteen.)*
+
+> Das BAMF gibt einen Zuschuss für die B1-Kurse.
+> *(The BAMF subsidises the B1 courses.)*
+
+---
+
+**die Anleitung** (pl. die Anleitungen) — *instructions / guide (how to do something)*
+- *die Bedienungsanleitung* = user manual · *die Gebrauchsanleitung* = instructions for use
+- *eine Anleitung lesen / befolgen* = to read / follow the instructions
+
+> Lesen Sie bitte die Anleitung, bevor Sie das Gerät benutzen.
+> *(Please read the instructions before you use the device.)*
+
+---
+
+**das Mitgefühl** (kein Plural) — *compassion / sympathy*
+- Synonym: *die Empathie*
+- *Mitgefühl zeigen / haben* = to show / have compassion
+- Condolences: *Mein herzliches Mitgefühl.* / *Ich spreche Ihnen mein Mitgefühl aus.*
+
+> In der Pflege braucht man viel Mitgefühl für die Patienten.
+> *(In care work you need a lot of compassion for the patients.)*
+
+---
+
+**die Absicherung** (pl. die Absicherungen) — *protection / safety net (financial security)*
+- *soziale Absicherung* = social security · *eine Absicherung für + Akk.*
+- Related: *absichern* (hat abgesichert) = to protect, to secure · *sich absichern* = to cover oneself
+
+> Arbeitslosengeld ist eine Absicherung für Menschen, die plötzlich arbeitslos werden.
+> *(Unemployment benefit is a safety net for people who suddenly lose their job.)*
+
+---
+
+**der Kündigungsschutz** (kein Plural) — *protection against dismissal*
+- Related: *kündigen* = to give notice, to fire / quit · *die Kündigung* = notice, dismissal
+- In Germany e.g. during pregnancy, parental leave, or for long-time employees
+
+> Schwangere Frauen haben Kündigungsschutz.
+> *(Pregnant women are protected against dismissal.)*
+
+---
+
+**die Bestechung** (pl. die Bestechungen) — *bribery*
+- Related: *bestechen* (besticht · bestach · hat bestochen) = to bribe · *bestechlich* = corrupt, bribable
+- *jemanden mit Geld bestechen* = to bribe someone with money
+
+> Der Beamte wurde wegen Bestechung verurteilt.
+> *(The official was convicted of bribery.)*
+
+---
+
+**die Faustregel** (pl. die Faustregeln) — *rule of thumb*
+- A simple, rough rule, not exact: *Als Faustregel gilt: …*
+- Synonym: *die Grundregel* (basic rule)
+
+> Als Faustregel gilt: Man sollte etwa zwei Liter Wasser pro Tag trinken.
+> *(As a rule of thumb, you should drink about two litres of water a day.)*
+
+> Als Faustregel gilt: Für die B2-Prüfung braucht man mindestens 60 Prozent.
+> *(As a rule of thumb, you need at least 60 per cent for the B2 exam.)*
+
+---
+
+**die Faust** (pl. die Fäuste) — *fist*
+- *die Faust ballen* = to clench your fist · *mit der Faust drohen* = to shake your fist (at sb.)
+- Idiom: *auf eigene Faust* = on your own (without help or permission)
+- Colloquial: *Gib mir die Faust!* = Give me a fist bump!
+
+> Der Lehrer droht den Teilnehmern, die keine Hausaufgaben machen, im Spaß mit der Faust.
+> *(The teacher jokingly shakes his fist at the participants who don't do their homework.)*
+
+> Er ist auf eigene Faust durch Asien gereist.
+> *(He travelled through Asia on his own.)*
+
+---
+
+**der / die Angehörige** (pl. die Angehörigen) — *relative / family member*
+- = *die Verwandten* (people from your family)
+- ⚠️ Adjective noun: *ein Angehöriger, eine Angehörige* · *die Angehörigen*
+
+> Im Krankenhaus dürfen nur Angehörige den Patienten besuchen.
+> *(In the hospital only relatives are allowed to visit the patient.)*
+
+---
+
+#### Verbs
+
+**sich bewerben** — *to apply (for a job / place)*
+- Irregular: *er bewirbt sich* · *bewarb sich* · Perfekt: **hat sich beworben**
+- *sich **um** + Akk. bewerben* (for what) · *sich **bei** + Dat. bewerben* (where) · *sich **als** … bewerben* (as what)
+- Related: *die Bewerbung* = application · *der Bewerber / die Bewerberin* = applicant
+
+> Ich bewerbe mich bei Siemens um eine Stelle als Ingenieur.
+> *(I'm applying to Siemens for a job as an engineer.)*
+
+---
+
+**werben** — *to advertise / to promote*
+- Irregular: *er wirbt* · *warb* · Perfekt: **hat geworben**
+- ① *für + Akk. werben* = to advertise sth.: *für ein Produkt werben*
+- ② *um + Akk. werben* = to try to win / attract: *um neue Kunden werben*
+- Related: *die Werbung* = advertising, advert
+
+> Die Firma wirbt im Internet für ihr neues Produkt.
+> *(The company advertises its new product online.)*
+
+---
+
+**erwerben** — *to acquire / to obtain (formal)*
+- Irregular: *er erwirbt* · *erwarb* · Perfekt: **hat erworben** (er- prefix, no ge-)
+- ① Skills & qualifications (most common): *Kenntnisse / Erfahrung / ein Zertifikat erwerben*
+- ② Buying (formal for *kaufen*): *ein Auto / ein Haus erwerben*
+- ⚠️ Don't mix up: **erwerben** (acquire) · **werben** (advertise) · **sich bewerben** (apply)
+
+> Ich habe ein Auto erworben.
+> *(I have acquired / bought a car.)*
+
+> In meinem letzten Job habe ich viel Erfahrung im Kundenservice erworben.
+> *(In my last job I gained a lot of experience in customer service.)*
+
+---
+
+**sich ausdrücken** — *to express oneself*
+- Separable: *Ich drücke mich … aus.* · Perfekt: **hat sich ausgedrückt**
+- *sich klar / höflich / positiv ausdrücken* = to express oneself clearly / politely / positively
+- Without *sich*: *etwas ausdrücken* = to express sth. (*Dank, Zweifel, seine Meinung ausdrücken*)
+- ① Literally: to squeeze out (*eine Zitrone ausdrücken*) · to stub out (*eine Zigarette ausdrücken*)
+- Related: *der Ausdruck* = expression
+
+> Ich habe mich in der Besprechung positiv ausgedrückt.
+> *(I expressed myself positively in the meeting.)*
+
+---
+
+**erfordern** — *to require / to demand (of a task or job)*
+- Perfekt: **hat erfordert** (er- prefix, no ge-)
+- The subject is a thing: *Die Stelle / Die Arbeit erfordert …*
+- Related: *die Anforderung* = requirement · *erforderlich* = required
+- ⚠️ Not **anfordern** (to request sth. formally, e.g. *Unterlagen anfordern*)
+
+> Die Arbeit erfordert Teamfähigkeit.
+> *(The job requires the ability to work in a team.)*
+
+---
+
+**sicherstellen** — *to make sure / to ensure*
+- Separable: *Ich stelle sicher, dass …* · Perfekt: **hat sichergestellt**
+- Usually with a *dass*-clause
+- ① Police: to seize (*Die Polizei hat Drogen sichergestellt.*)
+
+> Ich stelle sicher, dass alle Teilnehmer ein Buch haben.
+> *(I make sure that all participants have a book.)*
+
+> Du musst sicherstellen, dass du alle Dokumente hast, bevor du ins Ausland reist.
+> *(You have to make sure you have all your documents before you travel abroad.)*
+
+---
+
+**wünschen** — *to wish / to want*
+- Perfekt: **hat gewünscht**
+- *sich (Dat.) etwas wünschen* = to wish for sth. for yourself: *Ich wünsche mir …*
+- *jemandem etwas wünschen* = to wish sb. sth.: *Ich wünsche dir viel Glück!*
+- Related: *der Wunsch* (pl. Wünsche) = wish · *erwünscht* = desired
+
+> Ich wünsche mir ein Auto.
+> *(I would like a car / I wish for a car.)*
+
+---
+
+**verunsichern** — *to make someone unsure / to unsettle*
+- Perfekt: **hat verunsichert** (ver- prefix, no ge-)
+- *verunsichert sein* = to feel unsure · Related: *unsicher* = unsure
+
+> Das Spiel „Wer bin ich?" hat Yaroslav verunsichert.
+> *(The game "Who am I?" unsettled Yaroslav.)*
+
+---
+
+**beeinflussen** — *to influence / to affect*
+- Perfekt: **hat beeinflusst** (be- prefix, no ge-)
+- ⚠️ Starts with **be-**: ~~einflussen~~ · Related: *der Einfluss (auf + Akk.)* = influence
+
+> Meine erfahrenen Kollegen beeinflussen mich.
+> *(My experienced colleagues influence me.)*
+
+---
+
+#### Adjectives
+
+**belastbar** — *able to work under pressure / resilient*
+- Common in job ads and CVs: *Sie sind belastbar und teamfähig.*
+- ① Physical: able to bear a load (*eine belastbare Brücke*)
+- Related: *die Belastbarkeit* = resilience · *die Belastung* = strain, burden
+
+> Yefrem ist belastbar, weil er immer ruhig bleibt.
+> *(Yefrem works well under pressure because he always stays calm.)*
+
+---
+
+**nachweisbar** — *provable / verifiable*
+- Related: *nachweisen* (hat nachgewiesen) = to prove · *der Nachweis* = proof, certificate
+- In job ads: *nachweisbare Berufserfahrung* = proven work experience
+- More common in speech: *Ich kann meine Deutschkenntnisse nachweisen.*
+
+> Meine Deutschkenntnisse sind durch das telc-Zertifikat nachweisbar.
+> *(My German skills can be proven with the telc certificate.)*
+
+---
+
+**erwünscht** — *desired / welcome (nice to have)*
+- In job ads: *erwünscht* = wanted but not required · *erforderlich* = required
+- Opposite: *unerwünscht* = unwanted
+
+> Deutschkenntnisse sind erwünscht.
+> *(German skills are desirable.)*
+
+---
+
+**erforderlich** — *required / necessary*
+- Synonyms: *nötig, notwendig*
+- *für + Akk. erforderlich sein*
+- Related: *erfordern* = to require · *die Anforderung* = requirement
+
+> Für den B2-Kurs ist das B1-Zertifikat erforderlich.
+> *(The B1 certificate is required for the B2 course.)*
+
+---
+
+**diskret** — *discreet (keeps things private)*
+- Related: *die Diskretion* = discretion · *die Schweigepflicht* = duty of confidentiality
+- Opposite: *indiskret*
+
+> Der Arzt muss diskret sein.
+> *(The doctor has to be discreet.)*
+
+---
+
+**strafbar** — *punishable (by law) / illegal*
+- *sich strafbar machen* = to commit an offence
+- Related: *die Strafe* = punishment, fine · *bestrafen* = to punish
+- ⚠️ *strafbar* = the action is punishable · *kriminell* = describes a person or act as criminal
+
+> Ohne Führerschein Auto zu fahren, ist in Deutschland strafbar.
+> *(Driving a car without a licence is a criminal offence in Germany.)*
+
+> Schwarzarbeit ist strafbar.
+> *(Undeclared work is punishable by law.)*
+
+---
+
+**vorhanden** — *available / present (there)*
+- Mostly *vorhanden sein* = to be there, to exist (more formal than *da sein*)
+- Opposite: *nicht vorhanden* = missing, not available
+
+> Im Klassenzimmer ist ein Fernseher vorhanden.
+> *(There is a TV in the classroom.)*
+
+---
+
+**genannt** — *mentioned / called (named)*
+- Partizip II of *nennen* (nannte · hat genannt) = to name, to call, to mention
+- ① *oben genannt / die genannten …* = (the) above-mentioned
+- ② *X, genannt Y* = X, called / known as Y: *Alexander, genannt Sascha*
+- ⚠️ "the so-called …" before a noun = **sogenannt**: *das sogenannte Coronavirus*
+
+> Bitte bringen Sie die oben genannten Dokumente mit.
+> *(Please bring the documents mentioned above.)*
+
+---
+
+**dringend** — *urgent / urgently (= sofort)*
+- *ein dringender Termin* = an urgent appointment · *dringend brauchen* = to urgently need
+
+> Ich muss dringend auf die Toilette.
+> *(I urgently need to go to the toilet.)*
+
+---
+
+**sogenannt** — *so-called*
+- Before a noun, with adjective endings: *das sogenannte …, die sogenannten …*
+- Abbreviation: *sog.* · ⚠️ "mentioned" = **genannt** (*die oben genannten Dokumente*)
+
+> Das sogenannte Coronavirus hat 2020 die ganze Welt verändert.
+> *(The so-called coronavirus changed the whole world in 2020.)*
 
 ---

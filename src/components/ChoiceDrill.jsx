@@ -25,11 +25,13 @@ export function buildSession(exercises, size) {
     .map(q => ({ ...q, options: shuffle(q.options) }))
 }
 
+// q.fixedOrder keeps options in their given order (e.g. endings -e -en -er -es -em)
 function reshuffle(exercises) {
-  return shuffle(exercises).map(q => ({ ...q, options: shuffle(q.options) }))
+  return shuffle(exercises).map(q => ({ ...q, options: q.fixedOrder ? q.options : shuffle(q.options) }))
 }
 
-export default function ChoiceDrill({ makeSession, sessionKey, perfectText = 'Perfect — every answer correct!' }) {
+// upNextKey: this drill's task key on Home, so "Up next" skips it.
+export default function ChoiceDrill({ makeSession, sessionKey, perfectText = 'Perfect — every answer correct!', upNextKey = 'drill' }) {
   const { user } = useAuth()
   const { setGuard } = useNavGuard()
   const [questions, setQuestions] = useState(makeSession)
@@ -116,7 +118,7 @@ export default function ChoiceDrill({ makeSession, sessionKey, perfectText = 'Pe
         >
           New session
         </button>
-        <UpNext current="drill" className="mt-6 text-left" />
+        <UpNext current={upNextKey} className="mt-6 text-left" />
       </div>
     )
   }
@@ -156,7 +158,7 @@ export default function ChoiceDrill({ makeSession, sessionKey, perfectText = 'Pe
             ))}
           </p>
 
-          <div className="grid grid-cols-2 gap-3 mb-5">
+          <div className={`grid gap-3 mb-5 ${q.options.length === 5 ? 'grid-cols-5 gap-2' : 'grid-cols-2'}`}>
             {q.options.map(opt => {
               let style = 'bg-gray-50 text-gray-700 border border-gray-200 hover:bg-gray-100'
               if (answered) {

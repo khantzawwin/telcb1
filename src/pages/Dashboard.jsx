@@ -5,10 +5,12 @@ import { documentId } from 'firebase/firestore'
 import { db } from '../firebase'
 import { useAuth } from '../contexts/AuthContext'
 import { useTodayPlan } from '../utils/useTodayPlan'
+import { useLevel } from '../contexts/LevelContext'
 
 export default function Dashboard() {
   const { user } = useAuth()
   const { tasks, review, loading } = useTodayPlan()
+  const { level } = useLevel()
   const { stats } = review
   const firstName = user?.displayName?.split(' ')[0] || 'there'
   const doneCount = tasks.filter(t => t.done).length
@@ -34,7 +36,7 @@ export default function Dashboard() {
       {/* Today — one tap into each task */}
       <div className="bg-white rounded-3xl shadow-sm overflow-hidden mb-6">
         <div className="flex items-center justify-between px-6 pt-5 pb-3">
-          <h2 className="text-lg font-bold text-gray-900">Today</h2>
+          <h2 className="text-lg font-bold text-gray-900">Today · {level}</h2>
           <span className={`text-sm font-semibold ${doneCount === tasks.length ? 'text-green-700' : 'text-gray-500'}`}>
             {doneCount} / {tasks.length} done
           </span>
@@ -71,7 +73,7 @@ export default function Dashboard() {
 
       {/* Stats */}
       <div className="grid grid-cols-3 gap-3 mb-6">
-        <StatCard label="Words" value={stats.total} />
+        <StatCard label={`${level} words`} value={stats.total} />
         <StatCard label="Due" value={stats.due} />
         <StatCard label="New" value={stats.new} />
       </div>
@@ -145,18 +147,8 @@ function ActivityHeatmap({ uid }) {
         if (cancelled) return
         const map = {}
         snap.forEach(d => {
-          const data = d.data()
-          map[d.id] = (
-            (data.morning?.completed    ? 1 : 0) +
-            (data.evening?.completed    ? 1 : 0) +
-            (data.verben?.completed     ? 1 : 0) +
-            (data.connectors?.completed ? 1 : 0) +
-            (data.werden?.completed     ? 1 : 0) +
-            (data.vergangenheit?.completed ? 1 : 0) +
-            (data.konjunktiv?.completed ? 1 : 0) +
-            (data.writing?.completed    ? 1 : 0) +
-            (data.sprechen?.completed   ? 1 : 0)
-          )
+          // Every finished task counts (B1 and B2 keys alike)
+          map[d.id] = Object.values(d.data()).filter(v => v?.completed).length
         })
         setActivityMap(map)
       } catch {
@@ -194,7 +186,7 @@ function ActivityHeatmap({ uid }) {
     if (dateStr > toStr) return ''
     const count = activityMap[dateStr] || 0
     const label = day.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
-    return count === 0 ? `${label}: no activity` : `${label}: ${count}/5 activities completed`
+    return count === 0 ? `${label}: no activity` : `${label}: ${count} ${count === 1 ? 'activity' : 'activities'} completed`
   }
 
   return (

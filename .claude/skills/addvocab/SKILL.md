@@ -12,13 +12,18 @@ Turn each one into a clean notes entry, using the **better** definition and exam
 - **Source of truth:** `/Users/kzw/Documents/Claude/Projects/Telc_B1_Notes/notes.md`. Always edit this file, never only `public/notes.md`.
 - `./sync-notes.sh` copies it to `public/notes.md`, which the app parses with `src/utils/parseNotes.js`.
   Every `**headword** … — *translation*` line under `### Vocabulary` becomes a Vocab entry and a flashcard.
+- **B2:** the user is now in a B2 course. Every `## Klasse K17` section and later counts as **B2**
+  (`B2_FROM_KLASSE` in `parseNotes.js`). The app is split into B2 and B1 (switch in the sidebar/header):
+  in B2 mode, Vocab and flashcards show only these words; B1 mode shows only the older ones.
+  Lektion sections and Klasse K1–K15 are B1. New words always go into a B2 section.
 
 ## Steps
 
 1. **Back up first:** copy the notes file to the scratchpad before editing.
 
-2. **Check for duplicates:** grep the notes for each headword, e.g. `grep -n '^\*\*der Verbrecher\*\*'`.
-   If a word is already there, don't add it again. Tell the user where it already is, and add a new meaning or example to that entry only if theirs adds something.
+2. **Check for duplicates:** grep the notes for each headword, e.g. `grep -n '^\*\*der Verbrecher\*\*'`, and note the line numbers.
+   - **Already in a B2 section (K17 or later):** don't add it again. Tell the user where it is, and add a new meaning or example to that entry only if theirs adds something.
+   - **Only in a B1 section** (Lektion, or Klasse K1–K15): **still add a full entry to the B2 section** with the user's example, so it's part of the B2 deck. Leave the B1 entry as it is, and tell the user it was also in B1.
 
 3. **Work out each word:**
    - **Nouns:** article, plural, and the female form if one exists (`der Lehrer` → `die Lehrerin, pl. -innen`).
