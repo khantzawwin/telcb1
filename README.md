@@ -1,4 +1,4 @@
-# TELC B1 Trainer
+# Deutsch Drill
 
 A personal web app for preparing for the **telc Deutsch B1** exam. It turns a single Markdown notes file into an interactive study tool with spaced-repetition flashcards, grammar drills, verb practice, and AI-assisted writing and speaking feedback.
 

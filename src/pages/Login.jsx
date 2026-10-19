@@ -34,7 +34,7 @@ export default function Login() {
           <div className="w-20 h-20 bg-indigo-600 rounded-3xl flex items-center justify-center mx-auto mb-5 shadow-lg shadow-indigo-200">
             <span className="text-white text-3xl font-bold">B</span>
           </div>
-          <h1 className="text-2xl font-bold text-gray-900">TELC B Trainer</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Deutsch Drill</h1>
           <p className="text-sm text-gray-500 mt-2 leading-relaxed">
             Spaced repetition · Grammar practice<br />Progress tracked to your account
           </p>

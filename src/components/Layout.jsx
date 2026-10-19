@@ -164,8 +164,8 @@ function AppLogo({ level, compact = false }) {
         <span className="text-white text-sm font-bold">{level}</span>
       </div>
       <div className={compact ? 'hidden min-[380px]:block' : ''}>
-        <p className="text-base font-semibold text-gray-900 leading-tight">TELC {level}</p>
-        <p className="text-sm text-gray-500 leading-tight">Trainer</p>
+        <p className="text-base font-semibold text-gray-900 leading-tight">Deutsch Drill</p>
+        <p className="text-sm text-gray-500 leading-tight">telc {level}</p>
       </div>
     </div>
   )
