@@ -1,4 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#4F46E5"/>
-  <text x="16" y="22" font-size="18" text-anchor="middle" fill="white" font-family="serif" font-weight="bold">B1</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Deutsch Drill: white D + German tricolour -->
+  <rect width="512" height="512" rx="115" fill="#4F46E5"/>
+  <path fill="#fff" fill-rule="evenodd" d="M128 96H240A144 144 0 0 1 240 384H128Z M188 156H240A84 84 0 0 1 240 324H188Z"/>
+  <rect x="128" y="420" width="86" height="28" fill="#111827"/>
+  <rect x="213" y="420" width="86" height="28" fill="#DD0000"/>
+  <rect x="298" y="420" width="86" height="28" fill="#FFCE00"/>
 </svg>

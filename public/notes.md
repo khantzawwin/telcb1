@@ -11590,3 +11590,442 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 > *(The so-called coronavirus changed the whole world in 2020.)*
 
 ---
+
+## Klasse K21 — Lebenslauf & Anschreiben (CV & Cover Letter)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**das Gleichbehandlungsgesetz** (kein Plural) — *equal treatment act (German anti-discrimination law)*
+- Full name: *das Allgemeine Gleichbehandlungsgesetz (AGG)*
+- Related: *die Gleichbehandlung* = equal treatment · *die Diskriminierung* = discrimination
+
+> Manche Firmen wollen wegen des Gleichbehandlungsgesetzes kein Foto.
+> *(Some companies don't want a photo because of the equal treatment act.)*
+
+---
+
+**das Auftreten** (kein Plural) — *manner / the way you present yourself*
+- ① How someone behaves and comes across in front of others
+- ② Occurrence (*das Auftreten von Symptomen* = the occurrence of symptoms)
+- Verb: *auftreten* (ist aufgetreten) = to appear, to come across · *selbstbewusst auftreten* = to come across confidently
+
+> Im Kundenkontakt sind Auftreten und Ausstrahlung wichtig.
+> *(In customer-facing jobs, the way you present yourself and your charisma are important.)*
+
+---
+
+**die Ausstrahlung** (pl. die Ausstrahlungen) — *charisma / presence*
+- ① The positive effect a person has on others (*eine positive Ausstrahlung haben*)
+- ② Broadcast (TV / radio): *die Ausstrahlung der Sendung*
+- Verb: *ausstrahlen* = to radiate, to broadcast
+
+> Sie hat eine sehr freundliche Ausstrahlung.
+> *(She comes across as very friendly.)*
+
+---
+
+**die Hotellerie** (kein Plural) — *the hotel industry / hotel trade*
+- Often together: *Hotellerie und Gastronomie* = hotels and restaurants
+
+> In der Hotellerie wird viel Wert auf ein professionelles Foto gelegt.
+> *(In the hotel industry, a professional photo is considered very important.)*
+
+---
+
+**das Anerkennungsverfahren** (pl. die Anerkennungsverfahren) — *recognition procedure (for foreign qualifications)*
+- *die Anerkennung* = recognition · *anerkennen* (hat anerkannt) = to recognise
+- *einen Abschluss anerkennen lassen* = to have a qualification recognised
+
+> Das Anerkennungsverfahren prüft, ob ein ausländischer Abschluss in Deutschland gültig ist.
+> *(The recognition procedure checks whether a foreign qualification is valid in Germany.)*
+
+---
+
+**die Antragstellung** (pl. die Antragstellungen) — *submitting an application (formal)*
+- Verb phrase: *einen Antrag stellen* = to submit / file an application
+- *bei der Antragstellung* = when applying
+
+> Bei der Antragstellung brauchen Sie Ihren Pass und Ihr Zeugnis.
+> *(When you submit the application, you need your passport and your certificate.)*
+
+---
+
+**der Nachweis** (pl. die Nachweise) — *proof / evidence / certificate*
+- Documents that show that something is true (*Zeugnisse, Bescheinigungen*)
+- Adjective: *nachweisbar* = provable · Verb: *nachweisen* (hat nachgewiesen) = to prove
+
+> Zeugnisse und andere Nachweise werden kurz nach dem Antrag eingereicht.
+> *(Certificates and other proof are submitted shortly after the application.)*
+
+---
+
+**die Gleichwertigkeit** (kein Plural) — *equivalence*
+- Adjective: *gleichwertig* = equivalent, of equal value
+- = when something has the same value or quality as something else
+
+> Die Anerkennungsstelle prüft die Gleichwertigkeit des Abschlusses.
+> *(The recognition office checks whether the qualification is equivalent.)*
+
+---
+
+**der Bescheid** (pl. die Bescheide) — *official notice / decision (letter from an authority)*
+- *einen Bescheid erhalten / bekommen* = to receive an official decision
+- ⚠️ *Bescheid sagen / geben* = to let someone know (*Sag mir Bescheid!*)
+- Also in the B1 notes.
+
+> Nach der Prüfung erhält man einen Bescheid über die Anerkennung.
+> *(After the check, you receive an official decision about the recognition.)*
+
+---
+
+**die Beglaubigung** (pl. die Beglaubigungen) — *certification (official confirmation that a copy matches the original)*
+- *eine beglaubigte Kopie* = a certified copy · *beglaubigen* (hat beglaubigt) = to certify
+- Usually done by a notary (*der Notar*) or an authority
+- In practice: an official stamp (*der Stempel*) on the copy that confirms it
+
+> Für den Antrag brauchen Sie Beglaubigungen Ihrer Zeugnisse.
+> *(For the application you need certified copies of your certificates.)*
+
+---
+
+**die Bestätigung** (pl. die Bestätigungen) — *confirmation*
+- Verb: *bestätigen* (hat bestätigt) = to confirm
+- *eine Bestätigung per E-Mail bekommen* = to get a confirmation by email
+
+> Eine Beglaubigung ist die Bestätigung, dass eine Kopie genau wie das Original ist.
+> *(A certification is the confirmation that a copy is exactly like the original.)*
+
+---
+
+**die Genesung** (kein Plural) — *recovery (from an illness)*
+- Verb: *genesen* (ist genesen, formal) = to recover · everyday: *gesund werden*
+- *Gute Besserung!* = Get well soon!
+
+> Nach meiner Erkrankung habe ich drei Monate für die Genesung gebraucht.
+> *(After my illness I needed three months to recover.)*
+
+---
+
+**der Studienabbruch** (pl. die Studienabbrüche) — *dropping out of university*
+- *das Studium abbrechen* (hat abgebrochen) = to drop out · *der Studienabbrecher* = dropout
+- Compare: *der Studienfachwechsel* = changing your subject
+
+> Nach dem Studienabbruch habe ich eine Ausbildung gemacht.
+> *(After dropping out of university, I did vocational training.)*
+
+---
+
+**die Übergangsphase** (pl. die Übergangsphasen) — *transition phase*
+- *der Übergang* = transition · *übergangsweise* = temporarily
+- A neutral word for a gap in the CV (*Lücke im Lebenslauf*)
+
+> Die Zeit zwischen Studium und erstem Job war eine Übergangsphase.
+> *(The time between university and my first job was a transition phase.)*
+
+---
+
+**das Anschreiben** (pl. die Anschreiben) — *cover letter*
+- = *das Motivationsschreiben* (letter explaining why you want the job)
+- Part of the *Bewerbungsunterlagen* with *Lebenslauf, Zeugnisse, Zertifikate*
+- Also in the B1 notes.
+
+> Im Anschreiben erkläre ich, warum ich die Stelle möchte.
+> *(In the cover letter I explain why I want the job.)*
+
+---
+
+**das Arbeitszeugnis** (pl. die Arbeitszeugnisse) — *job reference (written by a former employer)*
+- In Germany employers must write one when you leave · *ein gutes Arbeitszeugnis bekommen*
+- Compare: *das Zeugnis* = school report / certificate
+
+> Mein alter Chef hat mir ein sehr gutes Arbeitszeugnis geschrieben.
+> *(My old boss wrote me a very good job reference.)*
+
+---
+
+**das Netzwerk** (pl. die Netzwerke) — *network*
+- *ein berufliches Netzwerk aufbauen* = to build a professional network
+- Verb: *sich vernetzen*
+
+> Ein gutes Netzwerk hilft bei der Jobsuche.
+> *(A good network helps when looking for a job.)*
+
+---
+
+**die Gleichbehandlung** (kein Plural) — *equal treatment*
+- *die Gleichbehandlung von Frauen und Männern*
+- Related: *das Gleichbehandlungsgesetz* · Opposite: *die Diskriminierung*
+
+> Alle Bewerber haben ein Recht auf Gleichbehandlung.
+> *(All applicants have a right to equal treatment.)*
+
+---
+
+**die Anerkennung** (pl. die Anerkennungen) — *recognition*
+- ① Official recognition of a qualification: *die Anerkennung des Schulabschlusses*
+- ② Appreciation, praise: *Anerkennung für gute Arbeit bekommen*
+- Verb: *anerkennen* (hat anerkannt) · *etwas anerkennen lassen*
+
+> Für die Anerkennung brauche ich eine Übersetzung meines Schulabschlusses.
+> *(For the recognition I need a translation of my school-leaving certificate.)*
+
+---
+
+**das Verfahren** (pl. die Verfahren) — *procedure / process*
+- = *der Prozess, der Ablauf* · *das Anerkennungsverfahren, das Bewerbungsverfahren*
+- ② In court: proceedings (*ein Verfahren gegen jemanden*)
+- Also in the B1 notes.
+
+> Das Verfahren dauert ungefähr drei Monate.
+> *(The procedure takes about three months.)*
+
+---
+
+**der Ablauf** (pl. die Abläufe) — *process / sequence of steps (how something runs)*
+- *Wie läuft das ab?* = How does it work / what are the steps? · Verb: *ablaufen* (ist abgelaufen)
+- ② *ablaufen* also = to expire: *Mein Pass ist abgelaufen.*
+
+> Können Sie mir den Ablauf des Verfahrens erklären?
+> *(Can you explain the steps of the procedure to me?)*
+
+---
+
+**die Geburtsurkunde** (pl. die Geburtsurkunden) — *birth certificate*
+- *die Urkunde* = official document / certificate · *die Heiratsurkunde* = marriage certificate
+
+> Um einen Pass zu bekommen, ist eine Geburtsurkunde notwendig.
+> *(To get a passport, a birth certificate is necessary.)*
+
+---
+
+#### Verbs
+
+**abhängen von** (+ Dat.) — *to depend on*
+- Perfekt: **hat abgehangen** · separable: *Es hängt von … ab.*
+- = *es kommt darauf an* · Adjective: *abhängig von* = dependent on
+- Also in the B1 notes.
+
+> Es hängt sehr von der Branche ab.
+> *(It depends a lot on the industry.)*
+
+---
+
+**beurteilen** — *to judge / to assess*
+- Perfekt: **hat beurteilt** · inseparable
+- *jemanden nach dem Aussehen beurteilen* = to judge someone by their looks
+- Noun: *die Beurteilung* = assessment, evaluation
+
+> Man sollte Bewerber nicht nach ihrem Aussehen beurteilen.
+> *(You shouldn't judge applicants by their appearance.)*
+
+> Der Prüfer beurteilt die Deutschkenntnisse.
+> *(The examiner assesses the German skills.)*
+
+---
+
+**erwarten** — *to expect*
+- Perfekt: **hat erwartet** · *etwas von jemandem erwarten*
+- Noun: *die Erwartung* = expectation
+- Also in the B1 notes.
+
+> In Deutschland wird ein Bewerbungsfoto oft noch erwartet.
+> *(In Germany, an application photo is often still expected.)*
+
+---
+
+**überwiegen** — *to predominate / to outweigh*
+- Perfekt: **hat überwogen** · inseparable (*überwog*)
+- Adjective: *überwiegend* = mainly, mostly
+
+> Manche Tage sind schwer, aber meistens überwiegen die schönen Momente.
+> *(Some days are hard, but mostly the good moments outweigh them.)*
+
+---
+
+**festhalten** — *to capture / to record (in writing, a picture)*
+- Perfekt: **hat festgehalten** · separable (*hielt fest*)
+- ② *sich festhalten an* + Dat. = to hold on to (*Halt dich fest!*)
+
+> Ich schreibe Gedichte, um Gefühle festzuhalten.
+> *(I write poems to capture my feelings.)*
+
+---
+
+**entsprechen** (+ Dat.) — *to correspond to / to meet (a standard)*
+- Perfekt: **hat entsprochen** · inseparable (*entspricht, entsprach*)
+- *den Anforderungen entsprechen* = to meet the requirements · Adjective: *entsprechend* = corresponding
+- In class: ≈ *passen zu* → *Meine Kenntnisse entsprechen den Anforderungen.*
+
+> Das Verfahren prüft, ob der Abschluss den deutschen Standards entspricht.
+> *(The procedure checks whether the qualification meets German standards.)*
+
+---
+
+**einreichen** — *to submit / to hand in (documents)*
+- Perfekt: **hat eingereicht** · separable
+- *einen Antrag / Unterlagen / eine Bewerbung einreichen*
+
+> Sie müssen den Antrag bei der zuständigen Stelle einreichen.
+> *(You have to submit the application to the responsible office.)*
+
+---
+
+**variieren** — *to vary*
+- Perfekt: **hat variiert**
+- = *sich ändern, unterschiedlich sein*
+
+> Die Kosten variieren je nach Beruf und Bundesland.
+> *(The costs vary depending on the profession and federal state.)*
+
+> Die Temperatur variiert zwischen 10 und 20 Grad.
+> *(The temperature varies between 10 and 20 degrees.)*
+
+---
+
+**sich vernetzen** — *to network / to connect with people*
+- Perfekt: **hat sich vernetzt** · reflexive
+- *sich mit jemandem vernetzen* · *sich beruflich vernetzen* (e.g. on LinkedIn)
+
+> Ich möchte mich in Deutschland beruflich vernetzen.
+> *(I want to build a professional network in Germany.)*
+
+---
+
+#### Adjectives
+
+**bloß** — *only / just (= nur); bare*
+- ① = *nur*: *Bloß kein Selfie!* = Whatever you do, no selfie!
+- ② bare: *mit bloßen Händen* = with bare hands
+
+> Ein gutes Foto vom Profi, bloß kein Selfie!
+> *(A good photo by a professional — just no selfie!)*
+
+> Wenn ich doch bloß ein Bewerbungsfoto hätte!
+> *(If only I had an application photo!)*
+
+---
+
+**üblich** — *usual / customary*
+- *wie üblich* = as usual · Opposite: *unüblich*
+
+> Das Foto sollte die übliche Größe haben.
+> *(The photo should be the usual size.)*
+
+---
+
+**kaum** — *hardly / barely*
+- *kaum eine Rolle spielen* = to hardly matter · *kaum Zeit haben* = to have hardly any time
+
+> In der IT spielt das Aussehen kaum eine Rolle.
+> *(In IT, appearance hardly matters.)*
+
+---
+
+**dagegen** — *on the other hand / in contrast; against it*
+- ① Contrast: *In den USA sind Fotos verboten. In Deutschland dagegen …*
+- ② Against: *Ich bin dagegen.* = I'm against it.
+
+> In Deutschland werden Fotos dagegen immer noch oft erwartet.
+> *(In Germany, on the other hand, photos are still often expected.)*
+
+---
+
+**fordernd** — *demanding*
+- About people: wanting a lot · Compare: *herausfordernd* = challenging (about tasks)
+
+> Manche Patienten sind sehr fordernd.
+> *(Some patients are very demanding.)*
+
+---
+
+**reglementiert** — *regulated (strictly controlled by law)*
+- *ein reglementierter Beruf* = a regulated profession (e.g. doctor, teacher)
+- = *durch Gesetze oder Vorschriften streng geregelt*
+
+> Arzt und Lehrer sind reglementierte Berufe.
+> *(Doctor and teacher are regulated professions.)*
+
+---
+
+**zuständig** — *responsible / in charge (for)*
+- *zuständig für* + Akk. · *die zuständige Stelle / Behörde* = the relevant office / authority
+- Noun: *die Zuständigkeit* = responsibility
+
+> Wer ist hier für die Anerkennung zuständig?
+> *(Who is responsible for recognition here?)*
+
+---
+
+**notwendig** — *necessary*
+- = *nötig, erforderlich*
+- *Es ist notwendig, … zu + Infinitiv*
+- Also in the B1 notes.
+
+> Die Anerkennung ist notwendig, um als Arzt zu arbeiten.
+> *(Recognition is necessary to work as a doctor.)*
+
+---
+
+**vergleichbar** — *comparable*
+- *vergleichbar mit* + Dat. · Verb: *vergleichen* (hat verglichen)
+
+> Der Ausbildungsstand muss mit dem deutschen Standard vergleichbar sein.
+> *(The level of training must be comparable to the German standard.)*
+
+---
+
+**ähnlich** — *similar*
+- *ähnlich wie* … · *jemandem ähnlich sehen* = to look like someone
+
+> Die beiden Abschlüsse sind sich sehr ähnlich.
+> *(The two qualifications are very similar.)*
+
+---
+
+**pädagogisch** — *educational / teaching-related*
+- *die Pädagogik* = education (as a subject) · *pädagogische Kenntnisse* = teaching skills
+
+> Lehrer brauchen pädagogische und fachliche Kenntnisse.
+> *(Teachers need teaching skills and subject knowledge.)*
+
+---
+
+**derselbe / dieselbe / dasselbe** — *the same (one)*
+- Declines like *der* + adjective: *denselben Wert, mit demselben Ziel*
+- ⚠️ *dasselbe* = the very same thing · *das Gleiche* = an identical kind (often used for both in speech)
+
+> Die beiden Abschlüsse haben denselben Wert.
+> *(The two qualifications have the same value.)*
+
+---
+
+#### Phrases
+
+**es kommt darauf an** — *it depends*
+- Spoken: *Kommt drauf an!* · *Es kommt darauf an, was in der Anzeige steht.*
+- *ankommen auf* + Akk. = to depend on / to matter
+
+> „Brauche ich ein Foto?" – „Kommt drauf an, was in der Anzeige steht!"
+> *("Do I need a photo?" – "It depends on what the ad says!")*
+
+---
+
+**aus der Puste kommen** — *to get out of breath*
+- *die Puste* (colloquial) = breath · *außer Puste sein* = to be out of breath
+
+> Ich trainiere regelmäßig, damit ich beim Tanzen nicht so schnell aus der Puste komme.
+> *(I train regularly so I don't get out of breath so quickly when dancing.)*
+
+---
+
+**Wurzeln schlagen** — *to put down roots / to settle in*
+- *die Wurzel* (pl. die Wurzeln) = root
+
+> Die Kunst ist für mich ein Weg, um in diesem neuen Land Wurzeln zu schlagen.
+> *(For me, art is a way to put down roots in this new country.)*
+
+---
