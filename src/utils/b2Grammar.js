@@ -27,6 +27,24 @@ export const B2_TOPICS = [
     sessionKey: 'b2_adjektive',
   },
   {
+    id: 'indirekt',
+    title: 'Indirekte Rede',
+    subtitle: 'Konjunktiv I · er sagt, er sei … · Fragen & Bitten',
+    sessionKey: 'b2_indirekt',
+  },
+  {
+    id: 'relativ',
+    title: 'Relativsätze',
+    subtitle: 'der · den · dem · dessen / deren · mit Präposition',
+    sessionKey: 'b2_relativ',
+  },
+  {
+    id: 'zeit',
+    title: 'Temporale Präpositionen',
+    subtitle: 'um · am · im · bei · seit · vor · während …',
+    sessionKey: 'b2_zeit',
+  },
+  {
     id: 'verben',
     title: 'Unregelmäßige Verben',
     subtitle: 'Nach Vokalwechsel gruppiert (ei – ie – ie …)',

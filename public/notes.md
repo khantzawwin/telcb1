@@ -11778,6 +11778,7 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 **das Verfahren** (pl. die Verfahren) — *procedure / process*
 - = *der Prozess, der Ablauf* · *das Anerkennungsverfahren, das Bewerbungsverfahren*
 - ② In court: proceedings (*ein Verfahren gegen jemanden*)
+- ③ In science: method, technique (*ein neues Verfahren entwickeln* = to develop a new method)
 - Also in the B1 notes.
 
 > Das Verfahren dauert ungefähr drei Monate.
@@ -12029,3 +12030,796 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 > *(For me, art is a way to put down roots in this new country.)*
 
 ---
+
+## Klasse K23 — Forschung & Medizin (Research & Medicine)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**die Pressemitteilung** (pl. die Pressemitteilungen) — *press release*
+- *die Presse* = the press · *die Mitteilung* = announcement, notice
+- *eine Pressemitteilung veröffentlichen* = to publish a press release
+
+> Laut einer Pressemitteilung der Universität kann das neue Programm seltene Krankheiten erkennen.
+> *(According to a press release from the university, the new program can detect rare diseases.)*
+
+---
+
+**die Forschenden** (Plural; Sg. der/die Forschende) — *researchers*
+- Adjective noun (from *forschen* = to research): *ein Forschender*, *eine Forschende*, *die Forschenden*
+- Gender-neutral word for *die Forscher und Forscherinnen*; common in news and press releases
+- Related: *die Forschung* = research · *forschen* (hat geforscht)
+
+> Die Forschenden haben das Verfahren an über tausend Patienten getestet.
+> *(The researchers tested the method on more than a thousand patients.)*
+
+---
+
+**die Genauigkeit** (kein Plural) — *accuracy / precision*
+- Adjective: *genau* = exact, accurate · *mit hoher Genauigkeit* = with high accuracy
+- Opposite: *die Ungenauigkeit*
+
+> Das Programm erkennt die Krankheit mit einer Genauigkeit von 95 Prozent.
+> *(The program detects the disease with an accuracy of 95 percent.)*
+
+---
+
+#### Verbs
+
+**versprechen** — *to promise*
+- Perfekt: **hat versprochen** · verspricht – versprach (e – a – o)
+- *jemandem etwas versprechen* (Dat. + Akk.) · *versprechen, etwas zu tun*
+- ② *sich versprechen* = to misspeak / make a slip of the tongue
+- Noun: *das Versprechen* = promise
+
+> Die neue Methode verspricht eine schnellere Diagnose.
+> *(The new method promises a faster diagnosis.)*
+
+---
+
+**erkennen** — *to detect / to recognise*
+- Perfekt: **hat erkannt** · erkannte
+- *etwas an + Dat. erkennen* → *Ich habe dich an der Stimme erkannt.*
+- *eine Krankheit früh erkennen* = to detect a disease early
+- ⚠️ Not the same as *anerkennen* = to officially recognise / acknowledge
+
+> Ärzte können seltene Krankheiten oft erst nach Jahren erkennen.
+> *(Doctors often can only detect rare diseases after years.)*
+
+---
+
+**ermöglichen** — *to make possible / to enable*
+- Perfekt: **hat ermöglicht** (inseparable: no *ge-*)
+- *jemandem etwas ermöglichen* (Dat. + Akk.) → *Das Stipendium ermöglicht ihr das Studium.*
+- Related: *möglich* = possible · *die Möglichkeit* = possibility
+
+> Die neue Technik ermöglicht eine Diagnose innerhalb weniger Minuten.
+> *(The new technology makes a diagnosis possible within a few minutes.)*
+
+---
+
+**anwenden** — *to apply / to use (a method, rule, medicine)*
+- Perfekt: **hat angewendet** or **hat angewandt** (both correct) · wendete an / wandte an
+- Separable: *Ich wende die Regel an.*
+- Noun: *die Anwendung* = application, use · *die App* = *die Anwendung* too
+
+> Das Verfahren soll bald auch in Krankenhäusern angewendet werden.
+> *(The method is soon to be used in hospitals as well.)*
+
+---
+
+#### Adjectives & Adverbs
+
+**selten** — *rare / rarely*
+- *eine seltene Krankheit*, pl. *seltene Krankheiten* = rare disease(s)
+- Adverb: *Ich gehe selten ins Kino.* = I rarely go to the cinema.
+- Opposite: *häufig / oft* · Also in the B1 notes.
+
+> Seltene Krankheiten sind schwer zu erkennen, weil viele Ärzte sie nicht kennen.
+> *(Rare diseases are hard to detect because many doctors don't know them.)*
+
+---
+
+**deutlich** — *clearly / significantly*
+- ① Clear, easy to see or hear: *Bitte sprechen Sie deutlich!*
+- ② Significantly, by a lot (with comparatives): *deutlich schneller, deutlich besser*
+- Synonyms: *klar* (①), *erheblich* (②)
+
+> Mit dem neuen Programm ist die Diagnose deutlich schneller als früher.
+> *(With the new program, the diagnosis is significantly faster than before.)*
+
+---
+
+#### Phrases
+
+**innerhalb** (+ Genitiv) — *within*
+- Time: *innerhalb einer Woche* = within a week · *innerhalb weniger Minuten*
+- Place: *innerhalb der Stadt* = within the city
+- Spoken, with a plural noun without an article: *innerhalb von* + Dat. → *innerhalb von zwei Tagen*
+- Opposite: *außerhalb* + Gen. = outside
+
+> Die Ergebnisse liegen innerhalb einer Stunde vor.
+> *(The results are available within an hour.)*
+
+---
+
+## Klasse K25 — Bewerbungsgespräch & Unternehmen (Job Interview & Companies)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**der Umsatz** (pl. die Umsätze) — *turnover / revenue (sales)*
+- = all the money a company takes in from sales, **before** costs
+- ⚠️ Not the same as *der Gewinn* = profit (what is left after costs)
+- *der Rekordumsatz* = record turnover · *einen Umsatz erzielen*
+
+> Die Firma hat im letzten Jahr einen Rekordumsatz erzielt.
+> *(The company achieved record turnover last year.)*
+
+---
+
+**der Vorort** (pl. die Vororte) — *suburb*
+- A smaller town or district on the edge of a big city
+- Opposite: *das Zentrum, die Innenstadt*
+
+> Fellbach ist ein Vorort von Stuttgart.
+> *(Fellbach is a suburb of Stuttgart.)*
+
+---
+
+**die Backstube** (pl. die Backstuben) — *bakehouse (the room where a bakery bakes)*
+- *backen* + *die Stube* · *die Stube* (old-fashioned) = room, parlour → *die Wohnstube* = living room
+- *die Bäckerei* = the bakery shop
+
+> Der Bäcker steht schon um drei Uhr morgens in der Backstube.
+> *(The baker is already in the bakehouse at three in the morning.)*
+
+---
+
+**die Gänsehaut** (kein Plural) — *goose bumps*
+- *Gänsehaut haben / bekommen* · from cold, fear, stress or strong emotion
+- *die Gans* = goose + *die Haut* = skin
+
+> Wenn es kalt ist, bekomme ich Gänsehaut.
+> *(When it's cold, I get goose bumps.)*
+
+---
+
+**die Gehaltsvorstellung** (pl. die Gehaltsvorstellungen) — *salary expectation*
+- Typical interview question: *Was ist Ihre Gehaltsvorstellung?*
+- *das Gehalt* = salary · *die Vorstellung* = idea, expectation
+
+> Vor dem Bewerbungsgespräch sollte man das typische Gehalt recherchieren, um eine realistische Gehaltsvorstellung zu haben.
+> *(Before the job interview you should research the typical salary so you have a realistic salary expectation.)*
+
+---
+
+**der Würfel** (pl. die Würfel) — *dice / cube*
+- *würfeln* (hat gewürfelt) = to roll the dice
+- ② cube: *der Eiswürfel* = ice cube
+
+> Jeder Spieler würfelt einmal mit dem Würfel.
+> *(Each player rolls the dice once.)*
+
+---
+
+**der Erfolgskurs** (kein Plural) — *path of success / winning streak*
+- *auf Erfolgskurs sein* = to be on track for success · *den Erfolgskurs fortsetzen*
+
+> Die EcoGreen GmbH will ihren Erfolgskurs fortsetzen.
+> *(EcoGreen GmbH wants to continue its success.)*
+
+---
+
+**das Sortiment** (pl. die Sortimente) — *range of products (in a shop)*
+- *die Sortimentspflege* = looking after the product range (restocking, ordering, removing old items)
+- *Mitarbeiterrabatt auf unser Sortiment* = staff discount on our range
+
+> Zu Ihren Aufgaben gehören die Warenpräsentation und die Sortimentspflege.
+> *(Your tasks include displaying goods and maintaining the product range.)*
+
+---
+
+**der Umgang** (kein Plural) — *dealing with / handling*
+- *der Umgang mit* + Dat. → *Freude am Umgang mit Menschen* = enjoys dealing with people
+- Verb: *umgehen mit* (ist umgegangen) · Also in the B1 notes.
+
+> Wir suchen eine Verkäuferin mit Freude am Verkauf und im Umgang mit Menschen.
+> *(We're looking for a sales assistant who enjoys selling and dealing with people.)*
+
+---
+
+**die Zuverlässigkeit** (kein Plural) — *reliability*
+- Adjective: *zuverlässig* = reliable · typical strength in an Anschreiben
+- Often with: *Pünktlichkeit, Teamfähigkeit, Leistungsbereitschaft*
+
+> Zu meinen Stärken zählen Zuverlässigkeit und Leistungsbereitschaft.
+> *(My strengths include reliability and willingness to work hard.)*
+
+---
+
+**das Arbeitsumfeld** (pl. die Arbeitsumfelder) — *working environment*
+- *ein angenehmes / modernes Arbeitsumfeld* · = *die Arbeitsatmosphäre*
+
+> Wir bieten ein motiviertes Team und ein angenehmes Arbeitsumfeld.
+> *(We offer a motivated team and a pleasant working environment.)*
+
+---
+
+**der Kundenkontakt** (pl. die Kundenkontakte) — *customer contact*
+- *viel / wenig Kundenkontakt haben* · *der Kunde* + *der Kontakt*
+
+> Im Modegeschäft hatte ich leider wenig Kundenkontakt.
+> *(Unfortunately I had little customer contact in the clothes shop.)*
+
+---
+
+**das Pflegeprodukt** (pl. die Pflegeprodukte) — *personal care / skincare product*
+- *die Pflege* = care · *die Hautpflege* = skincare · *die dekorative Kosmetik* = make-up
+- ⚠️ *die Pflege* also = nursing care (*die Altenpflege*)
+
+> Schreib, was dich an Pflegeprodukten interessiert.
+> *(Write what interests you about skincare products.)*
+
+---
+
+**das Geschick** (kein Plural) — *skill / dexterity*
+- *handwerkliches Geschick* = manual / practical skills (good with your hands)
+- Adjective: *geschickt* = skilful · Opposite: *ungeschickt* = clumsy
+
+> Zu meinen Stärken zählen Zuverlässigkeit und handwerkliches Geschick.
+> *(My strengths include reliability and manual skills.)*
+
+---
+
+**der Zeitdruck** (kein Plural) — *time pressure*
+- *unter Zeitdruck arbeiten / stehen* · *bei Zeitdruck* = under time pressure
+- Also in the B1 notes.
+
+> Ich arbeite ruhig und konzentriert – auch bei Zeitdruck.
+> *(I work calmly and with concentration, even under time pressure.)*
+
+---
+
+**die Wartungsarbeiten** (Plural; Sg. die Wartungsarbeit) — *maintenance work*
+- *die Wartung* = maintenance, servicing · *warten* (hat gewartet) = ② to service a machine
+- *Wartungsarbeiten durchführen* = to carry out maintenance
+
+> Ich kann kleinere Wartungsarbeiten selbstständig durchführen.
+> *(I can carry out minor maintenance work on my own.)*
+
+---
+
+**das Umzugsunternehmen** (pl. die Umzugsunternehmen) — *removal company / moving company*
+- *der Umzug* = move (house) · *umziehen* (ist umgezogen) = to move
+
+> Ich habe als Lagerarbeiter und Fahrer bei einem Umzugsunternehmen gearbeitet.
+> *(I worked as a warehouse worker and driver for a removal company.)*
+
+---
+
+**die Kündigung** (pl. die Kündigungen) — *notice / dismissal / resignation*
+- = the official end of an employment relationship
+- *kündigen* (hat gekündigt) = to quit / to give notice · *jemandem kündigen* = to fire someone
+- Also in the B1 notes.
+
+> Die Kündigung ist die offizielle Beendigung eines Arbeitsverhältnisses.
+> *(Notice is the official end of an employment relationship.)*
+
+---
+
+**das Arbeitsverhältnis** (pl. die Arbeitsverhältnisse) — *employment relationship / job*
+- *ein befristetes / unbefristetes Arbeitsverhältnis* = fixed-term / permanent job
+- *ein Arbeitsverhältnis beginnen / beenden*
+
+> Die Einstellung ist der Beginn eines neuen Arbeitsverhältnisses.
+> *(Hiring is the start of a new employment relationship.)*
+
+---
+
+**die Einstellung** (pl. die Einstellungen) — *hiring / employment (of a new worker)*
+- Verb: *einstellen* (hat eingestellt) = to hire · *Wen würden Sie einstellen?*
+- ② attitude: *eine positive Einstellung zur Arbeit*
+- ③ setting (phone, computer): *die Einstellungen ändern*
+
+> Nach dem Gespräch hat die Firma über meine Einstellung entschieden.
+> *(After the interview the company decided whether to hire me.)*
+
+---
+
+**die Initiativbewerbung** (pl. die Initiativbewerbungen) — *speculative / unsolicited application*
+- = a written application to a company **without** a current job advert
+- *sich initiativ bewerben* = to apply speculatively
+
+> Ich habe eine Initiativbewerbung an meine Lieblingsfirma geschickt.
+> *(I sent a speculative application to my favourite company.)*
+
+---
+
+**die Tätigkeit** (pl. die Tätigkeiten) — *activity / work / job*
+- *eine befristete Tätigkeit* · *eine sitzende Tätigkeit* = a desk job
+- *tätig sein als* = to work as · Also in the B1 notes.
+
+> Eine sitzende, aber zugleich handfeste Tätigkeit wie das Fahren passt gut zu mir.
+> *(A job where I sit but that is also hands-on, like driving, suits me well.)*
+
+---
+
+**die Filiale** (pl. die Filialen) — *branch (of a shop, bank, company)*
+- = *die Zweigstelle* · *die Zentrale / der Hauptsitz* = head office
+
+> Das Vorstellungsgespräch hat in Ihrer Filiale in der Friedrichstraße stattgefunden.
+> *(The interview took place at your branch on Friedrichstraße.)*
+
+---
+
+**die Gelegenheit** (pl. die Gelegenheiten) — *opportunity / chance*
+- *die Gelegenheit nutzen* = to take the opportunity · *bei Gelegenheit* = when you get a chance
+- Anschreiben: *Ich würde mich sehr über die Gelegenheit freuen, …*
+
+> Ein Bewerbungsgespräch ist eine wichtige Gelegenheit, einen guten ersten Eindruck zu hinterlassen.
+> *(A job interview is an important opportunity to make a good first impression.)*
+
+---
+
+**der Eindruck** (pl. die Eindrücke) — *impression*
+- *einen guten Eindruck machen / hinterlassen* · *der erste Eindruck*
+- Also in the B1 notes.
+
+> Ein gepflegtes Outfit macht immer einen guten Eindruck.
+> *(A neat outfit always makes a good impression.)*
+
+---
+
+**das Leitbild** (pl. die Leitbilder) — *mission statement / guiding principles (of a company)*
+- What a company stands for: its goals and **values** (*die Werte*)
+
+> Vor dem Gespräch sollte man die Werte und das Leitbild der Firma kennen.
+> *(Before the interview you should know the company's values and mission statement.)*
+
+---
+
+**der Wert** (pl. die Werte) — *value*
+- ① *die Werte* = values, principles (*Werte wie Ehrlichkeit*)
+- ② worth / value: *Das hat einen Wert von 100 Euro.* · *Wert legen auf + Akk.* = to attach importance to
+
+> Ehrlichkeit und Respekt sind wichtige Werte in unserem Unternehmen.
+> *(Honesty and respect are important values in our company.)*
+
+---
+
+**das Erscheinungsbild** (pl. die Erscheinungsbilder) — *appearance (how you look)*
+- *ein gepflegtes Erscheinungsbild* = a neat, well-groomed appearance
+- *erscheinen* = to appear
+
+> Ein gepflegtes Erscheinungsbild spielt im Verkauf eine große Rolle.
+> *(A well-groomed appearance plays a big role in sales.)*
+
+---
+
+**das Fazit** (pl. die Fazits / die Fazite) — *conclusion / summary*
+- *ein Fazit ziehen* = to draw a conclusion · Useful in TELC Schreiben: *Mein Fazit: …*
+
+> Mein Fazit: Mit guter Vorbereitung ist das Gespräch kein Problem.
+> *(My conclusion: with good preparation, the interview is no problem.)*
+
+---
+
+**die Neuorientierung** (pl. die Neuorientierungen) — *new direction / career change*
+- *berufliche Neuorientierung* = a positive way to describe a gap or change in your CV
+- *sich neu orientieren* = to look for a new direction
+
+> Nach meiner Kündigung folgte eine Phase der beruflichen Neuorientierung.
+> *(After I left my job, there was a period of career reorientation.)*
+
+---
+
+
+#### Verbs
+
+**erzielen** — *to achieve (a result, success, turnover)*
+- Perfekt: **hat erzielt** (inseparable)
+- *einen Erfolg / ein Ergebnis / einen Umsatz / ein Tor erzielen*
+- ⚠️ Not with dreams or levels: *einen Traum verwirklichen* / *sich einen Traum erfüllen*, *das Niveau B2 erreichen*
+
+> Mit dem neuen Produkt hat die Firma einen großen Erfolg erzielt.
+> *(The company achieved great success with the new product.)*
+
+---
+
+**erschließen** — *to open up / to tap (a new market, area, customers)*
+- Perfekt: **hat erschlossen** · erschloss
+- ① *neue Märkte / neue Kunden erschließen*
+- ② *ein Baugebiet erschließen* = to develop land (roads, water, power)
+- ③ *die Bedeutung aus dem Kontext erschließen* = to work out the meaning from context (useful for TELC Lesen!)
+
+> Die Firma will mit neuen Filialen den Markt in Süddeutschland erschließen.
+> *(The company wants to open up the market in southern Germany with new branches.)*
+
+---
+
+**verkürzen** — *to shorten / to reduce*
+- Perfekt: **hat verkürzt** · *die Arbeitszeit / den Urlaub / den Weg verkürzen*
+- ⚠️ Somebody actively makes it shorter. On their own, things *werden kürzer*: *Im Winter werden die Tage kürzer.*
+- Noun: *die Verkürzung*
+
+> Ich suche eine Wohnung im Zentrum, um meinen Arbeitsweg zu verkürzen.
+> *(I'm looking for a flat in the centre to shorten my commute.)*
+
+---
+
+**errichten** — *to build / to put up (formal)*
+- Perfekt: **hat errichtet** · = *bauen* (formal, newspapers)
+- ② *eine Stiftung errichten* = to set up a foundation
+
+> Die Stadt errichtet einen neuen Bahnhof.
+> *(The city is building a new train station.)*
+
+---
+
+**herumkreisen** — *to circle around*
+- Perfekt: **ist herumgekreist** (movement; *hat* is also used)
+- Separable: *Die Vögel kreisen um mich herum.* · *um + Akk. herumkreisen*
+- *der Kreis* = circle
+
+> Über dem Feld kreisen viele Vögel herum.
+> *(Lots of birds are circling over the field.)*
+
+---
+
+**auftreten** — *to come across / to present yourself*
+- Perfekt: **ist aufgetreten** · du trittst auf, er tritt auf · trat auf
+- ① behave, come across: *selbstbewusst / sicher / gepflegt auftreten*
+- ② perform (on stage): *Die Band tritt heute Abend auf.*
+- ③ occur: *Es sind Probleme aufgetreten.*
+- Noun: *das Auftreten* (see K21)
+
+> Bei einem Bewerbungsgespräch sollte man selbstbewusst und gepflegt auftreten.
+> *(At a job interview you should come across confidently and look well-groomed.)*
+
+---
+
+**recherchieren** — *to research (look up information)*
+- Perfekt: **hat recherchiert** · *über + Akk. recherchieren / etwas recherchieren*
+- Noun: *die Recherche*
+
+> Vor dem Gespräch habe ich über die Firma recherchiert.
+> *(Before the interview I researched the company.)*
+
+---
+
+**fortsetzen** — *to continue (something)*
+- Perfekt: **hat fortgesetzt** · Separable: *Wir setzen das Gespräch morgen fort.*
+- Noun: *die Fortsetzung* = continuation, sequel
+
+> Das Unternehmen will seinen Erfolgskurs fortsetzen.
+> *(The company wants to continue its success.)*
+
+---
+
+**hinausblicken** (über + Akk.) — *to look beyond*
+- Perfekt: **hat hinausgeblickt** · Separable: *Er blickt über … hinaus.*
+- *über die Grenzen hinausblicken* = to look beyond the borders (expand abroad)
+
+> Nun blickt der Vorstand über die deutschen Grenzen hinaus.
+> *(Now the board is looking beyond Germany's borders.)*
+
+---
+
+**stammen** (aus + Dat.) — *to come from / to originate from*
+- Mostly present and Präteritum: *stammt – stammte* (Perfekt *hat gestammt* is rare)
+- = *kommen aus* (more formal)
+
+> Frau Rahimi stammt aus dem Iran und lebt heute in einem Vorort von Hannover.
+> *(Ms Rahimi comes from Iran and now lives in a suburb of Hanover.)*
+
+---
+
+**zusammenlegen** — *to fold (clothes)*
+- Perfekt: **hat zusammengelegt** · Separable
+- ② to merge / combine: *zwei Abteilungen zusammenlegen*
+
+> Im Modegeschäft habe ich vor allem Kleider zusammengelegt.
+> *(In the clothes shop I mainly folded clothes.)*
+
+---
+
+**zählen** (zu + Dat.) — *to be among / to count as*
+- Perfekt: **hat gezählt** · *Zu meinen Stärken zählen …* = my strengths include …
+- ① *zählen* = to count (1, 2, 3) · ② *auf jemanden zählen* = to rely on someone
+
+> Zu meinen Stärken zählen Zuverlässigkeit und handwerkliches Geschick.
+> *(My strengths include reliability and manual skills.)*
+
+---
+
+**umgehen** (mit + Dat.) — *to handle / to deal with*
+- Perfekt: **ist umgegangen** · Separable: *Ich gehe sorgfältig damit um.*
+- ⚠️ *umgehen* (inseparable, hat umgangen) = to avoid / bypass
+- Also in the B1 notes.
+
+> Ich habe gelernt, sorgfältig mit Materialien und Geräten umzugehen.
+> *(I've learned to handle materials and equipment carefully.)*
+
+---
+
+**überzeugen** (von + Dat.) — *to convince*
+- Perfekt: **hat überzeugt** (inseparable) · *überzeugend* = convincing
+- *jemanden von etwas überzeugen* · Also in the B1 notes.
+
+> Gerne überzeuge ich Sie persönlich von meiner Motivation.
+> *(I'd be happy to convince you of my motivation in person.)*
+
+---
+
+**ausschreiben** — *to advertise (a job)*
+- Perfekt: **hat ausgeschrieben** · schrieb aus · Separable
+- *die ausgeschriebene Stelle* = the advertised position · Noun: *die Ausschreibung*
+- ② *ein Wort ausschreiben* = to write a word out in full
+
+> Ich interessiere mich sehr für die ausgeschriebene Stelle als Verkäuferin.
+> *(I'm very interested in the advertised position as a sales assistant.)*
+
+---
+
+**empfinden** — *to feel / to perceive (as)*
+- Perfekt: **hat empfunden** · empfand (i – a – u)
+- *etwas als angenehm / schwierig empfinden* · Noun: *die Empfindung*
+
+> Ich habe das Gespräch mit Ihnen als sehr angenehm empfunden.
+> *(I found the conversation with you very pleasant.)*
+
+---
+
+**hinterlassen** — *to leave (behind)*
+- Perfekt: **hat hinterlassen** (inseparable, no *ge-*) · hinterließ
+- *einen guten Eindruck hinterlassen* · *eine Nachricht hinterlassen* = to leave a message
+
+> Im Gespräch möchte ich einen guten ersten Eindruck hinterlassen.
+> *(I want to make a good first impression in the interview.)*
+
+---
+
+**erhöhen** — *to increase / to raise*
+- Perfekt: **hat erhöht** · *die Chancen / die Preise / das Gehalt erhöhen*
+- *sich erhöhen* = to go up · Opposite: *senken*
+
+> Eine sorgfältige Vorbereitung erhöht die Chancen auf Erfolg deutlich.
+> *(Careful preparation significantly increases the chances of success.)*
+
+---
+
+**belegen** — *to prove / to back up (with evidence)*
+- Perfekt: **hat belegt** · *mit Beispielen / Zahlen belegen*
+- ② *einen Kurs belegen* = to take / enrol in a course · *der Beleg* = receipt, proof
+
+> Ihre Stärken sollten Sie mit Beispielen belegen können.
+> *(You should be able to back up your strengths with examples.)*
+
+---
+
+**gestalten** — *to design / to shape / to organise*
+- Perfekt: **hat gestaltet** · *nach festen Regeln gestaltet* = designed according to fixed rules
+- Noun: *die Gestaltung* · Also in the B1 notes.
+
+> Viele Fragen im Bewerbungsgespräch sind nach festen Regeln gestaltet.
+> *(Many interview questions follow fixed rules.)*
+
+---
+
+**meistern** — *to master / to cope with successfully*
+- Perfekt: **hat gemeistert** · *eine Herausforderung / eine Situation meistern*
+
+> Mit guter Vorbereitung kann man das Bewerbungsgespräch erfolgreich meistern.
+> *(With good preparation you can get through the interview successfully.)*
+
+---
+
+**sich überlegen** — *to think about / to consider*
+- Perfekt: **hat sich überlegt** · *sich (Dat.) etwas überlegen* → *Ich überlege mir eine Antwort.*
+- *Überlegen Sie: …* = Think about … · Adjective *überlegen* = superior (different word!)
+
+> Überlegen Sie sich vorher, welche Fragen Sie selbst stellen möchten.
+> *(Think beforehand about which questions you want to ask yourself.)*
+
+---
+
+**sich lohnen** — *to be worth it*
+- Perfekt: **hat sich gelohnt** · *Es lohnt sich, … zu …* = it's worth …ing
+- *der Lohn* = wage
+
+> Es lohnt sich, Antworten auf typische Fragen vorzubereiten.
+> *(It's worth preparing answers to typical questions.)*
+
+---
+
+
+#### Adjectives & Adverbs
+
+**nachhaltig** — *sustainable / sustainably*
+- = good for nature and the planet; also: long-lasting (*eine nachhaltige Wirkung*)
+- Noun: *die Nachhaltigkeit* · Also in the B1 notes.
+
+> Bei dm gibt es viele nachhaltige Produkte.
+> *(There are lots of sustainable products at dm.)*
+
+---
+
+**mühevoll** — *laborious / hard work*
+- = *anstrengend, mühsam* · *die Mühe* = effort · *sich Mühe geben* = to make an effort
+- *Es ist mühevoll, … zu …*
+
+> Es ist mühevoll, Deutsch zu lernen, aber es lohnt sich.
+> *(Learning German is hard work, but it's worth it.)*
+
+---
+
+**unablässig** — *constantly / incessantly*
+- = *ohne Pause, die ganze Zeit, ununterbrochen*
+
+> Kiril und Denys sprechen unablässig.
+> *(Kiril and Denys talk non-stop.)*
+
+---
+
+**durchdacht** — *well thought-out*
+- *gut durchdacht* · from *durchdenken* (inseparable, hat durchdacht) = to think through
+- Opposite: *undurchdacht, unüberlegt*
+
+> Sein Plan war gut durchdacht.
+> *(His plan was well thought out.)*
+
+---
+
+**mittelständisch** — *medium-sized (company)*
+- *der Mittelstand* = small and medium-sized businesses (the backbone of the German economy)
+
+> Das mittelständische Unternehmen aus Hannover setzt auf nachhaltige Produkte.
+> *(The medium-sized company from Hanover focuses on sustainable products.)*
+
+---
+
+**gepflegt** — *well-groomed / neat / well-kept*
+- *ein gepflegtes Erscheinungsbild* · *ein gepflegter Garten*
+- From *pflegen* = to look after
+
+> Für die Stelle wünschen wir uns ein gepflegtes Erscheinungsbild.
+> *(For the position we'd like a well-groomed appearance.)*
+
+---
+
+**umfangreich** — *extensive / comprehensive*
+- *umfangreiche Erfahrungen / Kenntnisse* · *der Umfang* = extent, size
+
+> In meiner Tätigkeit konnte ich umfangreiche Erfahrungen im Verkauf sammeln.
+> *(In my job I was able to gain extensive experience in sales.)*
+
+---
+
+**sorgfältig** — *careful(ly) / thorough(ly)*
+- *sorgfältig arbeiten* · Noun: *die Sorgfalt* · Opposite: *nachlässig* = careless
+
+> Ich arbeite sorgfältig und gut im Team, aber auch selbstständig.
+> *(I work carefully and well in a team, but also independently.)*
+
+---
+
+**bisherig** — *previous / up to now*
+- Only before a noun: *mein bisheriges Berufsleben* · Adverb: *bisher* = so far
+- Also in the B1 notes.
+
+> In meinem bisherigen Berufsleben habe ich praktische Erfahrungen gesammelt.
+> *(In my career so far I have gained practical experience.)*
+
+---
+
+**eigenverantwortlich** — *independently / on your own responsibility*
+- = *selbstständig* (with the responsibility being yours) · *die Eigenverantwortung*
+
+> Ich arbeite gern eigenverantwortlich, schätze aber auch feste Abläufe.
+> *(I like working independently, but I also value fixed routines.)*
+
+---
+
+**sitzend** — *sedentary / sitting*
+- *eine sitzende Tätigkeit* = a job where you sit · from *sitzen* (Partizip I)
+
+> Eine sitzende Tätigkeit ist nichts für mich – ich bewege mich gern.
+> *(A desk job isn't for me – I like moving around.)*
+
+---
+
+**handfest** — *hands-on / practical*
+- *eine handfeste Tätigkeit* = practical, physical work
+- ② solid, real: *handfeste Beweise* = hard evidence · *ein handfester Streit* = a serious row
+
+> Ich suche eine handfeste Tätigkeit, bei der ich etwas mit den Händen mache.
+> *(I'm looking for a practical job where I work with my hands.)*
+
+---
+
+**darauffolgend** — *following / subsequent*
+- *in der darauffolgenden Woche* = in the following week · = *nächst-*
+
+> Sie hatten mir gesagt, dass ich in der darauffolgenden Woche eine Rückmeldung erhalten würde.
+> *(You told me that I would hear back the following week.)*
+
+---
+
+**befristet** — *fixed-term / temporary*
+- *ein befristeter Vertrag* · *befristet auf ein Jahr* = limited to one year
+- Opposite: *unbefristet* = permanent
+
+> Ein Praktikum ist eine befristete Tätigkeit zum Sammeln erster Berufserfahrungen.
+> *(An internship is a temporary job for gaining first work experience.)*
+
+---
+
+**ebenfalls** — *also / likewise*
+- = *auch* (more formal) · Reply: *„Schönes Wochenende!“ – „Danke, ebenfalls!“* = you too
+
+> Kleidung, die zur Branche passt, spielt ebenfalls eine große Rolle.
+> *(Clothing that suits the industry also plays a big role.)*
+
+---
+
+**auswendig** — *by heart*
+- *auswendig lernen* = to memorise · *auswendig können / wissen*
+
+> Lernen Sie Ihre Antworten nicht auswendig – bleiben Sie authentisch.
+> *(Don't memorise your answers – stay authentic.)*
+
+---
+
+
+#### Phrases
+
+**es jemandem angetan haben** — *to have charmed / captivated someone*
+- *Er/Sie/Das hat es mir angetan.* = I'm really taken with him / her / it
+- Usually in the Perfekt, with *es* + Dativ
+
+> Diese Stadt hat es mir angetan.
+> *(I've fallen for this city.)*
+
+---
+
+**aufgrund** (+ Genitiv) — *because of / due to*
+- = *wegen* (more formal) · *aufgrund meiner Erfahrung* · also *aufgrund von* + Dat.
+
+> Aufgrund meiner bisherigen Erfahrungen im Einzelhandel könnte ich Ihr Team gut unterstützen.
+> *(Because of my previous experience in retail, I could support your team well.)*
+
+---
+
+**im Voraus** — *in advance*
+- *Vielen Dank im Voraus!* = thanks in advance (common at the end of formal emails)
+
+> Ich bedanke mich im Voraus für Ihre Rückmeldung.
+> *(Thank you in advance for your reply.)*
+
+---
+
+**kurzfristig einsetzbar sein** — *to be available at short notice*
+- *kurzfristig* = at short notice / short-term · *einsetzen* = to deploy, to use
+- Typical Anschreiben phrase, together with *ab dem … zur Verfügung stehen*
+
+> Ich bin kurzfristig einsetzbar und stehe ab dem 1. Oktober zur Verfügung.
+> *(I'm available at short notice and can start on 1 October.)*
+
+---
+
+**jemandem die Daumen drücken** — *to keep your fingers crossed for someone*
+- *der Daumen* = thumb · Germans press their thumbs, not cross fingers!
+- *Ich drücke dir die Daumen!* = Good luck!
+
+> Gern geschehen! Ich drücke dir ganz fest die Daumen.
+> *(You're welcome! I'll keep my fingers crossed for you.)*
+
+---
+

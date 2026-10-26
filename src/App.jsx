@@ -25,6 +25,9 @@ import B2Konjunktiv from './pages/b2/B2Konjunktiv'
 import B2UmZu from './pages/b2/B2UmZu'
 import B2Adjektive from './pages/b2/B2Adjektive'
 import B2Verben from './pages/b2/B2Verben'
+import B2IndirekteRede from './pages/b2/B2IndirekteRede'
+import B2Relativsaetze from './pages/b2/B2Relativsaetze'
+import B2Zeitpraepositionen from './pages/b2/B2Zeitpraepositionen'
 
 // /grammar shows the current level's grammar
 function GrammarHome() {
@@ -60,6 +63,9 @@ function AppRoutes() {
                 <Route path="/grammar/b2/umzu" element={<B2Page><B2UmZu /></B2Page>} />
                 <Route path="/grammar/b2/adjektive" element={<B2Page><B2Adjektive /></B2Page>} />
                 <Route path="/grammar/b2/verben" element={<B2Page><B2Verben /></B2Page>} />
+                <Route path="/grammar/b2/indirekt" element={<B2Page><B2IndirekteRede /></B2Page>} />
+                <Route path="/grammar/b2/relativ" element={<B2Page><B2Relativsaetze /></B2Page>} />
+                <Route path="/grammar/b2/zeit" element={<B2Page><B2Zeitpraepositionen /></B2Page>} />
                 <Route path="/grammar/b2/*" element={<Navigate to="/grammar" replace />} />
                 <Route path="/grammar/topic/:topicId" element={<GrammarTopic />} />
                 <Route path="/grammar/:themeId" element={<Grammar />} />
