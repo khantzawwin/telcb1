@@ -45,6 +45,12 @@ export const B2_TOPICS = [
     sessionKey: 'b2_zeit',
   },
   {
+    id: 'doppelkonnektoren',
+    title: 'Doppelkonnektoren',
+    subtitle: 'sowohl … als auch · weder … noch · zwar … aber · je … desto',
+    sessionKey: 'b2_doppelkonnektoren',
+  },
+  {
     id: 'verben',
     title: 'Unregelmäßige Verben',
     subtitle: 'Nach Vokalwechsel gruppiert (ei – ie – ie …)',

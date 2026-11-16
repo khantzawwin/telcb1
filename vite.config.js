@@ -37,7 +37,7 @@ export default defineConfig({
         globPatterns: ['**/*.{js,css,html,svg,png}'],
         runtimeCaching: [
           {
-            urlPattern: /\/notes\.md$/,
+            urlPattern: /\/(notes\.md|vocab-dates\.json)$/,
             handler: 'StaleWhileRevalidate',
             options: {
               cacheName: 'notes-cache',

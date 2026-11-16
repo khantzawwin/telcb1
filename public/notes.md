@@ -11675,6 +11675,7 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 **der Bescheid** (pl. die Bescheide) — *official notice / decision (letter from an authority)*
 - *einen Bescheid erhalten / bekommen* = to receive an official decision
 - ⚠️ *Bescheid sagen / geben* = to let someone know (*Sag mir Bescheid!*)
+- *Bescheid wissen* = to know about it / be informed → *Weißt du schon Bescheid?*
 - Also in the B1 notes.
 
 > Nach der Prüfung erhält man einen Bescheid über die Anerkennung.
@@ -12421,6 +12422,26 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 ---
 
 
+**die Einarbeitung** (pl. die Einarbeitungen) — *induction / onboarding (training period at a new job)*
+- *die Einarbeitungszeit / Einarbeitungsphase* = training period
+- *sich einarbeiten* (hat sich eingearbeitet) = to get to know a new job · *jemanden einarbeiten* = to train someone in
+- *sich in + Akk. einarbeiten* → *sich in neue Aufgaben einarbeiten*
+
+> In den ersten zwei Wochen bekommen neue Mitarbeiter eine gründliche Einarbeitung.
+> *(In the first two weeks, new employees get thorough onboarding.)*
+
+---
+
+**der Arbeitsablauf** (pl. die Arbeitsabläufe) — *work process / workflow*
+- *der Ablauf* = process, sequence · *ablaufen* (ist abgelaufen) = to go, to proceed
+- *Arbeitsabläufe kennenlernen / verbessern / optimieren*
+
+> Während der Einarbeitung lerne ich die Arbeitsabläufe im Team kennen.
+> *(During onboarding, I get to know the team's workflows.)*
+
+---
+
+
 #### Verbs
 
 **erzielen** — *to achieve (a result, success, turnover)*
@@ -12778,6 +12799,18 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 ---
 
 
+**beschäftigt** — *employed (at a company) / busy*
+- ① *bei + Dat. beschäftigt sein* = to be employed at → *Ich bin bei der Firma Siemens beschäftigt.*
+- ② busy: *Er ist gerade sehr beschäftigt.*
+- *der/die Beschäftigte* = employee · *die Beschäftigung* = employment / activity
+- *sich beschäftigen mit + Dat.* (hat sich beschäftigt) = to deal with / to occupy oneself with
+
+> Seit drei Jahren bin ich als Krankenpflegerin in einem Krankenhaus beschäftigt.
+> *(I have been employed as a nurse in a hospital for three years.)*
+
+---
+
+
 #### Phrases
 
 **es jemandem angetan haben** — *to have charmed / captivated someone*
@@ -12823,3 +12856,1065 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 
 ---
 
+
+## Klasse K27 — Arbeitsvertrag & Abteilungen (Employment Contract & Departments)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**die Vereinbarung** (pl. die Vereinbarungen) — *agreement / deal*
+- *eine Vereinbarung treffen* = to make an agreement · *zu einer Vereinbarung kommen* = to reach an agreement
+- *vereinbaren* (hat vereinbart) = to agree on · *einen Termin vereinbaren* = to make an appointment
+- *laut Vereinbarung* = as agreed
+
+> Die zwei Personen kommen zu einer Vereinbarung.
+> *(The two people reach an agreement.)*
+
+---
+
+**die Zusatzleistung** (pl. die Zusatzleistungen) — *extra benefit / additional service*
+- In a job: things on top of the salary (*Boni, Weihnachtsgeld, Jobticket, Firmenwagen*)
+- *zusätzlich* = additional · *die Leistung* = performance, service, benefit
+
+> Die Zusatzleistungen bestehen aus Boni und Weihnachtsgeld.
+> *(The extra benefits consist of bonuses and a Christmas bonus.)*
+
+---
+
+**das Gehalt** (pl. die Gehälter) — *salary*
+- *ein hohes / niedriges Gehalt* · *das Bruttogehalt / Nettogehalt* = gross / net salary
+- ⚠️ *der Lohn* = wage (often paid by the hour) · *das Gehalt* = fixed monthly pay
+- Related (K25): *die Gehaltsvorstellung* = salary expectation
+
+> Im Arbeitsvertrag steht, wie hoch das Gehalt ist.
+> *(The employment contract states how high the salary is.)*
+
+---
+
+**die Probezeit** (pl. die Probezeiten) — *probationary period*
+- Usually 3–6 months (maximum 6) at the start of a new job
+- During the Probezeit the notice period is short: usually 2 weeks
+- Also in the B1 notes.
+
+> In der Probezeit können beide Seiten mit einer Frist von zwei Wochen kündigen.
+> *(During the probationary period, both sides can give two weeks' notice.)*
+
+---
+
+**der Urlaubsanspruch** (kein Plural) — *holiday entitlement*
+- *der Anspruch auf + Akk.* = right to · *Anspruch auf Urlaub haben*
+- By law at least **20 days** a year (5-day week); many companies give 25–30
+
+> Mein Urlaubsanspruch beträgt 28 Tage im Jahr.
+> *(My holiday entitlement is 28 days a year.)*
+
+---
+
+**die Kündigungsfrist** (pl. die Kündigungsfristen) — *notice period*
+- *die Frist* = deadline, period · *eine Frist einhalten* = to meet a deadline
+- By law: 4 weeks, to the 15th or the end of the month
+- Related: *die Kündigung, kündigen* (K25)
+
+> Die Kündigungsfrist beträgt vier Wochen zum Monatsende.
+> *(The notice period is four weeks to the end of the month.)*
+
+---
+
+**die Arbeitszeit** (pl. die Arbeitszeiten) — *working hours*
+- *flexible Arbeitszeiten* · *die Gleitzeit* = flexitime · *die Teilzeit / Vollzeit* = part-time / full-time
+- *geregelte Arbeitszeiten* = regular, fixed hours
+
+> Die Arbeitszeiten sind von Montag bis Freitag, 8 bis 16 Uhr.
+> *(Working hours are Monday to Friday, 8 am to 4 pm.)*
+
+---
+
+**die Elternzeit** (kein Plural) — *parental leave*
+- Up to 3 years per child, for mothers **and** fathers · *in Elternzeit gehen / sein*
+- *das Elterngeld* = parental allowance (money from the state)
+
+> Nach der Geburt geht mein Mann sechs Monate in Elternzeit.
+> *(After the birth, my husband is taking six months of parental leave.)*
+
+---
+
+**der Mutterschaftsurlaub** (kein Plural) — *maternity leave*
+- Official term today: *der Mutterschutz* (6 weeks before and 8 weeks after the birth)
+- After that, parents can take *Elternzeit*
+
+> Während des Mutterschaftsurlaubs bekommt sie weiter Geld.
+> *(She still gets paid during her maternity leave.)*
+
+---
+
+**der Nachlass** (pl. die Nachlässe) — *discount*
+- = *der Rabatt* = *die Ermäßigung* · *einen Nachlass von 10 % bekommen / gewähren*
+- ② estate (what a dead person leaves behind)
+
+> Mitarbeiter bekommen einen Nachlass von 20 % auf alle Produkte.
+> *(Employees get a 20% discount on all products.)*
+
+---
+
+**die Vergabebestimmung** (pl. die Vergabebestimmungen) — *allocation rules (who gets something and under which conditions)*
+- *vergeben* (hat vergeben) = to award, to allocate · *die Bestimmung* = rule, regulation
+- Usually plural: *laut Vergabebestimmungen*
+
+> Laut Vergabebestimmungen bekommen nur festangestellte Mitarbeiter den Nachlass.
+> *(According to the allocation rules, only permanent employees get the discount.)*
+
+---
+
+**die Veranstaltung** (pl. die Veranstaltungen) — *event*
+- = *das Event* · *eine Veranstaltung organisieren / besuchen*
+- *veranstalten* (hat veranstaltet) = to organise (an event) · *der Veranstalter* = organiser
+
+> Die Firma organisiert jedes Jahr eine Veranstaltung für alle Mitarbeiter.
+> *(The company organises an event for all employees every year.)*
+
+---
+
+**das Gut** (pl. die Güter) — *goods / product*
+- Mostly plural: *die Güter* = goods · *der Güterverkehr* = freight transport
+- *Konsumgüter* = consumer goods
+- ② *das Gut* = estate, farm · ⚠️ not the adjective *gut*
+
+> Die Logistik sorgt dafür, dass die Güter pünktlich beim Kunden ankommen.
+> *(Logistics makes sure the goods reach the customer on time.)*
+
+---
+
+**die Abteilung** (pl. die Abteilungen) — *department*
+- *der Einkauf* = purchasing · *das Personal / die Personalabteilung* = HR
+- *die Logistik* = logistics · *der Vertrieb* = sales · *das Marketing* = marketing
+- *der Kundendienst* = customer service · *die Produktion* = production
+- *die Finanzen / die Finanzabteilung* = finance · *das Lager* = warehouse
+
+> In welcher Abteilung arbeiten Sie? – Ich arbeite im Vertrieb.
+> *(Which department do you work in? – I work in sales.)*
+
+---
+
+**der Einkauf** (pl. die Einkäufe) — *purchasing (department) / shopping*
+- In a company: buys materials and products from suppliers (*Lieferanten*)
+- ② everyday: *den Einkauf machen* = to do the shopping
+
+> Der Einkauf beschafft alle Materialien für die Produktion.
+> *(Purchasing buys all the materials for production.)*
+
+---
+
+**die Personalabteilung** (pl. die Personalabteilungen) — *HR department*
+- *das Personal* = staff, employees · ⚠️ not "personal" (= *persönlich*)
+- Short: *das Personal* or *HR* · Takes care of hiring, contracts and *Einarbeitung*
+
+> Ihre Bewerbung schicken Sie bitte an die Personalabteilung.
+> *(Please send your application to the HR department.)*
+
+---
+
+**der Vertrieb** (kein Plural) — *sales / distribution*
+- Sells the company's products to customers · *im Vertrieb arbeiten*
+- *vertreiben* (hat vertrieben) = to sell, distribute
+
+> Im Vertrieb muss man gut mit Kunden sprechen können.
+> *(In sales, you need to be good at talking to customers.)*
+
+---
+
+**der Kundendienst** (kein Plural) — *customer service*
+- = *der Kundenservice* · helps customers with questions, complaints and repairs
+- *sich an den Kundendienst wenden* = to contact customer service
+
+> Bei Problemen wenden Sie sich bitte an unseren Kundendienst.
+> *(If you have problems, please contact our customer service.)*
+
+---
+
+**das Lager** (pl. die Lager) — *warehouse / stock*
+- *auf Lager haben* = to have in stock · *der Lagerist* = warehouse worker
+- ② camp: *das Ferienlager* = holiday camp
+
+> Die Ware ist leider nicht mehr auf Lager.
+> *(Unfortunately, the item is no longer in stock.)*
+
+---
+
+
+**die Bedingung** (pl. die Bedingungen) — *condition / term*
+- *die Arbeitsbedingungen* = working conditions · *die Vertragsbedingungen* = terms of the contract
+- *unter einer Bedingung* = on one condition · *unter der Bedingung, dass …*
+- *eine Bedingung stellen / erfüllen* = to set / meet a condition
+
+> Bevor ich den Vertrag unterschreibe, möchte ich die Bedingungen genau lesen.
+> *(Before I sign the contract, I'd like to read the terms carefully.)*
+
+---
+
+
+**die Einzelheit** (pl. die Einzelheiten) — *detail*
+- Mostly plural: *alle Einzelheiten* = all the details · = *das Detail*
+- *in allen Einzelheiten* = in full detail · *Weitere Einzelheiten erfahren Sie im Gespräch.*
+
+> Die Einzelheiten zum Gehalt besprechen wir beim Vorstellungsgespräch.
+> *(We'll discuss the details of the salary at the interview.)*
+
+---
+
+**die Rahmenbedingungen** (pl.) — *general conditions / framework (the basic terms)*
+- Usually plural · *der Rahmen* = frame, framework + *die Bedingung* = condition
+- In a job: salary, working hours, holidays, contract type · *gute Rahmenbedingungen bieten*
+
+> Bevor ich zusage, möchte ich die Rahmenbedingungen der Stelle kennen.
+> *(Before I accept, I'd like to know the general conditions of the job.)*
+
+---
+
+**der Bezug** (pl. die Bezüge) — *reference (to something)*
+- *in Bezug auf + Akk.* = regarding, with regard to · *Bezug nehmen auf + Akk.* = to refer to
+- Formal letters: *Bezug nehmend auf Ihre Anzeige …* = With reference to your advertisement …
+- ② receipt (of money): *der Bezug von Arbeitslosengeld* · ③ cover: *der Bettbezug*
+
+> In Bezug auf Ihre Anzeige vom 1. November möchte ich mich als Bürokauffrau bewerben.
+> *(With reference to your advertisement of 1 November, I'd like to apply as an office clerk.)*
+
+---
+
+
+#### Verbs
+
+**sich erkundigen nach + Dat.** — *to ask about / to make enquiries about*
+- Perfekt: **hat sich erkundigt**
+- = *sich informieren über + Akk.* · *sich bei jemandem erkundigen* = to ask someone
+
+> Ich möchte mich nach dem Prüfungsdatum erkundigen.
+> *(I would like to ask about the exam date.)*
+
+---
+
+**durchdenken** — *to think something through*
+- Perfekt: **hat durchdacht** (inseparable, more common) or **hat durchgedacht** (separable)
+- *etwas gut / genau durchdenken* · Adjective: *durchdacht* = well thought-out (K25)
+
+> Ich habe das Projekt mit Strategie durchgedacht.
+> *(I thought the project through strategically.)*
+
+---
+
+**verlaufen** — *to go / to proceed (how something runs)*
+- Perfekt: **ist verlaufen** · es verläuft · verlief
+- *gut / ohne Probleme / wie geplant verlaufen*
+- ⚠️ *sich verlaufen* (hat sich verlaufen) = to get lost on foot
+
+> Der Kurs verläuft gut.
+> *(The course is going well.)*
+
+---
+
+**aufführen** — *to list (in a document)*
+- Perfekt: **hat aufgeführt** (separable)
+- *im Vertrag / in der Liste aufgeführt sein* = to be listed in the contract / list
+- ② to perform (a play): *ein Theaterstück aufführen* · *die Aufführung* = performance
+
+> Alle Zusatzleistungen sind im Arbeitsvertrag aufgeführt.
+> *(All the extra benefits are listed in the employment contract.)*
+
+---
+
+**sich scheuen** — *to shy away from / to be reluctant to*
+- Perfekt: **hat sich gescheut**
+- *sich scheuen, etwas zu tun* · *sich vor + Dat. scheuen* · *Scheuen Sie sich nicht, Fragen zu stellen!*
+- *scheu* = shy · More than *Angst haben*: you avoid doing it
+
+> Beim Bewerbungsgespräch scheue ich mich, nach dem Gehalt zu fragen.
+> *(In job interviews, I'm reluctant to ask about the salary.)*
+
+---
+
+**zur Verfügung stellen** — *to provide / to make available*
+- Perfekt: **hat zur Verfügung gestellt** · *jemandem etwas zur Verfügung stellen*
+- = *geben* (more formal) · *zur Verfügung stehen* = to be available
+
+> Die Schule stellt den Teilnehmern die Bücher zur Verfügung.
+> *(The school provides the books for the participants.)*
+
+---
+
+**kennzeichnen** — *to mark / to label*
+- Perfekt: **hat gekennzeichnet** (inseparable) · *gekennzeichnet* = marked = *markiert*
+- *die Kennzeichnung* = labelling · *das Kennzeichen* = number plate, sign
+
+> Die Baustelle ist gekennzeichnet.
+> *(The building site is marked.)*
+
+---
+
+**überwachen** — *to monitor / to watch over*
+- Perfekt: **hat überwacht** (inseparable)
+- *die Überwachung* = surveillance · *die Videoüberwachung* = CCTV
+
+> Die Omas überwachen die Straße.
+> *(The grannies keep an eye on the street.)*
+
+---
+
+**umsetzen** — *to put into practice / to implement*
+- Perfekt: **hat umgesetzt** (separable) · = *in die Realität bringen*
+- *eine Idee / einen Plan / ein Versprechen umsetzen*
+- Also in the B1 notes.
+
+> Die Firma hat die Idee schnell umgesetzt.
+> *(The company put the idea into practice quickly.)*
+
+---
+
+**einhalten** — *to keep to / to comply with*
+- Perfekt: **hat eingehalten** (separable) · du hältst ein, er hält ein
+- *eine Regel / eine Frist / einen Termin / ein Versprechen einhalten*
+
+> Ich halte die Regeln ein.
+> *(I stick to the rules.)*
+
+---
+
+**beschaffen** — *to get / to obtain (for a company)*
+- Perfekt: **hat beschafft** · = *besorgen*, *kaufen* (more formal)
+- *die Beschaffung* = procurement (a job for the *Einkauf*)
+
+> Die Firma beschafft die Bücher.
+> *(The company gets the books.)*
+
+---
+
+
+**gelten** — *to apply / to be valid*
+- er **gilt**, du giltst · galt · Perfekt: **hat gegolten**
+- *gelten für + Akk.* = to apply to → *Die Regel gilt für alle Mitarbeiter.*
+- ② *gelten als* = to be considered → *Er gilt als sehr zuverlässig.*
+- Adjective: *gültig* = valid · *ungültig* = invalid
+
+> Der neue Vertrag gilt ab dem 1. Januar.
+> *(The new contract applies from 1 January.)*
+
+---
+
+
+#### Adjectives & Adverbs
+
+**zusätzlich** — *additional / in addition*
+- = *außerdem*, *extra*, *plus* · *zusätzliche Kosten* = extra costs
+
+> Ich muss heute Abend zusätzlich unterrichten.
+> *(I have to teach an extra class this evening.)*
+
+---
+
+**bindend** — *binding*
+- = *verbindlich* · *ein bindender Vertrag* · You must keep to it
+- ⚠️ from *binden* (to tie): *Meine Haare sind gebunden.* = My hair is tied up
+
+> Der Vertrag ist bindend.
+> *(The contract is binding.)*
+
+---
+
+**geregelt** — *regulated / fixed / settled*
+- *regeln* (hat geregelt) = to regulate, sort out · *etwas ist (gesetzlich) geregelt*
+- *geregelte Arbeitszeiten* = regular working hours · *Das ist geregelt.* = That's sorted.
+
+> Urlaub und Kündigungsfrist sind im Arbeitsvertrag genau geregelt.
+> *(Holidays and the notice period are clearly set out in the employment contract.)*
+
+---
+
+**griffbereit** — *within reach / handy*
+- *der Griff* = grip, reach + *bereit* = ready · *etwas griffbereit haben*
+
+> Wenn ich im Bett liege, ist mein Handy griffbereit.
+> *(When I'm lying in bed, my phone is within reach.)*
+
+---
+
+**ehrlich** — *honest*
+- *die Ehrlichkeit* = honesty · *Ehrlich gesagt, …* = to be honest, …
+- Opposite: *unehrlich*
+
+> Im Bewerbungsgespräch sollte man ehrlich sein.
+> *(You should be honest in a job interview.)*
+
+---
+
+**hochwertig** — *high-quality*
+- = *von hoher Qualität* · Opposite: *minderwertig* = low-quality
+- ⚠️ *qualitativ* only means "in terms of quality": *qualitativ hochwertig* = high in quality
+
+> Louis Vuitton produziert hochwertige Kleidung.
+> *(Louis Vuitton produces high-quality clothing.)*
+
+---
+
+**dauerhaft** — *permanent / lasting*
+- = *für immer, permanent* · *dauerhaft geschlossen* = permanently closed
+- *die Dauer* = duration · *dauern* = to last
+
+> Das ist ein dauerhafter Aufenthaltstitel.
+> *(That is a permanent residence permit.)*
+
+---
+
+**hausintern** — *in-house / internal (within the company)*
+- = *firmenintern* · *eine Stelle hausintern ausschreiben* = to advertise a job internally
+- Opposite: *extern*
+
+> Die Stelle wird zuerst hausintern ausgeschrieben.
+> *(The job is first advertised internally.)*
+
+---
+
+**nächstgelegen** — *nearest*
+- Only before a noun: *der/die/das nächstgelegene …*
+- *gelegen* = located · *in der Nähe* = nearby
+
+> Das nächstgelegene Restaurant ist Arda Kebab.
+> *(The nearest restaurant is Arda Kebab.)*
+
+---
+
+**in Kürze** — *shortly / soon*
+- = *bald*, *in ein paar Tagen* · Formal, typical in letters and e-mails
+- *Wir melden uns in Kürze bei Ihnen.* = We'll be in touch shortly.
+
+> Sie erhalten in Kürze eine Antwort von uns.
+> *(You will receive an answer from us shortly.)*
+
+---
+
+
+**endgültig** — *final / definite*
+- *eine endgültige Entscheidung / Antwort* = a final decision / answer
+- Adverb: *endgültig* = for good, once and for all
+- ⚠️ *gültig* = valid (not "guilty")
+
+> Die endgültige Entscheidung bekommen Sie nächste Woche.
+> *(You'll get the final decision next week.)*
+
+---
+
+
+#### Phrases
+
+**sich interessieren für + Akk.** — *to be interested in*
+- Verb: *Ich interessiere mich für …* (Akk.)
+- Adjective: *interessiert sein an + Dat.* → *Ich bin an CR7 interessiert.*
+- Noun: *Interesse haben an + Dat.* → *Ich habe Interesse an CR7.*
+
+> Ich interessiere mich für CR7.
+> *(I'm interested in CR7.)*
+
+---
+
+**einen Termin wahrnehmen** — *to attend an appointment*
+- *wahrnehmen* (hat wahrgenommen) = to attend, to take up; ② to perceive
+- *einen Termin vereinbaren / absagen / verschieben* = to make / cancel / postpone an appointment
+
+> Leider kann ich den Termin am Montag nicht wahrnehmen.
+> *(Unfortunately, I can't attend the appointment on Monday.)*
+
+---
+
+**Süßes oder Saures!** — *Trick or treat!*
+- What children say at Halloween (31 October) · *das Süße* = sweets, *das Saure* = something sour (a trick)
+
+> Die Kinder klingeln und rufen: „Süßes oder Saures!“
+> *(The children ring the bell and shout: "Trick or treat!")*
+
+---
+
+
+## Klasse K29 — Regeln & Sicherheit am Arbeitsplatz (Workplace Rules & Safety)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**die Verschwiegenheit** (kein Plural) — *confidentiality / discretion*
+- You must stay silent and not pass on confidential information
+- *die Verschwiegenheitspflicht* = duty of confidentiality · *zur Verschwiegenheit verpflichtet sein*
+- Adjective: *verschwiegen* = discreet · Verb: *schweigen* = to keep quiet
+
+> Laut Arbeitsvertrag bin ich zur Verschwiegenheit verpflichtet.
+> *(Under my employment contract, I'm bound to confidentiality.)*
+
+---
+
+**die Abmahnung** (pl. die Abmahnungen) — *formal warning (from the employer)*
+- A written warning: if it happens again, you can be dismissed (*die Kündigung*)
+- *eine Abmahnung bekommen / erhalten* · Verb: *jemanden abmahnen* (hat abgemahnt)
+
+> Wer immer wieder zu spät kommt, bekommt eine Abmahnung.
+> *(Anyone who keeps coming in late gets a formal warning.)*
+
+---
+
+**die Werbung** (meist ohne Plural) — *advertising / adverts*
+- = *die Reklame* (a bit old-fashioned) · *die Werbepause* = commercial break
+- *für + Akk. Werbung machen* = to advertise something
+- Related (K19): *werben für + Akk.* = to advertise
+
+> Im Internet sieht man überall Werbung.
+> *(You see adverts everywhere on the internet.)*
+
+---
+
+**die Schutzausrüstung** (pl. die Schutzausrüstungen) — *protective equipment / safety gear*
+- Clothes and shoes you need for protection: *Helm, Handschuhe, Sicherheitsschuhe, Gehörschutz*
+- *die persönliche Schutzausrüstung (PSA)* = personal protective equipment (PPE)
+
+> Auf der Baustelle muss man immer Schutzausrüstung tragen.
+> *(On a building site, you always have to wear protective gear.)*
+
+---
+
+**der Helm** (pl. die Helme) — *helmet / hard hat*
+- Protection for the head · *der Schutzhelm* = hard hat · *der Fahrradhelm* = bike helmet
+- *einen Helm tragen / aufsetzen* = to wear / put on a helmet
+
+> Ohne Helm darf man die Baustelle nicht betreten.
+> *(You may not enter the building site without a helmet.)*
+
+---
+
+**die Panne** (pl. die Pannen) — *breakdown*
+- Something is broken and stops working, especially a car: *eine Panne haben*
+- *die Reifenpanne* = flat tyre · *der Pannendienst* = breakdown service
+- ② mishap, glitch: *eine technische Panne*
+
+> Auf dem Weg zur Arbeit hatte ich eine Panne.
+> *(My car broke down on the way to work.)*
+
+---
+
+**der Gehörschutz** (kein Plural) — *hearing protection / ear defenders*
+- = *die Ohrenschützer* (pl.) = earmuffs · *die Ohrstöpsel* (pl.) = earplugs
+- *das Gehör* = hearing · *Gehörschutz tragen*
+
+> In der lauten Halle tragen alle Mitarbeiter Gehörschutz.
+> *(In the noisy hall, all employees wear hearing protection.)*
+
+---
+
+**das Schild** (pl. die Schilder) — *sign*
+- = *das Zeichen* · *das Warnschild* = warning sign · *das Verkehrsschild* = road sign
+- ⚠️ *der Schild* (pl. die Schilde) = shield
+
+> Das Schild zeigt den Weg zum Notausgang.
+> *(The sign shows the way to the emergency exit.)*
+
+---
+
+**der Notausgang** (pl. die Notausgänge) — *emergency exit*
+- An exit you use when there is danger · *die Not* = emergency · *der Ausgang* = exit
+- *der Fluchtweg* = escape route · *Notausgang freihalten!* = Keep emergency exit clear!
+
+> Der Notausgang muss immer frei bleiben.
+> *(The emergency exit must always be kept clear.)*
+
+---
+
+**der Brand** (pl. die Brände) — *fire (a building, a forest …)*
+- = *das Feuer*, but an uncontrolled, dangerous one · *in Brand geraten* = to catch fire
+- Verb: *brennen* (brannte, hat gebrannt) = to burn · *Es brennt!* = Fire!
+- *im Brandfall* = in case of fire · *der Waldbrand* = forest fire
+
+> Bei dem Brand in der Fabrik wurde zum Glück niemand verletzt.
+> *(Luckily, nobody was hurt in the factory fire.)*
+
+---
+
+**der Feuerlöscher** (pl. die Feuerlöscher) — *fire extinguisher*
+- Verb: *ein Feuer löschen* = to put out a fire (= *ausmachen*)
+- *einen Löschversuch unternehmen* = to try to put out the fire (on the fire-safety notice)
+
+> Mit dem Feuerlöscher kann man einen kleinen Brand löschen.
+> *(You can put out a small fire with the fire extinguisher.)*
+
+---
+
+**die Wunde** (pl. die Wunden) — *wound*
+- An injury, e.g. from a cut, that bleeds · *bluten* (hat geblutet) = to bleed
+- *eine Wunde reinigen / verbinden* = to clean / dress a wound
+- Related: *die Verletzung* = injury (B1, Lektion 18)
+
+> Die Wunde blutet stark, wir brauchen einen Verband.
+> *(The wound is bleeding badly, we need a bandage.)*
+
+---
+
+**das Pflaster** (pl. die Pflaster) — *plaster / Band-Aid*
+- For small wounds · *ein Pflaster auf die Wunde kleben*
+- ② paving: *das Kopfsteinpflaster* = cobblestones
+
+> Für den kleinen Schnitt reicht ein Pflaster.
+> *(A plaster is enough for the small cut.)*
+
+---
+
+**der Verband** (pl. die Verbände) — *bandage / dressing*
+- *einen Verband anlegen* = to put on a bandage · *der Verbandskasten* = first-aid kit
+- ② association: *der Sportverband* = sports association
+
+> Der Arzt hat mir einen Verband angelegt.
+> *(The doctor put a bandage on me.)*
+
+---
+
+**die Genehmigung** (pl. die Genehmigungen) — *permission / permit*
+- *die Genehmigung haben, … zu + Infinitiv* · *eine Genehmigung beantragen / bekommen*
+- Verb: *genehmigen* (hat genehmigt) = to approve · *die Arbeitsgenehmigung* = work permit
+
+> Wir haben die Genehmigung, eine Pause einzulegen.
+> *(We have permission to take a break.)*
+
+---
+
+
+#### Verbs
+
+**verstoßen gegen + Akk.** — *to break / to violate (a rule, a law)*
+- Perfekt: **hat verstoßen** · er verstößt · verstieß
+- = *Regeln nicht einhalten* · Opposite: *eine Regel einhalten / befolgen* (K27)
+- Noun: *der Verstoß* (pl. die Verstöße) = violation, breach
+
+> Ich bin zu schnell gefahren, ich habe gegen die Straßenverkehrsordnung verstoßen.
+> *(I drove too fast; I broke the traffic regulations.)*
+
+---
+
+**posten** — *to post (on social media)*
+- Perfekt: **hat gepostet** · *etwas auf Instagram / Facebook posten*
+- = *teilen* (to share content) · ⚠️ *der Post* = a social-media post · *die Post* = mail, post office
+
+> Mitarbeiter dürfen keine Fotos aus dem Büro posten.
+> *(Employees aren't allowed to post photos from the office.)*
+
+---
+
+**hochladen** — *to upload*
+- Perfekt: **hat hochgeladen** (separable) · er lädt hoch · lud hoch
+- Opposite: *herunterladen* = to download
+
+> Kannst du die Fotos vom Betriebsausflug hochladen?
+> *(Can you upload the photos from the company outing?)*
+
+---
+
+**schweigen** — *to be silent / to say nothing*
+- Perfekt: **hat geschwiegen** · schwieg (irregular)
+- = *nichts sagen* · *über + Akk. schweigen* = to keep quiet about something
+- *Reden ist Silber, Schweigen ist Gold.* = Speech is silver, silence is golden.
+
+> Über vertrauliche Informationen muss man schweigen.
+> *(You have to keep quiet about confidential information.)*
+
+---
+
+**benachteiligen** — *to disadvantage / to discriminate against*
+- Perfekt: **hat benachteiligt** (inseparable)
+- Someone does something, so another person has disadvantages (*der Nachteil*)
+- *die Benachteiligung* = discrimination · Opposite: *bevorzugen* = to favour (K31)
+- Also in the B1 notes.
+
+> Niemand darf wegen seiner Herkunft benachteiligt werden.
+> *(Nobody may be discriminated against because of where they come from.)*
+
+---
+
+**beleidigen** — *to insult / to offend*
+- Perfekt: **hat beleidigt** (inseparable) · *jemanden mit Schimpfwörtern beleidigen*
+- *die Beleidigung* = insult · *beleidigt sein* = to be offended
+- Also in the B1 notes (Lektion 20).
+
+> In sozialen Netzwerken darf man niemanden beleidigen.
+> *(You mustn't insult anyone on social media.)*
+
+---
+
+**lästern** — *to bad-mouth / to gossip (nastily)*
+- Perfekt: **hat gelästert** · *über + Akk. lästern*
+- To speak badly about people behind their back (*hinter dem Rücken*)
+
+> In der Pause lästern sie immer über den Chef.
+> *(During the break, they always bad-mouth the boss.)*
+
+---
+
+**sich wehren gegen + Akk.** — *to defend oneself against / to fight back*
+- Perfekt: **hat sich gewehrt**
+- = *sich schützen gegen*, *sich verteidigen gegen* · *sich gegen Mobbing wehren*
+
+> Wenn ein Kollege dich beleidigt, solltest du dich dagegen wehren.
+> *(If a colleague insults you, you should stand up for yourself.)*
+
+---
+
+**leiden an / unter + Dat.** — *to suffer from*
+- Perfekt: **hat gelitten** · litt (irregular)
+- *an + Dat.* for illnesses → *an Migräne leiden* · *unter + Dat.* for stress, heat, a situation → *unter Stress leiden*
+- *jemanden nicht leiden können* = to not be able to stand someone
+- Also in the B1 notes (Lektion 18).
+
+> Letzten Sommer haben wir unter einer schrecklichen Hitze gelitten.
+> *(Last summer, we suffered from terrible heat.)*
+
+---
+
+**berühren** — *to touch*
+- Perfekt: **hat berührt** (inseparable) · = *anfassen*
+- *Bitte nicht berühren!* = Please do not touch!
+- ② to move (emotionally): *Der Film hat mich sehr berührt.*
+
+> Berühren Sie die Maschine nicht, solange sie läuft.
+> *(Don't touch the machine while it's running.)*
+
+---
+
+**retten** — *to save / to rescue*
+- Perfekt: **hat gerettet** · *jemandem das Leben retten* = to save someone's life
+- *die Rettung* = rescue · *der Rettungswagen* = ambulance
+
+> Die Feuerwehr hat alle Personen aus dem Gebäude gerettet.
+> *(The fire brigade rescued everyone from the building.)*
+
+---
+
+**löschen** — *to put out / to extinguish (a fire)*
+- Perfekt: **hat gelöscht** · *ein Feuer / einen Brand löschen* = *ausmachen*
+- ② to delete: *eine Datei / Daten löschen*
+- Also in the B1 notes (Lektion 8).
+
+> Die Feuerwehr hat den Brand schnell gelöscht.
+> *(The fire brigade quickly put out the fire.)*
+
+---
+
+**einschlagen** — *to smash (glass)*
+- Perfekt: **hat eingeschlagen** (separable) · er schlägt ein · schlug ein
+- On a fire alarm: first *die Scheibe einschlagen*, then press the button
+- ② *Der Blitz schlägt ein.* = Lightning strikes. · ③ *einen Nagel einschlagen* = to hammer in a nail
+
+> Im Notfall muss man die Scheibe einschlagen und den Knopf drücken.
+> *(In an emergency, you have to smash the glass and press the button.)*
+
+---
+
+**betätigen** — *to operate / to activate / to press*
+- Perfekt: **hat betätigt** (inseparable) · formal for *bedienen, benutzen*
+- *ein Gerät / einen Schalter / die Bremse / den Feuermelder betätigen*
+- ② *sich betätigen* = to be active → *sich sportlich betätigen*
+
+> Im Brandfall betätigen Sie sofort den Feuermelder.
+> *(In case of fire, activate the fire alarm immediately.)*
+
+---
+
+**flüchten** — *to flee / to escape*
+- Perfekt: **ist geflüchtet** · = *fliehen* (floh, ist geflohen)
+- *vor + Dat. flüchten* · *die Flucht* = escape · *der Flüchtling* = refugee
+
+> Bei einem Brand flüchtet man über die Treppe, nicht mit dem Aufzug.
+> *(In a fire, you escape by the stairs, not the lift.)*
+
+---
+
+**verständigen** — *to notify / to call (emergency services)*
+- Perfekt: **hat verständigt** · *die Feuerwehr / die Polizei / den Notarzt verständigen*
+- = *anrufen, benachrichtigen, informieren*
+- ② *sich verständigen* = to communicate, to make yourself understood
+
+> Wenn es brennt, verständigen Sie sofort die Feuerwehr unter 112.
+> *(If there's a fire, call the fire brigade on 112 immediately.)*
+
+---
+
+**gefährden** — *to endanger / to put at risk*
+- Perfekt: **hat gefährdet** (inseparable) · *jemanden / etwas gefährden* (+ Akk.)
+- = *in Gefahr bringen* · ⚠️ *gefährden* + Akk., but *schaden* + Dat.: *Das gefährdet die Gesundheit.* = *Das schadet der Gesundheit.*
+- *gefährdet sein* = to be at risk · *die Gefährdung* = danger, risk
+
+> Wer die Sicherheitsregeln nicht einhält, gefährdet sich und andere.
+> *(Anyone who doesn't follow the safety rules puts themselves and others at risk.)*
+
+---
+
+**stolpern** — *to trip / to stumble*
+- Perfekt: **ist gestolpert** · *über + Akk. stolpern*
+
+> Ich bin über ein Kabel gestolpert.
+> *(I tripped over a cable.)*
+
+---
+
+**stürzen** — *to fall (badly)*
+- Perfekt: **ist gestürzt** · = *hinfallen* · *der Sturz* (pl. die Stürze) = fall
+- ② (hat gestürzt) to overthrow: *eine Regierung stürzen*
+
+> Ich bin von der Leiter gestürzt.
+> *(I fell off the ladder.)*
+
+---
+
+**sich verletzen** — *to hurt oneself / to get injured*
+- Perfekt: **hat sich verletzt** · = *sich wehtun* · *die Verletzung* = injury (B1, Lektion 18)
+- With a body part, the reflexive pronoun is Dat.: *Ich habe mich verletzt.* but *Ich habe mir das Bein verletzt.*
+- Same pattern: *sich das Bein brechen* → *Ich habe mir das Bein gebrochen.* = I broke my leg.
+
+> Ich habe mich bei der Arbeit verletzt.
+> *(I hurt myself at work.)*
+
+---
+
+**ausrutschen** — *to slip*
+- Perfekt: **ist ausgerutscht** (separable) · *auf + Dat. ausrutschen* → *auf dem Eis ausrutschen*
+
+> Ich bin auf dem nassen Boden ausgerutscht.
+> *(I slipped on the wet floor.)*
+
+---
+
+**sich etwas einklemmen** — *to trap / to catch (e.g. your finger)*
+- Perfekt: **hat sich … eingeklemmt** (separable) · reflexive pronoun in the Dat.: *ich klemme mir …*
+- = *sich etwas quetschen* = to squash, to crush
+
+> Ich habe mir die Hand in der Tür eingeklemmt.
+> *(I caught my hand in the door.)*
+
+---
+
+**sich verbrennen** — *to burn oneself*
+- Perfekt: **hat sich verbrannt** · with fire, hot oil or hot water · *sich die Finger verbrennen*
+- *die Verbrennung* = burn · ② *verbrennen* (ist verbrannt) = to burn (up) → *Das Essen ist verbrannt.*
+
+> Ich habe mich am heißen Öl verbrannt.
+> *(I burned myself on the hot oil.)*
+
+---
+
+**beabsichtigen** — *to intend*
+- Perfekt: **hat beabsichtigt** (inseparable) · *beabsichtigen, … zu + Infinitiv* (formal)
+- = *vorhaben, planen, die Absicht haben*
+
+> Ich beabsichtige, in Zukunft einen neuen Porsche zu kaufen.
+> *(I intend to buy a new Porsche in the future.)*
+
+---
+
+
+#### Adjectives & Adverbs
+
+**vertraulich** — *confidential*
+- = *geheim, sehr privat* · *streng vertraulich* = strictly confidential
+- *vertrauliche Daten / Informationen* · from *das Vertrauen* = trust
+
+> Diese Informationen sind streng vertraulich.
+> *(This information is strictly confidential.)*
+
+---
+
+**abgelenkt** — *distracted*
+- *abgelenkt sein* = *nicht konzentriert sein* · *von + Dat. abgelenkt sein*
+- Verb: *ablenken* (lenkt ab, hat abgelenkt) = to distract (B1, Lektion 24)
+
+> Durch das Handy bin ich oft von der Arbeit abgelenkt.
+> *(My phone often distracts me from my work.)*
+
+---
+
+**hilfsbedürftig** — *in need of help*
+- *hilfsbedürftig sein* = *Hilfe brauchen* · *hilfsbedürftige Personen*
+- *bedürftig* = needy · *das Bedürfnis* = need
+
+> Bei einem Feueralarm nehmen wir hilfsbedürftige Kollegen mit nach draußen.
+> *(During a fire alarm, we take colleagues who need help outside with us.)*
+
+---
+
+**ohnmächtig** — *unconscious / fainted*
+- *ohnmächtig sein* = *bewusstlos sein* · *ohnmächtig werden* = *in Ohnmacht fallen* = to faint
+- ② powerless: *ohnmächtig zusehen* = to watch helplessly
+
+> Wegen der Hitze ist eine Kollegin ohnmächtig geworden.
+> *(A colleague fainted because of the heat.)*
+
+---
+
+
+#### Phrases
+
+**einen Sicherheitsgurt anlegen** — *to put on a seat belt / safety harness*
+- *anlegen* (legt an, hat angelegt) = to put on · in a car = *sich anschnallen*
+- At work (roof, scaffolding): a harness that stops you from falling
+- Also: *einen Verband anlegen* = to put on a bandage · *Geld anlegen* = to invest money
+
+> Bevor wir losfahren, legen alle den Sicherheitsgurt an.
+> *(Before we set off, everyone puts on their seat belt.)*
+
+---
+
+**es ist untersagt** — *it is prohibited*
+- = *es ist verboten* (formal; on signs and in rules) · *Rauchen untersagt!*
+- *es ist untersagt, … zu + Infinitiv* · Verb: *untersagen* (hat untersagt) = to prohibit
+
+> Es ist untersagt, innerhalb des Gebäudes zu rauchen.
+> *(Smoking inside the building is prohibited.)*
+
+---
+
+**Ruhe bewahren** — *to keep calm*
+- = *ruhig bleiben* · *Bitte bewahren Sie Ruhe!* = Please stay calm!
+- *bewahren* (hat bewahrt) = to keep, to preserve · The first rule on every fire-safety notice
+
+> Auch im Notfall sollte man Ruhe bewahren.
+> *(Even in an emergency, you should keep calm.)*
+
+---
+
+**in der Lage sein** — *to be able to / to be in a position to*
+- *in der Lage sein, … zu + Infinitiv* = *können* (formal) · *nicht in der Lage sein* = to be unable
+
+> Ich bin nicht in der Lage, den Termin einzuhalten.
+> *(I'm not able to meet the deadline.)*
+
+---
+
+**verpflichtet sein** — *to be obliged to*
+- *verpflichtet sein, … zu + Infinitiv* = *die Pflicht haben* = *müssen* (formal)
+- *zu + Dat. verpflichtet sein* → *zur Verschwiegenheit verpflichtet sein*
+
+> Wir sind verpflichtet, Steuern zu bezahlen.
+> *(We are obliged to pay taxes.)*
+
+---
+
+
+## Klasse K31 — Umgangsformen & Anrede (Etiquette & Forms of Address)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**der Vortrag** (pl. die Vorträge) — *talk / lecture / presentation*
+- = *die Präsentation, die Rede* · *einen Vortrag halten* (hält, hat gehalten) = to give a talk
+- *ein Vortrag über + Akk. / zum Thema …*
+
+> Morgen hält sie einen Vortrag zum Thema Umwelt.
+> *(Tomorrow she's giving a talk on the environment.)*
+
+---
+
+**der/die Vorgesetzte** (pl. die Vorgesetzten) — *boss / superior*
+- = *der Chef / die Chefin* · declined like an adjective: *ein Vorgesetzter, eine Vorgesetzte, mit meinem Vorgesetzten*
+- Opposite: *der Mitarbeiter / die Mitarbeiterin* = employee
+
+> Meine Vorgesetzte hat mir das Du angeboten.
+> *(My boss offered to switch to "du" with me.)*
+
+---
+
+**der Abstand** (pl. die Abstände) — *distance / gap*
+- = *die Distanz* · *Abstand halten* = to keep your distance
+- *in regelmäßigen Abständen* = at regular intervals · *mit Abstand* = by far → *Sie ist mit Abstand die Beste.*
+
+> Am Empfang beim Arzt muss man Abstand halten.
+> *(At the reception desk at the doctor's, you have to keep your distance.)*
+
+---
+
+**der Rang** (pl. die Ränge) — *rank / status*
+- = *die Position in der Hierarchie* · *ein hoher / niedriger Rang*
+- *ranghöher* = higher-ranking → In Germany, the higher-ranking or older person offers the *Du*
+- ② (theatre, stadium) circle, tier: *im ersten Rang sitzen*
+
+> In vielen Firmen spielt der Rang eine wichtige Rolle.
+> *(In many companies, rank plays an important role.)*
+
+---
+
+
+#### Verbs
+
+**duzen** — *to address someone as "du"*
+- Perfekt: **hat geduzt** · *jemanden duzen* · *sich duzen* → *Wir duzen uns.*
+- *jemandem das Du anbieten* = to offer to use "du" · Opposite: *siezen*
+
+> In unserer Firma duzen sich alle.
+> *(In our company, everyone says "du" to each other.)*
+
+---
+
+**siezen** — *to address someone as "Sie"*
+- Perfekt: **hat gesiezt** · *jemanden siezen* · *sich siezen* → *Wir siezen uns.*
+- Usual with strangers, customers, older people and often bosses · Opposite: *duzen*
+
+> Den Chef siezen wir, aber die Kollegen duzen wir.
+> *(We say "Sie" to the boss but "du" to our colleagues.)*
+
+---
+
+**sich etwas merken** — *to remember / to memorise*
+- Perfekt: **hat sich … gemerkt** · reflexive pronoun in the Dat.: *ich merke mir, du merkst dir*
+- = *etwas (im Kopf) speichern*, for people (a computer *speichert*) · *Merk dir das!* = Remember that!
+- ⚠️ *merken* without *sich* = to notice → *Ich habe nichts gemerkt.* (B1, Lektion 14)
+
+> Ich kann mir Namen nur schlecht merken.
+> *(I'm bad at remembering names.)*
+
+---
+
+**bevorzugen** — *to prefer*
+- Perfekt: **hat bevorzugt** (inseparable) · = *lieber haben, vorziehen* (zieht vor, hat vorgezogen)
+- ② to favour, to treat better: *Der Chef bevorzugt manche Mitarbeiter.* · Opposite: *benachteiligen* (K29)
+- Also in the B1 notes (Lektion 20).
+
+> Viele junge Kollegen bevorzugen das Du.
+> *(Many young colleagues prefer "du".)*
+
+---
+
+**schätzen** — *to estimate / to guess*
+- Perfekt: **hat geschätzt** · *jemanden / etwas auf + Akk. schätzen* · = *glauben, vermuten*
+- *Schätz mal!* = Have a guess! · Related: *einschätzen* = to assess
+- ② to value, to appreciate: *Ich schätze deine Hilfe sehr.*
+
+> Ich weiß nicht, wie alt er ist, aber ich schätze ihn auf 60 Jahre.
+> *(I don't know how old he is, but I'd guess he's 60.)*
+
+---
+
+
+#### Adjectives & Adverbs
+
+**umgekehrt** — *the other way round / reversed / vice versa*
+- *und umgekehrt* = and vice versa · *in umgekehrter Reihenfolge* = in reverse order
+- From *umkehren* = to turn round, to reverse
+
+> Der Chef bietet dem Mitarbeiter das Du an – umgekehrt ist das unüblich.
+> *(The boss offers the employee the "du" – the other way round is unusual.)*
+
+---
+
+**locker** — *relaxed / casual / informal*
+- = *nicht streng, nicht so formell, entspannt* · *eine lockere Atmosphäre*
+- *etwas locker sehen* = to be relaxed about something
+- ② loose: *Die Schraube ist locker.*
+
+> In unserem Team ist die Atmosphäre sehr locker.
+> *(The atmosphere in our team is very relaxed.)*
+
+---

@@ -9,6 +9,7 @@ const NotesContext = createContext(null)
 export function NotesProvider({ children }) {
   const { level } = useLevel()
   const [allLessons, setAllLessons] = useState([])
+  const [addedDates, setAddedDates] = useState({})
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
@@ -21,18 +22,23 @@ export function NotesProvider({ children }) {
       .then(text => setAllLessons(parseNotes(text)))
       .catch(setError)
       .finally(() => setLoading(false))
+    // Date each word was added (built by scripts/vocab-dates.mjs); optional
+    fetch('/vocab-dates.json')
+      .then(r => (r.ok ? r.json() : {}))
+      .then(setAddedDates)
+      .catch(() => {})
   }, [])
 
   const value = useMemo(() => {
     const lessons = allLessons.filter(l => l.level === level)
     return {
       lessons,
-      cards: buildCardList(lessons),
+      cards: buildCardList(lessons).map(c => ({ ...c, added: addedDates[c.id] || '' })),
       grammarTopics: buildGrammarList(allLessons.filter(l => l.level === 'B1')),
       loading,
       error,
     }
-  }, [allLessons, level, loading, error])
+  }, [allLessons, addedDates, level, loading, error])
 
   return <NotesContext.Provider value={value}>{children}</NotesContext.Provider>
 }
