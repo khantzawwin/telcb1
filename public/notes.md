@@ -13918,3 +13918,942 @@ Look-alike words that sound the same (or nearly) but are grammatically different
 > *(The atmosphere in our team is very relaxed.)*
 
 ---
+
+
+## Klasse K33 — Nomen-Verb-Verbindungen & Arbeitsalltag (Noun-Verb Phrases & Everyday Work)
+
+### Vocabulary
+
+---
+
+#### Phrases
+
+**zur Verfügung stehen** — *to be available*
+- = *verfügbar sein* · *jemandem zur Verfügung stehen* · Perfekt: **hat zur Verfügung gestanden**
+- Active partner: *jemandem etwas zur Verfügung stellen* = to provide (see K27)
+
+> Jedem Lehrer steht ein Laptop zur Verfügung.
+> *(A laptop is available to every teacher.)*
+
+---
+
+**einen Standpunkt vertreten** — *to hold / argue a point of view*
+- = *meinen, glauben* (formal) · Perfekt: **hat vertreten**
+- *den Standpunkt vertreten, dass …* · *der Standpunkt* = point of view
+
+> Ich vertrete den Standpunkt, dass Homeoffice produktiver ist.
+> *(I take the view that working from home is more productive.)*
+
+---
+
+**etwas in Angriff nehmen** — *to tackle / to get started on something*
+- = *mit etwas beginnen* · Perfekt: **hat in Angriff genommen**
+- *der Angriff* = attack — here: you "attack" a task
+
+> Dieses Jahr wollen wir die Wohnung renovieren. Im Juni möchten wir es in Angriff nehmen.
+> *(This year we want to renovate the flat. We'd like to get started on it in June.)*
+
+---
+
+**etwas in Empfang nehmen** — *to receive / to accept (delivery)*
+- = *annehmen, entgegennehmen* · Perfekt: **hat in Empfang genommen**
+- *der Empfang* = reception (also at a hotel / phone signal)
+
+> Kannst du für mich ein Paket in Empfang nehmen?
+> *(Can you take in a parcel for me?)*
+
+---
+
+**jemanden in Kenntnis setzen (über + Akk.)** — *to inform someone*
+- = *informieren, Bescheid geben* (very formal, letters/e-mails) · Perfekt: **hat in Kenntnis gesetzt**
+- *davon in Kenntnis setzen, dass …*
+
+> Ich möchte Sie davon in Kenntnis setzen, dass die Besprechung verschoben wurde.
+> *(I'd like to inform you that the meeting has been postponed.)*
+
+---
+
+**zu dem Entschluss kommen** — *to come to the decision*
+- = *sich entscheiden, beschließen* · Perfekt: **ist zu dem Entschluss gekommen**
+- Also: *zum Entschluss kommen, einen Entschluss fassen*
+
+> Wir sind zu dem Entschluss gekommen, dass wir unsere Rücklagen erhöhen müssen.
+> *(We have come to the decision that we must increase our reserves.)*
+
+---
+
+**Rücksicht nehmen auf + Akk.** — *to show consideration for*
+- = *berücksichtigen, beachten* · Perfekt: **hat Rücksicht genommen**
+- Adjective: *rücksichtsvoll* = considerate · Opposite: *rücksichtslos*
+
+> Man muss auf ältere Fahrgäste Rücksicht nehmen und ihnen einen Sitzplatz anbieten.
+> *(You have to be considerate of older passengers and offer them a seat.)*
+
+---
+
+**Abschied nehmen von + Dat.** — *to say goodbye to / to take leave of*
+- = *sich (für lange Zeit) verabschieden* · Perfekt: **hat Abschied genommen**
+- *die Abschiedsfeier* = farewell party
+
+> Frau Meier geht in Rente, leider müssen wir von ihr Abschied nehmen.
+> *(Ms Meier is retiring – unfortunately we have to say goodbye to her.)*
+
+---
+
+**zur Sprache kommen** — *to come up / to be raised (topic)*
+- = *ein Thema wird angesprochen* · Perfekt: **ist zur Sprache gekommen**
+- Active: *etwas zur Sprache bringen* = to raise a topic
+
+> Auf der Teamsitzung kommt das Thema „Urlaubsplanung“ zur Sprache.
+> *(The topic "holiday planning" comes up at the team meeting.)*
+
+---
+
+**infrage kommen** — *to be possible / to be an option*
+- = *möglich sein* · also spelled *in Frage kommen* · Perfekt: **ist infrage gekommen**
+- ⚠️ *nicht infrage kommen* = to be out of the question → *Das kommt nicht infrage!*
+
+> In Krisenzeiten kommt keine Gehaltserhöhung infrage.
+> *(In times of crisis a pay rise is out of the question.)*
+
+---
+
+**einen Beitrag leisten (zu + Dat.)** — *to make a contribution (to)*
+- = *etwas beitragen* · Perfekt: **hat einen Beitrag geleistet**
+- ⚠️ *sich etwas leisten* = to afford something — different meaning!
+
+> Wir alle können einen Beitrag zum Umweltschutz leisten.
+> *(We can all make a contribution to protecting the environment.)*
+
+---
+
+**Maßnahmen ergreifen / treffen** — *to take measures / action*
+- = *eine Aktion durchführen* · Perfekt: **hat ergriffen / hat getroffen**
+- *die Maßnahme* (pl. -n) = measure · *Sicherheitsmaßnahmen*
+
+> Die Firma muss Maßnahmen ergreifen, um Unfälle zu vermeiden.
+> *(The company has to take measures to avoid accidents.)*
+
+---
+
+**etwas in Kauf nehmen** — *to accept something (a disadvantage)*
+- = *akzeptieren* (something negative, for a bigger goal) · Perfekt: **hat in Kauf genommen**
+
+> Wer Karriere machen will, muss unbezahlte Überstunden in Kauf nehmen.
+> *(Anyone who wants a career has to accept unpaid overtime.)*
+
+---
+
+**einen Anspruch haben auf + Akk.** — *to be entitled to / to have a right to*
+- = *ein Recht haben auf* · *der Anspruch* (pl. Ansprüche)
+- *Anspruch auf Urlaub / Elterngeld haben*
+
+> Jeder Arbeitnehmer hat einen Anspruch auf bezahlten Urlaub.
+> *(Every employee is entitled to paid holiday.)*
+
+---
+
+**eine Präsentation halten** — *to give a presentation*
+- = *etwas präsentieren* · Perfekt: **hat eine Präsentation gehalten**
+- Also: *einen Vortrag / eine Rede halten*
+
+> Am Donnerstag hält jeder eine Präsentation über ein Produkt.
+> *(On Thursday everyone gives a presentation about a product.)*
+
+---
+
+**jemandem ins Wort fallen** — *to interrupt someone*
+- = *jemanden unterbrechen* · Perfekt: **ist ins Wort gefallen**
+
+> Warum fällst du mir die ganze Zeit ins Wort?
+> *(Why do you keep interrupting me?)*
+
+---
+
+**etwas in Erfahrung bringen** — *to find out*
+- = *herausfinden* · Perfekt: **hat in Erfahrung gebracht**
+
+> Ich habe in Erfahrung gebracht, wo er wohnt.
+> *(I found out where he lives.)*
+
+---
+
+**zur Diskussion stehen** — *to be up for discussion*
+- = *diskutiert werden* · Perfekt: **hat zur Diskussion gestanden**
+- Active: *etwas zur Diskussion stellen* = to put up for discussion
+
+> Das Thema steht bei der Sitzung zur Diskussion.
+> *(The topic is up for discussion at the meeting.)*
+
+---
+
+**Wert legen auf + Akk.** — *to attach importance to / to value*
+- = *wichtig finden* · Perfekt: **hat Wert gelegt** · *großen Wert legen auf*
+
+> Ich lege großen Wert auf Sauberkeit in der Küche.
+> *(Cleanliness in the kitchen is very important to me.)*
+
+---
+
+#### Nouns
+
+**die Wertschätzung** (kein Plural) — *appreciation / esteem*
+- = the company knows what an employee is worth and shows them recognition (*Anerkennung*)
+- Verb: *wertschätzen* = to value
+
+> Viele Mitarbeiter wünschen sich mehr Wertschätzung von ihrem Chef.
+> *(Many employees want more appreciation from their boss.)*
+
+---
+
+**der Schwindel** (kein Plural) — *dizziness*
+- Adjective: *schwindelig* = dizzy → *Mir ist schwindelig.* (dative!)
+- ② swindle, fraud (colloquial)
+
+> Nach dem Sturz hatte sie Kopfschmerzen und Schwindel.
+> *(After the fall she had a headache and dizziness.)*
+
+---
+
+**der Bereitschaftsdienst** (pl. die Bereitschaftsdienste) — *on-call service (emergency doctor)*
+- = *der Notfalldienst* · *ärztlicher Bereitschaftsdienst*: Tel. 116 117 (when your doctor is closed)
+
+> Am Wochenende habe ich den ärztlichen Bereitschaftsdienst angerufen.
+> *(At the weekend I called the out-of-hours medical service.)*
+
+---
+
+**die Röntgenaufnahme** (pl. die Röntgenaufnahmen) — *X-ray (image)*
+- = *das Röntgenbild* · Verb: *röntgen* → *Das Bein wurde geröntgt.*
+
+> Die Röntgenaufnahme zeigt, dass der Arm nicht gebrochen ist.
+> *(The X-ray shows that the arm isn't broken.)*
+
+---
+
+**die Gangsicherheit** (kein Plural) — *steadiness when walking*
+- = *Sicherheit beim Gehen* (medical/care context, e.g. older patients)
+
+> Nach dem Unfall war seine Gangsicherheit eingeschränkt.
+> *(After the accident he was unsteady on his feet.)*
+
+---
+
+**das Hämatom** (pl. die Hämatome) — *haematoma / bruise*
+- = *der Bluterguss, der blaue Fleck* — blood under the skin, in the body or in an organ
+
+> Nach dem Sturz hatte er ein großes Hämatom am Knie.
+> *(After the fall he had a big bruise on his knee.)*
+
+---
+
+**das Gleichgewicht** (kein Plural) — *balance*
+- = *die Balance* · *das Gleichgewicht verlieren* = to lose your balance
+
+> Auf dem nassen Boden hat sie das Gleichgewicht verloren.
+> *(She lost her balance on the wet floor.)*
+
+---
+
+**der Vorfall** (pl. die Vorfälle) — *incident*
+- = *das Ereignis* (something that happened, usually negative)
+
+> Der Vorfall muss sofort dem Chef gemeldet werden.
+> *(The incident must be reported to the boss immediately.)*
+
+---
+
+**der Zwischenfall** (pl. die Zwischenfälle) — *incident / unexpected event*
+- Smaller, unexpected disruption · *ohne Zwischenfälle* = without incident
+
+> Die Veranstaltung verlief ohne Zwischenfälle.
+> *(The event went off without incident.)*
+
+---
+
+**die Fußmatte** (pl. die Fußmatten) — *doormat*
+- *eine rutschfeste Matte* = a non-slip mat
+
+> Bitte putz dir die Schuhe auf der Fußmatte ab.
+> *(Please wipe your shoes on the doormat.)*
+
+---
+
+**der Wasserbehälter** (pl. die Wasserbehälter) — *water tank (e.g. coffee machine)*
+- *der Behälter* = container
+
+> Bevor du Kaffee machst, musst du den Wasserbehälter auffüllen.
+> *(Before you make coffee, you have to fill up the water tank.)*
+
+---
+
+**der Überlaufsensor** (pl. die Überlaufsensoren) — *overflow sensor*
+- *der Überlauf* = overflow · *überlaufen* = to overflow
+
+> Der Überlaufsensor meldet, dass die Schale voll ist.
+> *(The overflow sensor signals that the tray is full.)*
+
+---
+
+**der Milchaufschäumer** (pl. die Milchaufschäumer) — *milk frother*
+- *die Milch aufschäumen* = to froth milk · *der Schaum* = foam
+
+> Für einen Cappuccino brauchst du den Milchaufschäumer.
+> *(For a cappuccino you need the milk frother.)*
+
+---
+
+**die Überschneidung** (pl. die Überschneidungen) — *overlap / clash*
+- Here: several colleagues want holiday at the same time · *sich überschneiden* = to overlap
+
+> Bei der Urlaubsplanung gibt es oft Überschneidungen.
+> *(There are often clashes when planning holidays.)*
+
+---
+
+**der Vorrang** (kein Plural) — *priority*
+- = *die Priorität* · *Vorrang haben* = to have priority
+
+> Kollegen mit schulpflichtigen Kindern haben in den Sommerferien Vorrang.
+> *(Colleagues with school-age children have priority in the summer holidays.)*
+
+---
+
+**der Resturlaub** (kein Plural) — *remaining (unused) holiday*
+- = holiday left over from last year · often must be taken by 31 March, otherwise it *verfällt*
+
+> Ich muss meinen Resturlaub bis März nehmen.
+> *(I have to take my remaining holiday by March.)*
+
+---
+
+**der Beamte** (pl. die Beamten) — *civil servant* — (female: die Beamtin, pl. -innen)
+- = employee of the state (teacher, police, tax office…) · ⚠️ adjective noun: *ein Beamter*
+
+> Mein Onkel ist Beamter und arbeitet beim Finanzamt.
+> *(My uncle is a civil servant and works at the tax office.)*
+
+---
+
+**die eAU** (pl. die eAUs) — *electronic sick note*
+- = *die elektronische Arbeitsunfähigkeitsbescheinigung* = *die Krankmeldung*
+- The doctor sends it digitally; the employer *ruft sie ab* (retrieves it)
+
+> Seit 2023 bekommt der Arbeitgeber die eAU direkt von der Krankenkasse.
+> *(Since 2023 the employer gets the electronic sick note directly from the health insurer.)*
+
+---
+
+#### Verbs
+
+**ablehnen** — *to reject / to turn down*
+- Perfekt: **hat abgelehnt** · separable · = *nicht akzeptieren*
+- *einen Antrag / ein Angebot ablehnen* · Noun: *die Ablehnung*
+
+> Mein Urlaubsantrag wurde leider abgelehnt.
+> *(My holiday request was unfortunately turned down.)*
+
+---
+
+**mahlen** — *to grind*
+- Perfekt: **hat gemahlen** (⚠️ not *gemahlt*) · *Kaffeebohnen mahlen*
+- ⚠️ Don't confuse with *malen* = to paint
+
+> Die Maschine mahlt die Kaffeebohnen frisch.
+> *(The machine grinds the coffee beans fresh.)*
+
+---
+
+**entkalken** — *to descale*
+- Perfekt: **hat entkalkt** · *der Kalk* = limescale
+
+> Die Kaffeemaschine muss jeden Monat entkalkt werden.
+> *(The coffee machine has to be descaled every month.)*
+
+---
+
+**reinigen** — *to clean*
+- Perfekt: **hat gereinigt** · = *sauber machen, putzen* (more formal / technical)
+- *die Reinigung* = cleaning; dry cleaner's
+
+> Der Milchaufschäumer sollte nach jeder Benutzung gereinigt werden.
+> *(The milk frother should be cleaned after every use.)*
+
+---
+
+**Urlaub beantragen** — *to apply for holiday*
+- Perfekt: **hat beantragt** · *den Urlaubsantrag einreichen* = to submit the holiday request
+
+> Ich habe zwei Wochen Urlaub im August beantragt.
+> *(I've applied for two weeks' holiday in August.)*
+
+---
+
+**bewilligen** — *to approve / to grant*
+- Perfekt: **hat bewilligt** · = *genehmigen, erlauben* · Opposite: *ablehnen*
+
+> Der Chef hat meinen Urlaub bewilligt.
+> *(The boss approved my holiday.)*
+
+---
+
+**verfallen** — *to expire / to lapse*
+- Perfekt: **ist verfallen** · = *nicht mehr gültig sein* · *verfällt, verfiel*
+- ② to decay (a building): *Das alte Haus verfällt.*
+
+> Wenn du den Resturlaub nicht nimmst, verfällt er.
+> *(If you don't take your remaining holiday, it expires.)*
+
+---
+
+**stückeln** — *to split up (into small pieces)*
+- Perfekt: **hat gestückelt** · *Urlaub stückeln* = not take holiday all in one go (*am Stück*)
+
+> Ich stückele meinen Urlaub lieber und nehme öfter ein langes Wochenende.
+> *(I prefer to split my holiday and take long weekends more often.)*
+
+---
+
+**abrufen** — *to retrieve / to call up (digitally)*
+- Perfekt: **hat abgerufen** · separable · *E-Mails / Daten / Dateien abrufen*
+
+> Der Arbeitgeber kann die Krankmeldung online abrufen.
+> *(The employer can retrieve the sick note online.)*
+
+---
+
+#### Adjectives & Adverbs
+
+**verwirrt** — *confused*
+- = *durcheinander (in den Gedanken)* · Verb: *verwirren* · Noun: *die Verwirrung*
+
+> Nach dem Sturz war der Patient kurz verwirrt.
+> *(After the fall the patient was briefly confused.)*
+
+---
+
+**engmaschig** — *close / at short intervals*
+- = *in kurzen Abständen, sehr oft* · *engmaschig kontrollieren* (medical)
+- Literally: with small meshes (a net)
+
+> Der Blutdruck des Patienten wird engmaschig kontrolliert.
+> *(The patient's blood pressure is monitored closely.)*
+
+---
+
+**wachsam** — *alert / watchful*
+- = *vorsichtig, aufmerksam*
+
+> Im Straßenverkehr muss man immer wachsam sein.
+> *(You always have to be alert in traffic.)*
+
+---
+
+**rutschfest** — *non-slip*
+- *rutschen* = to slip · *rutschig* = slippery
+
+> Im Bad liegt eine rutschfeste Matte.
+> *(There's a non-slip mat in the bathroom.)*
+
+---
+
+**schulpflichtig** — *of compulsory school age*
+- = children who still have to go to school · *die Schulpflicht* = compulsory schooling
+
+> Familien mit schulpflichtigen Kindern können nur in den Ferien verreisen.
+> *(Families with school-age children can only travel during the holidays.)*
+
+---
+
+**gerecht** — *fair / just*
+- = *fair* · Opposite: *ungerecht* · Noun: *die Gerechtigkeit*
+
+> Die Urlaubsplanung soll für alle Mitarbeiter gerecht sein.
+> *(Holiday planning should be fair for all employees.)*
+
+---
+
+## Klasse K35 — Begegnungen & Produktpräsentation (Encounters & Product Presentations)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**die Begegnung** (pl. die Begegnungen) — *encounter / meeting*
+- = *ein (spontanes) Treffen* · Verb: *jemandem begegnen* (ist begegnet, + Dat.)
+
+> Letzte Woche hatte ich meine erste Begegnung mit Nino.
+> *(Last week I met Nino for the first time.)*
+
+---
+
+**der Einheimische** (pl. die Einheimischen) — *local (person)* — (female: die Einheimische, pl. -n)
+- = *lokale Person* · ⚠️ adjective noun: *ein Einheimischer* · Opposite: *der Tourist*
+
+> Die Einheimischen kennen die besten Restaurants der Stadt.
+> *(The locals know the best restaurants in town.)*
+
+---
+
+**die Gebühr** (pl. die Gebühren) — *fee / charge*
+- = *die Kosten* (for a service) · *die Studiengebühr* = tuition fee · *gebührenfrei* = free of charge
+
+> In Deutschland gibt es an den meisten Unis keine Studiengebühren.
+> *(At most universities in Germany there are no tuition fees.)*
+
+---
+
+**die Lebensweise** (pl. die Lebensweisen) — *way of life / lifestyle*
+- = *wie jemand lebt*
+
+> Ich habe eine minimalistische Lebensweise.
+> *(I have a minimalist lifestyle.)*
+
+---
+
+**die Stadterkundung** (pl. die Stadterkundungen) — *city exploration / city tour*
+- *erkunden* = to explore · ⚠️ *sich erkundigen* = to ask, to inform yourself
+
+> Am ersten Tag machen wir eine Stadterkundung mit einem Einheimischen.
+> *(On the first day we explore the city with a local.)*
+
+---
+
+**die Sichtweise** (pl. die Sichtweisen) — *point of view / perspective*
+- = *wie man etwas sieht* · = *die Perspektive, der Standpunkt*
+
+> Jeder hat beim Thema Religion eine andere Sichtweise.
+> *(Everyone has a different perspective on religion.)*
+
+---
+
+**der Gleichgesinnte** (pl. die Gleichgesinnten) — *like-minded person* — (female: die Gleichgesinnte, pl. -n)
+- people with the same interests or opinions · ⚠️ adjective noun
+
+> Im Sportverein habe ich viele Gleichgesinnte kennengelernt.
+> *(I got to know lots of like-minded people at the sports club.)*
+
+---
+
+**der Pfad** (pl. die Pfade) — *path / trail*
+- = *der (schmale) Weg* · *der Wanderpfad* · figurative: *der Pfad des Lebens*
+
+> Wir sind einem schmalen Pfad durch den Wald gefolgt.
+> *(We followed a narrow path through the forest.)*
+
+---
+
+**der Sarg** (pl. die Särge) — *coffin*
+
+> Bei der Beerdigung wurde der Sarg von sechs Männern getragen.
+> *(At the funeral the coffin was carried by six men.)*
+
+---
+
+**die Beerdigung** (pl. die Beerdigungen) — *funeral / burial*
+- = *die Bestattung* · Verb: *beerdigen*
+
+> Es gibt Menschen, die ihre Beerdigung selbst planen.
+> *(There are people who plan their own funeral.)*
+
+---
+
+**der Saugroboter** (pl. die Saugroboter) — *robot vacuum cleaner*
+- *saugen* = to vacuum · *wischen* = to mop
+
+> Das ist ein Gerät, das die Wohnung selbst saugen und wischen kann.
+> *(It's a device that can vacuum and mop the flat by itself.)*
+
+---
+
+**die Dienstleistung** (pl. die Dienstleistungen) — *service*
+- Opposite: *das Produkt* · *der Dienstleister* = service provider (DHL, Amazon …)
+
+> DHL bietet Dienstleistungen rund um Pakete und Briefe an.
+> *(DHL offers services for parcels and letters.)*
+
+---
+
+**das Merkmal** (pl. die Merkmale) — *feature / characteristic*
+- = *die Eigenschaft* (price, colour, material, technical data)
+
+> Ein wichtiges Merkmal des Saugroboters ist die Steuerung per App.
+> *(An important feature of the robot vacuum is control via app.)*
+
+---
+
+**der Nutzen** (kein Plural) — *benefit / use*
+- *der Nutzen für den Kunden* = customer benefit · Verb: *nutzen*
+
+> Der größte Nutzen für den Kunden ist, dass er Zeit spart.
+> *(The biggest benefit for the customer is that they save time.)*
+
+---
+
+**die Umsatzsteigerung** (pl. die Umsatzsteigerungen) — *increase in sales / turnover*
+- *der Umsatz* (sales) + *die Steigerung* (increase, from *steigern*)
+
+> Die neue Werbung hat zu einer Umsatzsteigerung von 20 % geführt.
+> *(The new advertising led to a 20% increase in sales.)*
+
+---
+
+**das Rollo** (pl. die Rollos) — *roller blind*
+- similar: *die Jalousie* (Venetian blind) · *das Rollo hochziehen / herunterlassen*
+
+> Am Abend lasse ich das Rollo herunter.
+> *(In the evening I pull down the blind.)*
+
+---
+
+**der Knöchel** (pl. die Knöchel) — *ankle* / *knuckle*
+- ① ankle (*der Fußknöchel*) ② knuckle (*der Fingerknöchel*)
+- *sich den Knöchel verstauchen* = to sprain your ankle
+
+> Ich habe mir beim Fußball den Knöchel verstaucht.
+> *(I sprained my ankle playing football.)*
+
+---
+
+**die Prävention** (pl. die Präventionen) — *prevention*
+- = *die Vorbeugung* · *Prävention gegen + Akk. / zur Prävention von + Dat.*
+
+> Masken sind eine gute Prävention gegen Krankheiten.
+> *(Masks are a good way to prevent illness.)*
+
+---
+
+**das Verbandbuch** (pl. die Verbandbücher) — *first-aid log / accident book*
+- = a book at work where every injury and first-aid treatment is recorded · also *Verbandsbuch*
+
+> Auch kleine Verletzungen müssen ins Verbandbuch eingetragen werden.
+> *(Even small injuries have to be entered in the accident book.)*
+
+---
+
+**der Mangel** (pl. die Mängel) — *defect* / *lack*
+- ① defect, fault (*der Fehler*) – plural *die Mängel* → *Die Wohnung hat Mängel.*
+- ② lack, shortage (*zu wenig*) – no plural: *der Vitaminmangel, der Personalmangel*
+
+> Die Kaffeemaschine hat einen Mangel. Ich bringe sie zurück.
+> *(The coffee machine has a defect. I'm taking it back.)*
+
+---
+
+#### Verbs
+
+**bewältigen** — *to cope with / to manage / to master*
+- Perfekt: **hat bewältigt** · *Stress / eine Aufgabe / eine Krise bewältigen*
+
+> Ich habe alle Aufgaben sehr gut bewältigt.
+> *(I managed all the tasks very well.)*
+
+---
+
+**sich eignen für + Akk.** — *to be suitable for*
+- Perfekt: **hat sich geeignet** · Adjective: *geeignet für*
+
+> Die Stelle eignet sich gut für dich.
+> *(The job is well suited to you.)*
+
+---
+
+**anstehen** — *to queue (up)*
+- Perfekt: **hat angestanden** (south: *ist*) · separable · *in der Schlange anstehen*
+- ② to be due, to be coming up: *Was steht heute an?* = What's on today?
+
+> Ich stehe an der Kasse in der Schlange an.
+> *(I'm queuing at the checkout.)*
+
+---
+
+**übernehmen** — *to take over / to take on*
+- Perfekt: **hat übernommen** · inseparable · *Verantwortung / ein Projekt / die Kosten übernehmen*
+
+> Ich übernehme das Projekt, während du im Urlaub bist.
+> *(I'll take over the project while you're on holiday.)*
+
+---
+
+**übertragen** — *to transfer / to broadcast*
+- Perfekt: **hat übertragen** · inseparable · *überträgt*
+- ① transfer data ② broadcast (TV): *Das Spiel wird live übertragen.* ③ pass on (illness)
+
+> Ich übertrage das Dokument auf mein Handy.
+> *(I'm transferring the document to my phone.)*
+
+---
+
+**graben** — *to dig*
+- Perfekt: **hat gegraben** · *gräbt, grub* · *das Grab* = grave
+
+> Für den Sarg wird ein tiefes Loch in die Erde gegraben.
+> *(A deep hole is dug in the ground for the coffin.)*
+
+---
+
+**ausweichen + Dat.** — *to avoid / to dodge / to swerve*
+- Perfekt: **ist ausgewichen** · separable · *wich aus*
+- *einer Frage / einem Problem / einem Auto ausweichen*
+
+> Er weicht meiner Frage immer aus.
+> *(He always dodges my question.)*
+
+---
+
+**basieren auf + Dat.** — *to be based on*
+- Perfekt: **hat basiert**
+
+> Der Film basiert auf einem Buch.
+> *(The film is based on a book.)*
+
+---
+
+**knüpfen** — *to make (contacts) / to tie*
+- Perfekt: **hat geknüpft** · *Kontakte knüpfen* = to make contacts, to network
+- Literally: to knot (*der Knoten*) · not related to *der Knopf* = button
+
+> Ich habe im Kurs viele Kontakte geknüpft.
+> *(I've made lots of contacts on the course.)*
+
+---
+
+#### Adjectives & Adverbs
+
+**gemeinnützig** — *non-profit / charitable*
+- An organisation that works for the common good, not for profit · *ein gemeinnütziger Verein*
+- ⚠️ Not "public / for everyone" – that's *öffentlich*
+
+> Das Tierheim wird von einem gemeinnützigen Verein geführt.
+> *(The animal shelter is run by a non-profit association.)*
+
+---
+
+**werbefrei** — *ad-free*
+- *die Werbung* = advertising · *-frei* = without
+
+> Spotify Premium ist werbefrei.
+> *(Spotify Premium is ad-free.)*
+
+---
+
+**längst** — *long since / for a long time (already)*
+- = *schon lange, vor langer Zeit* · *längst nicht* = not nearly
+- ⚠️ Used for something that is already done/known: *Das weiß ich längst.*
+
+> Das Problem ist längst gelöst.
+> *(The problem was solved long ago.)*
+
+---
+
+**scheinbar** — *apparently / seemingly*
+- Strictly = it only *looks* that way (but isn't true) · *anscheinend* = it seems so (probably true)
+- In everyday speech many people use *scheinbar* = *anscheinend*
+
+> Er ist scheinbar krank – aber eigentlich will er nur nicht arbeiten.
+> *(He seems to be ill – but really he just doesn't want to work.)*
+
+---
+
+**unverzüglich** — *immediately / without delay*
+- = *sofort, umgehend* (formal, rules and letters)
+
+> Unfälle müssen unverzüglich gemeldet werden.
+> *(Accidents must be reported immediately.)*
+
+---
+
+**wirksam** — *effective*
+- = *effektiv* · ② legally effective, valid (= *gültig*): *Die Kündigung ist wirksam.*
+- Noun: *die Wirksamkeit*
+
+> Das Medikament ist sehr wirksam.
+> *(The medicine is very effective.)*
+
+---
+
+**unerlässlich** — *essential / indispensable*
+- = *erforderlich, notwendig* (you must have it)
+
+> Das B1-Zertifikat ist für den B2-Kurs unerlässlich.
+> *(The B1 certificate is essential for the B2 course.)*
+
+---
+
+**effizient** — *efficient*
+- = *wirksam und ohne viel Aufwand* · Noun: *die Effizienz*
+
+> Der Saugroboter arbeitet effizient und spart viel Zeit.
+> *(The robot vacuum works efficiently and saves a lot of time.)*
+
+---
+
+## Klasse K37 — Produktion & Transport (Production & Transport)
+
+### Vocabulary
+
+---
+
+#### Nouns
+
+**der Anbau** (kein Plural) — *cultivation / growing*
+- Verb: *anbauen* = to grow (fruit, vegetables, grain) · *der Bio-Anbau*
+- ② extension (building)
+
+> In Brasilien gibt es viel Kaffeeanbau.
+> *(There's a lot of coffee growing in Brazil.)*
+
+---
+
+**das Getreide** (kein Plural) — *grain / cereal*
+- e.g. *der Weizen* (wheat), *der Roggen* (rye) – flour (*das Mehl*) is made from it
+
+> Aus Getreide wird Mehl gemacht.
+> *(Flour is made from grain.)*
+
+---
+
+**die Ernte** (pl. die Ernten) — *harvest*
+- Verb: *ernten* = to harvest
+
+> Die Ernte war dieses Jahr wegen der Trockenheit schlecht.
+> *(The harvest was bad this year because of the drought.)*
+
+---
+
+**der Rohstoff** (pl. die Rohstoffe) — *raw material*
+- = *ursprüngliches Material* (cotton, oil, wood …)
+
+> Baumwolle ist ein wichtiger Rohstoff für die Textilindustrie.
+> *(Cotton is an important raw material for the textile industry.)*
+
+---
+
+**die Baumwolle** (kein Plural) — *cotton*
+- Fabrics (*Stoffe*) are made from it, e.g. for T-shirts
+
+> Das T-Shirt ist aus 100 % Baumwolle.
+> *(The T-shirt is 100% cotton.)*
+
+---
+
+**das Garn** (pl. die Garne) — *yarn / thread*
+- = *der Faden*
+
+> Aus der Baumwolle wird zuerst Garn hergestellt.
+> *(First, yarn is made from the cotton.)*
+
+---
+
+**der Kragen** (pl. die Kragen) — *collar*
+- At the neckline, e.g. on a blazer, polo shirt, jacket
+
+> Der Kragen von meinem Hemd ist schmutzig.
+> *(The collar of my shirt is dirty.)*
+
+---
+
+**der Schadstoff** (pl. die Schadstoffe) — *pollutant / harmful substance*
+- = substances that are harmful to health · *schadstoffarm* = low-emission
+
+> Beim Färben werden oft Schadstoffe ins Wasser geleitet.
+> *(Pollutants are often released into the water during dyeing.)*
+
+---
+
+**die Fracht** (pl. die Frachten) — *freight / cargo*
+- = *die Ladung* · *das Frachtschiff* = cargo ship
+
+> Die Fracht wird mit dem Schiff nach Europa transportiert.
+> *(The cargo is transported to Europe by ship.)*
+
+---
+
+**das Gut** (pl. die Güter) — *goods / product*
+- = *das Produkt* (mostly plural) · *der Güterverkehr* = freight transport
+- ② estate (*das Landgut*)
+
+> Viele Güter werden heute per Lkw transportiert.
+> *(Many goods are transported by lorry today.)*
+
+---
+
+#### Verbs
+
+**erzeugen** — *to produce / to generate*
+- Perfekt: **hat erzeugt** · = *herstellen, produzieren* · *Strom / Energie erzeugen*
+- *das Erzeugnis* = product · *der Erzeuger* = producer
+
+> In dieser Region werden Obst und Gemüse erzeugt.
+> *(Fruit and vegetables are produced in this region.)*
+
+---
+
+**anbauen** — *to grow / to cultivate*
+- Perfekt: **hat angebaut** · separable · = *Obst, Gemüse, Getreide pflanzen*
+
+> Kaffee wird vor allem in Südamerika und Afrika angebaut.
+> *(Coffee is grown mainly in South America and Africa.)*
+
+---
+
+**ernten** — *to harvest*
+- Perfekt: **hat geerntet** · = vegetables/grain/fruit from the field
+
+> Die Kaffeebohnen werden per Hand geerntet.
+> *(The coffee beans are harvested by hand.)*
+
+---
+
+**aufbereiten** — *to process / to prepare (raw materials)*
+- Perfekt: **hat aufbereitet** · separable · *Wasser / Kaffeebohnen aufbereiten*
+
+> Nach der Ernte werden die Kaffeebohnen aufbereitet.
+> *(After the harvest, the coffee beans are processed.)*
+
+---
+
+**verarbeiten** — *to process*
+- Perfekt: **hat verarbeitet** · = make a new product from a raw material
+- *zu + Dat. verarbeiten* → *Baumwolle zu Garn verarbeiten*
+
+> Die Baumwolle wird in einer Fabrik zu Stoff verarbeitet.
+> *(The cotton is processed into fabric in a factory.)*
+
+---
+
+**rösten** — *to roast*
+- Perfekt: **hat geröstet** · = heat without fat · *die Rösterei* = roastery
+
+> Die Kaffeebohnen wurden geröstet.
+> *(The coffee beans were roasted.)*
+
+---
+
+**färben** — *to dye / to colour*
+- Perfekt: **hat gefärbt** · = *Farbe geben* · *sich die Haare färben*
+
+> Das Shirt kann in vielen Farben gefärbt werden.
+> *(The shirt can be dyed in many colours.)*
+
+---
+
+**Emissionen ausstoßen** — *to emit (emissions)*
+- Perfekt: **hat ausgestoßen** · separable · = *abgeben* · *der CO₂-Ausstoß*
+
+> Frachtschiffe stoßen viele Emissionen aus.
+> *(Cargo ships emit a lot of emissions.)*
+
+---
+
+#### Adjectives & Adverbs
+
+**reif** — *ripe*
+- = *fertig* (for fruit and vegetables) · Opposite: *unreif* · ② mature (person)
+
+> Die Bananen sind noch nicht reif.
+> *(The bananas aren't ripe yet.)*
+
+---

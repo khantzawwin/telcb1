@@ -29,6 +29,9 @@ import B2IndirekteRede from './pages/b2/B2IndirekteRede'
 import B2Relativsaetze from './pages/b2/B2Relativsaetze'
 import B2Zeitpraepositionen from './pages/b2/B2Zeitpraepositionen'
 import B2Doppelkonnektoren from './pages/b2/B2Doppelkonnektoren'
+import B2Passiv from './pages/b2/B2Passiv'
+import B2Kausal from './pages/b2/B2Kausal'
+import B2NomenVerb from './pages/b2/B2NomenVerb'
 
 // /grammar shows the current level's grammar
 function GrammarHome() {
@@ -68,6 +71,9 @@ function AppRoutes() {
                 <Route path="/grammar/b2/relativ" element={<B2Page><B2Relativsaetze /></B2Page>} />
                 <Route path="/grammar/b2/zeit" element={<B2Page><B2Zeitpraepositionen /></B2Page>} />
                 <Route path="/grammar/b2/doppelkonnektoren" element={<B2Page><B2Doppelkonnektoren /></B2Page>} />
+                <Route path="/grammar/b2/passiv" element={<B2Page><B2Passiv /></B2Page>} />
+                <Route path="/grammar/b2/kausal" element={<B2Page><B2Kausal /></B2Page>} />
+                <Route path="/grammar/b2/nomenverb" element={<B2Page><B2NomenVerb /></B2Page>} />
                 <Route path="/grammar/b2/*" element={<Navigate to="/grammar" replace />} />
                 <Route path="/grammar/topic/:topicId" element={<GrammarTopic />} />
                 <Route path="/grammar/:themeId" element={<Grammar />} />

@@ -51,6 +51,24 @@ export const B2_TOPICS = [
     sessionKey: 'b2_doppelkonnektoren',
   },
   {
+    id: 'passiv',
+    title: 'Passiv',
+    subtitle: 'Vorgangspassiv · alle Zeiten · Modalverben · Zustandspassiv',
+    sessionKey: 'b2_passiv',
+  },
+  {
+    id: 'kausal',
+    title: 'Kausale Satzverbindungen',
+    subtitle: 'weil · da · sodass · denn · nämlich · deshalb · aufgrund',
+    sessionKey: 'b2_kausal',
+  },
+  {
+    id: 'nomenverb',
+    title: 'Nomen-Verb-Verbindungen',
+    subtitle: 'zur Verfügung stellen · in Kauf nehmen · zur Sprache kommen …',
+    sessionKey: 'b2_nomenverb',
+  },
+  {
     id: 'verben',
     title: 'Unregelmäßige Verben',
     subtitle: 'Nach Vokalwechsel gruppiert (ei – ie – ie …)',
